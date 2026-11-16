@@ -2,6 +2,7 @@
 .obsidian/
 *.pdf
 *.png
+!docs/images/readme/*.png
 
 # JavaScript / Next.js
 node_modules/

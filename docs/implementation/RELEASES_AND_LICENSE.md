@@ -38,8 +38,8 @@ private (`gh repo view`: PRIVATE, checked 2026-11-02), so the website links no G
   (`LicenseRef-ChemDFT-ThirdParty`); `output/`, `research/`, `docs/history/`, `tools/scientific-acceptance-archive/`,
   `artifacts/` and the root milestone reports are retained evidence excluded from publication until audited
   (`LicenseRef-ChemDFT-NotForPublication`); the logo and icons are artwork (`LicenseRef-ChemDFT-Proprietary`).
-- **Nothing is published.** The repository is private, the site links no repository, and the licence page states:
-  "Source licence: Apache-2.0 for all ChemDFT first-party code. Public source repository: not published yet".
+- **Public snapshot published.** The public snapshot repository is at `https://github.com/TabAh007/chemdft-open` (published 2026-11-16), and the licence page states:
+  "Source licence: Apache-2.0 for all ChemDFT first-party code. Public source repository: https://github.com/TabAh007/chemdft-open".
 - **SPDX headers** stay on the files that already carried them (the open-core set). They were deliberately **not** added to
   every file; `tests/test_licensing_map.py` enforces the header rule for the open-core pattern set defined in
   `scripts/build_zenodo_snapshot.py` (`OPEN_CORE_PATTERNS`), so the map, the tests and the snapshot cannot disagree.
@@ -70,7 +70,7 @@ was replaced by the 2026-11-13 decision. `scripts/build_zenodo_snapshot.py` stil
 3b. **Quantum ESPRESSO is GPL-2.0-or-later and is only ever run as separate programs** (`pw.x`, `projwfc.x`, `dos.x`, `bands.x`, started with `mpirun`; files in, files out). No QE library is linked or imported, and **no QE source, binary or pseudopotential file is vendored in the repository or in any snapshot.** In the hosted image QE is compiled from the pinned tag `qe-7.6` and the SSSP files are fetched at image build time (`infra/aws/ec2-pilot/qe-recipe.lock`); the hosted image is therefore a combined work with QE's own obligations (source offer: the pinned tag and commit). Pseudopotentials are never redistributed with ChemDFT.
 4. The engine files are not standalone: they import other ChemDFT modules (`storage`, `errors`, `config`, `scientific_models`, `scientific.structures`). With the whole first-party tree published this no longer matters; the public export is the whole tree.
 5. xTB, DFT-D4, CREST and Psi4 are started as separate programs, not linked (to be confirmed in a legal read). If a binary or container of them is ever distributed, their source-offer obligations apply.
-6. The cite page and `CITATION.cff` `repository-code` still point to `https://github.com/TabAh007/ChemDFT`, which is private; they change only after publication.
+6. `CITATION.cff` `repository-code` points to `https://github.com/TabAh007/chemdft-open` (the public repository).
 
 ### 4.3 Open legal questions (no legal review has happened)
 
@@ -130,8 +130,7 @@ Option A was selected. The snapshot export is published to `TabAh007/chemdft-ope
 - **Identifier scan:** Full identifier scan on the export directory must yield zero findings across all categories (cloud accounts, instances, bucket names, hostnames/IP addresses, emails, deployment IDs, unrelated project names, keys/tokens, local filesystem paths).
 - **Privacy and manual push:** The repository is created private. The agent never makes anything public, never changes visibility, and never auto-publishes without explicit approval; the owner flips visibility to public when ready.
 
-Once published and confirmed: set the two URL constants (the footer then shows GitHub), change `repository-code` in `CITATION.cff` and
-`lib/citation.ts` to the public repository, bump the release.
+Published 2026-11-16: `TabAh007/chemdft-open` is public; `OPEN_REPOSITORY_URL` and `CITATION.cff` `repository-code` point to it.
 
 ## 7. Commands for you (NOT run)
 

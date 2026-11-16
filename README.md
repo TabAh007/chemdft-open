@@ -1,11 +1,25 @@
 # ChemDFT
 
+Website: https://chemdft.com · Public source: https://github.com/TabAh007/chemdft-open
+
 ChemDFT is a web platform for computational chemistry and materials science. An AI assistant plans and explains; every
 scientific value comes from a real engine (PySCF, Quantum ESPRESSO, xTB, CREST) and passes through a **Result Firewall**
 that records where it came from. Hosted service: <https://chemdft.com>.
 
 **Long-term goal:** a free, open tool for the kind of work people do today with Gaussian-like packages. This is a goal,
 not a promise: there are no dates and no committed system sizes.
+
+## Screenshots
+
+| Screenshot | Description |
+|---|---|
+| ![ChemDFT homepage hero](docs/images/readme/01-home-hero.png) | **Homepage hero:** interactive 3D crystal viewer displaying a chromium(III) oxide reference structure alongside introductory overview. |
+| ![3D molecular workspace viewer](docs/images/readme/02-workspace-viewer.png) | **3D molecular workspace:** ball-and-stick structure viewer with orientation controls, atom size, bond settings, and element legend. |
+| ![Project start options](docs/images/readme/03-start-options.png) | **Project start options:** choices for starting with a molecule, importing calculation outputs, analyzing experimental spectra, comparing results, exploring examples, or guided workflow. |
+| ![Scientific Result Firewall](docs/images/readme/04-scientific-result-firewall.png) | **Scientific Result Firewall:** platform workflow separating AI planning and interpretation from deterministic calculation execution and recorded results. |
+| ![Structure toolkits and parsers](docs/images/readme/05-structures-and-imports.png) | **Structure toolkits and parsers:** status and capability cards for RDKit, pymatgen, and cclib output parsing. |
+| ![Periodic calculations](docs/images/readme/06-periodic-crystals.png) | **Periodic calculations:** cards for Quantum ESPRESSO plane-wave DFT and PySCF periodic Gaussian-basis calculations with listed options. |
+| ![Molecular calculation engines](docs/images/readme/07-engines.png) | **Molecular calculation engines:** cards showing PySCF, geomeTRIC, xTB, and CREST versions, capabilities, and hosted limits. |
 
 ## Status
 

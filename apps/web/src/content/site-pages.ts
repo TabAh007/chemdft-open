@@ -63,7 +63,7 @@ export const PRINCIPLES = [
     id: "open",
     title: "Open core, stated plainly",
     body: [
-      "The licence map says which parts are Apache-2.0 and which are not. The repository is not public yet, and no page says otherwise.",
+      "The licence map says which parts are Apache-2.0 and which are not. The public source repository is at https://github.com/TabAh007/chemdft-open.",
     ],
   },
 ] as const;

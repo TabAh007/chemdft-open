@@ -45,7 +45,7 @@ authors:
     email: tab@chemdft.com
     affiliation: chemdft.com
     orcid: "https://orcid.org/0009-0006-0198-5253"
-repository-code: "https://github.com/TabAh007/ChemDFT"
+repository-code: "https://github.com/TabAh007/chemdft-open"
 url: "https://chemdft.com"
 abstract: "Computational chemistry workbench where an AI Scientist plans and explains and every scientific value comes from a verified engine."
 keywords:

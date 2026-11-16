@@ -1,14 +1,13 @@
 /**
  * The licensing model shown on the License page. The machine-readable map is /REUSE.toml and the full table with the open
  * questions is docs/implementation/RELEASES_AND_LICENSE.md; tests/license.test.ts keeps this file consistent with REUSE.toml.
- * Nothing here says the open parts are publicly available: they are licensed under Apache-2.0 once published, which has not
- * happened (the owner confirms it; until then `OPEN_REPOSITORY_URL` and `GITHUB_URL` are null).
+ * The open parts are published at https://github.com/TabAh007/chemdft-open under Apache-2.0.
  */
 
 /** The public repository link for the footer. null while the repository is private (checked 2026-11-02: PRIVATE). */
 export const GITHUB_URL: string | null = null;
-/** The repository (or mirror) holding only the open directories. null until it exists and the owner confirms. */
-export const OPEN_REPOSITORY_URL: string | null = null;
+/** The repository (or mirror) holding only the open directories. */
+export const OPEN_REPOSITORY_URL: string | null = "https://github.com/TabAh007/chemdft-open";
 
 export type LicenseGroup = "open" | "third-party" | "excluded" | "artwork";
 
@@ -75,7 +74,7 @@ export const OPEN_CORE_STATEMENT =
 
 /** The one line that says what the repository status is. A test keeps it exact. */
 export const REPOSITORY_STATUS =
-  "Source licence: Apache-2.0 for all ChemDFT first-party code. Public source repository: not published yet";
+  "Source licence: Apache-2.0 for all ChemDFT first-party code. Public source repository: https://github.com/TabAh007/chemdft-open";
 
 /** Files inside the Apache-2.0 paths that are held back from the public snapshot (scripts/build_zenodo_snapshot.py HELD_BACK; tests keep this list equal to it). */
 export const HELD_BACK_FILES: readonly string[] = [

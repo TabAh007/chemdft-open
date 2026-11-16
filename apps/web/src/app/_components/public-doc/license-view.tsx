@@ -1,4 +1,4 @@
-import { HELD_BACK_FILES, LICENCE_NOT_RECORDED, LICENSE_ROWS, OPEN_CORE_STATEMENT, OPEN_REPOSITORY_URL, REPOSITORY_STATUS, THIRD_PARTY, THIRD_PARTY_STATUS_LABEL, ZENODO_CONCEPT_DOI, ZENODO_SNAPSHOT_DOI } from "../../../content/license";
+import { HELD_BACK_FILES, LICENCE_NOT_RECORDED, LICENSE_ROWS, OPEN_CORE_STATEMENT, OPEN_REPOSITORY_URL, THIRD_PARTY, THIRD_PARTY_STATUS_LABEL, ZENODO_CONCEPT_DOI, ZENODO_SNAPSHOT_DOI } from "../../../content/license";
 import styles from "./public-doc.module.css";
 
 /** The License page: the open-core model in plain words, the directory table, SPDX ids and the verified third-party table. */
@@ -9,13 +9,11 @@ export function LicenseView() {
         <h1>License</h1>
         <p className={styles.lead}>{OPEN_CORE_STATEMENT}</p>
         <p className={styles.lead} data-testid="license-apache-line">
-          {REPOSITORY_STATUS}
+          Source licence: Apache-2.0 for all ChemDFT first-party code. Public source repository:{" "}
+          <a href={OPEN_REPOSITORY_URL ?? "https://github.com/TabAh007/chemdft-open"} rel="noopener noreferrer">
+            {OPEN_REPOSITORY_URL ?? "https://github.com/TabAh007/chemdft-open"}
+          </a>
         </p>
-        {OPEN_REPOSITORY_URL ? (
-          <p className={styles.notice}>
-            The open parts are published at <a href={OPEN_REPOSITORY_URL}>{OPEN_REPOSITORY_URL}</a>.
-          </p>
-        ) : null}
       </header>
 
       <section className={styles.section} aria-labelledby="model">

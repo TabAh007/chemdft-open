@@ -61,7 +61,7 @@ describe("Citation metadata and string formatting", () => {
     expect(cffContent).toContain("Tabriz");
     expect(cffContent).toContain("Ahmadli");
     expect(cffContent).toContain("https://orcid.org/0009-0006-0198-5253");
-    expect(cffContent).toContain("https://github.com/TabAh007/ChemDFT");
+    expect(cffContent).toContain("https://github.com/TabAh007/chemdft-open");
 
     // The licence covers the open group only (LICENSE.md); version and date are checked against content/releases.ts in releases.test.ts.
     expect(cffContent).toMatch(/^license: Apache-2\.0$/m);

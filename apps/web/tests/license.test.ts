@@ -52,12 +52,13 @@ describe("License page data", () => {
     }
   });
 
-  it("does not claim public availability or link a repository that does not exist", () => {
+  it("links the public repository and confirms licensing terms", () => {
     expect(GITHUB_URL).toBeNull();
-    expect(OPEN_REPOSITORY_URL).toBeNull();
+    expect(OPEN_REPOSITORY_URL).toBe("https://github.com/TabAh007/chemdft-open");
     const html = renderToStaticMarkup(createElement(LicenseView));
-    expect(html).toContain("Source licence: Apache-2.0 for all ChemDFT first-party code. Public source repository: not published yet");
-    expect(html).not.toMatch(/publicly available|TabAh007/i);
+    expect(html).toContain("Source licence: Apache-2.0 for all ChemDFT first-party code. Public source repository:");
+    expect(html).toContain("https://github.com/TabAh007/chemdft-open");
+    expect(html).toContain('href="https://github.com/TabAh007/chemdft-open"');
     expect(html).toContain("Apache-2.0");
     expect(html).toContain("Third-party software");
     expect(html).toMatch(/no warranty/i);
