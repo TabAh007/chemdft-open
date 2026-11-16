@@ -1,0 +1,69 @@
+[project]
+name = "chemdft-workspace"
+version = "0.1.0"
+license = {text = "Apache-2.0"}
+requires-python = ">=3.12"
+
+[tool.uv.workspace]
+members = ["services/api", "services/evaluation-core"]
+exclude = ["services/scientific-worker", "services/spectra-worker"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+# Archived acceptance harnesses, research snapshots, documentation scripts and
+# retained evidence are historical records, not maintained source.
+extend-exclude = [
+  "tools/scientific-acceptance-archive",
+  "research",
+  "docs",
+  "output",
+  # Hash-pinned: deployed AWS sources/ops records and the frozen blind evaluator.
+  # Editing them invalidates recorded SHA-256 evidence; change them only with
+  # their own re-verification.
+  "infra",
+  "services/embedding-evaluation",
+]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM", "RUF"]
+
+[tool.pytest.ini_options]
+markers = [
+  "scientific_integration: requires a separately provisioned real scientific engine environment",
+  "benchmark: cross-engine numerical benchmark requiring optional engines",
+  "ai_integration: opt-in test calling real external AI provider",
+  "qe_integration: opt-in test that needs real Quantum ESPRESSO 7.6 and the SSSP library (not run on the Mac)",
+]
+
+[tool.ruff.lint.per-file-ignores]
+# Existing lint debt, recorded 2026-10-25 so CI can gate NEW code without
+# rewriting tested/deployed source. New files get the full rule set. Remove an
+# entry when its file is cleaned (behaviour-neutral edits, then full tests).
+# Applied migrations are immutable history.
+"services/api/migrations/**" = ["E501"]
+# Prompt text: re-wrapping changes the model input and prompt hashes.
+"services/api/src/chemdft_api/ai/structure_inspection.py" = ["E501"]
+"services/api/src/chemdft_api/ai/context_builder.py" = ["RUF001"]
+"services/api/src/chemdft_api/ai/policy.py" = ["E501"]
+"services/api/src/chemdft_api/ai/tool_policy.py" = ["E501", "F401", "I001", "SIM105"]
+"services/api/src/chemdft_api/aws_compute.py" = ["E501", "SIM105"]
+"services/api/src/chemdft_api/aws_worker_lifecycle.py" = ["E501"]
+"services/api/src/chemdft_api/calculation_actions.py" = ["I001"]
+"services/api/src/chemdft_api/calculation_summary.py" = ["E501"]
+"services/api/src/chemdft_api/config.py" = ["E501"]
+"services/api/src/chemdft_api/contracts/analysis.py" = ["E501"]
+"services/api/src/chemdft_api/contracts/results.py" = ["E501"]
+"services/api/src/chemdft_api/published_results.py" = ["E501"]
+"services/api/src/chemdft_api/scientific/engines/registry.py" = ["E501"]
+"services/api/src/chemdft_api/scientific/engines/vibrational.py" = ["E501"]
+"services/api/src/chemdft_api/scientific/molecule_identity.py" = ["RUF059"]
+# Quantum ESPRESSO periodic package (0.0.43): long user-facing sentences and reference data.
+"services/api/src/chemdft_api/scientific/qe_periodic/*.py" = ["E501"]
+"services/api/src/chemdft_api/test_environment.py" = ["E501"]
+"services/api/src/chemdft_api/tool_registry/catalog.py" = ["E501"]
+"services/api/tests/**" = [
+  "B017", "E402", "E501", "F401", "F541", "F811", "F841", "I001",
+  "RUF015", "RUF043", "RUF059", "RUF100", "SIM117", "SIM300",
+]
+"tools/**" = ["B905", "E501", "I001", "RUF001", "RUF100", "SIM115"]

@@ -1,0 +1,15 @@
+.dialog { width: min(720px, calc(100vw - 32px)); border: 1px solid var(--cdf-line-strong); border-radius: var(--cdf-radius-2); background: var(--cdf-surface); color: var(--cdf-ink); padding: 14px 16px; }
+.dialog::backdrop { background: rgb(15 23 42 / 40%); }
+.dialog h2 { margin: 0 0 8px; font-size: 15px; }
+.facts { display: grid; grid-template-columns: auto 1fr; gap: 2px 12px; margin: 0 0 10px; font-size: 12.5px; }
+.facts dt { color: var(--cdf-ink-muted); }
+.facts dd { margin: 0; }
+.checks { width: 100%; border-collapse: collapse; font-size: 12px; }
+.checks th { text-align: left; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--cdf-ink-muted); border-bottom: 1px solid var(--cdf-line-strong); padding: 4px 8px 4px 0; }
+.checks td { padding: 4px 8px 4px 0; vertical-align: top; border-bottom: 1px solid var(--cdf-line); }
+.mono { font-family: var(--cdf-font-data); font-size: 11px; white-space: nowrap; }
+.pass { color: #1b6b41; white-space: nowrap; }
+.warn { color: #854d00; font-weight: 600; white-space: nowrap; }
+.fail { color: #a62525; font-weight: 600; }
+.note { margin: 10px 0; font-size: 12px; color: var(--cdf-ink-muted); line-height: 1.45; }
+.actions { display: flex; justify-content: flex-end; gap: 8px; }

@@ -1,0 +1,48 @@
+{
+ "schema_version": "1.0.0",
+ "status": "OK",
+ "label": "AI-drafted \u00b7 schematic",
+ "reply": "Drew water.",
+ "steps": [
+  {
+   "index": 0,
+   "op": {
+    "op": "load_smiles",
+    "smiles": "O",
+    "label": "water",
+    "replace": false
+   },
+   "ok": true,
+   "error": null,
+   "suggestion": null,
+   "molfile": "\n     RDKit          2D\n\n  3  2  0  0  0  0  0  0  0  0999 V2000\n   -0.0000   -0.3750    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n    1.2990    0.3750    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.2990    0.3750    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0\n  1  2  1  0\n  1  3  1  0\nM  END\n",
+   "smiles": "[H]O[H]",
+   "formula": "H2O",
+   "new_atom_numbers": [
+    1,
+    2,
+    3
+   ],
+   "atom_count": 3,
+   "description": "Load proposed structure for 'water'"
+  }
+ ],
+ "final": {
+  "molfile": "\n     RDKit          2D\n\n  3  2  0  0  0  0  0  0  0  0999 V2000\n   -0.0000   -0.3750    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n    1.2990    0.3750    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.2990    0.3750    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0\n  1  2  1  0\n  1  3  1  0\nM  END\n",
+  "smiles": "[H]O[H]",
+  "formula": "H2O",
+  "atom_count": 3
+ },
+ "clarify": null,
+ "reference_check": null,
+ "proposals": [],
+ "warnings": [],
+ "info": [],
+ "error_code": null,
+ "error": null,
+ "repaired": false,
+ "run_id": null,
+ "model": "nemotron-3.5-lightning-30b-a3b",
+ "input_tokens": 412,
+ "output_tokens": 64
+}

@@ -1,0 +1,11 @@
+ChemDFT proprietary notice
+
+Copyright (c) 2026 Tabriz Ahmadli. All rights reserved.
+
+This software and its source code are proprietary. No licence is granted to copy, modify, distribute, sublicense or
+create derivative works, except where a file or directory is expressly marked SPDX-License-Identifier: Apache-2.0
+(see LICENSE.md for the list). Using the ChemDFT website is free for scientists; that permission to use the service
+does not grant rights in the software.
+
+The software is provided "as is", without warranty of any kind. Scientific results are produced by the stated engines
+and must be checked by the user.

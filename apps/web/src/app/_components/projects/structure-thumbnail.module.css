@@ -1,0 +1,69 @@
+/* Neutral scientific plate: the drawing's own element colours are the only colour; card accents never reach in here. */
+.thumb {
+  --grid: rgba(21, 101, 167, 0.07);
+  position: relative;
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 96px;
+  height: 96px;
+  overflow: hidden;
+  border: 1px solid var(--cdf-line);
+  border-radius: 4px;
+  background-color: var(--cdf-surface);
+  background-image: linear-gradient(var(--grid) 1px, transparent 1px), linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 12px 12px;
+  background-position: center;
+}
+.thumb[data-size="row"] {
+  width: 44px;
+  height: 44px;
+  background-size: 8px 8px;
+}
+.thumb[data-size="panel"] {
+  width: 104px;
+  height: 104px;
+  background-size: 13px 13px;
+}
+.thumb[data-size="fill"] {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 0;
+  background-size: 16px 16px;
+}
+.thumb svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.thumb[data-state="loading"] {
+  background-color: var(--cdf-panel);
+  background-image: none;
+}
+.placeholder {
+  display: grid;
+  gap: 4px;
+  justify-items: center;
+  padding: 6px;
+  color: var(--cdf-ink-muted);
+  font-size: 0.6875rem;
+  line-height: 1.25;
+  text-align: center;
+}
+.placeholder :global(.bp6-icon) {
+  color: var(--cdf-line-strong);
+}
+.thumb[data-state="none"],
+.thumb[data-state="large"],
+.thumb[data-state="unavailable"] {
+  border-style: dashed;
+  background-image: none;
+  background-color: var(--cdf-panel);
+}
+@media (max-width: 640px) {
+  .thumb:not([data-size="row"]) {
+    width: 80px;
+    height: 80px;
+  }
+}

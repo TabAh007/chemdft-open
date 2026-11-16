@@ -1,0 +1,63 @@
+{
+ "schema_version": "1.0.0",
+ "status": "PARTIAL",
+ "label": "AI-drafted \u00b7 schematic",
+ "reply": "Stopped at step 2: Atom 1 (C) would have valence 5, which is not allowed for that element and charge. The 1 earlier step(s) are valid and were kept.",
+ "steps": [
+  {
+   "index": 0,
+   "op": {
+    "op": "add_atom",
+    "element": "C",
+    "count": 1
+   },
+   "ok": true,
+   "error": null,
+   "suggestion": null,
+   "molfile": "\n     RDKit          2D\n\n  1  0  0  0  0  0  0  0  0  0999 V2000\n    0.0000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\nM  END\n",
+   "smiles": "C",
+   "formula": "CH4",
+   "new_atom_numbers": [
+    1
+   ],
+   "atom_count": 1,
+   "description": "Add 1 \u00d7 C"
+  },
+  {
+   "index": 1,
+   "op": {
+    "op": "add_atom",
+    "element": "C",
+    "count": 5,
+    "attach_to": 1
+   },
+   "ok": false,
+   "error": "Atom 1 (C) would have valence 5, which is not allowed for that element and charge.",
+   "suggestion": "Remove a bond from that atom, lower a bond order, or change its element/charge.",
+   "molfile": null,
+   "smiles": null,
+   "formula": null,
+   "new_atom_numbers": [],
+   "atom_count": 1,
+   "description": "Add 5 \u00d7 C on atom 1"
+  }
+ ],
+ "final": {
+  "molfile": "\n     RDKit          2D\n\n  1  0  0  0  0  0  0  0  0  0999 V2000\n    0.0000    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\nM  END\n",
+  "smiles": "C",
+  "formula": "CH4",
+  "atom_count": 1
+ },
+ "clarify": null,
+ "reference_check": null,
+ "proposals": [],
+ "warnings": [],
+ "info": [],
+ "error_code": null,
+ "error": null,
+ "repaired": false,
+ "run_id": null,
+ "model": "nemotron-3.5-lightning-30b-a3b",
+ "input_tokens": 412,
+ "output_tokens": 64
+}

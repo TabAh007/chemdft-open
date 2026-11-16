@@ -1,0 +1,10 @@
+ChemDFT (open group)
+Copyright 2026 Tabriz Ahmadli
+
+The files licensed under Apache-2.0 (see LICENSE.md and REUSE.toml) are original work of the copyright holder.
+Third-party engines and libraries (PySCF, xTB, CREST, Psi4, RDKit and others) are used as installed packages or as separate programs and keep their own licenses.
+
+Bundled third-party assets:
+- 3Dmol.js v2.5.5 (services/api/src/chemdft_api/assets/3Dmol-min.js):
+  Copyright (c) 2014, University of Pittsburgh and contributors.
+  Licensed under BSD-3-Clause (see services/api/src/chemdft_api/assets/3Dmol.LICENSE).

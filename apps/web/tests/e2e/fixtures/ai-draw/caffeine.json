@@ -1,0 +1,67 @@
+{
+ "schema_version": "1.0.0",
+ "status": "OK",
+ "label": "AI-drafted \u00b7 schematic",
+ "reply": "Drew a proposed structure.",
+ "steps": [
+  {
+   "index": 0,
+   "op": {
+    "op": "load_smiles",
+    "smiles": "CN1C=NC2=C1C(=O)N(C(=O)N2C)C",
+    "label": "caffeine",
+    "replace": false
+   },
+   "ok": true,
+   "error": null,
+   "suggestion": null,
+   "molfile": "\n     RDKit          2D\n\n 14 15  0  0  0  0  0  0  0  0999 V2000\n    3.4387   -1.3417    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    2.5006   -0.1712    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0\n    2.8962    1.2757    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    1.6423    2.0990    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0\n    0.4718    1.1609    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    1.0023   -0.2421    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    0.0524   -1.4031    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    0.5829   -2.8061    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.4279   -1.1609    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.9584    0.2421    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -3.4387    0.4843    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.0085    1.4031    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.5390    2.8061    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -2.3778   -2.3219    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n  1  2  1  0\n  2  3  1  0\n  3  4  2  0\n  4  5  1  0\n  5  6  2  0\n  6  7  1  0\n  7  8  2  0\n  7  9  1  0\n  9 10  1  0\n 10 11  2  0\n 10 12  1  0\n 12 13  1  0\n  9 14  1  0\n  6  2  1  0\n 12  5  1  0\nM  END\n",
+   "smiles": "CN1C=NC2=C1C(=O)N(C)C(=O)N2C",
+   "formula": "C8H10N4O2",
+   "new_atom_numbers": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+   ],
+   "atom_count": 14,
+   "description": "Load proposed structure for 'caffeine'"
+  }
+ ],
+ "final": {
+  "molfile": "\n     RDKit          2D\n\n 14 15  0  0  0  0  0  0  0  0999 V2000\n    3.4387   -1.3417    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    2.5006   -0.1712    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0\n    2.8962    1.2757    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    1.6423    2.0990    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0\n    0.4718    1.1609    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    1.0023   -0.2421    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    0.0524   -1.4031    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    0.5829   -2.8061    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.4279   -1.1609    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.9584    0.2421    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -3.4387    0.4843    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.0085    1.4031    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.5390    2.8061    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -2.3778   -2.3219    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n  1  2  1  0\n  2  3  1  0\n  3  4  2  0\n  4  5  1  0\n  5  6  2  0\n  6  7  1  0\n  7  8  2  0\n  7  9  1  0\n  9 10  1  0\n 10 11  2  0\n 10 12  1  0\n 12 13  1  0\n  9 14  1  0\n  6  2  1  0\n 12  5  1  0\nM  END\n",
+  "smiles": "CN1C=NC2=C1C(=O)N(C)C(=O)N2C",
+  "formula": "C8H10N4O2",
+  "atom_count": 14
+ },
+ "clarify": null,
+ "reference_check": null,
+ "proposals": [
+  {
+   "label": "caffeine",
+   "smiles": "CN1C=NC2=C1C(=O)N(C(=O)N2C)C",
+   "note": "AI-proposed structure for 'caffeine' \u2014 verify against a trusted source before use"
+  }
+ ],
+ "warnings": [
+  "AI-proposed structure for 'caffeine' \u2014 verify against a trusted source before use"
+ ],
+ "info": [],
+ "error_code": null,
+ "error": null,
+ "repaired": false,
+ "run_id": null,
+ "model": "nemotron-3.5-lightning-30b-a3b",
+ "input_tokens": 412,
+ "output_tokens": 64
+}

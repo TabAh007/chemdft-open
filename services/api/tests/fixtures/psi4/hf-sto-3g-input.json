@@ -1,0 +1,59 @@
+{
+  "molecule": {
+    "fix_com": true,
+    "fix_orientation": true,
+    "fix_symmetry": "c1",
+    "geometry": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.80884585,
+      1.75107125,
+      0.0,
+      -0.4535097
+    ],
+    "molecular_charge": 0,
+    "molecular_multiplicity": 1,
+    "schema_name": "qcschema_molecule",
+    "schema_version": 3,
+    "symbols": [
+      "O",
+      "H",
+      "H"
+    ],
+    "validated": false
+  },
+  "schema_name": "qcschema_atomic_input",
+  "schema_version": 2,
+  "specification": {
+    "driver": "energy",
+    "extras": {
+      "chemdft_gate": "PF-8D-A1",
+      "fixture": "H2O",
+      "source_xyz_sha256": "0b6ffc5507319be6821850b2906212178b220823049a2a0f1145011e96056e37"
+    },
+    "keywords": {
+      "d_convergence": 1e-08,
+      "e_convergence": 1e-10,
+      "fail_on_maxiter": true,
+      "guess": "core",
+      "ints_tolerance": 1e-12,
+      "maxiter": 100,
+      "puream": true,
+      "reference": "rhf",
+      "scf_type": "pk"
+    },
+    "model": {
+      "basis": "sto-3g",
+      "method": "hf"
+    },
+    "protocols": {
+      "native_files": "all",
+      "stdout": true,
+      "wavefunction": "all"
+    },
+    "schema_name": "qcschema_atomic_specification"
+  }
+}

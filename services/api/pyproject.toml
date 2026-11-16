@@ -1,0 +1,54 @@
+[project]
+name = "chemdft-api"
+version = "0.2.0"
+license = {text = "Apache-2.0"}
+description = "ChemDFT application, scientific contract, and authority API foundation"
+requires-python = ">=3.12"
+dependencies = [
+  "alembic>=1.16,<2",
+  "fastapi==0.141.1",
+  "psycopg[binary]>=3.2,<4",
+  "pypdf>=5.0,<6",
+  "pgvector==0.5.0",
+  "pydantic==2.13.5",
+  "pydantic-settings>=2.11,<3",
+  "pymatgen==2025.10.7",
+  "python-multipart>=0.0.20,<1",
+  "rdkit==2025.9.1",
+  "sqlalchemy>=2.0.43,<3",
+  "uvicorn[standard]>=0.35,<1",
+  "pyjwt[crypto]>=2.10,<3",
+  "cryptography>=50,<51",
+  "pikepdf>=10.0,<11",
+  "reportlab>=5.0,<6",
+  "pillow>=11.0,<13",
+]
+
+[dependency-groups]
+dev = [
+  "httpx>=0.28,<1",
+  "pytest==9.1.1",
+  "ruff>=0.12,<1",
+]
+
+[project.scripts]
+chemdft-api = "chemdft_api.main:run"
+chemdft-compute-worker = "chemdft_api.compute_worker:run"
+chemdft-knowledge-worker = "chemdft_api.knowledge_worker:run"
+chemdft-investigation-worker = "chemdft_api.investigation_worker:run"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/chemdft_api"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+markers = [
+  "scientific_integration: requires a separately provisioned real scientific engine environment",
+  "benchmark: cross-engine numerical benchmark requiring optional engines",
+  "ai_integration: opt-in test calling real external AI provider",
+]

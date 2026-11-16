@@ -1,0 +1,123 @@
+#!/usr/bin/env bash
+# ChemDFT local verification gate: the merge gate that replaces GitHub Actions (DECISIONS.md, 2026-11-09).
+#
+#   scripts/local-gate                 fast: checks what the branch changed vs origin/main
+#   scripts/local-gate --full          everything: full backend suite, full web suite, full lint, all typechecks
+#   scripts/local-gate --regen-baseline  rewrite scripts/local-gate-baseline.txt (run on a CLEAN origin/main only)
+#   scripts/local-gate --base <ref>    compare against <ref> instead of origin/main
+#
+# Local only: no network, no AWS, no SSM, no worker, no AI/provider calls, no spending. It never deploys.
+# Each step prints PASS, FAIL or NOT RUN (with the reason); the last line is machine readable:
+#   GATE_SUMMARY result=PASS|FAIL pass=N fail=N notrun=N mode=fast|full sha=<head>
+set -u
+cd "$(dirname "$0")/.." || exit 2
+ROOT=$PWD
+MODE=fast; BASE=origin/main; REGEN=0
+while [ $# -gt 0 ]; do
+  case "$1" in
+    --full) MODE=full ;;
+    --regen-baseline) REGEN=1; MODE=full ;;
+    --base) BASE=${2:?--base needs a ref}; shift ;;
+    -h|--help) sed -n 2,13p "$0"; exit 0 ;;
+    *) echo "unknown option $1" >&2; exit 2 ;;
+  esac
+  shift
+done
+
+# Never let a test or tool reach a paid or remote service from this script.
+unset AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY AWS_SESSION_TOKEN AWS_PROFILE NVIDIA_API_KEY HF_TOKEN HUGGING_FACE_HUB_TOKEN MOONSHOT_API_KEY KIMI_API_KEY
+export AWS_EC2_METADATA_DISABLED=true HF_HUB_OFFLINE=1 CHEMDFT_E2E_AI_QUESTIONS=0
+export CHEMDFT_COMPUTE_LOCAL_TEMPORARY_STORAGE_BYTES=${CHEMDFT_COMPUTE_LOCAL_TEMPORARY_STORAGE_BYTES:-536870912}
+
+TOOLS_PY=${GATE_TOOLS_PYTHON:-python3}
+TOOLS="$TOOLS_PY $ROOT/scripts/local_gate_tools.py"
+MAIN=$(cd "$(git rev-parse --path-format=absolute --git-common-dir)/.." && pwd)
+PY=${GATE_PYTHON:-}
+for cand in "$ROOT/.venv/bin/python" "$MAIN/.venv/bin/python"; do [ -z "$PY" ] && [ -x "$cand" ] && PY=$cand; done
+OUT=${TMPDIR:-/tmp}/chemdft-local-gate.$$; mkdir -p "$OUT"; trap 'rm -rf "$OUT"' EXIT
+PASS=0; FAIL=0; NOTRUN=0
+say() { printf '%s\n' "$*"; }
+pass() { PASS=$((PASS+1)); say "PASS     $1${2:+  ($2)}"; }
+fail() { FAIL=$((FAIL+1)); say "FAIL     $1${2:+  ($2)}"; }
+skip() { NOTRUN=$((NOTRUN+1)); say "NOT RUN  $1  ($2)"; }
+
+git fetch -q origin 2>/dev/null || say "note: could not refresh origin (offline); comparing against the local $BASE"
+CHANGED=$($TOOLS changed "$BASE")
+changed_any() { printf '%s\n' "$CHANGED" | grep -Eq "$1"; }
+say "== ChemDFT local gate ($MODE) at $(git rev-parse --short HEAD) vs $BASE; $(printf '%s\n' "$CHANGED" | grep -c .) changed file(s) =="
+$TOOLS link-modules 2>/dev/null
+
+BACKEND_CHANGED=0; WEB_CHANGED=0
+changed_any '^services/' && BACKEND_CHANGED=1
+changed_any '^(apps/web/|packages/)' && WEB_CHANGED=1
+
+# 1. Backend tests with the known-failure baseline diff (only NEW failures fail).
+if [ -z "$PY" ]; then
+  skip "backend tests" "no Python with ChemDFT dependencies found (set GATE_PYTHON)"
+elif [ "$MODE" = full ] || [ "$BACKEND_CHANGED" = 1 ]; then
+  TARGETS=(); if [ "$MODE" != full ]; then while IFS= read -r line; do [ -n "$line" ] && TARGETS+=("$line"); done < <($TOOLS related-tests "$BASE"); fi
+  if [ "$MODE" != full ] && [ "${#TARGETS[@]}" -eq 0 ]; then
+    skip "backend tests" "backend changed but no related test file found; run --full"
+  else
+    (cd services/api && PYTHONPATH=src "$PY" -m pytest -p no:cacheprovider -rf ${TARGETS[@]+"${TARGETS[@]}"} > "$OUT/pytest.txt" 2>&1)
+    RC=$?
+    SUMMARY=$(grep -E "^[0-9]+ (passed|failed)|(passed|failed|error)" "$OUT/pytest.txt" | tail -n 1 | cut -c1-120)
+    [ -n "$SUMMARY" ] && say "         $SUMMARY"
+    if [ "$REGEN" = 1 ]; then $TOOLS write-baseline "$OUT/pytest.txt"; pass "baseline regenerated"
+    # A suite that could not run, or that collected nothing, is not a pass. Only a real run may pass.
+    elif [ "$RC" -ge 2 ] || grep -qE "^(no tests ran|ERROR: )" "$OUT/pytest.txt"; then
+      tail -n 20 "$OUT/pytest.txt"; fail "backend tests" "pytest did not complete a run (exit $RC)"
+    elif [ "$MODE" = full ]; then
+      NPASSED=$(grep -oE "[0-9]+ passed" "$OUT/pytest.txt" | tail -n 1 | grep -oE "[0-9]+" || true)
+      if [ "${NPASSED:-0}" -lt 1 ]; then tail -n 10 "$OUT/pytest.txt"; fail "backend tests" "full mode ran 0 passing tests: selecting nothing is a failure"
+      elif $TOOLS diff "$OUT/pytest.txt"; then pass "backend tests" "whole suite, mode full, ${NPASSED} passed, exit $RC"; else fail "backend tests" "new failures listed above"; fi
+    elif $TOOLS diff "$OUT/pytest.txt"; then pass "backend tests" "${#TARGETS[@]} targeted file(s); mode $MODE"
+    else fail "backend tests" "new failures listed above"; fi
+  fi
+else skip "backend tests" "no backend change (use --full)"; fi
+
+# 2. Backend lint (ruff).
+if [ -n "$PY" ] && { [ "$MODE" = full ] || [ "$BACKEND_CHANGED" = 1 ]; }; then
+  if (cd services/api && "$PY" -m ruff check src tests > "$OUT/ruff.txt" 2>&1); then pass "backend lint (ruff)"; else tail -n 15 "$OUT/ruff.txt"; fail "backend lint (ruff)"; fi
+else skip "backend lint (ruff)" "no backend change or no Python"; fi
+
+# 3-5. Web unit tests, lint, typecheck.
+if [ "$MODE" = full ] || [ "$WEB_CHANGED" = 1 ]; then
+  if [ ! -d apps/web/node_modules ]; then
+    skip "web unit tests" "apps/web/node_modules missing"; skip "web lint" "node_modules missing"; skip "web typecheck" "node_modules missing"
+  else
+    if (cd apps/web && npx --no-install vitest run > "$OUT/vitest.txt" 2>&1); then pass "web unit tests" "$(grep -E '^ +Tests ' "$OUT/vitest.txt" | sed 's/^ *//')"; else tail -n 25 "$OUT/vitest.txt"; fail "web unit tests"; fi
+    LINT=(); if [ "$MODE" = full ]; then LINT=(src tests next.config.ts playwright.config.ts); else while IFS= read -r line; do [ -n "$line" ] && LINT+=("$line"); done < <(printf '%s\n' "$CHANGED" | grep -E '^apps/web/(src|tests)/.*\.(ts|tsx)$' | sed 's#^apps/web/##'); fi
+    if [ "${#LINT[@]}" -eq 0 ]; then skip "web lint" "no changed web source file"
+    elif (cd apps/web && npx --no-install eslint ${LINT[@]+"${LINT[@]}"} --max-warnings=0 > "$OUT/eslint.txt" 2>&1); then pass "web lint" "${#LINT[@]} target(s)"; else tail -n 25 "$OUT/eslint.txt"; fail "web lint"; fi
+    if (cd apps/web && npx --no-install tsc --noEmit > "$OUT/tsc.txt" 2>&1); then pass "web typecheck"; else tail -n 25 "$OUT/tsc.txt"; fail "web typecheck"; fi
+    if [ "$MODE" = full ]; then
+      for pkg in schemas scientific-scene; do
+        if (cd packages/$pkg && npx --no-install tsc --noEmit > "$OUT/tsc-$pkg.txt" 2>&1); then pass "typecheck packages/$pkg"; else tail -n 15 "$OUT/tsc-$pkg.txt"; fail "typecheck packages/$pkg"; fi
+      done
+    fi
+  fi
+else skip "web unit tests" "no web change (use --full)"; skip "web lint" "no web change"; skip "web typecheck" "no web change"; fi
+
+# 6. Release version (backend release_info.py == newest releases.ts entry; web side too).
+if [ -n "$PY" ] && (cd services/api && PYTHONPATH=src "$PY" -m pytest -p no:cacheprovider tests/test_release_version_agrees.py > "$OUT/rv.txt" 2>&1); then pass "release version (backend)"
+elif [ -z "$PY" ]; then skip "release version (backend)" "no Python"; else tail -n 10 "$OUT/rv.txt"; fail "release version (backend)"; fi
+if [ -d apps/web/node_modules ]; then
+  if (cd apps/web && npx --no-install vitest run tests/releases.test.ts > "$OUT/rw.txt" 2>&1); then pass "release version (web releases.test)"; else tail -n 15 "$OUT/rw.txt"; fail "release version (web releases.test)"; fi
+else skip "release version (web releases.test)" "node_modules missing"; fi
+
+# 7. Contract generator check (full only; Python side; the TypeScript half needs pnpm).
+if [ "$MODE" = full ] && [ -n "$PY" ]; then
+  if (cd services/api && PYTHONPATH=src "$PY" -m chemdft_api.contracts.generate --check > "$OUT/schemas.txt" 2>&1); then pass "schemas:check (Python generator)"; else tail -n 10 "$OUT/schemas.txt"; fail "schemas:check (Python generator)"; fi
+else skip "schemas:check" "full mode only"; fi
+
+# 8. Licence map (REUSE) and 9. memory discipline (NEXT.md length, CHANGELOG line).
+if command -v reuse >/dev/null 2>&1; then
+  if reuse lint > "$OUT/reuse.txt" 2>&1; then pass "REUSE licence check"; else tail -n 10 "$OUT/reuse.txt"; fail "REUSE licence check"; fi
+else skip "REUSE licence check" "the reuse tool is not installed; REUSE.toml parse is checked below"; fi
+if $TOOLS docs "$BASE"; then pass "docs rules (NEXT.md < 150 lines, CHANGELOG line, REUSE.toml parses)"; else fail "docs rules"; fi
+
+if [ "$MODE" = full ]; then skip "next build / Playwright e2e" "need the real stack or a clean install; run by hand when needed"; fi
+RESULT=PASS; [ "$FAIL" -gt 0 ] && RESULT=FAIL
+say "GATE_SUMMARY result=$RESULT pass=$PASS fail=$FAIL notrun=$NOTRUN mode=$MODE sha=$(git rev-parse --short HEAD)"
+[ "$RESULT" = PASS ]

@@ -1,0 +1,74 @@
+[
+  {
+    "file": "hf-sto-3g-input.json",
+    "source": ".chemdft/pf8d-gate-a1-20261009T182713Z/runs/H2O-sto-3g-repeat-1/input.json",
+    "sha256": "31fc17a45e91b8dc438b2c858bbced850cacedeac7acb380604ce15b202486b5",
+    "kind": "genuine sealed native acceptance artifact; never fabricated"
+  },
+  {
+    "file": "hf-sto-3g-output.json",
+    "source": ".chemdft/pf8d-gate-a1-20261009T182713Z/runs/H2O-sto-3g-repeat-1/output.json",
+    "sha256": "604486ccc27548070204f4ee3431087e8f2d99ca0d43883ce07088f429ed3a92",
+    "kind": "genuine sealed native acceptance artifact; never fabricated"
+  },
+  {
+    "file": "hf-def2-svp-input.json",
+    "source": ".chemdft/pf8d-gate-a1-20261009T182713Z/runs/H2O-def2-svp-repeat-1/input.json",
+    "sha256": "d69f7c586f6c58c196e3548807de8dbd1defd95b3127ffa89500f575067e8692",
+    "kind": "genuine sealed native acceptance artifact; never fabricated"
+  },
+  {
+    "file": "hf-def2-svp-output.json",
+    "source": ".chemdft/pf8d-gate-a1-20261009T182713Z/runs/H2O-def2-svp-repeat-1/output.json",
+    "sha256": "67c43d1c4e86edcb0e63576854e803447919e5641e8e59d5cbfcc9b66a475e11",
+    "kind": "genuine sealed native acceptance artifact; never fabricated"
+  },
+  {
+    "file": "b3lyp-def2-svp-input.json",
+    "source": ".chemdft/pf8d-gate-a2-20261009T185342Z/runs/H2O-b3lyp-repeat-1/input.json",
+    "sha256": "d3e968e0cdb6f9172c678f62b7da4a6f31486ba8bafd6817e889b0ef06209535",
+    "kind": "genuine sealed native acceptance artifact; never fabricated"
+  },
+  {
+    "file": "b3lyp-def2-svp-output.json",
+    "source": ".chemdft/pf8d-gate-a2-20261009T185342Z/runs/H2O-b3lyp-repeat-1/output.json",
+    "sha256": "22243b6d92653200e42ad9bce074ad1616dbff6aeeeb0302916046b4f7b3cec5",
+    "kind": "genuine sealed native acceptance artifact; never fabricated"
+  },
+  {
+    "file": "pbe-def2-svp-input.json",
+    "source": ".chemdft/pf8d-gate-a2-20261009T185342Z/runs/H2O-pbe-repeat-1/input.json",
+    "sha256": "cc60bd5f0385d188ccf27ae03d19d27317ca8edb25b9b1ea7549a5921aa90935",
+    "kind": "genuine sealed native acceptance artifact; never fabricated"
+  },
+  {
+    "file": "pbe-def2-svp-output.json",
+    "source": ".chemdft/pf8d-gate-a2-20261009T185342Z/runs/H2O-pbe-repeat-1/output.json",
+    "sha256": "f72e7d94473e295536f5f40e4df81f9dbf7342ab0da39165f9d37d6ba92455c8",
+    "kind": "genuine sealed native acceptance artifact; never fabricated"
+  },
+  {
+    "file": "mp2-def2-svp-input.json",
+    "source": ".chemdft/pf8d-gate-a3-20261009T192858Z/runs/H2O-confirmation/input.json",
+    "sha256": "09878e0e61f9d4077601605fbf20aaeba48f348c4cc677668aa67e3e9b822923",
+    "kind": "genuine sealed native acceptance artifact; never fabricated"
+  },
+  {
+    "file": "mp2-def2-svp-output.json",
+    "source": ".chemdft/pf8d-gate-a3-20261009T192858Z/runs/H2O-confirmation/output.json",
+    "sha256": "880a65249451160221233ac5e223206fee6bce51f7a5fedee7f6fcf7cccc1a97",
+    "kind": "genuine sealed native acceptance artifact; never fabricated"
+  },
+  {
+    "file": "failed-rhf-input.json",
+    "source": ".chemdft/pf8d-gate-a3-20261009T192858Z/runs/forced-rhf-nonconvergence/input.json",
+    "sha256": "669b6d77252e5fbd880e06ca986f61558660b385c278b0b3145c1cf5cd8df193",
+    "kind": "genuine sealed native acceptance artifact; never fabricated"
+  },
+  {
+    "file": "failed-rhf-output.json",
+    "source": ".chemdft/pf8d-gate-a3-20261009T192858Z/runs/forced-rhf-nonconvergence/output.json",
+    "sha256": "7c2bf02ad5fe0bd2b5f36c4dcfe97dc3306c69189da7f2c8846fe971c61ce168",
+    "kind": "genuine sealed native acceptance artifact; never fabricated"
+  }
+]

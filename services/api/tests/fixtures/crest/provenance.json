@@ -1,0 +1,326 @@
+{
+  "source": "Immutable verified Gate A.1 native evidence",
+  "source_manifest_sha256": "afc03bafc8d174015f9eb69ce9205c7f33b1f9ffef0c974d0fb3561f58eb4c49",
+  "records": [
+    {
+      "path": "butane.xyz",
+      "sha256": "58369d781f919414b98c37a67677f48cef5b1d66d52bfd31903b9b53eae85b8f",
+      "bytes": 564
+    },
+    {
+      "path": "candidate-cregen-0p1/crest.energies",
+      "sha256": "c81359bac3f1d831b08b006e41f26ac6319bc9cf4c266268401730d16dff8d99",
+      "bytes": 18
+    },
+    {
+      "path": "candidate-cregen-0p1/crest_best.xyz",
+      "sha256": "600eee96c029b4fa9ae14ec8acba10da3896ca8cabb374fbcd7ced4dbb312e18",
+      "bytes": 936
+    },
+    {
+      "path": "candidate-cregen-0p1/input.xyz",
+      "sha256": "58369d781f919414b98c37a67677f48cef5b1d66d52bfd31903b9b53eae85b8f",
+      "bytes": 564
+    },
+    {
+      "path": "candidate-cregen-0p1/pair.xyz.sorted",
+      "sha256": "903ccc8ca0610379e85ba01e3f7bf631117831ffafaac6466e71f6434872325d",
+      "bytes": 970
+    },
+    {
+      "path": "candidate-cregen-0p1/stdout.txt",
+      "sha256": "8216251b899e81333bf5f7762210e67b97f7286e605216d0d9a3c9343e131da3",
+      "bytes": 4912
+    },
+    {
+      "path": "candidate-cregen-30p0/crest.energies",
+      "sha256": "a12a29e55098d01f5f26552b4d4fb65911fd2d61b03c6ba8fbf6bc032e929cc7",
+      "bytes": 36
+    },
+    {
+      "path": "candidate-cregen-30p0/crest_best.xyz",
+      "sha256": "600eee96c029b4fa9ae14ec8acba10da3896ca8cabb374fbcd7ced4dbb312e18",
+      "bytes": 936
+    },
+    {
+      "path": "candidate-cregen-30p0/input.xyz",
+      "sha256": "58369d781f919414b98c37a67677f48cef5b1d66d52bfd31903b9b53eae85b8f",
+      "bytes": 564
+    },
+    {
+      "path": "candidate-cregen-30p0/pair.xyz.sorted",
+      "sha256": "c834d64f800a994ac38cc066a4bcbf67a63a74543de90ef192ff641f1eb29381",
+      "bytes": 1940
+    },
+    {
+      "path": "candidate-cregen-30p0/stdout.txt",
+      "sha256": "6bbbf9d93477ee03ac97053de63768d30a229755ffe33d7ba22980ff2535629c",
+      "bytes": 4910
+    },
+    {
+      "path": "candidate-cregen-6/crest.energies",
+      "sha256": "a12a29e55098d01f5f26552b4d4fb65911fd2d61b03c6ba8fbf6bc032e929cc7",
+      "bytes": 36
+    },
+    {
+      "path": "candidate-cregen-6/crest_best.xyz",
+      "sha256": "600eee96c029b4fa9ae14ec8acba10da3896ca8cabb374fbcd7ced4dbb312e18",
+      "bytes": 936
+    },
+    {
+      "path": "candidate-cregen-6/input.xyz",
+      "sha256": "58369d781f919414b98c37a67677f48cef5b1d66d52bfd31903b9b53eae85b8f",
+      "bytes": 564
+    },
+    {
+      "path": "candidate-cregen-6/pair.xyz.sorted",
+      "sha256": "c834d64f800a994ac38cc066a4bcbf67a63a74543de90ef192ff641f1eb29381",
+      "bytes": 1940
+    },
+    {
+      "path": "candidate-cregen-6/stdout.txt",
+      "sha256": "417eedb16de052be0741d2cabad20976d06943d871a0af26666b7d443f6e7ce2",
+      "bytes": 4904
+    },
+    {
+      "path": "candidate-cregen-6p0/crest.energies",
+      "sha256": "a12a29e55098d01f5f26552b4d4fb65911fd2d61b03c6ba8fbf6bc032e929cc7",
+      "bytes": 36
+    },
+    {
+      "path": "candidate-cregen-6p0/crest_best.xyz",
+      "sha256": "600eee96c029b4fa9ae14ec8acba10da3896ca8cabb374fbcd7ced4dbb312e18",
+      "bytes": 936
+    },
+    {
+      "path": "candidate-cregen-6p0/input.xyz",
+      "sha256": "58369d781f919414b98c37a67677f48cef5b1d66d52bfd31903b9b53eae85b8f",
+      "bytes": 564
+    },
+    {
+      "path": "candidate-cregen-6p0/pair.xyz.sorted",
+      "sha256": "c834d64f800a994ac38cc066a4bcbf67a63a74543de90ef192ff641f1eb29381",
+      "bytes": 1940
+    },
+    {
+      "path": "candidate-cregen-6p0/stdout.txt",
+      "sha256": "97ad22d8b1c6150501c531505412022ef41bfb9d26e94235cc2407f380ddb7b7",
+      "bytes": 4908
+    },
+    {
+      "path": "candidate-cregen-duplicates/crest.energies",
+      "sha256": "a12a29e55098d01f5f26552b4d4fb65911fd2d61b03c6ba8fbf6bc032e929cc7",
+      "bytes": 36
+    },
+    {
+      "path": "candidate-cregen-duplicates/crest_best.xyz",
+      "sha256": "600eee96c029b4fa9ae14ec8acba10da3896ca8cabb374fbcd7ced4dbb312e18",
+      "bytes": 936
+    },
+    {
+      "path": "candidate-cregen-duplicates/input.xyz",
+      "sha256": "58369d781f919414b98c37a67677f48cef5b1d66d52bfd31903b9b53eae85b8f",
+      "bytes": 564
+    },
+    {
+      "path": "candidate-cregen-duplicates/pair.xyz.sorted",
+      "sha256": "c834d64f800a994ac38cc066a4bcbf67a63a74543de90ef192ff641f1eb29381",
+      "bytes": 1940
+    },
+    {
+      "path": "candidate-cregen-duplicates/stdout.txt",
+      "sha256": "86935770ce554bb78475ce9a918f3094c397eae242c3cab262e35d3b5368b44a",
+      "bytes": 4908
+    },
+    {
+      "path": "candidate-search-butane/crest.energies",
+      "sha256": "a12a29e55098d01f5f26552b4d4fb65911fd2d61b03c6ba8fbf6bc032e929cc7",
+      "bytes": 36
+    },
+    {
+      "path": "candidate-search-butane/crest_best.xyz",
+      "sha256": "b59e98919604b0cc95a0cf18637da706363aa45d2f0ae2a73150339e1238faf9",
+      "bytes": 936
+    },
+    {
+      "path": "candidate-search-butane/crest_conformers.xyz",
+      "sha256": "54ac1c7bb1a850d2f54ee15b1af86c65b42a9063a6b8df034d6dbc0bb4b024a8",
+      "bytes": 1872
+    },
+    {
+      "path": "candidate-search-butane/crest_rotamers.xyz",
+      "sha256": "55931560802b3ed29d08016a50f47498f70c4cf08c6d4ef648cb148b7fa9718b",
+      "bytes": 26190
+    },
+    {
+      "path": "candidate-search-butane/ensemble_energies.log",
+      "sha256": "f308c276d6cda5edfcb6a69f428b48ea9d2cabb73513eee4eff34c3bfd7f357e",
+      "bytes": 3477
+    },
+    {
+      "path": "candidate-search-butane/input.xyz",
+      "sha256": "58369d781f919414b98c37a67677f48cef5b1d66d52bfd31903b9b53eae85b8f",
+      "bytes": 564
+    },
+    {
+      "path": "candidate-search-butane/stdout.txt",
+      "sha256": "7df0306adc8434712c4bc059392e36eeea96968068d892dac1fdb45a84136aba",
+      "bytes": 34709
+    },
+    {
+      "path": "candidate-search-ethanol/crest.energies",
+      "sha256": "e1a1d79ef871c3952af032cfb20b4181a4a13b570f98c5646456e7990a941b86",
+      "bytes": 36
+    },
+    {
+      "path": "candidate-search-ethanol/crest_best.xyz",
+      "sha256": "03814d9668f06f4e34dff548446eabc651bc5ab0fe38f3070e447f5a981fd5ca",
+      "bytes": 610
+    },
+    {
+      "path": "candidate-search-ethanol/crest_conformers.xyz",
+      "sha256": "71fa627d2dcc2bcf58d58a59d706ca8000c3d239fe36a128009a3cfab8a67e1c",
+      "bytes": 1220
+    },
+    {
+      "path": "candidate-search-ethanol/crest_rotamers.xyz",
+      "sha256": "fe80949b5d5798de080bff40b39ef46b0b8d802836408faa22bd69b7e2a55d82",
+      "bytes": 5796
+    },
+    {
+      "path": "candidate-search-ethanol/ensemble_energies.log",
+      "sha256": "197396331ed89bc60c7b8bec7fa75f2cedb0c66edf50ec76d2577108a7cf3cbf",
+      "bytes": 549
+    },
+    {
+      "path": "candidate-search-ethanol/input.xyz",
+      "sha256": "b1bd03126f37b1cc0e99f799be0833c919dd45b4aa068e769f1a16a304199701",
+      "bytes": 363
+    },
+    {
+      "path": "candidate-search-ethanol/stdout.txt",
+      "sha256": "9bcd5156be252ff59611643ce9a4fa1e2124158451408dc8d258e16f17a23163",
+      "bytes": 32221
+    },
+    {
+      "path": "candidate-search-water/crest.energies",
+      "sha256": "c81359bac3f1d831b08b006e41f26ac6319bc9cf4c266268401730d16dff8d99",
+      "bytes": 18
+    },
+    {
+      "path": "candidate-search-water/crest_best.xyz",
+      "sha256": "9c923922dbfb10de8ce0a9678af40de73771637657ca1b4ba0e10cb592f38e54",
+      "bytes": 220
+    },
+    {
+      "path": "candidate-search-water/crest_conformers.xyz",
+      "sha256": "9c923922dbfb10de8ce0a9678af40de73771637657ca1b4ba0e10cb592f38e54",
+      "bytes": 220
+    },
+    {
+      "path": "candidate-search-water/crest_rotamers.xyz",
+      "sha256": "4b19b3171d4d32fbf41ced5e4925110afbd998ce9f85f9d6dec8d8e3a8148388",
+      "bytes": 254
+    },
+    {
+      "path": "candidate-search-water/ensemble_energies.log",
+      "sha256": "267d3ab10ffd72a908aacbbaf290162dd0521b3dd96b994b88d69978bd60a1a3",
+      "bytes": 61
+    },
+    {
+      "path": "candidate-search-water/input.xyz",
+      "sha256": "ff1f8d7de4e350296b72af88c412572454537ae995d52f73bbb6db464090d4a5",
+      "bytes": 123
+    },
+    {
+      "path": "candidate-search-water/stdout.txt",
+      "sha256": "15a2e68ec2d754f68f45e55dd0387ec44b9a2cde9557c57ef84fbc26352719fc",
+      "bytes": 28918
+    },
+    {
+      "path": "ethanol.xyz",
+      "sha256": "b1bd03126f37b1cc0e99f799be0833c919dd45b4aa068e769f1a16a304199701",
+      "bytes": 363
+    },
+    {
+      "path": "original-cregen-30p0/crest.energies",
+      "sha256": "c81359bac3f1d831b08b006e41f26ac6319bc9cf4c266268401730d16dff8d99",
+      "bytes": 18
+    },
+    {
+      "path": "original-cregen-30p0/crest_best.xyz",
+      "sha256": "600eee96c029b4fa9ae14ec8acba10da3896ca8cabb374fbcd7ced4dbb312e18",
+      "bytes": 936
+    },
+    {
+      "path": "original-cregen-30p0/input.xyz",
+      "sha256": "58369d781f919414b98c37a67677f48cef5b1d66d52bfd31903b9b53eae85b8f",
+      "bytes": 564
+    },
+    {
+      "path": "original-cregen-30p0/pair.xyz.sorted",
+      "sha256": "903ccc8ca0610379e85ba01e3f7bf631117831ffafaac6466e71f6434872325d",
+      "bytes": 970
+    },
+    {
+      "path": "original-cregen-30p0/stdout.txt",
+      "sha256": "788e4536009514e22b4c7db5535b64cea108a1c2f5c1f9e5a679f041121b88aa",
+      "bytes": 4897
+    },
+    {
+      "path": "original-cregen-6/crest.energies",
+      "sha256": "c81359bac3f1d831b08b006e41f26ac6319bc9cf4c266268401730d16dff8d99",
+      "bytes": 18
+    },
+    {
+      "path": "original-cregen-6/crest_best.xyz",
+      "sha256": "600eee96c029b4fa9ae14ec8acba10da3896ca8cabb374fbcd7ced4dbb312e18",
+      "bytes": 936
+    },
+    {
+      "path": "original-cregen-6/input.xyz",
+      "sha256": "58369d781f919414b98c37a67677f48cef5b1d66d52bfd31903b9b53eae85b8f",
+      "bytes": 564
+    },
+    {
+      "path": "original-cregen-6/pair.xyz.sorted",
+      "sha256": "903ccc8ca0610379e85ba01e3f7bf631117831ffafaac6466e71f6434872325d",
+      "bytes": 970
+    },
+    {
+      "path": "original-cregen-6/stdout.txt",
+      "sha256": "88dfe572b2c89a083b37bd21e9bff03dcc4ffcffef7ab64882d34f393828b578",
+      "bytes": 4891
+    },
+    {
+      "path": "original-cregen-6p0/crest.energies",
+      "sha256": "c81359bac3f1d831b08b006e41f26ac6319bc9cf4c266268401730d16dff8d99",
+      "bytes": 18
+    },
+    {
+      "path": "original-cregen-6p0/crest_best.xyz",
+      "sha256": "600eee96c029b4fa9ae14ec8acba10da3896ca8cabb374fbcd7ced4dbb312e18",
+      "bytes": 936
+    },
+    {
+      "path": "original-cregen-6p0/input.xyz",
+      "sha256": "58369d781f919414b98c37a67677f48cef5b1d66d52bfd31903b9b53eae85b8f",
+      "bytes": 564
+    },
+    {
+      "path": "original-cregen-6p0/pair.xyz.sorted",
+      "sha256": "903ccc8ca0610379e85ba01e3f7bf631117831ffafaac6466e71f6434872325d",
+      "bytes": 970
+    },
+    {
+      "path": "original-cregen-6p0/stdout.txt",
+      "sha256": "3402673220cda86c7ac3a534a2d693913f330a5de12d94bb7f54384e697ec830",
+      "bytes": 4895
+    },
+    {
+      "path": "water.xyz",
+      "sha256": "ff1f8d7de4e350296b72af88c412572454537ae995d52f73bbb6db464090d4a5",
+      "bytes": 123
+    }
+  ]
+}

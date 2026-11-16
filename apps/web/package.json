@@ -1,0 +1,63 @@
+{
+  "name": "@chemdft/web",
+  "version": "0.0.60",
+  "private": true,
+  "license": "Apache-2.0",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint src tests next.config.ts playwright.config.ts --max-warnings=0",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "auth:create-user": "node scripts/create-controlled-user.ts",
+    "auth:migrate": "node scripts/migrate-auth.ts"
+  },
+  "dependencies": {
+    "3dmol": "2.5.5",
+    "@blueprintjs/core": "6.18.0",
+    "@blueprintjs/icons": "6.13.0",
+    "@chemdft/domain": "workspace:*",
+    "@chemdft/i18n": "workspace:*",
+    "@chemdft/schemas": "workspace:*",
+    "@chemdft/scientific-scene": "workspace:*",
+    "@chemdft/ui": "workspace:*",
+    "@kitware/vtk.js": "37.3.1",
+    "@react-three/drei": "10.7.9",
+    "@react-three/fiber": "9.8.1",
+    "@react-three/postprocessing": "3.1.3",
+    "better-auth": "1.7.7",
+    "echarts": "6.1.0",
+    "gsap": "3.15.0",
+    "ketcher-react": "3.12.0",
+    "ketcher-standalone": "3.12.0",
+    "motion": "14.0.0",
+    "next": "16.3.4",
+    "next-intl": "4.14.3",
+    "pdfjs-dist": "6.3.289",
+    "pg": "8.13.3",
+    "postprocessing": "6.39.5",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "three": "0.186.0",
+    "xstate": "^5.33.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@types/node": "24.10.1",
+    "@types/pg": "8.11.10",
+    "@types/react": "19.2.9",
+    "@types/react-dom": "19.2.3",
+    "@types/three": "0.186.0",
+    "axe-core": "^4.13.0",
+    "eslint": "9.39.2",
+    "eslint-config-next": "16.3.4",
+    "typescript": "5.9.3",
+    "vitest": "5.0.0"
+  },
+  "browserslist": [
+    "chrome >= 109"
+  ]
+}

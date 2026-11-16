@@ -1,0 +1,36 @@
+{
+  "title": "ChemDFT",
+  "version": "0.0.60",
+  "upload_type": "software",
+  "publication_date": "2026-11-15",
+  "description": "<p>ChemDFT is a computational chemistry workbench in which an AI Scientist plans and explains, and every scientific value comes from a verified engine (PySCF, xTB, CREST) behind a Result Firewall that records provenance. All of ChemDFT's own code is licensed Apache-2.0. This record archives the open-core subset of the repository: the schemas and contracts, the engine wrappers (except the Psi4 environment file, which is held back) and the examples catalogue. The rest of ChemDFT is not part of this record, and neither is any third-party material: the CREST sources, the pseudopotentials and every retained evidence directory are excluded.</p>",
+  "creators": [
+    {
+      "name": "Ahmadli, Tabriz",
+      "affiliation": "chemdft.com",
+      "orcid": "0009-0006-0198-5253"
+    }
+  ],
+  "license": "Apache-2.0",
+  "access_right": "open",
+  "keywords": [
+    "computational chemistry",
+    "density functional theory",
+    "scientific provenance",
+    "PySCF",
+    "xTB",
+    "CREST"
+  ],
+  "related_identifiers": [
+    {
+      "relation": "isSupplementTo",
+      "identifier": "https://github.com/TabAh007/ChemDFT",
+      "scheme": "url"
+    },
+    {
+      "relation": "isSupplementTo",
+      "identifier": "https://chemdft.com",
+      "scheme": "url"
+    }
+  ]
+}

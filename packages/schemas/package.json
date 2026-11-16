@@ -1,0 +1,19 @@
+{
+  "name": "@chemdft/schemas",
+  "version": "0.1.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "type": "module",
+  "exports": {
+    ".": "./src/generated.ts",
+    "./schema": "./generated/chemdft-contracts.schema.json"
+  },
+  "scripts": {
+    "generate:typescript": "node scripts/generate-typescript.mjs",
+    "check:typescript": "node scripts/generate-typescript.mjs --check",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3"
+  }
+}

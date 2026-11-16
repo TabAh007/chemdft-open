@@ -1,0 +1,67 @@
+{
+  "note": "Executed on AWS. Single source: services/api/src/chemdft_api/aws_compute.py AWS_VERIFIED_ENERGY_PAIRS; mirrored in apps/web/src/lib/aws-verified.ts. optimization lists the pair executed on AWS (job ad4a9b01, 2026-10-27). tddft (job be84c239) and xtb_energy (job 69d9052f) were executed on AWS on 2026-11-02. energy water HF/STO-3G (job ffb3574d) and PBE/6-31G (job 01dd78af) were executed on AWS on 2026-11-03. xtb_optimization (job 8cf0ae40) was executed on AWS on 2026-11-03.",
+  "energy": [
+    {
+      "method": "hf",
+      "basis": "sto-3g",
+      "molecule": "H2"
+    },
+    {
+      "method": "b3lyp",
+      "basis": "def2-svp",
+      "molecule": "water"
+    },
+    {
+      "method": "hf",
+      "basis": "sto-3g",
+      "molecule": "water"
+    },
+    {
+      "method": "pbe",
+      "basis": "6-31g",
+      "molecule": "water"
+    }
+  ],
+  "optimization": [
+    {
+      "method": "b3lyp",
+      "basis": "def2-svp",
+      "molecule": "water"
+    }
+  ],
+  "frequency": [
+    {
+      "method": "b3lyp",
+      "basis": "def2-svp",
+      "molecule": "water"
+    }
+  ],
+  "thermochemistry": [
+    {
+      "method": "b3lyp",
+      "basis": "def2-svp",
+      "molecule": "water"
+    }
+  ],
+  "tddft": [
+    {
+      "method": "b3lyp",
+      "basis": "def2-svp",
+      "molecule": "water"
+    }
+  ],
+  "xtb_energy": [
+    {
+      "method": "gfn2",
+      "basis": "builtin",
+      "molecule": "water"
+    }
+  ],
+  "xtb_optimization": [
+    {
+      "method": "gfn2",
+      "basis": "builtin",
+      "molecule": "water"
+    }
+  ]
+}

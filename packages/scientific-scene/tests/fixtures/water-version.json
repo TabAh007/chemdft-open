@@ -1,0 +1,132 @@
+{
+  "structure": {
+    "schema_version": "1.0.0",
+    "id": "b8de172f-886e-401a-8f71-e6a6f359f2ac",
+    "project_id": "f39aefcf-a1cd-4606-8f03-f9b18eadb96d",
+    "name": "TEST USER-SUPPLIED WATER GEOMETRY",
+    "kind": "MOLECULE",
+    "sample_ids": [],
+    "created_by": "00000000-0000-4000-8000-000000000001",
+    "created_at": "2026-09-27T14:19:22.004410"
+  },
+  "version": {
+    "schema_version": "1.0.0",
+    "id": "de89ad41-298b-43ee-9eea-c796f6347391",
+    "project_id": "f39aefcf-a1cd-4606-8f03-f9b18eadb96d",
+    "structure_id": "b8de172f-886e-401a-8f71-e6a6f359f2ac",
+    "revision": 1,
+    "origin": "IMPORTED",
+    "parent_version_id": null,
+    "representation_artifacts": [
+      {
+        "project_id": "f39aefcf-a1cd-4606-8f03-f9b18eadb96d",
+        "artifact_id": "8841eeb6-fa27-4802-983a-561e78f91cc2",
+        "sha256": "39e5a504cab06c57678c1e87e71080a02d42969841c3cdf08141faecb955847b"
+      },
+      {
+        "project_id": "f39aefcf-a1cd-4606-8f03-f9b18eadb96d",
+        "artifact_id": "0f4eba76-1c31-4353-bea9-2f937f0632dc",
+        "sha256": "0b6ffc5507319be6821850b2906212178b220823049a2a0f1145011e96056e37"
+      }
+    ],
+    "coordinates": {
+      "structure_version_id": "de89ad41-298b-43ee-9eea-c796f6347391",
+      "coordinate_system": "CARTESIAN",
+      "unit": "angstrom",
+      "dimensionality": 3,
+      "atom_ordering": "AS_LISTED",
+      "source": {
+        "project_id": "f39aefcf-a1cd-4606-8f03-f9b18eadb96d",
+        "artifact_id": "8841eeb6-fa27-4802-983a-561e78f91cc2",
+        "sha256": "39e5a504cab06c57678c1e87e71080a02d42969841c3cdf08141faecb955847b"
+      },
+      "atoms": [
+        {
+          "index": 0,
+          "atomic_number": 8,
+          "element": "O",
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "isotope": null,
+          "formal_charge": null,
+          "label": null,
+          "occupancy": null
+        },
+        {
+          "index": 1,
+          "atomic_number": 1,
+          "element": "H",
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.9572,
+          "isotope": null,
+          "formal_charge": null,
+          "label": null,
+          "occupancy": null
+        },
+        {
+          "index": 2,
+          "atomic_number": 1,
+          "element": "H",
+          "x": 0.926627,
+          "y": 0.0,
+          "z": -0.239987,
+          "isotope": null,
+          "formal_charge": null,
+          "label": null,
+          "occupancy": null
+        }
+      ],
+      "bonds": []
+    },
+    "periodic_cell": null,
+    "diagnostics": [
+      {
+        "severity": "WARNING",
+        "code": "MISSING_CONNECTIVITY",
+        "message": "XYZ source does not contain authoritative bond connectivity.",
+        "atom_index": null
+      }
+    ],
+    "overall_charge": 0,
+    "multiplicity": 1,
+    "created_by": "00000000-0000-4000-8000-000000000001",
+    "created_at": "2026-09-27T14:19:22.006934"
+  },
+  "diagnostics": [
+    {
+      "severity": "WARNING",
+      "code": "MISSING_CONNECTIVITY",
+      "message": "XYZ source does not contain authoritative bond connectivity.",
+      "atom_index": null
+    }
+  ],
+  "provenance": {
+    "origin": "IMPORTED",
+    "detail": "MANUAL_ENTRY",
+    "source_artifact": {
+      "project_id": "f39aefcf-a1cd-4606-8f03-f9b18eadb96d",
+      "artifact_id": "0f4eba76-1c31-4353-bea9-2f937f0632dc",
+      "sha256": "0b6ffc5507319be6821850b2906212178b220823049a2a0f1145011e96056e37"
+    },
+    "parser": "rdkit",
+    "parser_version": "2025.09.1",
+    "adapter": "chemdft.rdkit.molecular",
+    "adapter_version": "1.0.0",
+    "operation": "chemdft.structure.import",
+    "operation_version": "1.0.0",
+    "source_class": "USER_SUPPLIED",
+    "coordinate_origin": null,
+    "coordinate_input_format": null,
+    "coordinate_unit": null,
+    "coordinate_file_sha256": null,
+    "candidate_representation_id": null,
+    "verification_state": "UNVERIFIED",
+    "created_at": "2026-09-27T14:19:22.005351",
+    "actor_id": "00000000-0000-4000-8000-000000000001",
+    "calculation_id": null,
+    "trajectory_id": null,
+    "final_step_index": null
+  }
+}

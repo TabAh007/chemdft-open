@@ -1,0 +1,32 @@
+{
+ "schema_version": "1.0.0",
+ "status": "CLARIFY",
+ "label": "AI-drafted \u00b7 schematic",
+ "reply": "Which structure?",
+ "steps": [],
+ "final": null,
+ "clarify": {
+  "question": "Which structure do you mean?",
+  "options": [
+   {
+    "label": "Methanediamine H2N-CH2-NH2",
+    "message": "Draw 1 C, 2 N and 6 H as methanediamine"
+   },
+   {
+    "label": "Methylhydrazine CH3-NH-NH2",
+    "message": "Draw 1 C, 2 N and 6 H as methylhydrazine"
+   }
+  ]
+ },
+ "reference_check": null,
+ "proposals": [],
+ "warnings": [],
+ "info": [],
+ "error_code": null,
+ "error": null,
+ "repaired": false,
+ "run_id": null,
+ "model": "nemotron-3.5-lightning-30b-a3b",
+ "input_tokens": 412,
+ "output_tokens": 64
+}

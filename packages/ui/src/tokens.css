@@ -1,0 +1,65 @@
+:root {
+  color-scheme: light;
+  --cdf-font-ui: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --cdf-font-data: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  --cdf-ink: #18212b;
+  --cdf-ink-muted: #52606d;
+  --cdf-ink-faint: #718096;
+  --cdf-canvas: #f7f9fb;
+  --cdf-surface: #ffffff;
+  --cdf-panel: #f1f4f7;
+  --cdf-panel-strong: #e8edf2;
+  --cdf-line: #d6dde4;
+  --cdf-line-strong: #b8c2cc;
+  --cdf-accent: #1565a7;
+  --cdf-accent-hover: #0f548d;
+  --cdf-accent-soft: #e4f0f8;
+  --cdf-success: #238551;
+  --cdf-warning: #a96700;
+  --cdf-danger: #c23030;
+  --cdf-focus: #2d7fc1;
+  --cdf-header-h: 42px;
+  --cdf-rail-w: 40px;
+  --cdf-explorer-w: 236px;
+  --cdf-dock-w: 300px;
+  --cdf-shelf-h: 28px;
+  --cdf-control-h: 30px;
+  --cdf-radius-1: 2px;
+  --cdf-radius-2: 4px;
+  --cdf-shadow-popover: 0 8px 24px rgba(24, 33, 43, 0.14);
+  --cdf-duration: 180ms;
+  --cdf-ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+::selection {
+  color: var(--cdf-ink);
+  background: #b9d9ee;
+}
+
+:focus-visible {
+  outline: 2px solid var(--cdf-focus);
+  outline-offset: 2px;
+}
+
+* {
+  scrollbar-color: var(--cdf-line-strong) var(--cdf-panel);
+  scrollbar-width: thin;
+}
+
+.bp6-button,
+.bp6-input,
+.bp6-html-select select {
+  border-radius: var(--cdf-radius-1);
+}
+
+.bp6-button.bp6-intent-primary {
+  background: var(--cdf-accent);
+}
+
+.bp6-button.bp6-intent-primary:hover {
+  background: var(--cdf-accent-hover);
+}
+
+.bp6-menu {
+  border-radius: var(--cdf-radius-2);
+}

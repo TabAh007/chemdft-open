@@ -1,0 +1,54 @@
+{
+ "schema_version": "1.0.0",
+ "status": "OK",
+ "label": "AI-drafted \u00b7 schematic",
+ "reply": "Drew 3 ethanol molecules.",
+ "steps": [
+  {
+   "index": 0,
+   "op": {
+    "op": "add_copies",
+    "source": "ethanol",
+    "count": 3,
+    "layout": "grid"
+   },
+   "ok": true,
+   "error": null,
+   "suggestion": null,
+   "molfile": "\n     RDKit          2D\n\n  9  6  0  0  0  0  0  0  0  0999 V2000\n   -3.7231    1.1250    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -2.4240    1.8750    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.1250    1.1250    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n    1.1250    1.1250    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    2.4240    1.8750    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    3.7231    1.1250    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n   -3.7231   -1.8750    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -2.4240   -1.1250    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.1250   -1.8750    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n  1  2  1  0\n  2  3  1  0\n  4  5  1  0\n  5  6  1  0\n  7  8  1  0\n  8  9  1  0\nM  END\n",
+   "smiles": "CCO.CCO.CCO",
+   "formula": "C6H18O3",
+   "new_atom_numbers": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "atom_count": 9,
+   "description": "Add 3 \u00d7 ethanol in a grid"
+  }
+ ],
+ "final": {
+  "molfile": "\n     RDKit          2D\n\n  9  6  0  0  0  0  0  0  0  0999 V2000\n   -3.7231    1.1250    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -2.4240    1.8750    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.1250    1.1250    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n    1.1250    1.1250    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    2.4240    1.8750    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    3.7231    1.1250    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n   -3.7231   -1.8750    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -2.4240   -1.1250    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.1250   -1.8750    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n  1  2  1  0\n  2  3  1  0\n  4  5  1  0\n  5  6  1  0\n  7  8  1  0\n  8  9  1  0\nM  END\n",
+  "smiles": "CCO.CCO.CCO",
+  "formula": "C6H18O3",
+  "atom_count": 9
+ },
+ "clarify": null,
+ "reference_check": null,
+ "proposals": [],
+ "warnings": [],
+ "info": [],
+ "error_code": null,
+ "error": null,
+ "repaired": false,
+ "run_id": null,
+ "model": "nemotron-3.5-lightning-30b-a3b",
+ "input_tokens": 412,
+ "output_tokens": 64
+}

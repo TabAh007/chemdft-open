@@ -1,0 +1,7 @@
+# Experimental data ingestion
+
+Phase 7 provides a project-scoped CSV/TSV/XY foundation for XRD, FTIR, NMR, HRMS, UV/VIS, TG/DTA, DLS, and other declared modalities. Import requires explicit x/y columns, labels, units, and modality. Multiple y channels are preserved for data such as TG/DTG/DTA, and DLS imports require the user to declare whether the axis is diameter, radius, diffusion coefficient, distribution value, or another quantity. Values are parsed as finite numbers; raw bytes remain immutable and are represented by an artifact reference. A committed direct import is `RAW` with source class `EXPERIMENTAL` and no processing steps.
+
+The internal dataset record stores axis declarations and bounded preview values for the workstation. Normalized and derived datasets must be new records linked to their source; the raw artifact is never rewritten. Manual graph digitization commits derived `DIGITIZED` datasets with calibration and source-anchor metadata, not raw experimental lineage.
+
+JCAMP-DX remains explicitly deferred for Phase 7. The practical blocker is specification breadth and variant handling: a safe parser must preserve metadata, axis direction, units, modality, point bounds, and unsupported-case diagnostics across FTIR/NMR/UV-Vis without silently accepting malformed vendor variants. Until that parser is implemented, users can import exported CSV/TSV/XY series with explicit modality, axes, and units.

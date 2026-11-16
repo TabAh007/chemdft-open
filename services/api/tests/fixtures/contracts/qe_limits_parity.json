@@ -1,0 +1,468 @@
+{
+ "note": "Golden record shared by test_qe_periodic.py and apps/web/tests/qe-periodic.test.ts. Regenerate only with qe_limits.py changes.",
+ "cases": [
+  {
+   "input": {
+    "atoms": 10,
+    "ecutwfc_ry": 45.0,
+    "scf_mesh": [
+     3,
+     3,
+     3
+    ],
+    "nspin": 2,
+    "relax": false,
+    "dos": false,
+    "dos_mesh": [
+     6,
+     6,
+     6
+    ],
+    "bands": false,
+    "band_points": 0,
+    "relax_max_steps": 30
+   },
+   "estimate_total_s": 101.9,
+   "estimate_stages_s": {
+    "scf": 96.9,
+    "projwfc_lowdin": 5.0,
+    "total": 101.9
+   },
+   "memory_mb": 350.0,
+   "refusal": null
+  },
+  {
+   "input": {
+    "atoms": 10,
+    "ecutwfc_ry": 45.0,
+    "scf_mesh": [
+     1,
+     1,
+     1
+    ],
+    "nspin": 2,
+    "relax": false,
+    "dos": false,
+    "dos_mesh": [
+     6,
+     6,
+     6
+    ],
+    "bands": false,
+    "band_points": 0,
+    "relax_max_steps": 30
+   },
+   "estimate_total_s": 57.0,
+   "estimate_stages_s": {
+    "scf": 52.0,
+    "projwfc_lowdin": 5.0,
+    "total": 57.0
+   },
+   "memory_mb": 350.0,
+   "refusal": null
+  },
+  {
+   "input": {
+    "atoms": 10,
+    "ecutwfc_ry": 45.0,
+    "scf_mesh": [
+     2,
+     2,
+     2
+    ],
+    "nspin": 2,
+    "relax": true,
+    "dos": false,
+    "dos_mesh": [
+     6,
+     6,
+     6
+    ],
+    "bands": false,
+    "band_points": 0,
+    "relax_max_steps": 30
+   },
+   "estimate_total_s": 354.1,
+   "estimate_stages_s": {
+    "scf": 0.0,
+    "projwfc_lowdin": 5.0,
+    "relax": 349.1,
+    "total": 354.1
+   },
+   "memory_mb": 350.0,
+   "refusal": null
+  },
+  {
+   "input": {
+    "atoms": 10,
+    "ecutwfc_ry": 45.0,
+    "scf_mesh": [
+     3,
+     3,
+     3
+    ],
+    "nspin": 2,
+    "relax": false,
+    "dos": true,
+    "dos_mesh": [
+     6,
+     6,
+     6
+    ],
+    "bands": false,
+    "band_points": 0,
+    "relax_max_steps": 30
+   },
+   "estimate_total_s": 259.4,
+   "estimate_stages_s": {
+    "scf": 96.9,
+    "projwfc_lowdin": 5.0,
+    "nscf_dos": 157.5,
+    "total": 259.4
+   },
+   "memory_mb": 500.0,
+   "refusal": null
+  },
+  {
+   "input": {
+    "atoms": 10,
+    "ecutwfc_ry": 45.0,
+    "scf_mesh": [
+     3,
+     3,
+     3
+    ],
+    "nspin": 2,
+    "relax": false,
+    "dos": false,
+    "dos_mesh": [
+     6,
+     6,
+     6
+    ],
+    "bands": true,
+    "band_points": 49,
+    "relax_max_steps": 30
+   },
+   "estimate_total_s": 468.0,
+   "estimate_stages_s": {
+    "scf": 96.9,
+    "projwfc_lowdin": 5.0,
+    "bands": 366.1,
+    "total": 468.0
+   },
+   "memory_mb": 1100.0,
+   "refusal": null
+  },
+  {
+   "input": {
+    "atoms": 10,
+    "ecutwfc_ry": 45.0,
+    "scf_mesh": [
+     2,
+     2,
+     2
+    ],
+    "nspin": 2,
+    "relax": true,
+    "dos": true,
+    "dos_mesh": [
+     6,
+     6,
+     6
+    ],
+    "bands": true,
+    "band_points": 60,
+    "relax_max_steps": 30
+   },
+   "estimate_total_s": 929.1,
+   "estimate_stages_s": {
+    "scf": 0.0,
+    "projwfc_lowdin": 5.0,
+    "relax": 349.1,
+    "nscf_dos": 157.5,
+    "bands": 417.5,
+    "total": 929.1
+   },
+   "memory_mb": 1346.9,
+   "refusal": null
+  },
+  {
+   "input": {
+    "atoms": 21,
+    "ecutwfc_ry": 45.0,
+    "scf_mesh": [
+     3,
+     3,
+     3
+    ],
+    "nspin": 2,
+    "relax": false,
+    "dos": false,
+    "dos_mesh": [
+     6,
+     6,
+     6
+    ],
+    "bands": false,
+    "band_points": 0,
+    "relax_max_steps": 30
+   },
+   "estimate_total_s": 944.1,
+   "estimate_stages_s": {
+    "scf": 897.8,
+    "projwfc_lowdin": 46.3,
+    "total": 944.1
+   },
+   "memory_mb": 1543.5,
+   "refusal": "Hosted Quantum ESPRESSO periodic DFT is limited to 20 atoms in the cell; this structure has 21."
+  },
+  {
+   "input": {
+    "atoms": 10,
+    "ecutwfc_ry": 45.0,
+    "scf_mesh": [
+     5,
+     5,
+     5
+    ],
+    "nspin": 2,
+    "relax": false,
+    "dos": false,
+    "dos_mesh": [
+     6,
+     6,
+     6
+    ],
+    "bands": false,
+    "band_points": 0,
+    "relax_max_steps": 30
+   },
+   "estimate_total_s": 271.5,
+   "estimate_stages_s": {
+    "scf": 266.5,
+    "projwfc_lowdin": 5.0,
+    "total": 271.5
+   },
+   "memory_mb": 350.0,
+   "refusal": "The SCF k-point mesh for Quantum ESPRESSO must be Gamma, 2x2x2, 3x3x3 or 4x4x4."
+  },
+  {
+   "input": {
+    "atoms": 10,
+    "ecutwfc_ry": 45.0,
+    "scf_mesh": [
+     3,
+     3,
+     3
+    ],
+    "nspin": 2,
+    "relax": false,
+    "dos": true,
+    "dos_mesh": [
+     7,
+     7,
+     7
+    ],
+    "bands": false,
+    "band_points": 0,
+    "relax_max_steps": 30
+   },
+   "estimate_total_s": 347.0,
+   "estimate_stages_s": {
+    "scf": 96.9,
+    "projwfc_lowdin": 5.0,
+    "nscf_dos": 245.0,
+    "total": 347.0
+   },
+   "memory_mb": 500.0,
+   "refusal": "The DOS k-point mesh is limited to 6x6x6."
+  },
+  {
+   "input": {
+    "atoms": 10,
+    "ecutwfc_ry": 45.0,
+    "scf_mesh": [
+     3,
+     3,
+     3
+    ],
+    "nspin": 2,
+    "relax": false,
+    "dos": false,
+    "dos_mesh": [
+     6,
+     6,
+     6
+    ],
+    "bands": true,
+    "band_points": 101,
+    "relax_max_steps": 30
+   },
+   "estimate_total_s": 711.0,
+   "estimate_stages_s": {
+    "scf": 96.9,
+    "projwfc_lowdin": 5.0,
+    "bands": 609.0,
+    "total": 711.0
+   },
+   "memory_mb": 2267.3,
+   "refusal": "The band path is limited to 100 k-points in total."
+  },
+  {
+   "input": {
+    "atoms": 10,
+    "ecutwfc_ry": 45.0,
+    "scf_mesh": [
+     3,
+     3,
+     3
+    ],
+    "nspin": 2,
+    "relax": true,
+    "dos": false,
+    "dos_mesh": [
+     6,
+     6,
+     6
+    ],
+    "bands": false,
+    "band_points": 0,
+    "relax_max_steps": 31
+   },
+   "estimate_total_s": 547.9,
+   "estimate_stages_s": {
+    "scf": 0.0,
+    "projwfc_lowdin": 5.0,
+    "relax": 542.9,
+    "total": 547.9
+   },
+   "memory_mb": 350.0,
+   "refusal": "Relaxation is limited to 30 ionic steps."
+  },
+  {
+   "input": {
+    "atoms": 20,
+    "ecutwfc_ry": 80.0,
+    "scf_mesh": [
+     1,
+     1,
+     1
+    ],
+    "nspin": 2,
+    "relax": false,
+    "dos": false,
+    "dos_mesh": [
+     6,
+     6,
+     6
+    ],
+    "bands": true,
+    "band_points": 100,
+    "relax_max_steps": 30
+   },
+   "estimate_total_s": 12540.3,
+   "estimate_stages_s": {
+    "scf": 985.3,
+    "projwfc_lowdin": 94.8,
+    "bands": 11460.1,
+    "total": 12540.3
+   },
+   "memory_mb": 21285.0,
+   "refusal": "Estimated memory 21.3 GB exceeds the hosted limit of 6.0 GB; use fewer atoms, fewer band k-points or fewer stages."
+  },
+  {
+   "input": {
+    "atoms": 20,
+    "ecutwfc_ry": 45.0,
+    "scf_mesh": [
+     4,
+     4,
+     4
+    ],
+    "nspin": 2,
+    "relax": true,
+    "dos": true,
+    "dos_mesh": [
+     6,
+     6,
+     6
+    ],
+    "bands": true,
+    "band_points": 100,
+    "relax_max_steps": 30
+   },
+   "estimate_total_s": 13267.8,
+   "estimate_stages_s": {
+    "scf": 0.0,
+    "projwfc_lowdin": 40.0,
+    "relax": 7133.1,
+    "nscf_dos": 1260.0,
+    "bands": 4834.7,
+    "total": 13267.8
+   },
+   "memory_mb": 8979.6,
+   "refusal": "Estimated memory 9.0 GB exceeds the hosted limit of 6.0 GB; use fewer atoms, fewer band k-points or fewer stages."
+  },
+  {
+   "input": {
+    "atoms": 10,
+    "ecutwfc_ry": 45.0,
+    "scf_mesh": [
+     3,
+     3,
+     3
+    ],
+    "nspin": 1,
+    "relax": false,
+    "dos": false,
+    "dos_mesh": [
+     6,
+     6,
+     6
+    ],
+    "bands": false,
+    "band_points": 0,
+    "relax_max_steps": 30
+   },
+   "estimate_total_s": 53.5,
+   "estimate_stages_s": {
+    "scf": 48.5,
+    "projwfc_lowdin": 5.0,
+    "total": 53.5
+   },
+   "memory_mb": 350.0,
+   "refusal": null
+  },
+  {
+   "input": {
+    "atoms": 4,
+    "ecutwfc_ry": 30.0,
+    "scf_mesh": [
+     4,
+     4,
+     4
+    ],
+    "nspin": 1,
+    "relax": false,
+    "dos": false,
+    "dos_mesh": [
+     6,
+     6,
+     6
+    ],
+    "bands": false,
+    "band_points": 0,
+    "relax_max_steps": 30
+   },
+   "estimate_total_s": 2.9,
+   "estimate_stages_s": {
+    "scf": 2.8,
+    "projwfc_lowdin": 0.2,
+    "total": 2.9
+   },
+   "memory_mb": 30.5,
+   "refusal": null
+  }
+ ]
+}

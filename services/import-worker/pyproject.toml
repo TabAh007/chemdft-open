@@ -1,0 +1,21 @@
+[project]
+name = "chemdft-import-worker"
+version = "0.1.0"
+license = {text = "Apache-2.0"}
+description = "Isolated, resource-limited parser environment for External Computational Import (Gaussian / ORCA)"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  # Pinned, locally built wheel of cclib @ b1364ecf5ac21042c5a37ed5446771217e0431ea (1.8.1.post1278).
+  # PyPI cclib 1.8.1 must NOT be used: it cannot parse ORCA 6.x. See wheels/README.md.
+  "cclib",
+  "numpy>=2.0,<3",
+  "scipy>=1.13,<2",
+  "periodictable>=2.0,<3",
+  "packaging>=24",
+]
+
+[tool.uv]
+package = false
+
+[tool.uv.sources]
+cclib = { path = "wheels/cclib-1.8.1.post1278+b1364ecf-py3-none-any.whl" }

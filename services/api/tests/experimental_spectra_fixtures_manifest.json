@@ -1,0 +1,167 @@
+{
+  "_comment": "Third-party experimental spectra that exercise the PRODUCTION delimited-text import path. The files are NOT committed: they live in .chemdft/experimental-fixtures (gitignored). Tests skip when a file is absent and fail when a present file's SHA-256 differs from this manifest. 'units' records how each unit is established: EXPLICIT_UNIT (written in the file) or USER_CONFIRMED (the file states nothing, a person confirms).",
+  "fixtures": {
+    "nist-ir-acetone-gas": {
+      "technique": "IR",
+      "description": "Gas-phase infrared spectrum of acetone (NIST Chemistry WebBook, Sadtler/EPA collection, 4 cm-1 spacing). Distributed as JCAMP-DX; ChemDFT V1 does not read JCAMP, so one uncompressed JCAMP is converted deterministically to tab-delimited text with an explicit-unit header.",
+      "source_url": "https://webbook.nist.gov/cgi/cbook.cgi?JCAMP=C67641&Index=0&Type=IR",
+      "license_note": "NIST Standard Reference Data; the file carries an 'All rights reserved' notice. Used for local scientific validation only; neither the JCAMP file nor the derived file is committed or redistributed.",
+      "source_file": "nist-ir-acetone-gas/acetone_gas_C67641.jdx",
+      "source_sha256": "da6d2d9180cf90b59f8a0e32eefe15a81db81ce8c3257b208be2f8a170a493b8",
+      "converter": "tools/convert_jcamp_affn_to_delimited.py",
+      "derived_file": "derived/nist-ir-acetone-gas.tsv",
+      "derived_sha256": "9f43bbd11fa554e03b7995ff58a0e0cc82eac33f827014a4d6834c6ba48d995f",
+      "import": {
+        "choices": {},
+        "units": {
+          "x": "EXPLICIT_UNIT",
+          "y": "EXPLICIT_UNIT"
+        },
+        "x_unit": "cm^-1",
+        "y_quantity": "ABSORBANCE",
+        "y_unit": "absorbance",
+        "points": 880,
+        "x_min": 450.0,
+        "x_max": 3966.0,
+        "direction": "ASCENDING",
+        "phase": "GAS (as reported in the file)"
+      },
+      "expected_peak_near": [
+        1738.9
+      ]
+    },
+    "opara-raman-acetone": {
+      "technique": "RAMAN",
+      "description": "Raman spectrum of pure liquid acetone at 25 C (Braeuer and Willger 2023); plain text, Windows-1252, tab metadata block followed by whitespace-separated data; no laser wavelength in the file.",
+      "source_url": "https://opara.zih.tu-dresden.de/server/api/core/bitstreams/7172fe52-2b31-4aee-80ce-7004d32eb914/content",
+      "doi": "10.25532/OPARA-274",
+      "license_note": "CC BY 4.0 (OPARA item metadata). Kept external anyway.",
+      "source_file": "opara-raman-acetone/ace_h2o_ace_pure_1.txt",
+      "source_sha256": "12ae2e8a7ba3b492258974a7488d54494f8dded90a438f44b3a573fc771d9f16",
+      "archive_sha256": "97627bb35747faba5211174ae350c925e47957143b65f1d3691b47d51c84b34d",
+      "import": {
+        "choices": {
+          "x_unit": "cm^-1",
+          "y_quantity": "INTENSITY",
+          "y_unit": "arbitrary"
+        },
+        "units": {
+          "x": "USER_CONFIRMED",
+          "y": "USER_CONFIRMED"
+        },
+        "needs_without_choices": [
+          "x_unit",
+          "y_quantity_and_unit"
+        ],
+        "x_unit": "cm^-1",
+        "y_unit": "arbitrary",
+        "points": 1044,
+        "x_min": -13.34046,
+        "x_max": 4481.512981,
+        "direction": "ASCENDING",
+        "encoding": "cp1252",
+        "laser_wavelength": "NOT_SUPPLIED"
+      },
+      "expected_peak_near": [
+        788.6,
+        1714.6,
+        2926.7
+      ]
+    },
+    "mainz-uv-acetone": {
+      "technique": "UVVIS",
+      "description": "Gas-phase UV absorption cross sections of acetone, 298 K, 215-349 nm (Gierczak et al. 1998), MPI-Mainz UV/VIS Spectral Atlas. Headerless: the unit is not in the file.",
+      "source_url": "https://www.uv-vis-spectral-atlas-mainz.org/uvvis_data/cross_sections/Organics%20(carbonyls)/Ketones,ketenes/CH3C(O)CH3_Gierczak(1998)_298K_215-349nm(meas).txt",
+      "doi": "10.5194/essd-5-365-2013",
+      "license_note": "CC BY 4.0 for the 2013 Zenodo snapshot (doi:10.5281/zenodo.6951); the live file is newer. Kept external.",
+      "source_file": "mainz-uv-acetone/CH3C(O)CH3_Gierczak(1998)_298K_215-349nm(meas).txt",
+      "source_sha256": "35391414d9a560da0773a5a27de7633b1b9e24ff7d0be458e0fe2910ab7e5b11",
+      "import": {
+        "choices": {
+          "x_unit": "nm",
+          "y_quantity": "CROSS_SECTION",
+          "y_unit": "cm^2/molecule"
+        },
+        "units": {
+          "x": "USER_CONFIRMED",
+          "y": "USER_CONFIRMED"
+        },
+        "needs_without_choices": [
+          "x_unit",
+          "y_quantity_and_unit"
+        ],
+        "x_unit": "nm",
+        "y_unit": "cm^2/molecule",
+        "points": 135,
+        "x_min": 215.0,
+        "x_max": 349.0,
+        "direction": "ASCENDING"
+      },
+      "expected_peak_near": [
+        274.0
+      ]
+    },
+    "mainz-uv-acetone-vuv": {
+      "technique": "UVVIS",
+      "description": "Gas-phase VUV/UV cross sections of acetone, 298 K, 115-335 nm (Nobre et al. 2008). The file mixes tab-separated and space-separated rows and has negative noise-floor values; both are read and reported, nothing is repaired.",
+      "source_url": "https://www.uv-vis-spectral-atlas-mainz.org/uvvis_data/cross_sections/Organics%20(carbonyls)/Ketones,ketenes/CH3C(O)CH3_Nobre(2008)_298K_115-335nm.txt",
+      "license_note": "As mainz-uv-acetone. Kept external.",
+      "source_file": "mainz-uv-acetone-vuv/CH3C(O)CH3_Nobre(2008)_298K_115-335nm.txt",
+      "source_sha256": "4d3d0d25f549a89672d337747d9fde723f3280d63d5e5b3836d8c0c3a6d6bf5b",
+      "import": {
+        "choices": {
+          "x_unit": "nm",
+          "y_quantity": "CROSS_SECTION",
+          "y_unit": "cm^2/molecule"
+        },
+        "units": {
+          "x": "USER_CONFIRMED",
+          "y": "USER_CONFIRMED"
+        },
+        "needs_without_choices": [
+          "x_unit",
+          "y_quantity_and_unit"
+        ],
+        "x_unit": "nm",
+        "y_unit": "cm^2/molecule",
+        "points": 2558,
+        "x_min": 115.0,
+        "x_max": 335.0,
+        "direction": "ASCENDING",
+        "diagnostics": [
+          "NON_UNIFORM_SPACING",
+          "NEGATIVE_SIGNAL"
+        ]
+      }
+    },
+    "mainz-uv-formaldehyde": {
+      "technique": "UVVIS",
+      "description": "Gas-phase UV cross sections of formaldehyde, 298 K (Meller and Moortgat 2000), MPI-Mainz UV/VIS Spectral Atlas.",
+      "source_url": "https://www.uv-vis-spectral-atlas-mainz.org/uvvis_data/cross_sections/Organics%20(carbonyls)/Aldehydes(aliphatic)/CH2O_MellerMoortgat(2000)_298K_225.5-375.5nm(1nm).txt",
+      "license_note": "As mainz-uv-acetone. Kept external.",
+      "source_file": "mainz-uv-formaldehyde/CH2O_MellerMoortgat(2000)_298K_225.5-375.5nm(1nm).txt",
+      "source_sha256": "0c51bb2e4c799de12e21b07ff65c33f715850ab30a4bc79db5bc041f1681270b",
+      "import": {
+        "choices": {
+          "x_unit": "nm",
+          "y_quantity": "CROSS_SECTION",
+          "y_unit": "cm^2/molecule"
+        },
+        "units": {
+          "x": "USER_CONFIRMED",
+          "y": "USER_CONFIRMED"
+        },
+        "needs_without_choices": [
+          "x_unit",
+          "y_quantity_and_unit"
+        ],
+        "x_unit": "nm",
+        "y_unit": "cm^2/molecule",
+        "points": 150,
+        "x_min": 226.0,
+        "x_max": 375.0,
+        "direction": "ASCENDING"
+      }
+    }
+  }
+}

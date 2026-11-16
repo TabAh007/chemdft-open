@@ -1,0 +1,135 @@
+# Machine-readable licence map (REUSE specification 3.x).
+#
+# Owner decision 2026-11-13: the WHOLE codebase is first-party Apache-2.0, except
+#   (a) third-party code and build inputs kept in the tree, which stay under their own licences;
+#   (b) retained evidence and history that are excluded from publication until audited;
+#   (c) the owner's artwork, which is not software.
+# This file records the LICENCE. It does not publish anything: no repository is public yet, and the default
+# Zenodo snapshot still contains only the open-core paths in scripts/build_zenodo_snapshot.py OPEN_CORE_PATTERNS.
+#
+# Anything not matched below falls back to LICENSE.md. The directory table, the exclusions and the open questions are in
+# docs/implementation/RELEASES_AND_LICENSE.md; tests/test_licensing_map.py enforces this file.
+version = 1
+SPDX-PackageName = "ChemDFT"
+SPDX-PackageSupplier = "Tabriz Ahmadli"
+
+# ---------------------------------------------------------------------------------------------------------------------
+# first-party source and documentation: Apache-2.0
+# ---------------------------------------------------------------------------------------------------------------------
+[[annotations]]
+path = [
+  "apps/web/**",
+  "packages/**",
+  "services/**",
+  "scripts/**",
+  "examples/**",
+  "docs/**",
+  "infra/**",
+  "tools/**",
+  ".github/**",
+  "AGENTS.md",
+  "CITATION.cff",
+  "CLAUDE.md",
+  "CODE_OF_CONDUCT.md",
+  "CONTRIBUTING.md",
+  "DECISIONS.md",
+  "DESIGN.md",
+  "GOVERNANCE.md",
+  "LICENSE",
+  "LICENSE.md",
+  "NEXT.md",
+  "NOTICE",
+  "PRODUCT.md",
+  "README.md",
+  "ROADMAP.md",
+  "SECURITY.md",
+  "package.json",
+  "pnpm-lock.yaml",
+  "pnpm-workspace.yaml",
+  "pyproject.toml",
+  "tsconfig.base.json",
+  "uv.lock",
+  ".zenodo.json",
+  ".claude/launch.json",
+  ".env.example",
+  ".gitignore",
+  ".mcp.json",
+  "docker-compose.selfhost.yml",
+]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2026 Tabriz Ahmadli"
+SPDX-License-Identifier = "Apache-2.0"
+
+# ---------------------------------------------------------------------------------------------------------------------
+# (a) Third-party material kept in the tree: NOT relicensed by ChemDFT.
+# ---------------------------------------------------------------------------------------------------------------------
+# Bundled 3Dmol.js: BSD-3-Clause, notices preserved in the same directory.
+[[annotations]]
+path = [
+  "services/api/src/chemdft_api/assets/**",
+]
+precedence = "override"
+SPDX-FileCopyrightText = "2014 University of Pittsburgh and contributors"
+SPDX-License-Identifier = "BSD-3-Clause"
+
+# CREST 3.0.2 accepted source, patches and its GPL/LGPL texts. Governed by the COPYING and COPYING.LESSER files kept
+# inside this directory, not by ChemDFT's licence. Never included in a snapshot.
+[[annotations]]
+path = [
+  "environments/**",
+]
+precedence = "override"
+SPDX-FileCopyrightText = "CREST developers and contributors"
+SPDX-License-Identifier = "LicenseRef-ChemDFT-ThirdParty"
+
+# ---------------------------------------------------------------------------------------------------------------------
+# (b) Retained evidence, history and build output: excluded from publication until audited.
+# ---------------------------------------------------------------------------------------------------------------------
+[[annotations]]
+path = [
+  "output/**",
+  "research/**",
+  "docs/history/**",
+  "tools/scientific-acceptance-archive/**",
+  "artifacts/**",
+  "_archive/**",
+  "user-tests/**",
+  "skills/**",
+  # Internal milestone and audit reports kept at the repository root. They describe a specific machine, a live account
+  # and a user's data; excluded from publication until audited (docs/implementation/PUBLICATION_READINESS.md).
+  "ChemDFT_Approved_UI_References.zip",
+  "PF-4-completion-report.md",
+  "PF-4.1-completion-report.md",
+  "PF-5-completion-report.md",
+  "PF-6-completion-report.md",
+  "PF-7-completion-report.md",
+  "ONBOARDING_AS_C1_2_REPORT.md",
+  "AS-C1.2-Stage3.2-Verification-Report.md",
+  "SCIENTIFIC_ENGINE_READINESS.md",
+]
+precedence = "override"
+SPDX-FileCopyrightText = "2026 Tabriz Ahmadli"
+SPDX-License-Identifier = "LicenseRef-ChemDFT-NotForPublication"
+
+# ---------------------------------------------------------------------------------------------------------------------
+# (c) Owner's artwork (ChemDFT logo, favicons, app icons). Not software; no open licence is assigned.
+# The same files are copied into apps/web/src/app/ for the Next.js icon convention.
+# ---------------------------------------------------------------------------------------------------------------------
+[[annotations]]
+path = [
+  "apps/web/public/brand/**",
+  "services/api/src/chemdft_api/assets/brand/**",
+  "apps/web/src/app/icon.svg",
+  "apps/web/src/app/icon1.png",
+  "apps/web/src/app/icon2.png",
+  "apps/web/src/app/icon3.png",
+  "apps/web/src/app/icon4.png",
+  "apps/web/src/app/apple-icon.png",
+  "apps/web/src/app/favicon.ico",
+]
+precedence = "override"
+SPDX-FileCopyrightText = "2026 Tabriz Ahmadli"
+SPDX-License-Identifier = "LicenseRef-ChemDFT-Proprietary"
+
+# LICENSES/ holds the licence texts themselves (Apache-2.0, BSD-3-Clause, the custom refs) and is not content under a
+# licence. It is deliberately left unannotated.

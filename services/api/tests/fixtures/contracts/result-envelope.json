@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0.0",
+  "result_type": "synthetic.artifact-result",
+  "project_id": "10000000-0000-4000-8000-000000000001",
+  "calculation_id": "10000000-0000-4000-8000-000000000007",
+  "calculation_input_id": "10000000-0000-4000-8000-000000000009",
+  "producer_software": {
+    "name": "synthetic-engine",
+    "version": "0.0-test",
+    "adapter_version": "0.0-test",
+    "execution_backend": "test.subprocess",
+    "capabilities": ["synthetic.schema-only"]
+  },
+  "payload": {
+    "payload_schema": "chemdft.synthetic-artifact-result",
+    "payload_schema_version": "1.0.0",
+    "artifacts": [
+      {
+        "project_id": "10000000-0000-4000-8000-000000000001",
+        "artifact_id": "10000000-0000-4000-8000-000000000004",
+        "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      }
+    ]
+  },
+  "provenance_record_id": "10000000-0000-4000-8000-000000000006",
+  "raw_artifacts": [
+    {
+      "project_id": "10000000-0000-4000-8000-000000000001",
+      "artifact_id": "10000000-0000-4000-8000-000000000004",
+      "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    }
+  ],
+  "idempotency_key": "synthetic-fixture-key",
+  "request_id": "10000000-0000-4000-8000-000000000010",
+  "correlation_id": "10000000-0000-4000-8000-000000000008"
+}

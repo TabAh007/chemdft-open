@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "name": "calculation.submit",
+  "version": {"major": 1, "minor": 0, "patch": 0},
+  "description": "Synthetic future contract fixture; it does not execute chemistry.",
+  "input_schema_ref": "chemdft.calculation-submit-input.v1",
+  "output_schema_ref": "chemdft.calculation.v1",
+  "permission_class": "EXPENSIVE",
+  "required_capabilities": ["calculation.submit"],
+  "cost_class": "scientific.expensive",
+  "risk_class": "controlled",
+  "approval_policy": "POLICY_DEPENDENT",
+  "side_effect": "DURABLE_JOB",
+  "reversible": false,
+  "idempotency": "KEY_REQUIRED",
+  "provenance_obligations": ["provenance.calculated"],
+  "authoritative_field_policy": "TRUSTED_PRODUCER_ONLY",
+  "availability": "FUTURE",
+  "tags": ["calculation.tool"],
+  "error_codes": ["VALIDATION_ERROR", "APPROVAL_REQUIRED"]
+}

@@ -1,0 +1,9 @@
+First-party material that is NOT part of any published source release.
+
+This identifier marks retained evidence, historical logs, local build output and archived acceptance harnesses
+(output/, research/, docs/history/, tools/scientific-acceptance-archive/, artifacts/). They are kept in the private
+repository for provenance and audit, and are excluded from the Zenodo snapshot and from any public export.
+
+They are not licensed for redistribution and must be audited before any of them is published: they may contain a user's
+data, a job identifier, an absolute local path or a cloud resource identifier. See
+docs/implementation/PUBLICATION_READINESS.md.

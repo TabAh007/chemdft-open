@@ -1,0 +1,35 @@
+{
+  "_comment": "Single source of truth for the ChemDFT SOFTWARE citation. Read by apps/web/src/lib/citation.ts and chemdft_api/citation_block.py. 'version' and 'date_released' must equal the newest entry of apps/web/src/content/releases.ts, release_info.py, CITATION.cff and .zenodo.json (tests enforce it). 'doi' is the all-versions (concept) DOI 10.5281/zenodo.24082321. The version DOI for the 0.0.26 open-core snapshot is 10.5281/zenodo.24082322 (Zenodo record https://zenodo.org/records/24082322).",
+  "title": "ChemDFT",
+  "type": "software",
+  "version": "0.0.60",
+  "date_released": "2026-11-15",
+  "license": "Apache-2.0",
+  "doi": "10.5281/zenodo.24082321",
+  "snapshot_0_0_26_version_doi": "10.5281/zenodo.24082322",
+  "snapshot_0_0_36_version_doi": "10.5281/zenodo.24122997",
+  "snapshot_0_0_38_version_doi": null,
+  "snapshot_0_0_40_version_doi": "10.5281/zenodo.24148448",
+  "snapshot_0_0_46_version_doi": "10.5281/zenodo.24183501",
+  "snapshot_0_0_50_version_doi": "10.5281/zenodo.24201081",
+  "snapshot_0_0_51_version_doi": "10.5281/zenodo.24204004",
+  "snapshot_0_0_52_version_doi": "10.5281/zenodo.24207715",
+  "snapshot_0_0_53_version_doi": "10.5281/zenodo.24209616",
+  "snapshot_0_0_56_version_doi": null,
+  "snapshot_0_0_57_version_doi": "10.5281/zenodo.24219804",
+  "snapshot_0_0_58_version_doi": null,
+  "snapshot_0_0_59_version_doi": null,
+  "snapshot_0_0_60_version_doi": null,
+  "authors": [
+    {
+      "given_names": "Tabriz",
+      "family_names": "Ahmadli",
+      "affiliation": "chemdft.com",
+      "orcid": "https://orcid.org/0009-0006-0198-5253"
+    }
+  ],
+  "repository_code": "https://github.com/TabAh007/ChemDFT",
+  "url": "https://chemdft.com",
+  "abstract": "Computational chemistry workbench where an AI Scientist plans and explains and every scientific value comes from a verified engine.",
+  "keywords": ["computational chemistry", "density functional theory", "PySCF"]
+}

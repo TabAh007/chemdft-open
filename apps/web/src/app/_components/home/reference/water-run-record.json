@@ -1,0 +1,69 @@
+{
+ "title": "Water \u00b7 restricted Hartree\u2013Fock / STO-3G",
+ "task": "ORBITAL",
+ "note": "A real stored ChemDFT calculation on the repository's water test geometry, exported once from a development database. Hashes and values only; identifiers are not exported.",
+ "structure": {
+  "input_structure_sha256": "39e5a504cab06c57678c1e87e71080a02d42969841c3cdf08141faecb955847b",
+  "formula": "H2O",
+  "charge": 0,
+  "multiplicity": 1
+ },
+ "method": {
+  "method": "Restricted Hartree-Fock",
+  "basis": "STO-3G",
+  "scf_convergence_threshold": 1e-10,
+  "scf_max_iterations": 100
+ },
+ "engine": {
+  "name": "PySCF",
+  "version": "2.14.0",
+  "backend": "local.subprocess",
+  "hardware_class": "arm64",
+  "library_versions": {
+   "numpy": "2.5.3",
+   "scipy": "1.18.1"
+  },
+  "environment_sha256": "a3da18265fc6fb0ebf4c9283173dd97a50e62bd0324410d5c494507faf50c166",
+  "adapter_version": "1.0.0"
+ },
+ "attempt": {
+  "number": 1,
+  "state": "SUCCEEDED",
+  "started_utc": "2026-09-27 14:19:44.957548",
+  "finished_utc": "2026-09-27 14:19:45.589715"
+ },
+ "result": {
+  "converged": true,
+  "scf_iterations": 7,
+  "total_energy_hartree": -74.96292823099459,
+  "electron_count": 10,
+  "alpha_electrons": 5,
+  "beta_electrons": 5,
+  "basis_functions": 7,
+  "molecular_orbitals": 7,
+  "homo": {
+   "index": 5,
+   "energy_hartree": -0.39124467126783147,
+   "energy_ev": -10.646309866553565
+  },
+  "lumo": {
+   "index": 6,
+   "energy_hartree": 0.6056739894771199,
+   "energy_ev": 16.48122886681038
+  },
+  "gap_hartree": 0.9969186607449514,
+  "gap_ev": 27.127538733363945,
+  "gap_note": "Orbital-energy difference; not an excited-state calculation."
+ },
+ "provenance": {
+  "authority": "AUTHORITATIVE",
+  "source_class": "CALCULATED",
+  "verification_state": "UNVERIFIED",
+  "validation_state": "VALIDATED",
+  "stored_utc": "2026-09-27 14:19:45.600571",
+  "calculation_input_sha256": "36708789755c9bf2ddcf7ad1891ddf9d7098020a099b8c4fba45a00e8301a614",
+  "result_sha256": "f459d51b96f532533986a7c5a04b620fb1c5b0a57e7f7e68c45462e209ed9a9c",
+  "coefficient_artifact_sha256": "e1abc2275247428f8eeaeebce41cfb71367a44de708ada5ce38a336275eca7d0",
+  "producer": "local.pyscf.worker"
+ }
+}

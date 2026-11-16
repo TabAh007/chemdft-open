@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0.0",
+  "task_type": "ENERGY",
+  "method": {
+    "identifier": "synthetic-method",
+    "display_name": "Synthetic method",
+    "registry": "chemdft.synthetic"
+  },
+  "basis": {
+    "identifier": "synthetic-basis",
+    "display_name": "Synthetic basis",
+    "registry": "chemdft.synthetic"
+  },
+  "charge": 0,
+  "multiplicity": 1,
+  "engine_preference": {
+    "engine": "pyscf"
+  }
+}

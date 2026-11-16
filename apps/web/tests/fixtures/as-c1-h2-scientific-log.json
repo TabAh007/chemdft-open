@@ -1,0 +1,95 @@
+{
+  "source": "Accepted AS-C1.2 H2 run; scientific lines unchanged; checkpoint path de-identified for presentation tests only.",
+  "source_native_log_sha256": "bc624ab3c84927cca5fcda86a44158ce05ef133132a7bdd186dc5e548ddff318",
+  "text": "[INPUT] verbose = 4\n[INPUT] num. atoms = 2\n[INPUT] num. electrons = 2\n[INPUT] charge = 0\n[INPUT] spin (= nelec alpha-beta = 2S) = 0\n[INPUT] symmetry False subgroup None\n[INPUT] Mole.unit = Angstrom\n[INPUT] Symbol           X                Y                Z      unit          X                Y                Z       unit  Magmom\n[INPUT]  1 H      0.000000000000   0.000000000000  -0.370000000000 AA    0.000000000000   0.000000000000  -0.699198666089 Bohr   0.0\n[INPUT]  2 H      0.000000000000   0.000000000000   0.370000000000 AA    0.000000000000   0.000000000000   0.699198666089 Bohr   0.0\n\nnuclear repulsion = 0.715104339081081\nnumber of shells = 2\nnumber of NR pGTOs = 6\nnumber of NR cGTOs = 2\nbasis = sto-3g\necp = {}\nCPU time:         0.34\n\n\n******** <class 'pyscf.scf.hf.RHF'> ********\nmethod = RHF\ninitial guess = minao\ndamping factor = 0\nlevel_shift factor = 0\nDIIS = <class 'pyscf.scf.diis.CDIIS'>\ndiis_start_cycle = 1\ndiis_space = 8\ndiis_damp = 0\nSCF conv_tol = 1e-09\nSCF conv_tol_grad = None\nSCF max_cycles = 50\ndirect_scf = True\ndirect_scf_tol = 1e-13\nchkfile to save SCF result = /private/tmp/presentation-fixture/checkpoint\nmax_memory 4000 MB (current use 0 MB)\nSet gradient conv threshold to 3.16228e-05\nInitial guess from minao.\ninit E= -0.770104695234174\n  HOMO = -0.520378970888117  LUMO = 0.593868174563271  gap/eV = 30.32021\ncycle= 1 E= -1.11675930739643  delta_E= -0.347  |g|= 2.22e-16  |ddm|= 0.849\n  HOMO = -0.578553859831529  LUMO = 0.671143491914252  gap/eV = 34.00600\ncycle= 2 E= -1.11675930739643  delta_E= 2.22e-16  |g|= 6.66e-16  |ddm|= 3.14e-16\n  HOMO = -0.578553859831529  LUMO = 0.671143491914252  gap/eV = 34.00600\nExtra cycle  E= -1.11675930739643  delta_E= -2.22e-16  |g|= 2.22e-16  |ddm|= 3.14e-16\nconverged SCF energy = -1.11675930739643\n",
+  "energy": -1.1167593073964255,
+  "iterations": 2,
+  "threshold": 1e-09,
+  "nuclear_repulsion": 0.715104339081081,
+  "electrons": 2,
+  "basis_functions": 2,
+  "frontier": [
+    -0.578553859831529,
+    0.671143491914252
+  ],
+  "specification": {
+    "schema_version": "1.0.0",
+    "task_type": "ENERGY",
+    "method": {
+      "identifier": "hf",
+      "display_name": "Hartree-Fock",
+      "registry": "chemdft.method",
+      "registry_version": null
+    },
+    "basis": {
+      "identifier": "sto-3g",
+      "display_name": "STO-3G",
+      "registry": "chemdft.basis",
+      "registry_version": null
+    },
+    "dispersion": null,
+    "solvation": null,
+    "charge": 0,
+    "multiplicity": 1,
+    "constraints": [],
+    "scf": null,
+    "optimization": null,
+    "conformer_search": null,
+    "hessian": null,
+    "tddft": null,
+    "raman": null,
+    "thermochemistry": null,
+    "property_requests": [],
+    "engine_preference": {
+      "engine": "pyscf",
+      "allowed_version": null,
+      "requested_capability": null,
+      "execution_preference": null
+    },
+    "engine_extensions": []
+  },
+  "input": {
+    "atom_ordering": "AS_LISTED",
+    "atoms": [
+      {
+        "atomic_number": 1,
+        "element": "H",
+        "index": 0,
+        "xyz_angstrom": [
+          0.0,
+          0.0,
+          -0.37
+        ]
+      },
+      {
+        "atomic_number": 1,
+        "element": "H",
+        "index": 1,
+        "xyz_angstrom": [
+          0.0,
+          0.0,
+          0.37
+        ]
+      }
+    ],
+    "basis": "sto-3g",
+    "charge": 0,
+    "constraints": [],
+    "coordinate_unit": "angstrom",
+    "dispersion": null,
+    "hessian": null,
+    "method": "hf",
+    "multiplicity": 1,
+    "optimization": null,
+    "property_requests": [],
+    "raman": null,
+    "scf": null,
+    "schema": "chemdft.calculation_input",
+    "schema_version": "1.0.0",
+    "solvation": null,
+    "structure_version_id": "6820694d-b2ee-4d8b-8ea8-6e1ff851badf",
+    "task": "ENERGY",
+    "tddft": null,
+    "thermochemistry": null
+  }
+}

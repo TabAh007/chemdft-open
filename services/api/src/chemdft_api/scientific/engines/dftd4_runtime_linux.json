@@ -1,0 +1,119 @@
+{
+  "lib/libatomic.so": {
+    "symlink": "libatomic.so.1.2.0"
+  },
+  "lib/libatomic.so.1": {
+    "symlink": "libatomic.so.1.2.0"
+  },
+  "lib/libatomic.so.1.2.0": {
+    "sha256": "12225c5780d6a97b3b7fd559f29a1d6afc5480a9981ce5e3bbf4219587286aa3"
+  },
+  "lib/libblas.so": {
+    "symlink": "libopenblasp-r0.3.34.so"
+  },
+  "lib/libblas.so.3": {
+    "symlink": "libopenblasp-r0.3.34.so"
+  },
+  "lib/libdftd4.so": {
+    "symlink": "libdftd4.so.4.2.0"
+  },
+  "lib/libdftd4.so.4": {
+    "symlink": "libdftd4.so.4.2.0"
+  },
+  "lib/libdftd4.so.4.2.0": {
+    "sha256": "5eaf8f6a243643fba2a9cb32ab18348ece9c23913a73a6f5cc15d3534f643e5f"
+  },
+  "lib/libgcc_s.so": {
+    "sha256": "69a56a9993b7729b29b274e65016031c81f2397f176ed5ad44d59bd50425e0bd"
+  },
+  "lib/libgcc_s.so.1": {
+    "sha256": "5444fbe71e8cfe3bd05cdf2b44bd8c2e553e6e7e276977089b5e4e1a1ceed531"
+  },
+  "lib/libgcc_s_asneeded.so": {
+    "sha256": "10bc094393cfacd92e7683eff066803c7c5bfd51ac8ee8eb7b57847a4c9b3ebb"
+  },
+  "lib/libgfortran.so": {
+    "symlink": "libgfortran.so.5.0.0"
+  },
+  "lib/libgfortran.so.5": {
+    "symlink": "libgfortran.so.5.0.0"
+  },
+  "lib/libgfortran.so.5.0.0": {
+    "sha256": "8b93406aef97f0f39ebac58aed3b63c58c9c26eb246595d8141dde5baeee5b33"
+  },
+  "lib/libgomp.so": {
+    "symlink": "libgomp.so.1.0.0"
+  },
+  "lib/libgomp.so.1": {
+    "symlink": "libgomp.so.1.0.0"
+  },
+  "lib/libgomp.so.1.0.0": {
+    "sha256": "34324e0835be6e103844d7c416bec42834cf803d3ba8d9519df15ced19914dfe"
+  },
+  "lib/libitm.so": {
+    "symlink": "libitm.so.1.0.0"
+  },
+  "lib/libitm.so.1": {
+    "symlink": "libitm.so.1.0.0"
+  },
+  "lib/libitm.so.1.0.0": {
+    "sha256": "1e3dde01965713a704290054eb1fdc73b62af4c0dbfd6e9a9c91610ae7e1dc05"
+  },
+  "lib/libjonquil.so": {
+    "symlink": "libjonquil.so.0.3.2"
+  },
+  "lib/libjonquil.so.0": {
+    "symlink": "libjonquil.so.0.3.2"
+  },
+  "lib/libjonquil.so.0.3.2": {
+    "sha256": "ce2762627ed5c51ccdcf7c87b7a158a17b644163e78caaeb7cfa2a9fb1dc40a2"
+  },
+  "lib/liblapack.so": {
+    "symlink": "libopenblasp-r0.3.34.so"
+  },
+  "lib/liblapack.so.3": {
+    "symlink": "libopenblasp-r0.3.34.so"
+  },
+  "lib/libmctc-lib.so": {
+    "symlink": "libmctc-lib.so.0.5.2"
+  },
+  "lib/libmctc-lib.so.0": {
+    "symlink": "libmctc-lib.so.0.5.2"
+  },
+  "lib/libmctc-lib.so.0.5.2": {
+    "sha256": "114eb96417b0ce0409fe03920c19cecd412dbad8c8bf89c3cf3b686bd0052c38"
+  },
+  "lib/libmulticharge.so": {
+    "symlink": "libmulticharge.so.0.5.0"
+  },
+  "lib/libmulticharge.so.0": {
+    "symlink": "libmulticharge.so.0.5.0"
+  },
+  "lib/libmulticharge.so.0.5.0": {
+    "sha256": "d8db344a0a2fce9595711d35eec40e624bd75ab514c971458e46bf96cd3db407"
+  },
+  "lib/libopenblas.so.0": {
+    "symlink": "libopenblasp-r0.3.34.so"
+  },
+  "lib/libopenblasp-r0.3.34.so": {
+    "sha256": "f1424288e9ac125331102c0150b66fbd244560987779552e0e97d5cfd9de572b"
+  },
+  "lib/libquadmath.so": {
+    "symlink": "libquadmath.so.0.0.0"
+  },
+  "lib/libquadmath.so.0": {
+    "symlink": "libquadmath.so.0.0.0"
+  },
+  "lib/libquadmath.so.0.0.0": {
+    "sha256": "9fa4807097fa47da1815765f0a43177c45e7ec7cc94e44cfa95a4c3a1a341ee6"
+  },
+  "lib/libtoml-f.so": {
+    "symlink": "libtoml-f.so.0.5.2"
+  },
+  "lib/libtoml-f.so.0": {
+    "symlink": "libtoml-f.so.0.5.2"
+  },
+  "lib/libtoml-f.so.0.5.2": {
+    "sha256": "00a8ef2feff63d7939d6717a7588a40d219e3c9c14c33105ebdd5bd449a5663b"
+  }
+}

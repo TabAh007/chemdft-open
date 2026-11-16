@@ -1,0 +1,38 @@
+{
+  "schema": "chemdft.nvidia-flow-authorization.v1",
+  "authorized_by": "<owner name: the person approving this exact reference-molecule flow run>",
+  "authorized_at": "<UTC ISO-8601 time of approval, e.g. 2026-10-18T09:00:00Z>",
+  "expires_at": "<UTC ISO-8601 time, at most 24 hours after authorized_at>",
+  "endpoint": "https://integrate.api.nvidia.com/v1",
+  "models": [
+    "nvidia/nemotron-3-super-120b-a12b",
+    "stepfun-ai/step-5-preview"
+  ],
+  "flow": {
+    "planning_profile": "PYSCF_ENERGY_PROPOSAL",
+    "max_model_calls_per_model": 2,
+    "input_token_basis": "SERVICE_RESERVATION",
+    "read_timeout_seconds": 120,
+    "cases": [
+      "h2o-pbe-def2svp",
+      "ethanol-b3lyp-631g"
+    ],
+    "cases_sha256": "26a12ff7624e977c808cf62894e056f9cd985b25ed1bac3423a9277eaf689870"
+  },
+  "max_total_calls": 6,
+  "max_input_tokens_per_request": 32768,
+  "max_output_tokens_per_request": 2048,
+  "max_total_tokens": 208000,
+  "max_wall_clock_seconds": 900,
+  "per_call_wall_clock_seconds": 150,
+  "spend_control": {
+    "kind": "TOKEN_CEILING_ONLY",
+    "acknowledged_no_cost_information": false
+  },
+  "no_retries": true,
+  "no_fallback": true,
+  "no_scientific_compute": true,
+  "no_production_data": true,
+  "fixture": "chemdft-reference-molecules-v1",
+  "sampling": "MODEL_CARD_PROFILE"
+}

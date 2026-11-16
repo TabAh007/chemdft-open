@@ -1,0 +1,85 @@
+{
+ "schema_version": "1.0.0",
+ "status": "OK",
+ "label": "AI-drafted \u00b7 schematic",
+ "reply": "Drew methanediamine.",
+ "steps": [
+  {
+   "index": 0,
+   "op": {
+    "op": "add_atom",
+    "element": "N",
+    "count": 1
+   },
+   "ok": true,
+   "error": null,
+   "suggestion": null,
+   "molfile": "\n     RDKit          2D\n\n  1  0  0  0  0  0  0  0  0  0999 V2000\n    0.0000    0.0000    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0\nM  END\n",
+   "smiles": "N",
+   "formula": "H3N",
+   "new_atom_numbers": [
+    1
+   ],
+   "atom_count": 1,
+   "description": "Add 1 \u00d7 N"
+  },
+  {
+   "index": 1,
+   "op": {
+    "op": "add_atom",
+    "element": "C",
+    "count": 1,
+    "attach_to": 1
+   },
+   "ok": true,
+   "error": null,
+   "suggestion": null,
+   "molfile": "\n     RDKit          2D\n\n  2  1  0  0  0  0  0  0  0  0999 V2000\n    0.6495    0.3750    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0\n   -0.6495   -0.3750    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n  1  2  1  0\nM  END\n",
+   "smiles": "CN",
+   "formula": "CH5N",
+   "new_atom_numbers": [
+    2
+   ],
+   "atom_count": 2,
+   "description": "Add 1 \u00d7 C on atom 1"
+  },
+  {
+   "index": 2,
+   "op": {
+    "op": "add_atom",
+    "element": "N",
+    "count": 1,
+    "attach_to": 2
+   },
+   "ok": true,
+   "error": null,
+   "suggestion": null,
+   "molfile": "\n     RDKit          2D\n\n  3  2  0  0  0  0  0  0  0  0999 V2000\n    1.2990    0.3750    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0\n    0.0000   -0.3750    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.2990    0.3750    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0\n  1  2  1  0\n  2  3  1  0\nM  END\n",
+   "smiles": "NCN",
+   "formula": "CH6N2",
+   "new_atom_numbers": [
+    3
+   ],
+   "atom_count": 3,
+   "description": "Add 1 \u00d7 N on atom 2"
+  }
+ ],
+ "final": {
+  "molfile": "\n     RDKit          2D\n\n  3  2  0  0  0  0  0  0  0  0999 V2000\n    1.2990    0.3750    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0\n    0.0000   -0.3750    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.2990    0.3750    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0\n  1  2  1  0\n  2  3  1  0\nM  END\n",
+  "smiles": "NCN",
+  "formula": "CH6N2",
+  "atom_count": 3
+ },
+ "clarify": null,
+ "reference_check": null,
+ "proposals": [],
+ "warnings": [],
+ "info": [],
+ "error_code": null,
+ "error": null,
+ "repaired": false,
+ "run_id": null,
+ "model": "nemotron-3.5-lightning-30b-a3b",
+ "input_tokens": 412,
+ "output_tokens": 64
+}

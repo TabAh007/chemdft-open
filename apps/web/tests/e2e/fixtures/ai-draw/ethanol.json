@@ -1,0 +1,84 @@
+{
+ "schema_version": "1.0.0",
+ "status": "OK",
+ "label": "AI-drafted \u00b7 schematic",
+ "reply": "Drew ethanol.",
+ "steps": [
+  {
+   "index": 0,
+   "op": {
+    "op": "add_atom",
+    "element": "C",
+    "count": 2
+   },
+   "ok": true,
+   "error": null,
+   "suggestion": null,
+   "molfile": "\n     RDKit          2D\n\n  2  0  0  0  0  0  0  0  0  0999 V2000\n   -1.1250    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    1.1250    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\nM  END\n",
+   "smiles": "C.C",
+   "formula": "C2H8",
+   "new_atom_numbers": [
+    1,
+    2
+   ],
+   "atom_count": 2,
+   "description": "Add 2 \u00d7 C"
+  },
+  {
+   "index": 1,
+   "op": {
+    "op": "add_bond",
+    "a": 1,
+    "b": 2,
+    "order": 1
+   },
+   "ok": true,
+   "error": null,
+   "suggestion": null,
+   "molfile": "\n     RDKit          2D\n\n  2  1  0  0  0  0  0  0  0  0999 V2000\n   -1.1250    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    1.1250    0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n  1  2  1  0\nM  END\n",
+   "smiles": "CC",
+   "formula": "C2H6",
+   "new_atom_numbers": [],
+   "atom_count": 2,
+   "description": "Bond atoms 1\u20132 (order 1)"
+  },
+  {
+   "index": 2,
+   "op": {
+    "op": "add_atom",
+    "element": "O",
+    "count": 1,
+    "attach_to": 2
+   },
+   "ok": true,
+   "error": null,
+   "suggestion": null,
+   "molfile": "\n     RDKit          2D\n\n  3  2  0  0  0  0  0  0  0  0999 V2000\n   -1.5000    0.6495    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    0.7500    0.6495    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    1.5000   -0.6495    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n  1  2  1  0\n  2  3  1  0\nM  END\n",
+   "smiles": "CCO",
+   "formula": "C2H6O",
+   "new_atom_numbers": [
+    3
+   ],
+   "atom_count": 3,
+   "description": "Add 1 \u00d7 O on atom 2"
+  }
+ ],
+ "final": {
+  "molfile": "\n     RDKit          2D\n\n  3  2  0  0  0  0  0  0  0  0999 V2000\n   -1.5000    0.6495    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    0.7500    0.6495    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    1.5000   -0.6495    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n  1  2  1  0\n  2  3  1  0\nM  END\n",
+  "smiles": "CCO",
+  "formula": "C2H6O",
+  "atom_count": 3
+ },
+ "clarify": null,
+ "reference_check": null,
+ "proposals": [],
+ "warnings": [],
+ "info": [],
+ "error_code": null,
+ "error": null,
+ "repaired": false,
+ "run_id": null,
+ "model": "nemotron-3.5-lightning-30b-a3b",
+ "input_tokens": 412,
+ "output_tokens": 64
+}

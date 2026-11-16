@@ -1,0 +1,7 @@
+# Fast backend smoke set: run by scripts/local-gate (fast mode) whenever anything under services/ changed,
+# in addition to the test files related to the changed modules. Keep it under about a minute.
+tests/test_project_export.py
+tests/test_export_presentation_0024.py
+tests/test_ai_chat_mode.py
+tests/test_release_version_agrees.py
+tests/test_contracts.py

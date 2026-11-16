@@ -1,0 +1,634 @@
+{
+  "payload_schema": "chemdft.conformer-ensemble-manifest",
+  "schema_version": "1.0.0",
+  "project_id": "ac2da9b7-dc65-43f5-91c7-e685c87344aa",
+  "calculation_id": "ed6cd00d-0677-43e6-991f-c906cc32167b",
+  "calculation_input_id": "64f4db7d-78bb-49b1-b0cd-39a1aa4d28b7",
+  "execution_id": "4af02528-c5df-43e0-a9f0-edf94035db7a",
+  "attempt_number": 1,
+  "input_structure_version_id": "d1bb67a9-db1c-4936-b2e2-3109cbab5ac3",
+  "input_structure_sha256": "10f3f7f57c200c56f8401552686b3bf9c97f6afcf00e5b896dbbb992e8c85821",
+  "calculation_input_sha256": "2f27d6ba2cb16c8343ac2a71e1ade65d2d5194db1eadc36608c0176b8a6e2690",
+  "executable_sha256": "f54fe9a18c268c0c563fa6732d31018b5ba29fdd87670a2e4df7db62475edf97",
+  "engine": "crest",
+  "engine_version": "3.0.2+pf8c-ewinfix-a1",
+  "calculator": "embedded-tblite-0.3.0-fork",
+  "method": "gfn2",
+  "charge": 0,
+  "multiplicity": 1,
+  "coordinate_unit": "angstrom",
+  "energy_unit": "Eh",
+  "relative_energy_unit": "kcal/mol",
+  "requested_ewin_kcal_mol": 6.0,
+  "effective_ewin_kcal_mol": 6.0,
+  "search_completed": true,
+  "native_optimized_count": 9,
+  "native_duplicate_count": 0,
+  "native_rotamer_count": 9,
+  "restart_count": 0,
+  "intermediate_minima": [
+    {
+      "stdout_line": 302,
+      "energy_hartree": -11.39433,
+      "protocol": "CRUDE",
+      "comparable_to_final": false
+    },
+    {
+      "stdout_line": 321,
+      "energy_hartree": -11.39434,
+      "protocol": "TIGHT",
+      "comparable_to_final": false
+    },
+    {
+      "stdout_line": 505,
+      "energy_hartree": -11.39432,
+      "protocol": "CRUDE",
+      "comparable_to_final": false
+    },
+    {
+      "stdout_line": 524,
+      "energy_hartree": -11.39434,
+      "protocol": "TIGHT",
+      "comparable_to_final": false
+    },
+    {
+      "stdout_line": 532,
+      "energy_hartree": -11.39434,
+      "protocol": "TIGHT",
+      "comparable_to_final": false
+    },
+    {
+      "stdout_line": 586,
+      "energy_hartree": -11.39434,
+      "protocol": "TIGHT",
+      "comparable_to_final": false
+    },
+    {
+      "stdout_line": 637,
+      "energy_hartree": -11.39434,
+      "protocol": "CRUDE",
+      "comparable_to_final": false
+    },
+    {
+      "stdout_line": 656,
+      "energy_hartree": -11.39434,
+      "protocol": "TIGHT",
+      "comparable_to_final": false
+    },
+    {
+      "stdout_line": 660,
+      "energy_hartree": -11.39434,
+      "protocol": "TIGHT",
+      "comparable_to_final": false
+    },
+    {
+      "stdout_line": 684,
+      "energy_hartree": -11.39434,
+      "protocol": "VTIGHT",
+      "comparable_to_final": true
+    }
+  ],
+  "members": [
+    {
+      "conformer": {
+        "schema_version": "1.0.0",
+        "id": "a9df5942-241d-5bda-95b0-f9d4bf49a5a1",
+        "project_id": "ac2da9b7-dc65-43f5-91c7-e685c87344aa",
+        "structure_version_id": "d1bb67a9-db1c-4936-b2e2-3109cbab5ac3",
+        "rank": 1,
+        "relative_energy": {
+          "value": 0.0,
+          "unit": {
+            "standard": "UCUM",
+            "code": "kcal/mol",
+            "dimension": "ENERGY"
+          },
+          "source_unit": null,
+          "uncertainty": null,
+          "precision": {
+            "significant_figures": null,
+            "decimal_places": 3
+          },
+          "approximation": "EXACT_AS_REPORTED"
+        },
+        "generation_method": "chemdft.crest.imtd-gc",
+        "coordinates": {
+          "structure_version_id": "d1bb67a9-db1c-4936-b2e2-3109cbab5ac3",
+          "coordinate_system": "CARTESIAN",
+          "unit": "angstrom",
+          "dimensionality": 3,
+          "atom_ordering": "AS_LISTED",
+          "source": {
+            "project_id": "ac2da9b7-dc65-43f5-91c7-e685c87344aa",
+            "artifact_id": "195a1b8a-3321-4d8d-b867-46ebd6b9c902",
+            "sha256": "74659a9beb2883fcb8373cfae2787dac989c24f4652e6a3b229a8127711681ab"
+          },
+          "atoms": [
+            {
+              "index": 0,
+              "atomic_number": 6,
+              "element": "C",
+              "x": -1.2751058863,
+              "y": -0.2514881514,
+              "z": 0.0157658274,
+              "isotope": null,
+              "formal_charge": null,
+              "label": null,
+              "occupancy": null
+            },
+            {
+              "index": 1,
+              "atomic_number": 6,
+              "element": "C",
+              "x": 0.0146097184,
+              "y": 0.5611229066,
+              "z": -0.032757645,
+              "isotope": null,
+              "formal_charge": null,
+              "label": null,
+              "occupancy": null
+            },
+            {
+              "index": 2,
+              "atomic_number": 8,
+              "element": "O",
+              "x": 1.1686932816,
+              "y": -0.2415080978,
+              "z": 0.0563229681,
+              "isotope": null,
+              "formal_charge": null,
+              "label": null,
+              "occupancy": null
+            },
+            {
+              "index": 3,
+              "atomic_number": 1,
+              "element": "H",
+              "x": -1.3405003798,
+              "y": -0.9159383858,
+              "z": -0.8449348366,
+              "isotope": null,
+              "formal_charge": null,
+              "label": null,
+              "occupancy": null
+            },
+            {
+              "index": 4,
+              "atomic_number": 1,
+              "element": "H",
+              "x": -1.3033219314,
+              "y": -0.8526946041,
+              "z": 0.921363692,
+              "isotope": null,
+              "formal_charge": null,
+              "label": null,
+              "occupancy": null
+            },
+            {
+              "index": 5,
+              "atomic_number": 1,
+              "element": "H",
+              "x": -2.1346646055,
+              "y": 0.4128532675,
+              "z": 0.0069998576,
+              "isotope": null,
+              "formal_charge": null,
+              "label": null,
+              "occupancy": null
+            },
+            {
+              "index": 6,
+              "atomic_number": 1,
+              "element": "H",
+              "x": 0.0683511081,
+              "y": 1.2380036293,
+              "z": 0.8228984792,
+              "isotope": null,
+              "formal_charge": null,
+              "label": null,
+              "occupancy": null
+            },
+            {
+              "index": 7,
+              "atomic_number": 1,
+              "element": "H",
+              "x": 0.0401715917,
+              "y": 1.164032647,
+              "z": -0.9531480906,
+              "isotope": null,
+              "formal_charge": null,
+              "label": null,
+              "occupancy": null
+            },
+            {
+              "index": 8,
+              "atomic_number": 1,
+              "element": "H",
+              "x": 1.1390915313,
+              "y": -0.9023546664,
+              "z": -0.6447373496,
+              "isotope": null,
+              "formal_charge": null,
+              "label": null,
+              "occupancy": null
+            }
+          ],
+          "bonds": []
+        },
+        "created_at": "2026-10-09T13:30:27.670099Z"
+      },
+      "native_rank": 1,
+      "application_rank": 1,
+      "native_electronic_energy": {
+        "value": -11.39433939,
+        "unit": {
+          "standard": "QCSCHEMA",
+          "code": "Eh",
+          "dimension": "ENERGY"
+        },
+        "source_unit": null,
+        "uncertainty": null,
+        "precision": {
+          "significant_figures": null,
+          "decimal_places": 8
+        },
+        "approximation": "EXACT_AS_REPORTED"
+      },
+      "native_record_sha256": "90646a13eb9f485ead6dc3be9bdaf1beb67a5714622bc2183bbbe7e71ca90b4e",
+      "minimum_status": "UNVERIFIED",
+      "geometry_convergence": "NATIVE_GRADIENT_CONVERGED"
+    },
+    {
+      "conformer": {
+        "schema_version": "1.0.0",
+        "id": "7a0f7388-e592-5660-a180-96fe0719cecb",
+        "project_id": "ac2da9b7-dc65-43f5-91c7-e685c87344aa",
+        "structure_version_id": "d1bb67a9-db1c-4936-b2e2-3109cbab5ac3",
+        "rank": 2,
+        "relative_energy": {
+          "value": 1.551,
+          "unit": {
+            "standard": "UCUM",
+            "code": "kcal/mol",
+            "dimension": "ENERGY"
+          },
+          "source_unit": null,
+          "uncertainty": null,
+          "precision": {
+            "significant_figures": null,
+            "decimal_places": 3
+          },
+          "approximation": "EXACT_AS_REPORTED"
+        },
+        "generation_method": "chemdft.crest.imtd-gc",
+        "coordinates": {
+          "structure_version_id": "d1bb67a9-db1c-4936-b2e2-3109cbab5ac3",
+          "coordinate_system": "CARTESIAN",
+          "unit": "angstrom",
+          "dimensionality": 3,
+          "atom_ordering": "AS_LISTED",
+          "source": {
+            "project_id": "ac2da9b7-dc65-43f5-91c7-e685c87344aa",
+            "artifact_id": "195a1b8a-3321-4d8d-b867-46ebd6b9c902",
+            "sha256": "74659a9beb2883fcb8373cfae2787dac989c24f4652e6a3b229a8127711681ab"
+          },
+          "atoms": [
+            {
+              "index": 0,
+              "atomic_number": 6,
+              "element": "C",
+              "x": -1.2591079235,
+              "y": -0.2891953801,
+              "z": 0.003702512,
+              "isotope": null,
+              "formal_charge": null,
+              "label": null,
+              "occupancy": null
+            },
+            {
+              "index": 1,
+              "atomic_number": 6,
+              "element": "C",
+              "x": -0.0037755587,
+              "y": 0.5675365801,
+              "z": -0.0492252439,
+              "isotope": null,
+              "formal_charge": null,
+              "label": null,
+              "occupancy": null
+            },
+            {
+              "index": 2,
+              "atomic_number": 8,
+              "element": "O",
+              "x": 1.120892147,
+              "y": -0.2822590744,
+              "z": 0.043441912,
+              "isotope": null,
+              "formal_charge": null,
+              "label": null,
+              "occupancy": null
+            },
+            {
+              "index": 3,
+              "atomic_number": 1,
+              "element": "H",
+              "x": -1.2848086036,
+              "y": -0.8457830195,
+              "z": 0.936330637,
+              "isotope": null,
+              "formal_charge": null,
+              "label": null,
+              "occupancy": null
+            },
+            {
+              "index": 4,
+              "atomic_number": 1,
+              "element": "H",
+              "x": -2.1428975363,
+              "y": 0.3386699976,
+              "z": -0.0656981404,
+              "isotope": null,
+              "formal_charge": null,
+              "label": null,
+              "occupancy": null
+            },
+            {
+              "index": 5,
+              "atomic_number": 1,
+              "element": "H",
+              "x": -1.2548739029,
+              "y": -0.9977714989,
+              "z": -0.8197786012,
+              "isotope": null,
+              "formal_charge": null,
+              "label": null,
+              "occupancy": null
+            },
+            {
+              "index": 6,
+              "atomic_number": 1,
+              "element": "H",
+              "x": -0.0073549276,
+              "y": 1.2872721348,
+              "z": 0.7828384666,
+              "isotope": null,
+              "formal_charge": null,
+              "label": null,
+              "occupancy": null
+            },
+            {
+              "index": 7,
+              "atomic_number": 1,
+              "element": "H",
+              "x": 0.0228539728,
+              "y": 1.133808282,
+              "z": -0.9921097209,
+              "isotope": null,
+              "formal_charge": null,
+              "label": null,
+              "occupancy": null
+            },
+            {
+              "index": 8,
+              "atomic_number": 1,
+              "element": "H",
+              "x": 1.9234203658,
+              "y": 0.2474583961,
+              "z": 0.0113023327,
+              "isotope": null,
+              "formal_charge": null,
+              "label": null,
+              "occupancy": null
+            }
+          ],
+          "bonds": []
+        },
+        "created_at": "2026-10-09T13:30:27.670099Z"
+      },
+      "native_rank": 2,
+      "application_rank": 2,
+      "native_electronic_energy": {
+        "value": -11.39186743,
+        "unit": {
+          "standard": "QCSCHEMA",
+          "code": "Eh",
+          "dimension": "ENERGY"
+        },
+        "source_unit": null,
+        "uncertainty": null,
+        "precision": {
+          "significant_figures": null,
+          "decimal_places": 8
+        },
+        "approximation": "EXACT_AS_REPORTED"
+      },
+      "native_record_sha256": "35bc28a2dcfa0ee2ed9983ef036d7c3fe1951ec0f08ec992931b98fa2038d9b4",
+      "minimum_status": "UNVERIFIED",
+      "geometry_convergence": "NATIVE_GRADIENT_CONVERGED"
+    }
+  ],
+  "native_artifacts": [
+    {
+      "name": "crest.energies",
+      "artifact": {
+        "project_id": "ac2da9b7-dc65-43f5-91c7-e685c87344aa",
+        "artifact_id": "998a1682-ad6c-428b-a466-7a520ffea205",
+        "sha256": "e1a1d79ef871c3952af032cfb20b4181a4a13b570f98c5646456e7990a941b86"
+      }
+    },
+    {
+      "name": "crest_best.xyz",
+      "artifact": {
+        "project_id": "ac2da9b7-dc65-43f5-91c7-e685c87344aa",
+        "artifact_id": "0fcafa29-f7f4-45a0-9500-1846cdf84e41",
+        "sha256": "90646a13eb9f485ead6dc3be9bdaf1beb67a5714622bc2183bbbe7e71ca90b4e"
+      }
+    },
+    {
+      "name": "crest_conformers.xyz",
+      "artifact": {
+        "project_id": "ac2da9b7-dc65-43f5-91c7-e685c87344aa",
+        "artifact_id": "195a1b8a-3321-4d8d-b867-46ebd6b9c902",
+        "sha256": "74659a9beb2883fcb8373cfae2787dac989c24f4652e6a3b229a8127711681ab"
+      }
+    },
+    {
+      "name": "crest_rotamers.xyz",
+      "artifact": {
+        "project_id": "ac2da9b7-dc65-43f5-91c7-e685c87344aa",
+        "artifact_id": "c8fa07dd-56a8-49b5-9261-67492359548c",
+        "sha256": "7f1a3ea10045a48670f847ea960711fe8aaf70008fbc5548613a9788f762cd5f"
+      }
+    },
+    {
+      "name": "ensemble_energies.log",
+      "artifact": {
+        "project_id": "ac2da9b7-dc65-43f5-91c7-e685c87344aa",
+        "artifact_id": "e9a8f3f2-eab9-4924-b033-7990d85af760",
+        "sha256": "337fd61886377aba33544ce07cd55719fb0cacaa28cf75d5b344a8357cb7ccca"
+      }
+    },
+    {
+      "name": "input.xyz",
+      "artifact": {
+        "project_id": "ac2da9b7-dc65-43f5-91c7-e685c87344aa",
+        "artifact_id": "ad02790f-602e-4462-9fb4-570e109f61dc",
+        "sha256": "6d1198ac08f39b729195170b15ba4d7606c27a0cb5964bb87950d44c990819e8"
+      }
+    },
+    {
+      "name": "invocation.json",
+      "artifact": {
+        "project_id": "ac2da9b7-dc65-43f5-91c7-e685c87344aa",
+        "artifact_id": "c5966741-679d-4b0d-b747-1f00224d2d33",
+        "sha256": "41d515674d1ae7527e628e2db122d5115436a0da2eac3226e2c77d7bfe8becb7"
+      }
+    },
+    {
+      "name": "stderr.txt",
+      "artifact": {
+        "project_id": "ac2da9b7-dc65-43f5-91c7-e685c87344aa",
+        "artifact_id": "99b117ce-a063-4ff5-a1ce-7314144cc0d3",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "stdout.txt",
+      "artifact": {
+        "project_id": "ac2da9b7-dc65-43f5-91c7-e685c87344aa",
+        "artifact_id": "87004513-23c9-40c3-a3f9-2c68039539f6",
+        "sha256": "586615145ec055b6737fcafb6ef3c5e76d54c087c6069355c68775de523cf130"
+      }
+    },
+    {
+      "name": "confcross.xyz",
+      "artifact": {
+        "project_id": "ac2da9b7-dc65-43f5-91c7-e685c87344aa",
+        "artifact_id": "c9a6bae7-50d6-41b4-bee6-c8c732856f6b",
+        "sha256": "6d61eccee6cd847b0ef2a70645a75897f33d8ac6d529e4812b76dc7710b659b2"
+      }
+    },
+    {
+      "name": "coord",
+      "artifact": {
+        "project_id": "ac2da9b7-dc65-43f5-91c7-e685c87344aa",
+        "artifact_id": "0815d6ae-f62e-4e3e-b7f6-95059de76dee",
+        "sha256": "4e5d476365d17d49679f0254b71d49d2915c4609babe6af46a08551ec2b9ad08"
+      }
+    },
+    {
+      "name": "cre_members",
+      "artifact": {
+        "project_id": "ac2da9b7-dc65-43f5-91c7-e685c87344aa",
+        "artifact_id": "f08842b4-0a3c-4851-9e21-d5c6da418317",
+        "sha256": "0cf89513dac212ad28b1808692bd71aa4a0e83de44fe91891f81a14bd5d21b18"
+      }
+    },
+    {
+      "name": "cregen_0.tmp",
+      "artifact": {
+        "project_id": "ac2da9b7-dc65-43f5-91c7-e685c87344aa",
+        "artifact_id": "f461396d-c227-4d08-ae85-f0ee298243ae",
+        "sha256": "7e3f1faeceec39d0b03b94ca7104c1a8f16969c8826ed9146b82017efc011b69"
+      }
+    },
+    {
+      "name": "cregen_1.tmp",
+      "artifact": {
+        "project_id": "ac2da9b7-dc65-43f5-91c7-e685c87344aa",
+        "artifact_id": "57759a04-fc24-4be0-a8b0-3de77b841ae2",
+        "sha256": "f7f0744107435859df7c10698f3259b3ba7cc0527769aff77ccfe8f25ef98195"
+      }
+    },
+    {
+      "name": "crest.restart",
+      "artifact": {
+        "project_id": "ac2da9b7-dc65-43f5-91c7-e685c87344aa",
+        "artifact_id": "5ba4ff5e-2b98-4bad-84c9-c6b531bdc645",
+        "sha256": "713453ec0b1e58f74e49af73d42c4cfa9355c98c13fe4da3f7f2b040e26dff86"
+      }
+    },
+    {
+      "name": "crest_0.mdrestart",
+      "artifact": {
+        "project_id": "ac2da9b7-dc65-43f5-91c7-e685c87344aa",
+        "artifact_id": "6f2642fc-6d2a-447f-b4f4-e5e272a2f423",
+        "sha256": "330093ddb79a1abffafe3ded6c96e286b89d38955fc0856bb0ad4ac497595ca5"
+      }
+    },
+    {
+      "name": "crest_dynamics.trj",
+      "artifact": {
+        "project_id": "ac2da9b7-dc65-43f5-91c7-e685c87344aa",
+        "artifact_id": "f54b3f8e-10e4-453d-bf9b-3201d39ffcd0",
+        "sha256": "527ba59dff6ef746d0d904859b0bfd5713d9e3154a88be145beacd9fba03431f"
+      }
+    },
+    {
+      "name": "crest_input_copy.xyz",
+      "artifact": {
+        "project_id": "ac2da9b7-dc65-43f5-91c7-e685c87344aa",
+        "artifact_id": "b2504611-4f02-4bf3-863c-261243b640be",
+        "sha256": "59e676d15b180cfcfb8f483fbd0c55b3d1c28a83ad4c7e4cd1a9c47485c6c088"
+      }
+    },
+    {
+      "name": "crestopt.log",
+      "artifact": {
+        "project_id": "ac2da9b7-dc65-43f5-91c7-e685c87344aa",
+        "artifact_id": "beadaf7f-7ce9-4bed-aa4f-443d2136ca00",
+        "sha256": "03b00641f7b06615f22acc918eec35b4e5b573bde89e8231bef6d18e32606e85"
+      }
+    },
+    {
+      "name": "gfnff_adjacency",
+      "artifact": {
+        "project_id": "ac2da9b7-dc65-43f5-91c7-e685c87344aa",
+        "artifact_id": "88545b97-e6be-4b19-ac09-dda59726af69",
+        "sha256": "f5db90596876220590e79e70569f2382d63a86568447eee93d4f3b3d6cb8b984"
+      }
+    },
+    {
+      "name": "gfnff_topo",
+      "artifact": {
+        "project_id": "ac2da9b7-dc65-43f5-91c7-e685c87344aa",
+        "artifact_id": "7318aa0a-12fd-48bb-b50d-619b30e2960a",
+        "sha256": "a2490facabf21e6aed455b6b8c13b2101903de619c7f15498d30e8c7d3478255"
+      }
+    },
+    {
+      "name": "wbo",
+      "artifact": {
+        "project_id": "ac2da9b7-dc65-43f5-91c7-e685c87344aa",
+        "artifact_id": "85416297-56de-45ba-89c2-cab90561ab29",
+        "sha256": "1aeda3612ce2d54acdd52b17785ffa72569a29e544c9c9deaf4c6bfa2b1875e5"
+      }
+    },
+    {
+      "name": "intermediate-snapshots.zip",
+      "artifact": {
+        "project_id": "ac2da9b7-dc65-43f5-91c7-e685c87344aa",
+        "artifact_id": "ca842002-b67d-481d-a225-bac95c7a4a4a",
+        "sha256": "7ad803702a60a9f5fc08b310f23fa471052257dcb40bc04b26d881c647e0f41e"
+      }
+    },
+    {
+      "name": "execution.json",
+      "artifact": {
+        "project_id": "ac2da9b7-dc65-43f5-91c7-e685c87344aa",
+        "artifact_id": "0e578949-0955-428a-98fe-67d0c3cbd9c9",
+        "sha256": "6551342910b2ee70dd2cbf36c55e19e400827267da93d5cee752510ce0dd1319"
+      }
+    }
+  ],
+  "limitations": [
+    "Native CREST members have UNVERIFIED local-minimum status; gradients are insufficient.",
+    "Stochastic bounded sampling; neither exhaustive ensemble nor proven global minimum.",
+    "Upstream #494 unresolved: outer-restart runs fail closed; matched VTIGHT minima are compared.",
+    "No frequency, Hessian, local-minimum or thermochemistry eligibility is conferred.",
+    "Trusted native worker evidence is independently reparsed, not independently recalculated.",
+    "macOS ARM64 acceptance only; neutral singlet H/C/O inputs and validated iMTD-GC settings.",
+    "Intermediate snapshots are sampled, not lossless restart history."
+  ]
+}

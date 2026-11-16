@@ -1,0 +1,11 @@
+{
+  "specification": "docs/implementation/PRODUCT_FOUNDATION_SPIKE.md#7-first-run-onboarding",
+  "paths": [
+    { "id": "molecule", "actions": ["structure.draw", "structure.import"], "goal": null },
+    { "id": "calculation", "actions": ["evidence.import_calculation"], "goal": null },
+    { "id": "experimental", "actions": ["spectra.upload_experimental"], "goal": null },
+    { "id": "compare", "actions": [], "goal": "compare" },
+    { "id": "examples", "actions": [], "goal": null },
+    { "id": "unsure", "actions": [], "goal": null }
+  ]
+}

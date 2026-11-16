@@ -1,0 +1,29 @@
+{
+  "name": "chemdft",
+  "version": "0.1.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "packageManager": "pnpm@11.18.0",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "pnpm --filter @chemdft/web dev",
+    "build": "pnpm --filter @chemdft/web build",
+    "lint": "pnpm --filter @chemdft/web lint && pnpm lint:api",
+    "lint:api": "uv run --project services/api ruff check .",
+    "typecheck": "pnpm --filter @chemdft/schemas typecheck && pnpm --filter @chemdft/scientific-scene typecheck && pnpm --filter @chemdft/web typecheck",
+    "test": "pnpm --filter @chemdft/scientific-scene test && pnpm --filter @chemdft/web test && uv run --project services/api pytest",
+    "test:web": "pnpm --filter @chemdft/web test",
+    "test:api": "uv run --project services/api pytest",
+    "test:e2e": "pnpm --filter @chemdft/web test:e2e",
+    "schemas:generate": "uv run --project services/api python -m chemdft_api.contracts.generate && pnpm --filter @chemdft/schemas generate:typescript",
+    "schemas:check": "uv run --project services/api python -m chemdft_api.contracts.generate --check && pnpm --filter @chemdft/schemas check:typescript",
+    "contracts:test": "uv run --project services/api pytest tests/test_contracts.py tests/test_qcschema.py tests/test_tool_registry.py tests/test_result_firewall.py",
+    "check": "pnpm lint && pnpm schemas:check && pnpm typecheck && pnpm test && pnpm build",
+    "verify": "pnpm check && pnpm test:e2e"
+  },
+  "devDependencies": {
+    "json-schema-to-typescript": "16.0.0"
+  }
+}

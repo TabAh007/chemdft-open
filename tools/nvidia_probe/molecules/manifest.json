@@ -1,0 +1,88 @@
+{
+  "schema": "chemdft.reference-molecules.v1",
+  "purpose": "Real molecular inputs for AI Scientist planning tests. Nothing here is a ChemDFT calculation or a result: coordinates are the source's own, preserved byte for byte (SDF) or constructed once from one cited constant (H2).",
+  "retrieved_utc": "2026-10-17",
+  "molecules": [
+    {
+      "id": "h2",
+      "title": "Hydrogen molecule",
+      "formula": "H2",
+      "atoms": 2,
+      "bonds": 1,
+      "charge": 0,
+      "multiplicity": 1,
+      "inchikey": "UFHFLCQGNIYNRP-UHFFFAOYSA-N",
+      "file": "h2-nist-re-0p74144.xyz",
+      "format": "XYZ",
+      "sha256": "64b84f48d56f836219eb871e71c93802e4d8ed31cf955eaeb71f6af21a4f730f",
+      "structure_name": "H2 (r_e 0.74144 A, NIST)",
+      "source": {
+        "kind": "EXPERIMENTAL_CONSTANT_CONSTRUCTED",
+        "authority": "NIST Chemistry WebBook, SRD 69: Constants of diatomic molecules (compiled by K. P. Huber and G. H. Herzberg, data through 1976)",
+        "identifier": "CAS 1333-74-0",
+        "url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C1333740&Units=SI&Mask=1000#Diatomic",
+        "value": "r_e = 0.74144 Angstrom (X 1Sigma_g+ state)",
+        "construction": "Two H atoms on the z axis, centred at the origin, at z = -r_e/2 and +r_e/2 (+/-0.37072 Angstrom). The electronic state is declared in the XYZ comment line (charge 0, multiplicity 1). PubChem has no 3D conformer record for H2 (PUG REST returned 404 on 2026-10-17)."
+      },
+      "reuse_basis": "A single published numerical constant, cited; the coordinates are constructed here.",
+      "expected": {
+        "bond_length_angstrom": 0.74144,
+        "tolerance": 1e-06
+      }
+    },
+    {
+      "id": "h2o",
+      "title": "Water",
+      "formula": "H2O",
+      "atoms": 3,
+      "bonds": 2,
+      "charge": 0,
+      "multiplicity": 1,
+      "inchikey": "XLYOFNOQVPJJNP-UHFFFAOYSA-N",
+      "file": "pubchem-cid-962-water.sdf",
+      "format": "SDF",
+      "sha256": "0c3abe2a0778c61bed2384ad87ca2d56eace35c282696e33c8c91aef4f353017",
+      "structure_name": "Water (PubChem CID 962)",
+      "source": {
+        "kind": "PUBCHEM_COMPUTED_3D_CONFORMER",
+        "authority": "PubChem / NLM",
+        "identifier": "PubChem CID 962",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/962/SDF?record_type=3d",
+        "retrieval": "single HTTP GET with curl on 2026-10-17 22:17 UTC; file stored unmodified"
+      },
+      "reuse_basis": "NCBI places no restrictions on the use of PubChem data; third-party submitters may claim rights in submitted content (https://www.ncbi.nlm.nih.gov/home/about/policies/). The conformer is computed by PubChem (OEChem/MMFF94-based), not an experimental geometry. NLM acknowledged.",
+      "expected": {
+        "oh_bond_length_angstrom": 0.969,
+        "hoh_angle_degrees": 103.98,
+        "tolerance_length": 0.0005,
+        "tolerance_angle": 0.01,
+        "note": "The PubChem conformer differs from the experimental equilibrium geometry (O-H 0.9572 A, H-O-H 104.52 degrees, as used by the repository's own water test geometry); it is a computed model and is labelled as such."
+      }
+    },
+    {
+      "id": "ethanol",
+      "title": "Ethanol",
+      "formula": "C2H6O",
+      "atoms": 9,
+      "bonds": 8,
+      "charge": 0,
+      "multiplicity": 1,
+      "inchikey": "LFQSCWFLJHTTHZ-UHFFFAOYSA-N",
+      "file": "pubchem-cid-702-ethanol.sdf",
+      "format": "SDF",
+      "sha256": "dd8c849a504269a7337cb413b78df4185c07010c5b1434f2cf7a855da8e9d343",
+      "structure_name": "Ethanol (PubChem CID 702)",
+      "source": {
+        "kind": "PUBCHEM_COMPUTED_3D_CONFORMER",
+        "authority": "PubChem / NLM",
+        "identifier": "PubChem CID 702",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/702/SDF?record_type=3d",
+        "retrieval": "single HTTP GET with curl on 2026-10-17 22:17 UTC; file stored unmodified"
+      },
+      "reuse_basis": "NCBI places no restrictions on the use of PubChem data; third-party submitters may claim rights in submitted content (https://www.ncbi.nlm.nih.gov/home/about/policies/). The conformer is computed by PubChem (OEChem/MMFF94-based), not an experimental geometry. NLM acknowledged.",
+      "expected": {
+        "heavy_atom_planar_rms_angstrom_max": 0.001
+      }
+    }
+  ]
+}

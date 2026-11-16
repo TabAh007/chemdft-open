@@ -1,0 +1,22 @@
+[project]
+name = "chemdft-scientific-worker"
+version = "0.1.0"
+license = {text = "Apache-2.0"}
+description = "Pinned isolated local scientific execution environment for ChemDFT"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "pyscf==2.14.0",
+]
+
+[project.optional-dependencies]
+# geomeTRIC is NOT a default dependency. Its installed licence (1.1.1) adds a clause forbidding use of the
+# source or binary in AI-training datasets, which is a field-of-use restriction. ChemDFT therefore ships no
+# geomeTRIC code, keeps it out of the default install, and lets a user install it deliberately.
+# NOTE: the deployed compute image still installs geomeTRIC until the owner rebuilds it; see
+# docs/implementation/THIRD_PARTY_LICENCE_AUDIT.md and NEXT.md.
+optimization = [
+  "geometric==1.1.1",
+]
+
+[tool.uv]
+package = false

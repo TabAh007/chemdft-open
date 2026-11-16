@@ -1,0 +1,236 @@
+{
+  "lib/libatomic.1.dylib": {
+    "sha256": "58634471fc6a15a4eca4723b08367f638bc0bbb1540f751d070bc631a4ebca59"
+  },
+  "lib/libatomic.dylib": {
+    "symlink": "libatomic.1.dylib"
+  },
+  "lib/libblas.3.dylib": {
+    "symlink": "libopenblas.0.dylib"
+  },
+  "lib/libblas.dylib": {
+    "symlink": "libopenblas.0.dylib"
+  },
+  "lib/libbz2.1.0.8.dylib": {
+    "sha256": "2bf4d65c31ce1290d272dc6e84556d1decae7bdc90785caea83487677dfc65ac"
+  },
+  "lib/libbz2.dylib": {
+    "symlink": "libbz2.1.0.8.dylib"
+  },
+  "lib/libc++.1.0.dylib": {
+    "sha256": "e4a7733fa712854b9aa2035dc47cfd27d1c850993b90b1419fb2b278b66ec2bd"
+  },
+  "lib/libc++.1.dylib": {
+    "symlink": "libc++.1.0.dylib"
+  },
+  "lib/libc++.dylib": {
+    "symlink": "libc++.1.0.dylib"
+  },
+  "lib/libcrypto.3.dylib": {
+    "sha256": "7518f7cbfeacfb358588dd75ed4f29be0661b86f48aa411250cf9d07fba76b04"
+  },
+  "lib/libcrypto.dylib": {
+    "symlink": "libcrypto.3.dylib"
+  },
+  "lib/libdftd4.4.dylib": {
+    "sha256": "3a1e77bdc130d08998a9b09b01f09360bde6f52c7b0c2587ad0a54f509703187"
+  },
+  "lib/libdftd4.dylib": {
+    "symlink": "libdftd4.4.dylib"
+  },
+  "lib/libexpat.1.12.5.dylib": {
+    "sha256": "a3bcb822e9c1dae4576a529a1a0a09ac23d26d41f5ec0ba322a9eaaf02c91b76"
+  },
+  "lib/libexpat.1.dylib": {
+    "symlink": "libexpat.1.12.5.dylib"
+  },
+  "lib/libffi.8.dylib": {
+    "sha256": "c98788ece1f44cbf62e79dca94d1e2a58fe99e0df8bc928eec3555ff56cc50c9"
+  },
+  "lib/libffi.dylib": {
+    "symlink": "libffi.8.dylib"
+  },
+  "lib/libform.6.dylib": {
+    "sha256": "d56e6b880d8da0d5c3d06646b44abb9eae672b82216228b7b90a455bacb61d6b"
+  },
+  "lib/libform.dylib": {
+    "symlink": "libform.6.dylib"
+  },
+  "lib/libformw.6.dylib": {
+    "sha256": "aa44899fa23a84bd3e51644fbace8e13671c4b7b94b35a7a32c5f0d855c777ee"
+  },
+  "lib/libformw.dylib": {
+    "symlink": "libformw.6.dylib"
+  },
+  "lib/libgcc_s.1.1.dylib": {
+    "sha256": "570abb2fa6a9d3bb60a4de8a0c7155b4840c21200ea8428eca23c056c8ba6d3e"
+  },
+  "lib/libgfortran.5.dylib": {
+    "sha256": "280f2e05129cfb708cc4041c25f4da59ff1581ede37341fad113b38cf5dc54db"
+  },
+  "lib/libgfortran.dylib": {
+    "symlink": "libgfortran.5.dylib"
+  },
+  "lib/libgomp.1.dylib": {
+    "symlink": "libomp.dylib"
+  },
+  "lib/libgomp.dylib": {
+    "symlink": "libomp.dylib"
+  },
+  "lib/libhistory.8.3.dylib": {
+    "sha256": "0aa2a7b8baa871a6f46e47d1d078ec512b6f311908f0febc8f4be3c84f9f8114"
+  },
+  "lib/libhistory.8.dylib": {
+    "symlink": "libhistory.8.3.dylib"
+  },
+  "lib/libhistory.dylib": {
+    "symlink": "libhistory.8.3.dylib"
+  },
+  "lib/libiomp5.dylib": {
+    "symlink": "libomp.dylib"
+  },
+  "lib/libjonquil.0.dylib": {
+    "sha256": "8543084ae649b1486f1217a0d303538e11b2be78f1ca02721b36fce6f17ff83c"
+  },
+  "lib/libjonquil.dylib": {
+    "symlink": "libjonquil.0.dylib"
+  },
+  "lib/liblapack.3.dylib": {
+    "symlink": "libopenblas.0.dylib"
+  },
+  "lib/liblapack.dylib": {
+    "symlink": "libopenblas.0.dylib"
+  },
+  "lib/liblzma.5.dylib": {
+    "sha256": "bec041a8e5a3a8a5b83fb1c0b9ea6d9d5c8575ea046ce2489f2ef266b834e247"
+  },
+  "lib/libmctc-lib.0.dylib": {
+    "sha256": "e26739e7bf9a04e02acd85c6cc2db74084cd72fea4bbc8442c0b49300b527bca"
+  },
+  "lib/libmctc-lib.dylib": {
+    "symlink": "libmctc-lib.0.dylib"
+  },
+  "lib/libmenu.6.dylib": {
+    "sha256": "67ed4b3e4869503227c8e113a1a6af4dcab82c60ee5c95cac3ba47d73b113ff0"
+  },
+  "lib/libmenu.dylib": {
+    "symlink": "libmenu.6.dylib"
+  },
+  "lib/libmenuw.6.dylib": {
+    "sha256": "7925f32256048ac467b127e7e8a030a417222242cf5407184e30174aab574816"
+  },
+  "lib/libmenuw.dylib": {
+    "symlink": "libmenuw.6.dylib"
+  },
+  "lib/libmulticharge.0.dylib": {
+    "sha256": "bc84ea52372cd1d9a43c6675fc90348b20fb913257744932225703084160bb72"
+  },
+  "lib/libmulticharge.dylib": {
+    "symlink": "libmulticharge.0.dylib"
+  },
+  "lib/libncurses.6.dylib": {
+    "sha256": "49a5fd3b5e0324cf14098dc9a4a94b234c7ec5bb1c3ecbbad4ce3afd0b87b056"
+  },
+  "lib/libncurses.dylib": {
+    "symlink": "libncurses.6.dylib"
+  },
+  "lib/libncursesw.6.dylib": {
+    "sha256": "458b160930a7e79ec64ee7536a38f369e3ed090c0e1749fc70d656dc5b6c84f6"
+  },
+  "lib/libncursesw.dylib": {
+    "symlink": "libncursesw.6.dylib"
+  },
+  "lib/libomp.dylib": {
+    "sha256": "665ed85d9fa867960d7dc6efdae4e4629b500471faaff4de9bfa6d6212ffd502"
+  },
+  "lib/libopenblas.0.dylib": {
+    "sha256": "7a89772da7fb86aea4c91eefdbc4e6980fb1f668d77bbc34537503a5d1f29c07"
+  },
+  "lib/libopenblas_armv8p-r0.3.34.dylib": {
+    "symlink": "libopenblas.0.dylib"
+  },
+  "lib/libopenblas_vortexp-r0.3.34.dylib": {
+    "symlink": "libopenblas.0.dylib"
+  },
+  "lib/libopenblasp-r0.3.34.dylib": {
+    "symlink": "libopenblas.0.dylib"
+  },
+  "lib/libpanel.6.dylib": {
+    "sha256": "995ad75cd35903ec2b0abb3f2d76c7d6bd05ba6077d490a776765cf0eaba9458"
+  },
+  "lib/libpanel.dylib": {
+    "symlink": "libpanel.6.dylib"
+  },
+  "lib/libpanelw.6.dylib": {
+    "sha256": "04f39d0602b0634791fa31f20205ea01086880575781c26b1273cc08c498a89e"
+  },
+  "lib/libpanelw.dylib": {
+    "symlink": "libpanelw.6.dylib"
+  },
+  "lib/libpython3.12.dylib": {
+    "sha256": "40bc4fae39f1d468c19464ffeecc5b8df21c6a83f944719e2e57616cc8f86d2d"
+  },
+  "lib/libpython3.dylib": {
+    "sha256": "e7f4fcb6bfc339cc11ce573a22afa179ef16974a215edb45bd4159683eb8014f"
+  },
+  "lib/libquadmath.0.dylib": {
+    "sha256": "546c4aa60f8b1d367d4140d2f869ccf9c125fbd6760e464583f15b552f973183"
+  },
+  "lib/libquadmath.dylib": {
+    "symlink": "libquadmath.0.dylib"
+  },
+  "lib/libreadline.8.3.dylib": {
+    "sha256": "e89cd4a053ca5b64e06649a141c0ac8086f5a3f5ef2a7964d39b901c731c8b43"
+  },
+  "lib/libreadline.8.dylib": {
+    "symlink": "libreadline.8.3.dylib"
+  },
+  "lib/libreadline.dylib": {
+    "symlink": "libreadline.8.3.dylib"
+  },
+  "lib/libsqlite3.0.dylib": {
+    "symlink": "libsqlite3.3.54.0.dylib"
+  },
+  "lib/libsqlite3.3.54.0.dylib": {
+    "sha256": "ea769e3d1834d09f8f44e9281bdc41dd6034156e2276b8a940a5cd196f44867e"
+  },
+  "lib/libsqlite3.dylib": {
+    "symlink": "libsqlite3.3.54.0.dylib"
+  },
+  "lib/libssl.3.dylib": {
+    "sha256": "186ccda1086e78d7098a2182fd6f9c6aafe67f86d5e5ee12b9563aae8ede59e3"
+  },
+  "lib/libssl.dylib": {
+    "symlink": "libssl.3.dylib"
+  },
+  "lib/libtcl8.6.dylib": {
+    "sha256": "b24d2fb575dbd99804b6a2d3e0f5e41a4980982559e96fe9a30942fa0b66ca8a"
+  },
+  "lib/libtinfo.6.dylib": {
+    "sha256": "d084372fa8f6e7e94e40480ba3821a5332cbe280dbec219967badab1c13be4cc"
+  },
+  "lib/libtinfo.dylib": {
+    "symlink": "libtinfo.6.dylib"
+  },
+  "lib/libtinfow.6.dylib": {
+    "sha256": "82fcbc7eb5865bc591d68df3675b3fcdb15503e226806a63877515e1b226f401"
+  },
+  "lib/libtinfow.dylib": {
+    "symlink": "libtinfow.6.dylib"
+  },
+  "lib/libtk8.6.dylib": {
+    "sha256": "bf598482c681e65c4becaa0aaa3e8f508ba6586dee2df7c3fa899521b1681078"
+  },
+  "lib/libtoml-f.0.dylib": {
+    "sha256": "6d15e9c85217269a8a299395e75eaad642aa0098a47223b2e74141716d8c4066"
+  },
+  "lib/libtoml-f.dylib": {
+    "symlink": "libtoml-f.0.dylib"
+  },
+  "lib/libz.1.3.2.dylib": {
+    "sha256": "8020844faf07e3a0a3058cf2eb8cc859ee3981297cdb3f3620db0714e2813b77"
+  },
+  "lib/libz.1.dylib": {
+    "symlink": "libz.1.3.2.dylib"
+  }
+}

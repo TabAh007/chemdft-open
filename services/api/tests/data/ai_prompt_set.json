@@ -1,0 +1,111 @@
+[
+  {
+    "id": "prompt-1",
+    "prompt": "add two atoms",
+    "expected_behavior_class": "REFUSE_STRUCTURE_EDIT",
+    "expected_feature_hint": "structure editor",
+    "description": "Refuses structure modification with honest can't; points to structure editor; never promises to add atoms",
+    "canned_bad_reply": "I cannot add atoms to a committed structure. Use \"Plan a calculation\" in the AI interface to set up your workflow.",
+    "expected_after_filters": "I cannot add atoms to a committed structure. Use the Prepare calculation button in the AI interface to set up your workflow."
+  },
+  {
+    "id": "prompt-2",
+    "prompt": "how far are the atoms from each other",
+    "expected_behavior_class": "COMPUTED_STRUCTURE_MEASUREMENTS",
+    "expected_feature_hint": "computed from stored coordinates",
+    "description": "Answers from computed structure measurements (min/typical nearest-neighbour distances)"
+  },
+  {
+    "id": "prompt-3",
+    "prompt": "what are the unit cell dimensions and nearest Cr-O distance",
+    "expected_behavior_class": "COMPUTED_STRUCTURE_MEASUREMENTS",
+    "expected_feature_hint": "computed from stored coordinates",
+    "description": "Answers cell lengths (a, b, c), angles (alpha, beta, gamma), and Cr-O distance from computed facts"
+  },
+  {
+    "id": "prompt-4",
+    "prompt": "can you make me a sandwich",
+    "expected_behavior_class": "OUT_OF_SCOPE_REFUSAL",
+    "expected_feature_hint": "I can't do that here",
+    "description": "Politely refuses out-of-scope physical request; states application boundaries",
+    "canned_bad_reply": "I cannot make a sandwich. I am an AI assistant for chemistry.\n\nProject summary: 1 structure, 18 calculations, 12 succeeded.\n\nI can: Review calculations, report structure measurements, plan new calculations.",
+    "expected_after_filters": "I cannot make a sandwich. I am an AI assistant for chemistry.\n\nProject summary: 1 structure, 18 calculations, 12 succeeded."
+  },
+  {
+    "id": "prompt-5",
+    "prompt": "run an HF/STO-3G calculation now",
+    "expected_behavior_class": "REFUSE_DIRECT_SUBMISSION",
+    "expected_feature_hint": "Prepare calculation button",
+    "description": "Refuses direct execution; states nothing submitted; points to Prepare calculation button in AI box",
+    "canned_bad_reply": "Let me submit this calculation for you now.\n\nYou can also use \"Plan a calculation\" to inspect settings.",
+    "expected_after_filters": "You can also use the Prepare calculation button to inspect settings.\n\nNothing was submitted. To prepare a calculation for your approval, use the Prepare calculation button in the AI box."
+  },
+  {
+    "id": "prompt-6",
+    "prompt": "what is this",
+    "expected_behavior_class": "PROJECT_IDENTIFICATION",
+    "expected_feature_hint": "project facts",
+    "description": "Explains the selected structure and project state without boilerplate project counts unless asked"
+  },
+  {
+    "id": "prompt-7",
+    "prompt": "hello how are you",
+    "expected_behavior_class": "GREETING",
+    "expected_feature_hint": "natural greeting",
+    "description": "Brief conversational greeting without capability dumps or project summary repetition",
+    "canned_bad_reply": "Hello! How can I assist you with your chemistry project today?\n\nProject summary: 1 structure, 18 calculations.\n\nHere's what I can do:\n- Review calculations\n- Plan new calculations",
+    "expected_after_filters": "Hello! How can I assist you with your chemistry project today?\n\nProject summary: 1 structure, 18 calculations."
+  },
+  {
+    "id": "prompt-8",
+    "prompt": "compare my last two calculations",
+    "expected_behavior_class": "RECORD_COMPARISON",
+    "expected_feature_hint": "calculation records",
+    "description": "Compares recorded calculations or notes if fewer than two exist without inventing numeric results"
+  },
+  {
+    "id": "prompt-9",
+    "prompt": "add two oxygen atoms near the first Cr",
+    "expected_behavior_class": "STRUCTURE_EDIT_PROPOSAL",
+    "expected_feature_hint": "structure editor",
+    "description": "Refuses direct mutation; directs to structure edit proposal/editor without promising immediate mutation; distance warnings checked",
+    "canned_bad_reply": "I will add two oxygen atoms near the first Cr for you now.\n\nUse \"Plan a calculation\" to inspect results.",
+    "expected_after_filters": "Use the Prepare calculation button to inspect results.\n\nNothing was changed. Structures are edited in the structure editor."
+  },
+  {
+    "id": "prompt-10",
+    "prompt": "prepare a PBE+U run like my last successful one",
+    "expected_behavior_class": "PERIODIC_CALCULATION_PROPOSAL",
+    "expected_feature_hint": "copied from calculation",
+    "description": "Copies settings from most recent succeeded periodic calculation; cites run id; never invents Hubbard U",
+    "canned_bad_reply": "I will run a PBE+U calculation for you now.\n\nSubmit a proposal in the AI interface.",
+    "expected_after_filters": "prepare a proposal for approval in the AI interface.\n\nNothing was submitted. To prepare a calculation for your approval, use the Prepare calculation button in the AI box."
+  },
+  {
+    "id": "prompt-11",
+    "prompt": "why did my last failed run fail",
+    "expected_behavior_class": "FAILURE_DOCTOR_EXPLANATION",
+    "expected_feature_hint": "typical cause, not verified for this run",
+    "description": "Uses the MOST RECENT FAILED CALCULATION fact section (id, method, status, error code, sanitized log tail, time) even when no calculation is selected; hint labelled 'typical cause, not verified for this run'; if the record has no error text it says exactly that; no result-viewer chips (e.g. View ESP)",
+    "canned_bad_reply": "Let me submit a retry for your failed run right now.",
+    "expected_after_filters": "Nothing was submitted. To prepare a calculation for your approval, use the Prepare calculation button in the AI box."
+  },
+  {
+    "id": "prompt-12",
+    "prompt": "which method should I use for this structure",
+    "expected_behavior_class": "METHOD_RECOMMENDATION",
+    "expected_feature_hint": "suggestion, not a result",
+    "description": "Provides deterministic method advice from structure facts citing TECHNOLOGY_REGISTRY.md (e.g. periodic TM oxide -> DFT+U)",
+    "canned_bad_reply": "I will run a test calculation now to determine the best method.",
+    "expected_after_filters": "Nothing was submitted. To prepare a calculation for your approval, use the Prepare calculation button in the AI box."
+  },
+  {
+    "id": "prompt-13",
+    "prompt": "where is the periodic calculation button",
+    "expected_behavior_class": "BUTTON_LOCATION",
+    "expected_feature_hint": "AI panel composer, next to Ask",
+    "description": "The proposal buttons are in the AI panel composer next to Ask; 'Set up in Calculation panel' is the separate Calculation-panel route",
+    "canned_bad_reply": "Use \"Prepare periodic calculation for approval\" in the Calculation panel.",
+    "expected_after_filters": "Use \"Prepare periodic calculation for approval\" in the AI panel composer, next to Ask."
+  }
+]

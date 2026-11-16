@@ -1,0 +1,243 @@
+{
+  "benchmark_id": "real-scientific-retrieval-v1",
+  "status": "UNREVIEWED",
+  "download_date": "2026-09-24",
+  "parser_version": "pypdf-5-isolated-1",
+  "chunker_version": "deterministic-scientific-v2",
+  "papers": [
+    {
+      "benchmark_document_id": "ru-crystal-grid-2025",
+      "title": "Application of mathematical methods and DBMS technologies for solving the problem of crystalline grid identification",
+      "doi": "10.60797/IRJ.2025.160s.25",
+      "publisher": "International Research Journal",
+      "domain_tags": [
+        "crystallography",
+        "materials science",
+        "algorithms"
+      ],
+      "language": [
+        "ru",
+        "en"
+      ],
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://research-journal.org/en/archive/10-160-2025s-october/10.60797/IRJ.2025.160s.25",
+      "source_url": "https://research-journal.org/en/archive/10-160-2025s-october/10.60797/IRJ.2025.160s.25",
+      "pdf_url": "https://research-journal.org/media/articles/21005.pdf",
+      "pdf_source_url": "https://research-journal.org/media/articles/21005.pdf",
+      "download_date": "2026-09-24",
+      "local_pdf_name": "ru-crystal-grid.pdf",
+      "pdf_sha256": "e72bb98d73d037f962bd31add866590e1ce0dd80753cee8ff250f3ed95d22bd4",
+      "page_count": 8,
+      "chunk_count": 79,
+      "document_id": "fd1edfa8-99a5-51f2-ab6a-fe5033fb1af9",
+      "parser_version": "pypdf-5-isolated-1",
+      "chunker_version": "deterministic-scientific-v2"
+    },
+    {
+      "benchmark_document_id": "polymer-nanospheres-2020",
+      "title": "Facile synthesis and nanoscale features of a nanostructured nordihydroguaiaretic acid analog for therapeutic applications",
+      "doi": "10.1186/s12951-020-00628-z",
+      "publisher": "Journal of Nanobiotechnology (Springer Nature)",
+      "domain_tags": [
+        "nanomaterials",
+        "polymers",
+        "spectroscopy",
+        "thermal analysis"
+      ],
+      "language": [
+        "en"
+      ],
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://link.springer.com/article/10.1186/s12951-020-00628-z",
+      "source_url": "https://link.springer.com/article/10.1186/s12951-020-00628-z",
+      "pdf_url": "https://jnanobiotechnology.biomedcentral.com/counter/pdf/10.1186/s12951-020-00628-z.pdf",
+      "pdf_source_url": "https://jnanobiotechnology.biomedcentral.com/counter/pdf/10.1186/s12951-020-00628-z.pdf",
+      "download_date": "2026-09-24",
+      "local_pdf_name": "bmc-polymer-nanospheres.pdf",
+      "pdf_sha256": "16aaca0b72ec10ff8a3479b951805163b6dbb8a54491a09ac774bf51fc7bbd9e",
+      "page_count": 16,
+      "chunk_count": 135,
+      "document_id": "5450ebd1-4ce1-552b-a5b0-ddc6f8fab7ee",
+      "parser_version": "pypdf-5-isolated-1",
+      "chunker_version": "deterministic-scientific-v2"
+    },
+    {
+      "benchmark_document_id": "metal-oxide-nanoparticles-2020",
+      "title": "Mycosinthetized Ag, CuO and ZnO nanoparticles from a promising Trichoderma harzianum strain and their antifungal potential against important phytopathogens",
+      "doi": "10.1038/s41598-020-77294-6",
+      "publisher": "Scientific Reports (Springer Nature)",
+      "domain_tags": [
+        "nanomaterials",
+        "materials chemistry",
+        "XRD",
+        "thermal analysis",
+        "DLS"
+      ],
+      "language": [
+        "en"
+      ],
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://www.nature.com/articles/s41598-020-77294-6",
+      "source_url": "https://www.nature.com/articles/s41598-020-77294-6",
+      "pdf_url": "https://www.nature.com/articles/s41598-020-77294-6.pdf",
+      "pdf_source_url": "https://www.nature.com/articles/s41598-020-77294-6.pdf",
+      "download_date": "2026-09-24",
+      "local_pdf_name": "nature-zn-nanoparticles.pdf",
+      "pdf_sha256": "f28b2cf7a69a4bf34f35102224c1bb72a66faf46462e6a7364a05f965cd674be",
+      "page_count": 9,
+      "chunk_count": 76,
+      "document_id": "9f17af81-8835-5891-84b7-8e1831cef5a2",
+      "parser_version": "pypdf-5-isolated-1",
+      "chunker_version": "deterministic-scientific-v2"
+    },
+    {
+      "benchmark_document_id": "counterfeit-drug-xrd-dsc-2018",
+      "title": "Application of X-ray powder diffraction and differential scanning calorimetry for identification of counterfeit drugs",
+      "doi": "10.1007/s00706-018-2193-z",
+      "publisher": "Monatshefte für Chemie - Chemical Monthly (Springer Nature)",
+      "domain_tags": [
+        "XRD",
+        "crystallography",
+        "thermal analysis",
+        "pharmaceutical materials"
+      ],
+      "language": [
+        "en"
+      ],
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://link.springer.com/article/10.1007/s00706-018-2193-z",
+      "source_url": "https://link.springer.com/article/10.1007/s00706-018-2193-z",
+      "pdf_url": "https://link.springer.com/content/pdf/10.1007/s00706-018-2193-z.pdf",
+      "pdf_source_url": "https://link.springer.com/content/pdf/10.1007/s00706-018-2193-z.pdf",
+      "download_date": "2026-09-24",
+      "local_pdf_name": "springer-xrd-dsc.pdf",
+      "pdf_sha256": "0a78e87fe598472491e4c8c316e6318933cd60b8891ce5f0eedea23a70d18b01",
+      "page_count": 9,
+      "chunk_count": 9,
+      "document_id": "58511336-2551-5e7c-8102-6827c1b3f563",
+      "parser_version": "pypdf-5-isolated-1",
+      "chunker_version": "deterministic-scientific-v2"
+    },
+    {
+      "benchmark_document_id": "supramolecular-framework-water-2014",
+      "title": "Three-dimensional periodic supramolecular organic framework ion sponge in water and microcrystals",
+      "doi": "10.1038/ncomms6574",
+      "publisher": "Nature Communications (Springer Nature)",
+      "domain_tags": [
+        "supramolecular chemistry",
+        "crystallography",
+        "materials",
+        "DLS",
+        "thermal analysis"
+      ],
+      "language": [
+        "en"
+      ],
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://www.nature.com/articles/ncomms6574",
+      "source_url": "https://www.nature.com/articles/ncomms6574",
+      "pdf_url": "https://www.nature.com/articles/ncomms6574.pdf",
+      "pdf_source_url": "https://www.nature.com/articles/ncomms6574.pdf",
+      "download_date": "2026-09-24",
+      "local_pdf_name": "nature-framework-water.pdf",
+      "pdf_sha256": "20246a776d5b424e57752d4f4ed5826736ca56fac0969bf6db6c991707fd1efc",
+      "page_count": 11,
+      "chunk_count": 11,
+      "document_id": "b6562c24-796e-5279-a966-fa595664db9e",
+      "parser_version": "pypdf-5-isolated-1",
+      "chunker_version": "deterministic-scientific-v2"
+    },
+    {
+      "benchmark_document_id": "xpcs-pendant-drop-2023",
+      "title": "Robotic pendant drop: containerless liquid for μs-resolved, AI-executable XPCS",
+      "doi": "10.1038/s41377-023-01233-z",
+      "publisher": "Light: Science & Applications (Springer Nature)",
+      "domain_tags": [
+        "materials science",
+        "X-ray scattering",
+        "spectroscopy",
+        "experimental methods"
+      ],
+      "language": [
+        "en"
+      ],
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://www.nature.com/articles/s41377-023-01233-z",
+      "source_url": "https://www.nature.com/articles/s41377-023-01233-z",
+      "pdf_url": "https://www.nature.com/articles/s41377-023-01233-z.pdf",
+      "pdf_source_url": "https://www.nature.com/articles/s41377-023-01233-z.pdf",
+      "download_date": "2026-09-24",
+      "local_pdf_name": "nature-xpcs.pdf",
+      "pdf_sha256": "129e2cd3155ff1c46695a2c959762a75012f8ddc9ea05ccb224ab98844e19991",
+      "page_count": 10,
+      "chunk_count": 10,
+      "document_id": "bddda8e4-8cd7-54e1-8277-8b502c6d4af2",
+      "parser_version": "pypdf-5-isolated-1",
+      "chunker_version": "deterministic-scientific-v2"
+    },
+    {
+      "benchmark_document_id": "co2-electrocatalyst-descriptor-2023",
+      "title": "The importance of a charge transfer descriptor for screening potential CO2 reduction electrocatalysts",
+      "doi": "10.1038/s41467-023-37929-4",
+      "publisher": "Nature Communications (Springer Nature)",
+      "domain_tags": [
+        "DFT",
+        "electrochemistry",
+        "electrocatalysis",
+        "computational chemistry"
+      ],
+      "language": [
+        "en"
+      ],
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://www.nature.com/articles/s41467-023-37929-4",
+      "source_url": "https://www.nature.com/articles/s41467-023-37929-4",
+      "pdf_url": "https://www.nature.com/articles/s41467-023-37929-4.pdf",
+      "pdf_source_url": "https://www.nature.com/articles/s41467-023-37929-4.pdf",
+      "download_date": "2026-09-24",
+      "local_pdf_name": "nature-electrocatalysis.pdf",
+      "pdf_sha256": "c2895be6d378772a6269c107b7fafdbf915e5b645385ca2a062f731df608da2f",
+      "page_count": 14,
+      "chunk_count": 14,
+      "document_id": "0cd26d4e-b456-5014-a90a-ec64ffeb549f",
+      "parser_version": "pypdf-5-isolated-1",
+      "chunker_version": "deterministic-scientific-v2"
+    },
+    {
+      "benchmark_document_id": "chiral-organometallic-helices-2025",
+      "title": "Disassembly of chiral hydrogen-bonded frameworks into single-unit organometallic helices for enantioselective amyloid inhibition",
+      "doi": "10.1038/s41467-025-63459-2",
+      "publisher": "Nature Communications (Springer Nature)",
+      "domain_tags": [
+        "supramolecular chemistry",
+        "organometallic chemistry",
+        "crystallography",
+        "materials chemistry"
+      ],
+      "language": [
+        "en"
+      ],
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://www.nature.com/articles/s41467-025-63459-2",
+      "source_url": "https://www.nature.com/articles/s41467-025-63459-2",
+      "pdf_url": "https://www.nature.com/articles/s41467-025-63459-2.pdf",
+      "pdf_source_url": "https://www.nature.com/articles/s41467-025-63459-2.pdf",
+      "download_date": "2026-09-24",
+      "local_pdf_name": "nature-organometallic-framework.pdf",
+      "pdf_sha256": "717e540ffc503612cf7c05d0d5676404a7accc4e6470ee837af638af8affcecf",
+      "page_count": 15,
+      "chunk_count": 15,
+      "document_id": "e4aec772-429d-5793-8ce2-e20240572334",
+      "parser_version": "pypdf-5-isolated-1",
+      "chunker_version": "deterministic-scientific-v2"
+    }
+  ]
+}

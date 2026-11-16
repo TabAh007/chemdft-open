@@ -1,0 +1,1882 @@
+{
+ "energy": {
+  "payload": {
+   "basis": "sto-3g",
+   "converged": true,
+   "method": "hf",
+   "parser_version": "1.0.0",
+   "payload_schema": "chemdft.energy",
+   "payload_schema_version": "1.0.0",
+   "scf_iterations": 6,
+   "task_type": "ENERGY",
+   "total_energy": {
+    "approximation": "EXACT_AS_REPORTED",
+    "precision": null,
+    "source_unit": null,
+    "uncertainty": null,
+    "unit": {
+     "code": "Eh",
+     "dimension": "ENERGY",
+     "standard": "QCSCHEMA"
+    },
+    "value": -74.96292823099294
+   },
+   "validator_version": "1.0.0"
+  },
+  "producer": {
+   "adapter_version": "1.0.0",
+   "capabilities": [
+    "chemdft.energy"
+   ],
+   "environment_digest": "a3da18265fc6fb0ebf4c9283173dd97a50e62bd0324410d5c494507faf50c166",
+   "execution_backend": "local.subprocess",
+   "hardware_class": "arm64",
+   "library_versions": [
+    {
+     "namespace": "chemdft.library-version",
+     "schema_version": "1.0.0",
+     "values": [
+      {
+       "key": "numpy",
+       "value": "2.5.3"
+      },
+      {
+       "key": "scipy",
+       "value": "1.18.1"
+      }
+     ]
+    }
+   ],
+   "name": "pyscf",
+   "version": "2.14.0"
+  },
+  "result_type": "chemdft.energy",
+  "specification": {
+   "basis": {
+    "display_name": "STO-3G",
+    "identifier": "sto-3g",
+    "registry": "chemdft.basis",
+    "registry_version": null
+   },
+   "charge": 0,
+   "constraints": [],
+   "dispersion": null,
+   "engine_extensions": [],
+   "engine_preference": {
+    "allowed_version": null,
+    "engine": "pyscf",
+    "execution_preference": null,
+    "requested_capability": null
+   },
+   "hessian": null,
+   "method": {
+    "display_name": "Hartree\u2013Fock",
+    "identifier": "hf",
+    "registry": "chemdft.method",
+    "registry_version": null
+   },
+   "multiplicity": 1,
+   "optimization": null,
+   "property_requests": [],
+   "scf": null,
+   "schema_version": "1.0.0",
+   "solvation": null,
+   "task_type": "ENERGY",
+   "tddft": null
+  },
+  "trusted_producer_id": "local.pyscf.worker",
+  "trusted_producer_type": "SCIENTIFIC_WORKER"
+ },
+ "mo": {
+  "payload": {
+   "adapter_version": "1.0.0",
+   "alpha_electron_count": 5,
+   "basis": "sto-3g",
+   "basis_function_count": 7,
+   "beta_electron_count": 5,
+   "calculation_id": "d964b79f-a9dc-4e85-b6bd-b6e35c3385a3",
+   "calculation_input_hash": "6438182dd38633cda4b7ae569400af35e8b7ef3b6ae0c2566c1edc6a4f4c736e",
+   "charge": 0,
+   "coefficient_artifact": {
+    "artifact_id": "7e014b52-6450-49ed-bbef-4eca3d17cc16",
+    "project_id": "3537048e-306a-4f4f-9b9e-493681c0df83",
+    "sha256": "e1abc2275247428f8eeaeebce41cfb71367a44de708ada5ce38a336275eca7d0"
+   },
+   "coefficient_artifact_sha256": "e1abc2275247428f8eeaeebce41cfb71367a44de708ada5ce38a336275eca7d0",
+   "coefficient_format": "chemdft.mo-coefficients.npz",
+   "converged": true,
+   "converted_energy_unit": "eV",
+   "electron_count": 10,
+   "energy_unit": "Eh",
+   "engine": "pyscf",
+   "engine_version": "2.14.0",
+   "frontier_by_spin": [
+    {
+     "gap_ev": 27.127538733363945,
+     "gap_hartree": 0.9969186607449514,
+     "homo_energy_ev": -10.646309866553565,
+     "homo_energy_hartree": -0.39124467126783147,
+     "homo_index": 4,
+     "lumo_energy_ev": 16.48122886681038,
+     "lumo_energy_hartree": 0.6056739894771199,
+     "lumo_index": 5,
+     "spin_channel": "restricted"
+    }
+   ],
+   "input_structure_hash": "39e5a504cab06c57678c1e87e71080a02d42969841c3cdf08141faecb955847b",
+   "input_structure_id": "4aebbaca-baa2-4974-8867-2c35d06d1d1a",
+   "input_structure_version_id": "186f6c21-b0ca-4020-a78d-af2c2b83c7eb",
+   "method": "hf",
+   "molecular_orbital_count": 7,
+   "multiplicity": 1,
+   "orbital_gap_label": "HOMO-LUMO orbital-energy gap",
+   "orbital_gap_note": "Orbital-energy difference; not an excited-state calculation.",
+   "orbitals": [
+    {
+     "energy_ev": -550.8057803719136,
+     "energy_hartree": -20.241739079100515,
+     "index": 0,
+     "occupation": 2.0,
+     "spin_channel": "restricted"
+    },
+    {
+     "energy_ev": -34.51517040630461,
+     "energy_hartree": -1.268409117208921,
+     "index": 1,
+     "occupation": 2.0,
+     "spin_channel": "restricted"
+    },
+    {
+     "energy_ev": -16.81485024221764,
+     "energy_hartree": -0.6179343488866464,
+     "index": 2,
+     "occupation": 2.0,
+     "spin_channel": "restricted"
+    },
+    {
+     "energy_ev": -12.326608573798557,
+     "energy_hartree": -0.4529945098117143,
+     "index": 3,
+     "occupation": 2.0,
+     "spin_channel": "restricted"
+    },
+    {
+     "energy_ev": -10.646309866553565,
+     "energy_hartree": -0.39124467126783147,
+     "index": 4,
+     "occupation": 2.0,
+     "spin_channel": "restricted"
+    },
+    {
+     "energy_ev": 16.48122886681038,
+     "energy_hartree": 0.6056739894771199,
+     "index": 5,
+     "occupation": 0.0,
+     "spin_channel": "restricted"
+    },
+    {
+     "energy_ev": 20.201711750248183,
+     "energy_hartree": 0.7423992136095856,
+     "index": 6,
+     "occupation": 0.0,
+     "spin_channel": "restricted"
+    }
+   ],
+   "payload_schema": "chemdft.molecular-orbitals",
+   "payload_schema_version": "1.0.0",
+   "producer": "local.pyscf.worker",
+   "result_sha256": "205cb3fa1fc65cda593621c0643f24f6aaa901134273f43018a7e7c39453c62c",
+   "scf_iterations": 7,
+   "schema_version": "1.0.0",
+   "task_type": "ORBITAL",
+   "total_energy_hartree": -74.96292823099459
+  },
+  "producer": {
+   "adapter_version": "1.0.0",
+   "capabilities": [
+    "chemdft.molecular-orbitals"
+   ],
+   "environment_digest": "a3da18265fc6fb0ebf4c9283173dd97a50e62bd0324410d5c494507faf50c166",
+   "execution_backend": "local.subprocess",
+   "hardware_class": "arm64",
+   "library_versions": [
+    {
+     "namespace": "chemdft.library-version",
+     "schema_version": "1.0.0",
+     "values": [
+      {
+       "key": "numpy",
+       "value": "2.5.3"
+      },
+      {
+       "key": "scipy",
+       "value": "1.18.1"
+      }
+     ]
+    }
+   ],
+   "name": "pyscf",
+   "version": "2.14.0"
+  },
+  "result_type": "chemdft.molecular-orbitals",
+  "specification": {
+   "basis": {
+    "display_name": "STO-3G",
+    "identifier": "sto-3g",
+    "registry": "chemdft.basis",
+    "registry_version": null
+   },
+   "charge": 0,
+   "constraints": [],
+   "dispersion": null,
+   "engine_extensions": [],
+   "engine_preference": {
+    "allowed_version": "2.14.0",
+    "engine": "pyscf",
+    "execution_preference": null,
+    "requested_capability": null
+   },
+   "hessian": null,
+   "method": {
+    "display_name": "Restricted Hartree-Fock",
+    "identifier": "hf",
+    "registry": "chemdft.method",
+    "registry_version": null
+   },
+   "multiplicity": 1,
+   "optimization": null,
+   "property_requests": [],
+   "scf": {
+    "convergence_threshold": 1e-10,
+    "max_iterations": 100,
+    "reference": null
+   },
+   "schema_version": "1.0.0",
+   "solvation": null,
+   "task_type": "ORBITAL"
+  },
+  "trusted_producer_id": "local.pyscf.worker",
+  "trusted_producer_type": "SCIENTIFIC_WORKER"
+ },
+ "opt": {
+  "payload": {
+   "basis": "def2-svp",
+   "converged": true,
+   "final_energy": {
+    "approximation": "EXACT_AS_REPORTED",
+    "precision": null,
+    "source_unit": null,
+    "uncertainty": null,
+    "unit": {
+     "code": "Eh",
+     "dimension": "ENERGY",
+     "standard": "QCSCHEMA"
+    },
+    "value": -76.35831535099852
+   },
+   "final_structure_hash": "e2188cf8ce6127e37a0f77644fc9ac872733faacb383d0ae563285efd26bfa87",
+   "final_structure_version_id": "3bf481b5-4d38-4e93-bc0f-8a9afd50d14c",
+   "method": "b3lyp",
+   "parser_version": "1.0.0",
+   "payload_schema": "chemdft.optimization",
+   "payload_schema_version": "1.0.0",
+   "step_count": 4,
+   "task_type": "GEOMETRY_OPTIMIZATION",
+   "trajectory_artifact": {
+    "artifact_id": "b0281877-ff1a-472c-868e-112e3bb4b477",
+    "project_id": "f39aefcf-a1cd-4606-8f03-f9b18eadb96d",
+    "sha256": "7f4f3adec0ccef2680403b59f6543b9278cdafc2faee9fc5dc09d849ca71a93e"
+   },
+   "trajectory_sha256": "7f4f3adec0ccef2680403b59f6543b9278cdafc2faee9fc5dc09d849ca71a93e",
+   "validator_version": "1.0.0"
+  },
+  "producer": {
+   "adapter_version": "1.0.0",
+   "capabilities": [
+    "chemdft.optimization"
+   ],
+   "environment_digest": "6de62017c82f321afea51a6bb966e54c1a424fada079c15582f64f73cef50cee",
+   "execution_backend": "local.subprocess",
+   "hardware_class": "arm64",
+   "library_versions": [
+    {
+     "namespace": "chemdft.library-version",
+     "schema_version": "1.0.0",
+     "values": [
+      {
+       "key": "geometric",
+       "value": "1.1.1"
+      },
+      {
+       "key": "numpy",
+       "value": "2.5.3"
+      },
+      {
+       "key": "scipy",
+       "value": "1.18.1"
+      }
+     ]
+    }
+   ],
+   "name": "pyscf",
+   "version": "2.14.0"
+  },
+  "result_type": "chemdft.optimization",
+  "specification": {
+   "basis": {
+    "display_name": "def2-SVP",
+    "identifier": "def2-svp",
+    "registry": "chemdft.basis",
+    "registry_version": null
+   },
+   "charge": 0,
+   "constraints": [],
+   "dispersion": null,
+   "engine_extensions": [],
+   "engine_preference": {
+    "allowed_version": "2.14.0",
+    "engine": "pyscf",
+    "execution_preference": null,
+    "requested_capability": null
+   },
+   "hessian": null,
+   "method": {
+    "display_name": "B3LYP",
+    "identifier": "b3lyp",
+    "registry": "chemdft.method",
+    "registry_version": null
+   },
+   "multiplicity": 1,
+   "optimization": {
+    "convergence_dmax": null,
+    "convergence_drms": null,
+    "convergence_energy": null,
+    "convergence_gmax": null,
+    "convergence_grms": null,
+    "coordinate_unit": "angstrom",
+    "displacement_unit": "angstrom",
+    "energy_unit": "Eh",
+    "gradient_unit": "Eh/bohr",
+    "max_steps": 100,
+    "optimizer": "geometric"
+   },
+   "property_requests": [],
+   "raman": null,
+   "scf": null,
+   "schema_version": "1.0.0",
+   "solvation": null,
+   "task_type": "GEOMETRY_OPTIMIZATION",
+   "tddft": null,
+   "thermochemistry": null
+  },
+  "trajectory": {
+   "atom_identities": [
+    {
+     "atomic_number": 8,
+     "element": "O",
+     "formal_charge": null,
+     "index": 0,
+     "isotope": null,
+     "label": null,
+     "occupancy": null,
+     "x": 0.0,
+     "y": 0.0,
+     "z": 0.0
+    },
+    {
+     "atomic_number": 1,
+     "element": "H",
+     "formal_charge": null,
+     "index": 1,
+     "isotope": null,
+     "label": null,
+     "occupancy": null,
+     "x": 0.0,
+     "y": 0.0,
+     "z": 0.9572
+    },
+    {
+     "atomic_number": 1,
+     "element": "H",
+     "formal_charge": null,
+     "index": 2,
+     "isotope": null,
+     "label": null,
+     "occupancy": null,
+     "x": 0.926627,
+     "y": 0.0,
+     "z": -0.239987
+    }
+   ],
+   "engine": {
+    "adapter_version": "1.0.0",
+    "capabilities": [
+     "chemdft.optimization"
+    ],
+    "environment_artifact": {
+     "artifact_id": "e5a6d51f-8655-40e2-852e-d702b1726a5f",
+     "project_id": "f39aefcf-a1cd-4606-8f03-f9b18eadb96d",
+     "sha256": "6de62017c82f321afea51a6bb966e54c1a424fada079c15582f64f73cef50cee"
+    },
+    "environment_digest": "6de62017c82f321afea51a6bb966e54c1a424fada079c15582f64f73cef50cee",
+    "execution_backend": "local.subprocess",
+    "hardware_class": "arm64",
+    "library_versions": [
+     {
+      "namespace": "chemdft.library-version",
+      "schema_version": "1.0.0",
+      "values": [
+       {
+        "key": "geometric",
+        "value": "1.1.1"
+       },
+       {
+        "key": "numpy",
+        "value": "2.5.3"
+       },
+       {
+        "key": "scipy",
+        "value": "1.18.1"
+       }
+      ]
+     }
+    ],
+    "name": "pyscf",
+    "version": "2.14.0"
+   },
+   "input_hash": "e38d53824e1097a3933d0009a089da24cf1b13a1e667a1d1f87c7d18e231236e",
+   "state": "CONVERGED",
+   "steps": [
+    {
+     "converged": null,
+     "coordinates_angstrom": [
+      [
+       0.0,
+       0.0,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       0.9571999999999999
+      ],
+      [
+       0.926627,
+       0.0,
+       -0.239987
+      ]
+     ],
+     "energy_hartree": -76.35812051264632,
+     "engine_cycle": 1,
+     "gradient_norm_hartree_per_bohr": 0.018614966904119064,
+     "gradient_rms_hartree_per_bohr": 0.006204988968039687,
+     "index": 0,
+     "timestamp": "2026-10-05T15:32:33.574238Z"
+    },
+    {
+     "converged": null,
+     "coordinates_angstrom": [
+      [
+       -0.006325199626621581,
+       5.049479245899126e-15,
+       -0.00490673709583558
+      ],
+      [
+       0.0023312011041980224,
+       4.525565368326773e-15,
+       0.9606976844031442
+      ],
+      [
+       0.9306161789994803,
+       5.135300197298989e-15,
+       -0.23858698262733047
+      ]
+     ],
+     "energy_hartree": -76.35831017687532,
+     "engine_cycle": 2,
+     "gradient_norm_hartree_per_bohr": 0.0023677607665613808,
+     "gradient_rms_hartree_per_bohr": 0.0007892535888537937,
+     "index": 1,
+     "timestamp": "2026-10-05T15:32:33.726114Z"
+    },
+    {
+     "converged": null,
+     "coordinates_angstrom": [
+      [
+       -0.008133547450434177,
+       1.1006806870164474e-14,
+       -0.0063184996867782185
+      ],
+      [
+       0.004104637247033286,
+       4.402460063347706e-15,
+       0.9602516012510484
+      ],
+      [
+       0.9306495513402294,
+       1.1135157012398512e-14,
+       -0.23673667113356317
+      ]
+     ],
+     "energy_hartree": -76.3583153248465,
+     "engine_cycle": 3,
+     "gradient_norm_hartree_per_bohr": 0.00011917567315538976,
+     "gradient_rms_hartree_per_bohr": 3.972522438512992e-05,
+     "index": 2,
+     "timestamp": "2026-10-05T15:32:33.868195Z"
+    },
+    {
+     "converged": true,
+     "coordinates_angstrom": [
+      [
+       -0.008057058876404543,
+       9.122204939884336e-15,
+       -0.006268975949623479
+      ],
+      [
+       0.003942094106565064,
+       -1.16156685796677e-15,
+       0.9603639358774182
+      ],
+      [
+       0.9307342922848365,
+       1.1700083323215617e-14,
+       -0.23690440383013447
+      ]
+     ],
+     "energy_hartree": -76.35831535099852,
+     "engine_cycle": 4,
+     "gradient_norm_hartree_per_bohr": 5.653350983349829e-06,
+     "gradient_rms_hartree_per_bohr": 1.8844503277832766e-06,
+     "index": 3,
+     "timestamp": "2026-10-05T15:32:33.999191Z"
+    }
+   ]
+  },
+  "trusted_producer_id": "local.pyscf.worker",
+  "trusted_producer_type": "SCIENTIFIC_WORKER"
+ },
+ "tddft": {
+  "payload": {
+   "adapter_version": "1.0.0",
+   "amplitudes_artifact": {
+    "artifact_id": "962179b3-4281-4ab9-956d-b6d7153d45f0",
+    "project_id": "f39aefcf-a1cd-4606-8f03-f9b18eadb96d",
+    "sha256": "376367ed4c4f0527b0e83107aa79e8a7b9b590ced10956a53f20820fdbf00dd1"
+   },
+   "amplitudes_artifact_sha256": "376367ed4c4f0527b0e83107aa79e8a7b9b590ced10956a53f20820fdbf00dd1",
+   "amplitudes_format": "chemdft.tddft-amplitudes.npz",
+   "basis": "def2-svpd",
+   "calculation_id": "e3146f9f-f143-4ba9-957f-281ac23e68af",
+   "calculation_input_hash": "9f370fb0d5c7c6f7abb0c90dc87465cf538d5631c5bad5e7d6d595143d1c067c",
+   "charge": 0,
+   "converged": true,
+   "converged_roots": 10,
+   "converted_energy_unit": "eV",
+   "dominant_state_index": 2,
+   "energy_unit": "Eh",
+   "engine": "pyscf",
+   "engine_version": "2.14.0",
+   "excited_states": [
+    {
+     "converged": true,
+     "dominant_transitions": [
+      {
+       "magnitude": 0.7062177694377509,
+       "occupied_label": "MO 5",
+       "occupied_mo_index": 4,
+       "virtual_label": "MO 6",
+       "virtual_mo_index": 5,
+       "x": -0.7062177694377509,
+       "y": 0.009215407926869337
+      }
+     ],
+     "energy_ev": 7.406244190584863,
+     "energy_hartree": 0.27217445387137623,
+     "index": 0,
+     "oscillator_strength": 0.05311974239133034,
+     "oscillator_strength_gauge": "length",
+     "state_label": "S1",
+     "transition_dipole": [
+      8.911447235571426e-14,
+      -0.5410656080033226,
+      2.3984425858497027e-13
+     ],
+     "wavelength_nm": 167.4049562000863
+    },
+    {
+     "converged": true,
+     "dominant_transitions": [
+      {
+       "magnitude": 0.7026673284052137,
+       "occupied_label": "MO 5",
+       "occupied_mo_index": 4,
+       "virtual_label": "MO 7",
+       "virtual_mo_index": 6,
+       "x": 0.7026673284052137,
+       "y": -0.0012126774716136111
+      },
+      {
+       "magnitude": 0.0638325775655808,
+       "occupied_label": "MO 5",
+       "occupied_mo_index": 4,
+       "virtual_label": "MO 10",
+       "virtual_mo_index": 9,
+       "x": -0.0638325775655808,
+       "y": 0.002326302492861287
+      }
+     ],
+     "energy_ev": 9.189525187857855,
+     "energy_hartree": 0.33770882176988476,
+     "index": 1,
+     "oscillator_strength": 1.4113753034561274e-17,
+     "oscillator_strength_gauge": "length",
+     "state_label": "S2",
+     "transition_dipole": [
+      -8.037522451819173e-14,
+      7.917638765265074e-09,
+      2.16342049333554e-14
+     ],
+     "wavelength_nm": 134.9190473921557
+    },
+    {
+     "converged": true,
+     "dominant_transitions": [
+      {
+       "magnitude": 0.6957614116042131,
+       "occupied_label": "MO 4",
+       "occupied_mo_index": 3,
+       "virtual_label": "MO 6",
+       "virtual_mo_index": 5,
+       "x": -0.6957614116042131,
+       "y": 0.007948634905420944
+      },
+      {
+       "magnitude": 0.11386718412906999,
+       "occupied_label": "MO 5",
+       "occupied_mo_index": 4,
+       "virtual_label": "MO 8",
+       "virtual_mo_index": 7,
+       "x": 0.11386718412906999,
+       "y": 0.005682631918765108
+      }
+     ],
+     "energy_ev": 9.516303720996078,
+     "energy_hartree": 0.34971771136426927,
+     "index": 2,
+     "oscillator_strength": 0.09772089502168543,
+     "oscillator_strength_gauge": "length",
+     "state_label": "S3",
+     "transition_dipole": [
+      -0.5119703657243737,
+      -5.146706794846844e-14,
+      -0.3962678824874181
+     ],
+     "wavelength_nm": 130.28608803190104
+    },
+    {
+     "converged": true,
+     "dominant_transitions": [
+      {
+       "magnitude": 0.7051937617904351,
+       "occupied_label": "MO 5",
+       "occupied_mo_index": 4,
+       "virtual_label": "MO 9",
+       "virtual_mo_index": 8,
+       "x": -0.7051937617904351,
+       "y": 0.0008209613678965394
+      }
+     ],
+     "energy_ev": 10.696545257200107,
+     "energy_hartree": 0.39309078782332113,
+     "index": 3,
+     "oscillator_strength": 0.005391266421818954,
+     "oscillator_strength_gauge": "length",
+     "state_label": "S4",
+     "transition_dipole": [
+      -2.423900179709278e-13,
+      0.14343151756811126,
+      -1.0983230726425375e-13
+     ],
+     "wavelength_nm": 115.91050703940456
+    },
+    {
+     "converged": true,
+     "dominant_transitions": [
+      {
+       "magnitude": 0.6734610032125109,
+       "occupied_label": "MO 5",
+       "occupied_mo_index": 4,
+       "virtual_label": "MO 8",
+       "virtual_mo_index": 7,
+       "x": 0.6734610032125109,
+       "y": -0.010920364612838615
+      },
+      {
+       "magnitude": 0.16082752294410155,
+       "occupied_label": "MO 4",
+       "occupied_mo_index": 3,
+       "virtual_label": "MO 9",
+       "virtual_mo_index": 8,
+       "x": -0.16082752294410155,
+       "y": -0.010901138555621635
+      },
+      {
+       "magnitude": 0.10037898926347863,
+       "occupied_label": "MO 4",
+       "occupied_mo_index": 3,
+       "virtual_label": "MO 6",
+       "virtual_mo_index": 5,
+       "x": 0.10037898926347863,
+       "y": -0.00812190385339366
+      },
+      {
+       "magnitude": 0.07911050383250215,
+       "occupied_label": "MO 3",
+       "occupied_mo_index": 2,
+       "virtual_label": "MO 7",
+       "virtual_mo_index": 6,
+       "x": -0.07911050383250215,
+       "y": -0.012270450232770331
+      }
+     ],
+     "energy_ev": 11.080071178640747,
+     "energy_hartree": 0.40718510547305814,
+     "index": 4,
+     "oscillator_strength": 0.0010151559963054802,
+     "oscillator_strength_gauge": "length",
+     "state_label": "S5",
+     "transition_dipole": [
+      0.04835866148521124,
+      1.957664359819406e-13,
+      0.03743127315982986
+     ],
+     "wavelength_nm": 111.89837721639084
+    },
+    {
+     "converged": true,
+     "dominant_transitions": [
+      {
+       "magnitude": 0.7047889693161736,
+       "occupied_label": "MO 4",
+       "occupied_mo_index": 3,
+       "virtual_label": "MO 7",
+       "virtual_mo_index": 6,
+       "x": 0.7047889693161736,
+       "y": -0.00349844616110615
+      }
+     ],
+     "energy_ev": 11.331312284034812,
+     "energy_hartree": 0.4164180457989523,
+     "index": 5,
+     "oscillator_strength": 0.015251929654744058,
+     "oscillator_strength_gauge": "length",
+     "state_label": "S6",
+     "transition_dipole": [
+      -0.14346711020539918,
+      -5.807930726799649e-14,
+      0.18535618963949016
+     ],
+     "wavelength_nm": 109.41733430812518
+    },
+    {
+     "converged": true,
+     "dominant_transitions": [
+      {
+       "magnitude": 0.7028114709675409,
+       "occupied_label": "MO 5",
+       "occupied_mo_index": 4,
+       "virtual_label": "MO 10",
+       "virtual_mo_index": 9,
+       "x": -0.7028114709675409,
+       "y": -0.0005649264022957954
+      },
+      {
+       "magnitude": 0.06561560530109327,
+       "occupied_label": "MO 5",
+       "occupied_mo_index": 4,
+       "virtual_label": "MO 7",
+       "virtual_mo_index": 6,
+       "x": -0.06561560530109327,
+       "y": -0.002281715562471433
+      }
+     ],
+     "energy_ev": 11.759862699471489,
+     "energy_hartree": 0.43216698308434554,
+     "index": 6,
+     "oscillator_strength": 1.6119882245186487e-16,
+     "oscillator_strength_gauge": "length",
+     "state_label": "S7",
+     "transition_dipole": [
+      -1.3121709081050066e-14,
+      2.3653791798303146e-08,
+      2.607341688272231e-13
+     ],
+     "wavelength_nm": 105.42997108186675
+    },
+    {
+     "converged": true,
+     "dominant_transitions": [
+      {
+       "magnitude": 0.635093947095513,
+       "occupied_label": "MO 5",
+       "occupied_mo_index": 4,
+       "virtual_label": "MO 11",
+       "virtual_mo_index": 10,
+       "x": 0.635093947095513,
+       "y": 0.0001574260282913324
+      },
+      {
+       "magnitude": 0.3080384174762067,
+       "occupied_label": "MO 4",
+       "occupied_mo_index": 3,
+       "virtual_label": "MO 8",
+       "virtual_mo_index": 7,
+       "x": -0.3080384174762067,
+       "y": -0.0013803756421005746
+      }
+     ],
+     "energy_ev": 12.532695740264868,
+     "energy_hartree": 0.4605680734884526,
+     "index": 7,
+     "oscillator_strength": 0.04627979540770683,
+     "oscillator_strength_gauge": "length",
+     "state_label": "S8",
+     "transition_dipole": [
+      -4.2819732095443946e-13,
+      0.38823477190011685,
+      -2.062847054715566e-13
+     ],
+     "wavelength_nm": 98.92859525414438
+    },
+    {
+     "converged": true,
+     "dominant_transitions": [
+      {
+       "magnitude": 0.6355340637750089,
+       "occupied_label": "MO 4",
+       "occupied_mo_index": 3,
+       "virtual_label": "MO 8",
+       "virtual_mo_index": 7,
+       "x": 0.6355340637750089,
+       "y": -0.0019812266712449017
+      },
+      {
+       "magnitude": 0.3082627771590709,
+       "occupied_label": "MO 5",
+       "occupied_mo_index": 4,
+       "virtual_label": "MO 11",
+       "virtual_mo_index": 10,
+       "x": 0.3082627771590709,
+       "y": -0.0023347057749099447
+      }
+     ],
+     "energy_ev": 12.661244431982006,
+     "energy_hartree": 0.4652921507756246,
+     "index": 8,
+     "oscillator_strength": 0.003840736869434945,
+     "oscillator_strength_gauge": "length",
+     "state_label": "S9",
+     "transition_dipole": [
+      -3.40474185052126e-13,
+      0.1112730631643121,
+      1.6556395467097796e-13
+     ],
+     "wavelength_nm": 97.92418043839284
+    },
+    {
+     "converged": true,
+     "dominant_transitions": [
+      {
+       "magnitude": 0.6694696031563521,
+       "occupied_label": "MO 4",
+       "occupied_mo_index": 3,
+       "virtual_label": "MO 9",
+       "virtual_mo_index": 8,
+       "x": -0.6694696031563521,
+       "y": 0.009032300567225178
+      },
+      {
+       "magnitude": 0.13785987625724525,
+       "occupied_label": "MO 3",
+       "occupied_mo_index": 2,
+       "virtual_label": "MO 7",
+       "virtual_mo_index": 6,
+       "x": 0.13785987625724525,
+       "y": 0.010251314212569897
+      },
+      {
+       "magnitude": 0.12930702540211259,
+       "occupied_label": "MO 5",
+       "occupied_mo_index": 4,
+       "virtual_label": "MO 8",
+       "virtual_mo_index": 7,
+       "x": -0.12930702540211259,
+       "y": 0.012600246336666714
+      },
+      {
+       "magnitude": 0.09554738988351318,
+       "occupied_label": "MO 5",
+       "occupied_mo_index": 4,
+       "virtual_label": "MO 14",
+       "virtual_mo_index": 13,
+       "x": -0.09554738988351318,
+       "y": -0.006359204711454955
+      }
+     ],
+     "energy_ev": 13.084808952608642,
+     "energy_hartree": 0.48085785980630974,
+     "index": 9,
+     "oscillator_strength": 0.035198391817729505,
+     "oscillator_strength_gauge": "length",
+     "state_label": "S10",
+     "transition_dipole": [
+      0.2620370250169843,
+      6.194169328570613e-13,
+      0.2028184872481028
+     ],
+     "wavelength_nm": 94.75430545623844
+    }
+   ],
+   "ground_state_energy_hartree": -76.38027943322872,
+   "homo_energy_hartree": -0.3262560972395052,
+   "homo_index": 4,
+   "homo_lumo_gap_ev": 8.812156016602847,
+   "homo_lumo_gap_hartree": 0.32384076051627453,
+   "homo_lumo_gap_label": "HOMO-LUMO orbital-energy gap",
+   "homo_lumo_gap_note": "Orbital-energy difference; not an excited-state calculation.",
+   "input_structure_hash": "39e5a504cab06c57678c1e87e71080a02d42969841c3cdf08141faecb955847b",
+   "input_structure_id": "b8de172f-886e-401a-8f71-e6a6f359f2ac",
+   "input_structure_version_id": "de89ad41-298b-43ee-9eea-c796f6347391",
+   "lumo_energy_hartree": -0.0024153367232306877,
+   "lumo_index": 5,
+   "max_oscillator_strength": 0.09772089502168543,
+   "method": "b3lyp",
+   "multiplicity": 1,
+   "nocc": 5,
+   "nvir": 34,
+   "oscillator_strength_gauge": "length",
+   "payload_schema": "chemdft.tddft",
+   "payload_schema_version": "1.0.0",
+   "producer": "local.pyscf.worker",
+   "reference_method": "RKS",
+   "requested_roots": 10,
+   "response_method": "TDDFT",
+   "result_sha256": "4fbda976af8e47af699dc5045cb5d121d5f1c3a6b93923322ba2ca76fc256807",
+   "scf_iterations": 7,
+   "schema_version": "1.0.0",
+   "spin_channel": "singlet",
+   "task_type": "TDDFT",
+   "wavelength_unit": "nm"
+  },
+  "producer": {
+   "adapter_version": "1.0.0",
+   "capabilities": [
+    "chemdft.energy"
+   ],
+   "environment_digest": "a3da18265fc6fb0ebf4c9283173dd97a50e62bd0324410d5c494507faf50c166",
+   "execution_backend": "local.subprocess",
+   "hardware_class": "arm64",
+   "library_versions": [
+    {
+     "namespace": "chemdft.library-version",
+     "schema_version": "1.0.0",
+     "values": [
+      {
+       "key": "numpy",
+       "value": "2.5.3"
+      },
+      {
+       "key": "scipy",
+       "value": "1.18.1"
+      }
+     ]
+    }
+   ],
+   "name": "pyscf",
+   "version": "2.14.0"
+  },
+  "result_type": "chemdft.tddft",
+  "specification": {
+   "basis": {
+    "display_name": "def2-SVPD",
+    "identifier": "def2-svpd",
+    "registry": "chemdft.basis",
+    "registry_version": null
+   },
+   "charge": 0,
+   "constraints": [],
+   "dispersion": null,
+   "engine_extensions": [],
+   "engine_preference": {
+    "allowed_version": "2.14.0",
+    "engine": "pyscf",
+    "execution_preference": null,
+    "requested_capability": null
+   },
+   "hessian": null,
+   "method": {
+    "display_name": "B3LYP",
+    "identifier": "b3lyp",
+    "registry": "chemdft.method",
+    "registry_version": null
+   },
+   "multiplicity": 1,
+   "optimization": null,
+   "property_requests": [],
+   "scf": null,
+   "schema_version": "1.0.0",
+   "solvation": null,
+   "task_type": "TDDFT",
+   "tddft": {
+    "conv_tol": null,
+    "gauge": "length",
+    "nstates": 10,
+    "spin": "singlet"
+   }
+  },
+  "trusted_producer_id": "local.pyscf.worker",
+  "trusted_producer_type": "SCIENTIFIC_WORKER"
+ },
+ "thermo": {
+  "payload": {
+   "adapter_version": "1.0.0",
+   "basis": "def2-svp",
+   "calculation_id": "a68cf393-5be4-4974-903a-d06900c8afac",
+   "calculation_input_hash": "e8de95eba1715c705acb2960fe09d53a01b3a23bb2f974161ef79b7916cb1644",
+   "components": {
+    "electronic": {
+     "cp_hartree_per_k": 0.0,
+     "cv_hartree_per_k": 0.0,
+     "energy_hartree": -76.35831535099847,
+     "enthalpy_hartree": -76.35831535099847,
+     "entropy_hartree_per_k": 0.0,
+     "gibbs_hartree": -76.35831535099847
+    },
+    "rotational": {
+     "cp_hartree_per_k": 4.750215777928532e-06,
+     "cv_hartree_per_k": 4.750215777928532e-06,
+     "energy_hartree": 0.0014162768341893916,
+     "enthalpy_hartree": 0.0014162768341893916,
+     "entropy_hartree_per_k": 1.6758345029789076e-05,
+     "gibbs_hartree": -0.003580223736442221
+    },
+    "translational": {
+     "cp_hartree_per_k": 7.917026296547553e-06,
+     "cv_hartree_per_k": 4.750215777928532e-06,
+     "energy_hartree": 0.0014162768341893916,
+     "enthalpy_hartree": 0.0023604613903156525,
+     "entropy_hartree_per_k": 5.515294252088886e-05,
+     "gibbs_hartree": -0.01408338842228736
+    },
+    "vibrational": {
+     "cp_hartree_per_k": 7.290180443044063e-08,
+     "cv_hartree_per_k": 7.290180443044063e-08,
+     "energy_hartree": 0.021227932129596176,
+     "enthalpy_hartree": 0.021227932129596176,
+     "entropy_hartree_per_k": 1.0378505441950191e-08,
+     "gibbs_hartree": 0.021224837778198658
+    }
+   },
+   "conditions": {
+    "assumptions": [
+     "Ideal gas",
+     "Rigid rotor",
+     "Harmonic oscillator (pure RRHO, no quasi-RRHO correction)",
+     "Gas phase; no solvation; no 1 M solution standard state",
+     "Electronic degeneracy limited to spin multiplicity"
+    ],
+    "gas_model": "ideal-gas",
+    "pressure_atm": 1.0,
+    "pressure_pa": 101325.0,
+    "reference_pressure_pa": 101325.0,
+    "standard_state": "ideal-gas-at-specified-pressure",
+    "temperature_k": 298.15,
+    "thermo_model": "ideal-gas-rrho"
+   },
+   "constants": {
+    "atomic_mass_kg": 1.660539040427164e-27,
+    "avogadro_per_mol": 6.022140857e+23,
+    "bohr_m": 5.2917721092e-11,
+    "boltzmann_j_per_k": 1.38064852e-23,
+    "hartree_j": 4.359744644911914e-18,
+    "planck_j_s": 6.62607004e-34,
+    "source": "pyscf.data.nist",
+    "speed_of_light_m_per_s": 299792458.0,
+    "thermochemical_calorie_j": 4.184
+   },
+   "corrections": {
+    "includes_zpe": true,
+    "reference": "electronic_energy_hartree",
+    "thermal_correction_enthalpy_hartree": 0.02500467035409315,
+    "thermal_correction_gibbs_hartree": 0.003561225619449715,
+    "thermal_correction_internal_energy_hartree": 0.024060485797974707
+   },
+   "diagnostics": {
+    "imaginary_mode_count": 0,
+    "imaginary_mode_policy": "reject",
+    "low_frequency_entropy_hartree_per_k": 0.0,
+    "low_frequency_minus_ts_hartree": 0.0,
+    "low_frequency_mode_indices": [],
+    "low_frequency_policy": "warn-below-threshold-pure-rrho-no-correction",
+    "low_frequency_threshold_cm1": 100.0,
+    "lowest_real_frequency_cm1": 1638.766824211474,
+    "stationarity": {
+     "criterion_rms_hartree_per_bohr": 0.0003,
+     "gradient_norm_hartree_per_bohr": 5.653350983349829e-06,
+     "gradient_rms_hartree_per_bohr": 1.8844503277832766e-06,
+     "passed": true,
+     "source": "optimization-trajectory-final-step",
+     "trajectory_step_index": 3
+    },
+    "warnings": []
+   },
+   "energy_artifact": {
+    "artifact_id": "150df810-d037-4a56-9bfa-b99a21a67da2",
+    "project_id": "f39aefcf-a1cd-4606-8f03-f9b18eadb96d",
+    "sha256": "8a23b6ac5bcdf7ee52dfe3b9eac2942891f3dd69027660e21fe40ea4f316fdfb"
+   },
+   "energy_artifact_sha256": "8a23b6ac5bcdf7ee52dfe3b9eac2942891f3dd69027660e21fe40ea4f316fdfb",
+   "energy_source_field": "total_energy_hartree",
+   "energy_unit": "Eh",
+   "engine": "pyscf",
+   "engine_version": "2.14.0",
+   "entropy_unit": "Eh/K",
+   "frequencies_cm1": [
+    1638.766824211474,
+    3791.449151438813,
+    3886.5633479926423
+   ],
+   "frequency_calculation_id": "cbb76d8f-7656-4e7d-bfb4-770ac2931585",
+   "frequency_result_id": "c89b3a61-d79e-4d41-be5c-da8677a48bc5",
+   "frequency_result_sha256": "d644947d2ec1c69170413952038b4574b72a71cf9d1b5724d8881ea9351b27c7",
+   "geometry_hash": "d7deab707ed9906ef694951cfcb08e319b60577623d485f91a37b4da09b79b4d",
+   "input_structure_hash": "e2188cf8ce6127e37a0f77644fc9ac872733faacb383d0ae563285efd26bfa87",
+   "input_structure_id": "b8de172f-886e-401a-8f71-e6a6f359f2ac",
+   "input_structure_version_id": "3bf481b5-4d38-4e93-bc0f-8a9afd50d14c",
+   "method": "b3lyp",
+   "molecule": {
+    "atom_identities": [
+     "O",
+     "H",
+     "H"
+    ],
+    "charge": 0,
+    "equilibrium_coordinates_angstrom": [
+     [
+      -0.008057058876404543,
+      9.122204939884336e-15,
+      -0.006268975949623479
+     ],
+     [
+      0.003942094106565064,
+      -1.16156685796677e-15,
+      0.9603639358774182
+     ],
+     [
+      0.9307342922848365,
+      1.1700083323215617e-14,
+      -0.23690440383013447
+     ]
+    ],
+    "mass_convention": "pyscf-isotope-average",
+    "multiplicity": 1,
+    "rotational_constants_ghz": [
+     781.0007449807795,
+     437.4185149087167,
+     280.3831138085239
+    ],
+    "rotor_type": "NONLINEAR",
+    "total_mass_amu": 18.015
+   },
+   "optimization_calculation_id": "a9f38a35-0332-4940-acdb-daba6c0074ef",
+   "optimization_result_id": "dc234052-6543-4fb6-a967-fac901dd2d52",
+   "optimization_result_sha256": "90ad7b0e80b7b27319755d7133ce2a54825bce2b162fbfe61fd02102c4e61236",
+   "parser_version": "1.0.0",
+   "payload_schema": "chemdft.thermochemistry",
+   "payload_schema_version": "1.0.0",
+   "producer": "local.pyscf.worker",
+   "result_sha256": "864cb15e01d902a96d2f14124ec85b203630ddfc680a705b2c785ec52fa4d81e",
+   "schema_version": "1.0.0",
+   "symmetry": {
+    "algorithm": "chemdft.proper-rotation-permutation-count",
+    "algorithm_version": "1.0.0",
+    "method": "proper-rotation-count",
+    "override_reason": null,
+    "pyscf_cross_check_agrees": true,
+    "pyscf_point_group_sigma": 2,
+    "rotational_symmetry_number": 2,
+    "source": "chemdft-proper-rotation-count",
+    "stability_tolerances_angstrom": [
+     0.01,
+     0.02,
+     0.04
+    ],
+    "tolerance_angstrom": 0.02
+   },
+   "task_type": "THERMOCHEMISTRY",
+   "thermo_api": "pyscf.hessian.thermo.thermo",
+   "thermodynamics": {
+    "cp_hartree_per_k": 1.2740143878906526e-05,
+    "cv_hartree_per_k": 9.573333360287504e-06,
+    "e0_plus_zpe_hartree": -76.33709016593656,
+    "electronic_energy_hartree": -76.35831535099847,
+    "enthalpy_hartree": -76.33331068064437,
+    "entropy_hartree_per_k": 7.192166605611989e-05,
+    "gibbs_free_energy_hartree": -76.35475412537902,
+    "internal_energy_hartree": -76.33425486520049,
+    "zpe_hartree": 0.021225185061904243
+   },
+   "validator_version": "1.0.0",
+   "vibrational_modes": [
+    {
+     "cv_hartree_per_k": 7.28818281793726e-08,
+     "entropy_hartree_per_k": 1.0377365764177896e-08,
+     "frequency_cm1": 1638.766824211474,
+     "index": 0,
+     "low_frequency": false,
+     "thermal_energy_hartree": 2.7467453455923733e-06,
+     "vibrational_temperature_k": 2357.8205948796412,
+     "zpe_hartree": 0.0037333855304407027
+    },
+    {
+     "cv_hartree_per_k": 1.2004785291371326e-11,
+     "entropy_hartree_per_k": 6.919920542113429e-13,
+     "frequency_cm1": 3791.449151438813,
+     "index": 1,
+     "low_frequency": false,
+     "thermal_energy_hartree": 1.9562537621789426e-10,
+     "vibrational_temperature_k": 5455.051177279491,
+     "zpe_hartree": 0.008637556723906883
+    },
+    {
+     "cv_hartree_per_k": 7.971465776670963e-12,
+     "entropy_hartree_per_k": 4.476857180834177e-13,
+     "frequency_cm1": 3886.5633479926423,
+     "index": 2,
+     "low_frequency": false,
+     "thermal_energy_hartree": 1.26720963384498e-10,
+     "vibrational_temperature_k": 5591.89932930866,
+     "zpe_hartree": 0.008854242807556657
+    }
+   ]
+  },
+  "producer": {
+   "adapter_version": "1.0.0",
+   "capabilities": [
+    "chemdft.energy"
+   ],
+   "environment_digest": "b2f8af972d2a5d0f25d616641e3189e2380ce307a293ace9f16e1450331ffead",
+   "execution_backend": "local.subprocess",
+   "hardware_class": "arm64",
+   "library_versions": [
+    {
+     "namespace": "chemdft.library-version",
+     "schema_version": "1.0.0",
+     "values": [
+      {
+       "key": "numpy",
+       "value": "2.5.3"
+      },
+      {
+       "key": "pyscf",
+       "value": "2.14.0"
+      },
+      {
+       "key": "scipy",
+       "value": "1.18.1"
+      }
+     ]
+    }
+   ],
+   "name": "pyscf",
+   "version": "2.14.0"
+  },
+  "result_type": "chemdft.thermochemistry",
+  "specification": {
+   "basis": {
+    "display_name": "def2-SVP",
+    "identifier": "def2-svp",
+    "registry": "chemdft.basis",
+    "registry_version": null
+   },
+   "charge": 0,
+   "constraints": [],
+   "dispersion": null,
+   "engine_extensions": [],
+   "engine_preference": {
+    "allowed_version": "2.14.0",
+    "engine": "pyscf",
+    "execution_preference": null,
+    "requested_capability": null
+   },
+   "hessian": null,
+   "method": {
+    "display_name": "B3LYP",
+    "identifier": "b3lyp",
+    "registry": "chemdft.method",
+    "registry_version": null
+   },
+   "multiplicity": 1,
+   "optimization": null,
+   "property_requests": [],
+   "raman": null,
+   "scf": null,
+   "schema_version": "1.0.0",
+   "solvation": null,
+   "task_type": "THERMOCHEMISTRY",
+   "tddft": null,
+   "thermochemistry": {
+    "imaginary_mode_policy": "reject",
+    "low_frequency_warning_cm1": 100.0,
+    "pressure_pa": 101325.0,
+    "source_frequency_result_id": "c89b3a61-d79e-4d41-be5c-da8677a48bc5",
+    "symmetry_number_override": null,
+    "symmetry_override_reason": null,
+    "temperature_k": 298.15,
+    "thermo_model": "ideal-gas-rrho"
+   }
+  },
+  "trusted_producer_id": "local.pyscf.worker",
+  "trusted_producer_type": "SCIENTIFIC_WORKER"
+ },
+ "vib_ir": {
+  "payload": {
+   "adapter_version": "1.0.0",
+   "atom_identities": [
+    "O",
+    "H",
+    "H"
+   ],
+   "basis": "def2-svp",
+   "calculation_id": "cf9d7da1-f52c-4452-95af-0fb5ba9bc7dc",
+   "calculation_specification_hash": "89ceeaee5163839580418e95b09265c54e27443286e9f2a404161cb6ae459a8b",
+   "charge": 0,
+   "coordinate_unit": "angstrom",
+   "dipole_derivative_method": "central_finite_difference",
+   "engine": "pyscf",
+   "engine_version": "2.14.0",
+   "equilibrium_coordinates_angstrom": [
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.9572
+    ],
+    [
+     0.926627,
+     0.0,
+     -0.239987
+    ]
+   ],
+   "equilibrium_coordinates_hash": "ee5d87637775ec37e945e74709ddd5dc301c9ca0e1b81e3b7d96fc3f9950f4f2",
+   "expected_vibrational_mode_count": 3,
+   "finite_difference_step_bohr": 0.01,
+   "frequency_unit": "cm^-1",
+   "hessian_artifact": {
+    "artifact_id": "ef26f68e-62c7-492d-b792-bc678bec0018",
+    "project_id": "f39aefcf-a1cd-4606-8f03-f9b18eadb96d",
+    "sha256": "fc02008a9e484dafd0284019f3ef1834a297c83931db8c6b85af3cbdb893dd64"
+   },
+   "hessian_sha256": "fc02008a9e484dafd0284019f3ef1834a297c83931db8c6b85af3cbdb893dd64",
+   "hessian_type": "analytic",
+   "hessian_unit": "Eh/bohr^2",
+   "input_structure_hash": "39e5a504cab06c57678c1e87e71080a02d42969841c3cdf08141faecb955847b",
+   "input_structure_version_id": "de89ad41-298b-43ee-9eea-c796f6347391",
+   "intensity_unit": "km/mol",
+   "method": "b3lyp",
+   "mode_ordering": "ascending_eigenvalue",
+   "modes": [
+    {
+     "displacement_vectors": [
+      [
+       -0.05363013799854736,
+       -1.6204110343807827e-17,
+       -0.04151027529302367
+      ],
+      [
+       0.6778785504872978,
+       -6.313929697102193e-19,
+       0.0035010729808928383
+      ],
+      [
+       0.17334027673369365,
+       -3.775425836662262e-19,
+       0.655351004809867
+      ]
+     ],
+     "frequency_cm1": 1595.7025643827803,
+     "imaginary": false,
+     "index": 0,
+     "ir_intensity": {
+      "approximation": "EXACT_AS_REPORTED",
+      "precision": null,
+      "source_unit": null,
+      "uncertainty": null,
+      "unit": {
+       "code": "km/mol",
+       "dimension": "INTENSITY",
+       "standard": "UCUM"
+      },
+      "value": 59.030994366501794
+     },
+     "raman_activity": null,
+     "reduced_mass_amu": 1.0826463273403937
+    },
+    {
+     "displacement_vectors": [
+      [
+       0.038707566178007066,
+       1.67849078470822e-17,
+       0.0299505989710896
+      ],
+      [
+       0.04241535412639892,
+       -1.472134029267398e-17,
+       -0.6892914990624681
+      ],
+      [
+       -0.6567827661124457,
+       -8.802652414198347e-18,
+       0.21391487908383472
+      ]
+     ],
+     "frequency_cm1": 3913.6238169875246,
+     "imaginary": false,
+     "index": 1,
+     "ir_intensity": {
+      "approximation": "EXACT_AS_REPORTED",
+      "precision": null,
+      "source_unit": null,
+      "uncertainty": null,
+      "unit": {
+       "code": "km/mol",
+       "dimension": "INTENSITY",
+       "standard": "UCUM"
+      },
+      "value": 5.638093920970219
+     },
+     "raman_activity": null,
+     "reduced_mass_amu": 1.0455435373553548
+    },
+    {
+     "displacement_vectors": [
+      [
+       -0.04135354865956325,
+       -1.5630454095828685e-17,
+       0.053436268916151386
+      ],
+      [
+       7.2707277052530356e-06,
+       -1.2960569984525933e-17,
+       -0.6781593717901744
+      ],
+      [
+       0.6563572382051842,
+       -7.749796580712913e-18,
+       -0.16998236073909787
+      ]
+     ],
+     "frequency_cm1": 4020.195278189008,
+     "imaginary": false,
+     "index": 2,
+     "ir_intensity": {
+      "approximation": "EXACT_AS_REPORTED",
+      "precision": null,
+      "source_unit": null,
+      "uncertainty": null,
+      "unit": {
+       "code": "km/mol",
+       "dimension": "INTENSITY",
+       "standard": "UCUM"
+      },
+      "value": 32.40967441744656
+     },
+     "raman_activity": null,
+     "reduced_mass_amu": 1.082058429559951
+    }
+   ],
+   "multiplicity": 1,
+   "parser_version": "1.0.0",
+   "payload_schema": "chemdft.vibrational-analysis",
+   "payload_schema_version": "1.0.0",
+   "result_sha256": "e06cfe54b3ed5029c2c9af848d0940972bf2c9738e3002170374e63813fe77c0",
+   "schema_version": "1.0.0",
+   "task_type": "FREQUENCY",
+   "vector_convention": "pyscf_thermo_norm_mode",
+   "vector_unit": "amu^-1/2"
+  },
+  "producer": {
+   "adapter_version": "1.0.0",
+   "capabilities": [
+    "chemdft.vibrational-analysis"
+   ],
+   "environment_digest": "a3da18265fc6fb0ebf4c9283173dd97a50e62bd0324410d5c494507faf50c166",
+   "execution_backend": "local.subprocess",
+   "hardware_class": "arm64",
+   "library_versions": [
+    {
+     "namespace": "chemdft.library-version",
+     "schema_version": "1.0.0",
+     "values": [
+      {
+       "key": "numpy",
+       "value": "2.5.3"
+      },
+      {
+       "key": "scipy",
+       "value": "1.18.1"
+      }
+     ]
+    }
+   ],
+   "name": "pyscf",
+   "version": "2.14.0"
+  },
+  "result_type": "chemdft.vibrational-analysis",
+  "specification": {
+   "basis": {
+    "display_name": "def2-SVP",
+    "identifier": "def2-svp",
+    "registry": "chemdft.basis",
+    "registry_version": null
+   },
+   "charge": 0,
+   "constraints": [],
+   "dispersion": null,
+   "engine_extensions": [],
+   "engine_preference": {
+    "allowed_version": "2.14.0",
+    "engine": "pyscf",
+    "execution_preference": null,
+    "requested_capability": null
+   },
+   "hessian": {
+    "coordinate_unit": "angstrom",
+    "exclude_translation_rotation": true,
+    "frequency_unit": "cm^-1",
+    "hessian_unit": "Eh/bohr^2",
+    "strategy": "ANALYTIC"
+   },
+   "method": {
+    "display_name": "B3LYP",
+    "identifier": "b3lyp",
+    "registry": "chemdft.method",
+    "registry_version": null
+   },
+   "multiplicity": 1,
+   "optimization": null,
+   "property_requests": [],
+   "scf": null,
+   "schema_version": "1.0.0",
+   "solvation": null,
+   "task_type": "FREQUENCY",
+   "tddft": null
+  },
+  "trusted_producer_id": "local.pyscf.worker",
+  "trusted_producer_type": "SCIENTIFIC_WORKER"
+ },
+ "vib_raman": {
+  "payload": {
+   "adapter_version": "1.0.0",
+   "atom_identities": [
+    "O",
+    "H",
+    "H"
+   ],
+   "basis": "def2-svp",
+   "calculation_id": "4761242c-6792-4a1c-90bd-52717a803ccb",
+   "calculation_specification_hash": "5b6d7e552f5c3a3cb1dee312269b5f19036c90cbf9ac48cbc821ba1cb957b883",
+   "charge": 0,
+   "coordinate_unit": "angstrom",
+   "dipole_derivative_method": "central_finite_difference",
+   "electric_field_step_au": 0.001,
+   "engine": "pyscf",
+   "engine_version": "2.14.0",
+   "equilibrium_coordinates_angstrom": [
+    [
+     0.0,
+     0.0,
+     0.0
+    ],
+    [
+     0.0,
+     0.0,
+     0.9572
+    ],
+    [
+     0.926627,
+     0.0,
+     -0.239987
+    ]
+   ],
+   "equilibrium_coordinates_hash": "ee5d87637775ec37e945e74709ddd5dc301c9ca0e1b81e3b7d96fc3f9950f4f2",
+   "expected_vibrational_mode_count": 3,
+   "finite_difference_step_bohr": 0.01,
+   "frequency_unit": "cm^-1",
+   "hessian_artifact": {
+    "artifact_id": "9b3a5a5d-360d-4de6-a6b4-201a3cbb2b51",
+    "project_id": "f39aefcf-a1cd-4606-8f03-f9b18eadb96d",
+    "sha256": "43f27a2e9ccf4820b9a55842940d7d1321c1dd6fdb9b78f52da204134cddfb41"
+   },
+   "hessian_sha256": "43f27a2e9ccf4820b9a55842940d7d1321c1dd6fdb9b78f52da204134cddfb41",
+   "hessian_type": "analytic",
+   "hessian_unit": "Eh/bohr^2",
+   "input_structure_hash": "39e5a504cab06c57678c1e87e71080a02d42969841c3cdf08141faecb955847b",
+   "input_structure_version_id": "de89ad41-298b-43ee-9eea-c796f6347391",
+   "intensity_unit": "km/mol",
+   "method": "b3lyp",
+   "mode_ordering": "ascending_eigenvalue",
+   "modes": [
+    {
+     "depolarization_ratio": 0.5247693650497998,
+     "displacement_vectors": [
+      [
+       -0.05363013799854736,
+       -1.6204110343807827e-17,
+       -0.04151027529302367
+      ],
+      [
+       0.6778785504872978,
+       -6.313929697102193e-19,
+       0.0035010729808928383
+      ],
+      [
+       0.17334027673369365,
+       -3.775425836662262e-19,
+       0.655351004809867
+      ]
+     ],
+     "frequency_cm1": 1595.7025643827803,
+     "imaginary": false,
+     "index": 0,
+     "ir_intensity": {
+      "approximation": "EXACT_AS_REPORTED",
+      "precision": null,
+      "source_unit": null,
+      "uncertainty": null,
+      "unit": {
+       "code": "km/mol",
+       "dimension": "INTENSITY",
+       "standard": "UCUM"
+      },
+      "value": 59.030994366501794
+     },
+     "raman_activity": {
+      "approximation": "EXACT_AS_REPORTED",
+      "precision": null,
+      "source_unit": null,
+      "uncertainty": null,
+      "unit": {
+       "code": "Angstrom^4/amu",
+       "dimension": "OTHER_DECLARED",
+       "standard": "UCUM"
+      },
+      "value": 6.3836352180881235
+     },
+     "reduced_mass_amu": 1.0826463273403937
+    },
+    {
+     "depolarization_ratio": 0.16692281626571034,
+     "displacement_vectors": [
+      [
+       0.038707566178007066,
+       1.67849078470822e-17,
+       0.0299505989710896
+      ],
+      [
+       0.04241535412639892,
+       -1.472134029267398e-17,
+       -0.6892914990624681
+      ],
+      [
+       -0.6567827661124457,
+       -8.802652414198347e-18,
+       0.21391487908383472
+      ]
+     ],
+     "frequency_cm1": 3913.6238169875246,
+     "imaginary": false,
+     "index": 1,
+     "ir_intensity": {
+      "approximation": "EXACT_AS_REPORTED",
+      "precision": null,
+      "source_unit": null,
+      "uncertainty": null,
+      "unit": {
+       "code": "km/mol",
+       "dimension": "INTENSITY",
+       "standard": "UCUM"
+      },
+      "value": 5.638093920970219
+     },
+     "raman_activity": {
+      "approximation": "EXACT_AS_REPORTED",
+      "precision": null,
+      "source_unit": null,
+      "uncertainty": null,
+      "unit": {
+       "code": "Angstrom^4/amu",
+       "dimension": "OTHER_DECLARED",
+       "standard": "UCUM"
+      },
+      "value": 74.42015426358759
+     },
+     "reduced_mass_amu": 1.0455435373553548
+    },
+    {
+     "depolarization_ratio": 0.7499999848255875,
+     "displacement_vectors": [
+      [
+       -0.04135354865956325,
+       -1.5630454095828685e-17,
+       0.053436268916151386
+      ],
+      [
+       7.2707277052530356e-06,
+       -1.2960569984525933e-17,
+       -0.6781593717901744
+      ],
+      [
+       0.6563572382051842,
+       -7.749796580712913e-18,
+       -0.16998236073909787
+      ]
+     ],
+     "frequency_cm1": 4020.195278189008,
+     "imaginary": false,
+     "index": 2,
+     "ir_intensity": {
+      "approximation": "EXACT_AS_REPORTED",
+      "precision": null,
+      "source_unit": null,
+      "uncertainty": null,
+      "unit": {
+       "code": "km/mol",
+       "dimension": "INTENSITY",
+       "standard": "UCUM"
+      },
+      "value": 32.40967441744656
+     },
+     "raman_activity": {
+      "approximation": "EXACT_AS_REPORTED",
+      "precision": null,
+      "source_unit": null,
+      "uncertainty": null,
+      "unit": {
+       "code": "Angstrom^4/amu",
+       "dimension": "OTHER_DECLARED",
+       "standard": "UCUM"
+      },
+      "value": 34.71963988146872
+     },
+     "reduced_mass_amu": 1.082058429559951
+    }
+   ],
+   "multiplicity": 1,
+   "parser_version": "1.0.0",
+   "payload_schema": "chemdft.vibrational-analysis",
+   "payload_schema_version": "1.0.0",
+   "polarizability_antisymmetry_tolerance": 0.0001,
+   "polarizability_derivative_method": "central_normal_coordinate_difference",
+   "polarizability_derivative_step_angstrom_amu_half": 0.01,
+   "polarizability_method": "finite_electric_field",
+   "polarizability_tensor_symmetrization": true,
+   "polarizability_unit": "angstrom^3",
+   "raman_activity_unit": "angstrom^4/amu",
+   "raman_artifact": {
+    "artifact_id": "8a43702d-96af-4508-b92b-836aaf721ed1",
+    "project_id": "f39aefcf-a1cd-4606-8f03-f9b18eadb96d",
+    "sha256": "86e6eae3b717cb1772e96b409e9e98044bb96c9ee729f1a710909f9bce76c37a"
+   },
+   "raman_method": "placzek_static",
+   "raman_sha256": "86e6eae3b717cb1772e96b409e9e98044bb96c9ee729f1a710909f9bce76c37a",
+   "result_sha256": "8d78268787e12c08e220942c7d8c4f5e503f85c3cb93367db7c66a32c6cdacd2",
+   "schema_version": "1.0.0",
+   "task_type": "FREQUENCY",
+   "vector_convention": "pyscf_thermo_norm_mode",
+   "vector_unit": "amu^-1/2"
+  },
+  "producer": {
+   "adapter_version": "1.0.0",
+   "capabilities": [
+    "chemdft.vibrational-analysis"
+   ],
+   "environment_digest": "a3da18265fc6fb0ebf4c9283173dd97a50e62bd0324410d5c494507faf50c166",
+   "execution_backend": "local.subprocess",
+   "hardware_class": "arm64",
+   "library_versions": [
+    {
+     "namespace": "chemdft.library-version",
+     "schema_version": "1.0.0",
+     "values": [
+      {
+       "key": "numpy",
+       "value": "2.5.3"
+      },
+      {
+       "key": "scipy",
+       "value": "1.18.1"
+      }
+     ]
+    }
+   ],
+   "name": "pyscf",
+   "version": "2.14.0"
+  },
+  "result_type": "chemdft.vibrational-analysis",
+  "specification": {
+   "basis": {
+    "display_name": "def2-SVP",
+    "identifier": "def2-svp",
+    "registry": "chemdft.basis",
+    "registry_version": null
+   },
+   "charge": 0,
+   "constraints": [],
+   "dispersion": null,
+   "engine_extensions": [],
+   "engine_preference": {
+    "allowed_version": "2.14.0",
+    "engine": "pyscf",
+    "execution_preference": null,
+    "requested_capability": null
+   },
+   "hessian": {
+    "coordinate_unit": "angstrom",
+    "exclude_translation_rotation": true,
+    "frequency_unit": "cm^-1",
+    "hessian_unit": "Eh/bohr^2",
+    "strategy": "ANALYTIC"
+   },
+   "method": {
+    "display_name": "B3LYP",
+    "identifier": "b3lyp",
+    "registry": "chemdft.method",
+    "registry_version": null
+   },
+   "multiplicity": 1,
+   "optimization": null,
+   "property_requests": [],
+   "raman": {
+    "antisymmetry_tolerance": 0.0001,
+    "electric_field_step_au": 0.001,
+    "method": "placzek_static",
+    "polarizability_derivative_step_angstrom_amu_half": 0.01,
+    "polarizability_method": "finite_electric_field",
+    "symmetrize_polarizability": true
+   },
+   "scf": null,
+   "schema_version": "1.0.0",
+   "solvation": null,
+   "task_type": "FREQUENCY",
+   "tddft": null
+  },
+  "trusted_producer_id": "local.pyscf.worker",
+  "trusted_producer_type": "SCIENTIFIC_WORKER"
+ }
+}

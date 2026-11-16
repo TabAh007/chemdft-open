@@ -1,0 +1,95 @@
+/* Same header as the approved Scientific Projects page. */
+header.header {
+  height: 58px;
+  padding-inline: max(var(--ph-pad, 30px), calc((100% - var(--ph-max, 1180px)) / 2 + var(--ph-pad, 30px)));
+  background: var(--cdf-surface);
+  border-bottom: 1px solid var(--cdf-line);
+}
+.right {
+  gap: 10px;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.nav a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 38px;
+  padding: 0 13px;
+  border: 1px solid transparent;
+  border-radius: var(--cdf-radius-2);
+  color: var(--cdf-ink-muted);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition:
+    background var(--cdf-duration) var(--cdf-ease),
+    color var(--cdf-duration) var(--cdf-ease);
+}
+.nav a:hover {
+  background: var(--cdf-panel);
+  color: var(--cdf-ink);
+  text-decoration: none;
+}
+.nav a[aria-current="page"] {
+  border-color: var(--cdf-line-strong);
+  background: var(--cdf-panel);
+  color: var(--cdf-ink);
+}
+.nav :global(.bp6-icon) {
+  color: var(--cdf-accent);
+}
+.nav a:focus-visible {
+  outline: 2px solid var(--cdf-focus);
+  outline-offset: 2px;
+}
+@media (max-width: 1024px) {
+  header.header :global(.header-brand) {
+    display: inline-flex;
+    align-items: center;
+    min-height: 32px;
+  }
+}
+@media (max-width: 1024px) and (pointer: coarse) {
+  header.header :global(.header-brand) { min-height: 44px; }
+}
+@media (max-width: 1279px) {
+  .nav a {
+    min-height: 32px;
+    min-width: 32px;
+    justify-content: center;
+    padding: 0 10px;
+  }
+  .label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+}
+@media (max-width: 760px) {
+  header.header {
+    padding-inline: 16px;
+  }
+  .nav {
+    gap: 2px;
+  }
+}
+@media (max-width: 480px) {
+  .right { gap: 4px; }
+  .nav { gap: 0; }
+  .nav a { min-width: 28px; padding: 0 5px; }
+}
+@media (max-width: 1279px) and (pointer: coarse) {
+  .nav a { min-height: 44px; min-width: 44px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .nav a {
+    transition: none;
+  }
+}

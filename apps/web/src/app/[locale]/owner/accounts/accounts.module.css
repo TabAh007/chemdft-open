@@ -1,0 +1,150 @@
+/*
+ * Owner tools: Beta Accounts Manager.
+ * Consistent with ChemDFT workstation aesthetic (Blueprint.js primary, dense scientific styling).
+ */
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 24px 32px 48px;
+  color: var(--cdf-ink);
+}
+
+.header {
+  margin-bottom: 24px;
+}
+
+.header h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin: 0 0 8px;
+}
+
+.header p {
+  color: var(--cdf-ink-muted);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin: 0;
+  max-width: 80ch;
+}
+
+.tableCard {
+  border: 1px solid var(--cdf-line);
+  border-radius: var(--cdf-radius-2);
+  background: var(--cdf-surface);
+  overflow: hidden;
+}
+
+.tableHeader {
+  padding: 12px 16px;
+  background: var(--cdf-panel);
+  border-bottom: 1px solid var(--cdf-line);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tableHeader h2 {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.tableWrap {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  text-align: left;
+}
+
+.table th {
+  background: var(--cdf-panel);
+  color: var(--cdf-ink-muted);
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--cdf-line);
+  white-space: nowrap;
+}
+
+.table td {
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--cdf-line);
+  vertical-align: middle;
+}
+
+.table tr:last-child td {
+  border-bottom: none;
+}
+
+.table tr:hover td {
+  background: var(--cdf-panel);
+}
+
+.date {
+  font-family: var(--cdf-font-data);
+  font-size: 0.8125rem;
+  color: var(--cdf-ink-muted);
+  white-space: nowrap;
+}
+
+.limitsList {
+  font-size: 0.8125rem;
+  color: var(--cdf-ink);
+  line-height: 1.4;
+}
+
+.limitsSource {
+  font-size: 0.75rem;
+  color: var(--cdf-ink-muted);
+  margin-top: 2px;
+}
+
+.capStatus {
+  font-size: 0.8125rem;
+  color: var(--cdf-ink-muted);
+  font-weight: normal;
+  margin-left: 12px;
+}
+
+.infoBanner {
+  margin-bottom: 20px;
+}
+
+.emptyState {
+  padding: 40px 24px;
+  text-align: center;
+  color: var(--cdf-ink-muted);
+}
+
+.emptyState h3 {
+  font-size: 1rem;
+  color: var(--cdf-ink);
+  margin: 0 0 6px;
+}
+
+.emptyState p {
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.mutedNote {
+  margin-top: 16px;
+  font-size: 0.8125rem;
+  color: var(--cdf-ink-muted);
+  line-height: 1.4;
+}
+

@@ -1,0 +1,276 @@
+{
+ "formula": "Cr2O3",
+ "mineral": "Eskolaite",
+ "space_group_symbol": "R-3c",
+ "space_group_number": 167,
+ "crystal_system": "trigonal",
+ "lattice": {
+  "a": 4.957,
+  "b": 4.957,
+  "c": 13.5923,
+  "alpha": 90.0,
+  "beta": 90.0,
+  "gamma": 120.0,
+  "volume": 289.242
+ },
+ "sites_in_conventional_cell": 30,
+ "composition": {
+  "Cr": 12,
+  "O": 18
+ },
+ "coordination_numbers": {
+  "Cr": [
+   6
+  ],
+  "O": [
+   4
+  ]
+ },
+ "cr_o_distances_angstrom": [
+  1.9645,
+  2.013
+ ],
+ "chemdft_candidate_atoms": 30,
+ "sites": [
+  {
+   "element": "Cr",
+   "fractional": [
+    0.333333,
+    0.666667,
+    0.014157
+   ]
+  },
+  {
+   "element": "Cr",
+   "fractional": [
+    0.0,
+    0.0,
+    0.15251
+   ]
+  },
+  {
+   "element": "Cr",
+   "fractional": [
+    0.666667,
+    0.333333,
+    0.180823
+   ]
+  },
+  {
+   "element": "Cr",
+   "fractional": [
+    0.333333,
+    0.666667,
+    0.319177
+   ]
+  },
+  {
+   "element": "Cr",
+   "fractional": [
+    0.0,
+    0.0,
+    0.34749
+   ]
+  },
+  {
+   "element": "Cr",
+   "fractional": [
+    0.666667,
+    0.333333,
+    0.485843
+   ]
+  },
+  {
+   "element": "Cr",
+   "fractional": [
+    0.333333,
+    0.666667,
+    0.514157
+   ]
+  },
+  {
+   "element": "Cr",
+   "fractional": [
+    0.0,
+    0.0,
+    0.65251
+   ]
+  },
+  {
+   "element": "Cr",
+   "fractional": [
+    0.666667,
+    0.333333,
+    0.680823
+   ]
+  },
+  {
+   "element": "Cr",
+   "fractional": [
+    0.333333,
+    0.666667,
+    0.819177
+   ]
+  },
+  {
+   "element": "Cr",
+   "fractional": [
+    0.0,
+    0.0,
+    0.84749
+   ]
+  },
+  {
+   "element": "Cr",
+   "fractional": [
+    0.666667,
+    0.333333,
+    0.985843
+   ]
+  },
+  {
+   "element": "O",
+   "fractional": [
+    0.666667,
+    0.027633,
+    0.083333
+   ]
+  },
+  {
+   "element": "O",
+   "fractional": [
+    0.360967,
+    0.333333,
+    0.083333
+   ]
+  },
+  {
+   "element": "O",
+   "fractional": [
+    0.972367,
+    0.639033,
+    0.083333
+   ]
+  },
+  {
+   "element": "O",
+   "fractional": [
+    0.3057,
+    0.0,
+    0.25
+   ]
+  },
+  {
+   "element": "O",
+   "fractional": [
+    0.0,
+    0.3057,
+    0.25
+   ]
+  },
+  {
+   "element": "O",
+   "fractional": [
+    0.6943,
+    0.6943,
+    0.25
+   ]
+  },
+  {
+   "element": "O",
+   "fractional": [
+    0.333333,
+    0.360967,
+    0.416667
+   ]
+  },
+  {
+   "element": "O",
+   "fractional": [
+    0.027633,
+    0.666667,
+    0.416667
+   ]
+  },
+  {
+   "element": "O",
+   "fractional": [
+    0.639033,
+    0.972367,
+    0.416667
+   ]
+  },
+  {
+   "element": "O",
+   "fractional": [
+    0.360967,
+    0.027633,
+    0.583333
+   ]
+  },
+  {
+   "element": "O",
+   "fractional": [
+    0.972367,
+    0.333333,
+    0.583333
+   ]
+  },
+  {
+   "element": "O",
+   "fractional": [
+    0.666667,
+    0.639033,
+    0.583333
+   ]
+  },
+  {
+   "element": "O",
+   "fractional": [
+    0.6943,
+    0.0,
+    0.75
+   ]
+  },
+  {
+   "element": "O",
+   "fractional": [
+    0.3057,
+    0.3057,
+    0.75
+   ]
+  },
+  {
+   "element": "O",
+   "fractional": [
+    0.0,
+    0.6943,
+    0.75
+   ]
+  },
+  {
+   "element": "O",
+   "fractional": [
+    0.027633,
+    0.360967,
+    0.916667
+   ]
+  },
+  {
+   "element": "O",
+   "fractional": [
+    0.639033,
+    0.666667,
+    0.916667
+   ]
+  },
+  {
+   "element": "O",
+   "fractional": [
+    0.333333,
+    0.972367,
+    0.916667
+   ]
+  }
+ ]
+}

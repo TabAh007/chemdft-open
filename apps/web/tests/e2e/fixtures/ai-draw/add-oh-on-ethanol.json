@@ -1,0 +1,45 @@
+{
+ "schema_version": "1.0.0",
+ "status": "OK",
+ "label": "AI-drafted \u00b7 schematic",
+ "reply": "Added an OH group.",
+ "steps": [
+  {
+   "index": 0,
+   "op": {
+    "op": "add_group",
+    "name": "OH",
+    "attach_to": 1
+   },
+   "ok": true,
+   "error": null,
+   "suggestion": null,
+   "molfile": "\n     RDKit          2D\n\n  4  3  0  0  0  0  0  0  0  0999 V2000\n   -1.1250   -0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    1.1250   -0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    1.8750   -1.2990    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.8750    1.2990    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n  1  2  1  0\n  2  3  1  0\n  1  4  1  0\nM  END\n",
+   "smiles": "OCCO",
+   "formula": "C2H6O2",
+   "new_atom_numbers": [
+    4
+   ],
+   "atom_count": 4,
+   "description": "Add OH on atom 1"
+  }
+ ],
+ "final": {
+  "molfile": "\n     RDKit          2D\n\n  4  3  0  0  0  0  0  0  0  0999 V2000\n   -1.1250   -0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    1.1250   -0.0000    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0\n    1.8750   -1.2990    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n   -1.8750    1.2990    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0\n  1  2  1  0\n  2  3  1  0\n  1  4  1  0\nM  END\n",
+  "smiles": "OCCO",
+  "formula": "C2H6O2",
+  "atom_count": 4
+ },
+ "clarify": null,
+ "reference_check": null,
+ "proposals": [],
+ "warnings": [],
+ "info": [],
+ "error_code": null,
+ "error": null,
+ "repaired": false,
+ "run_id": null,
+ "model": "nemotron-3.5-lightning-30b-a3b",
+ "input_tokens": 412,
+ "output_tokens": 64
+}

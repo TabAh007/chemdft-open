@@ -1,0 +1,132 @@
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px 20px 48px;
+}
+
+.header {
+  margin-bottom: 32px;
+  border-bottom: 1px solid var(--cdf-border, #d8e1e8);
+  padding-bottom: 20px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--cdf-ink, #1c2127);
+  margin: 0 0 8px 0;
+}
+
+.subtitle {
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--cdf-ink-muted, #5c7080);
+  margin: 0;
+}
+
+.notice {
+  margin-top: 12px;
+  font-size: 12.5px;
+  color: var(--cdf-ink-muted, #5c7080);
+  background: #f6f8fa;
+  border: 1px solid #ebf1f5;
+  border-radius: 6px;
+  padding: 8px 12px;
+}
+
+.section {
+  margin-bottom: 36px;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.sectionTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--cdf-ink, #1c2127);
+  margin: 0;
+}
+
+.sectionDesc {
+  font-size: 13px;
+  color: var(--cdf-ink-muted, #5c7080);
+  margin: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid var(--cdf-border, #d8e1e8);
+  border-radius: 8px;
+  padding: 16px 18px;
+  box-shadow: 0 1px 3px rgba(16, 22, 26, 0.04);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.itemTitle {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--cdf-ink, #1c2127);
+  margin: 0;
+}
+
+.categoryTag {
+  font-size: 11px;
+  font-weight: 500;
+  color: #5c7080;
+  background: #f5f8fa;
+  border: 1px solid #e1e8ed;
+  border-radius: 4px;
+  padding: 2px 6px;
+  white-space: nowrap;
+}
+
+.itemDesc {
+  font-size: 13px;
+  line-height: 1.45;
+  color: #394b59;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.statusBar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  margin-top: 4px;
+}
+
+.statusInProgress {
+  color: #106ba3;
+}
+
+.statusPlanned {
+  color: #5c7080;
+}
+
+.statusDone {
+  color: #0f9960;
+}

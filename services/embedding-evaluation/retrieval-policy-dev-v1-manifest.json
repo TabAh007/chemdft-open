@@ -1,0 +1,4892 @@
+{
+  "benchmark_id": "retrieval-policy-dev-v1",
+  "status": "CORPUS_LABELS_UNREVIEWED",
+  "corpus_source_count": 6,
+  "chunk_count": 342,
+  "chunker": {
+    "max_words": 220,
+    "overlap_words": 30
+  },
+  "documents": [
+    {
+      "document_id": "pmc6538633",
+      "pmcid": "PMC6538633",
+      "title": "High-throughput calculations of catalytic properties of bimetallic alloy surfaces",
+      "doi": "10.1038/s41597-019-0080-z",
+      "topic": "bimetallic alloy surface catalysis",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6538633/",
+      "full_text_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6538633/fullTextXML",
+      "license": "CC-BY-4.0",
+      "license_url": "http://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6538633/",
+      "source_xml_sha256": "d4da038c12aa3a303db89511130966713fcc99b92f5534441c551e35d708215f",
+      "paragraph_count": 63,
+      "chunk_count": 65
+    },
+    {
+      "document_id": "pmc10934912",
+      "pmcid": "PMC10934912",
+      "title": "The Effect P Additive on the CeZrAl Support Properties and the Activity of the Pd Catalysts in Propane Oxidation",
+      "doi": "10.3390/ma17051003",
+      "topic": "palladium catalyst support and propane oxidation",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10934912/",
+      "full_text_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10934912/fullTextXML",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10934912/",
+      "source_xml_sha256": "47dce5ff7ad22b3039795c129a6a750dc5c6359096e62db0f7be1fece321256f",
+      "paragraph_count": 55,
+      "chunk_count": 76
+    },
+    {
+      "document_id": "pmc4335811",
+      "pmcid": "PMC4335811",
+      "title": "Ligand-Sensitive But Not Ligand-Diagnostic: Evaluating Cr Valence-to-Core X-ray Emission Spectroscopy as a Probe of Inner-Sphere Coordination",
+      "doi": "10.1021/ic502152r",
+      "topic": "chromium X-ray emission spectroscopy",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4335811/",
+      "full_text_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4335811/fullTextXML",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://pubs.acs.org/doi/10.1021/ic502152r",
+      "source_xml_sha256": "8c9598fefa3c1e604f116e436d550e148cf1240e2fb1c793e0a20e1409cfba71",
+      "paragraph_count": 34,
+      "chunk_count": 40
+    },
+    {
+      "document_id": "pmc9396622",
+      "pmcid": "PMC9396622",
+      "title": "Cobalt-Catalyzed Hydrogenation Reactions Enabled by Ligand-Based Storage of Dihydrogen",
+      "doi": "10.1021/acscatal.2c02467",
+      "topic": "cobalt molecular hydrogenation catalysis",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9396622/",
+      "full_text_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9396622/fullTextXML",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9396622/",
+      "source_xml_sha256": "59f8dcd53b6866d8c6cfbc8af938fdf9eb0c04e8c23e1f9558ead7a265c16e3f",
+      "paragraph_count": 39,
+      "chunk_count": 43
+    },
+    {
+      "document_id": "pmc6222785",
+      "pmcid": "PMC6222785",
+      "title": "Lewis Acidity and Basicity of Mixed Chlorometallate Ionic Liquids: Investigations from Surface Analysis and Fukui Function",
+      "doi": "10.3390/molecules23102516",
+      "topic": "chlorometallate ionic-liquid acidity",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6222785/",
+      "full_text_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6222785/fullTextXML",
+      "license": "CC-BY-4.0",
+      "license_url": "http://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6222785/",
+      "source_xml_sha256": "1f5fe262a48117c5af255a2ef18630246a07ad457f12afe169edbd113b0ee81e",
+      "paragraph_count": 37,
+      "chunk_count": 44
+    },
+    {
+      "document_id": "pmc12550025",
+      "pmcid": "PMC12550025",
+      "title": "Reaction-conditioned generative model for catalyst design and optimization with CatDRX",
+      "doi": "10.1038/s42004-025-01732-7",
+      "topic": "reaction-conditioned catalyst design",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12550025/",
+      "full_text_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12550025/fullTextXML",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_evidence_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12550025/",
+      "source_xml_sha256": "726fdf30f7a41398d613bc28d3aa1dcf8a6a642b4f22bbfaaebd9bef75041cb3",
+      "paragraph_count": 64,
+      "chunk_count": 74
+    }
+  ],
+  "chunks": [
+    {
+      "chunk_id": "pmc6538633-p00001-c6f9c67b15af",
+      "document_id": "pmc6538633",
+      "section": "Background & Summary",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Background & Summary",
+        "paragraph_ordinal": 1,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par4"
+      },
+      "content_sha256": "c6f9c67b15af5491dd614f9772553412ea6ee7013ede813f3680e51b31654a05",
+      "word_count": 87
+    },
+    {
+      "chunk_id": "pmc6538633-p00002-5953ca00ac37",
+      "document_id": "pmc6538633",
+      "section": "Background & Summary",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Background & Summary",
+        "paragraph_ordinal": 2,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par5"
+      },
+      "content_sha256": "5953ca00ac37f80fbf5a2e8a5b871246bf747958fec3e5d4b6804c66c5f72775",
+      "word_count": 131
+    },
+    {
+      "chunk_id": "pmc6538633-p00003-5a2fdcc9953b",
+      "document_id": "pmc6538633",
+      "section": "Background & Summary",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Background & Summary",
+        "paragraph_ordinal": 3,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par6"
+      },
+      "content_sha256": "5a2fdcc9953b931042b11ce2f7785313e1e6aca89c2b1d6f54c774f9b45ceab4",
+      "word_count": 179
+    },
+    {
+      "chunk_id": "pmc6538633-p00004-e9008d856dc2",
+      "document_id": "pmc6538633",
+      "section": "Background & Summary",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Background & Summary",
+        "paragraph_ordinal": 4,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par7"
+      },
+      "content_sha256": "e9008d856dc2c328b736365c0c115280fa3083fd714b7f0d2c5d5e88648a3b83",
+      "word_count": 220
+    },
+    {
+      "chunk_id": "pmc6538633-p00005-762996bc4ab0",
+      "document_id": "pmc6538633",
+      "section": "Background & Summary",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Background & Summary",
+        "paragraph_ordinal": 4,
+        "chunk_ordinal": 2,
+        "xml_node_id": "Par7"
+      },
+      "content_sha256": "762996bc4ab0cc220c90158ba4dbbaa4a09a86285c3286f33be1250c0d3de5e8",
+      "word_count": 67
+    },
+    {
+      "chunk_id": "pmc6538633-p00006-4729840bd4a6",
+      "document_id": "pmc6538633",
+      "section": "Background & Summary",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Background & Summary",
+        "paragraph_ordinal": 5,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par8"
+      },
+      "content_sha256": "4729840bd4a69f45f5bfda24e4b11498637c13a044588dee5432b875e7adc81b",
+      "word_count": 27
+    },
+    {
+      "chunk_id": "pmc6538633-p00007-dc907dd48aff",
+      "document_id": "pmc6538633",
+      "section": "Background & Summary",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Background & Summary",
+        "paragraph_ordinal": 6,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par9"
+      },
+      "content_sha256": "dc907dd48affefeb24eaa81f927070d20a7ac73cc42ab79972e2b9c6f3a65185",
+      "word_count": 116
+    },
+    {
+      "chunk_id": "pmc6538633-p00008-9be3171f6428",
+      "document_id": "pmc6538633",
+      "section": "Background & Summary",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Background & Summary",
+        "paragraph_ordinal": 7,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par10"
+      },
+      "content_sha256": "9be3171f642848e03282082109f213d1092dd451b88261d4bd613a72f43ea18f",
+      "word_count": 189
+    },
+    {
+      "chunk_id": "pmc6538633-p00009-d660b8999a87",
+      "document_id": "pmc6538633",
+      "section": "Methods",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Methods",
+        "paragraph_ordinal": 8,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par11"
+      },
+      "content_sha256": "d660b8999a87258abc87eebcbcc3e7f7a48149695be2e058c02a36e016454b02",
+      "word_count": 11
+    },
+    {
+      "chunk_id": "pmc6538633-p00010-054ca9fd325e",
+      "document_id": "pmc6538633",
+      "section": "Methods",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Methods",
+        "paragraph_ordinal": 9,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "054ca9fd325ec3f94773f69a8fd680d55fe9e2ac9c606636f3ebc4b6bf2f6728",
+      "word_count": 39
+    },
+    {
+      "chunk_id": "pmc6538633-p00011-2d054c387044",
+      "document_id": "pmc6538633",
+      "section": "Methods",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Methods",
+        "paragraph_ordinal": 10,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par12"
+      },
+      "content_sha256": "2d054c3870449146343768af2ce36dda45ed0315b571fa2897fea57b24ee69b4",
+      "word_count": 38
+    },
+    {
+      "chunk_id": "pmc6538633-p00012-1a61c8e9488a",
+      "document_id": "pmc6538633",
+      "section": "Methods",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Methods",
+        "paragraph_ordinal": 11,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par13"
+      },
+      "content_sha256": "1a61c8e9488a2f1c0216f9603113558b3ff2f143e1367f53cecc3a010fb48266",
+      "word_count": 220
+    },
+    {
+      "chunk_id": "pmc6538633-p00013-d6c97c3dd46b",
+      "document_id": "pmc6538633",
+      "section": "Methods",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Methods",
+        "paragraph_ordinal": 11,
+        "chunk_ordinal": 2,
+        "xml_node_id": "Par13"
+      },
+      "content_sha256": "d6c97c3dd46bc2d1ba68b4c322b82af2b97958079304075b98e3eb71ef55a893",
+      "word_count": 57
+    },
+    {
+      "chunk_id": "pmc6538633-p00014-07e52ea402e1",
+      "document_id": "pmc6538633",
+      "section": "Methods",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Methods",
+        "paragraph_ordinal": 12,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par14"
+      },
+      "content_sha256": "07e52ea402e1dd221f0b0012825fd358dfbf1f0c53333f614576a7bfb9cdef7a",
+      "word_count": 97
+    },
+    {
+      "chunk_id": "pmc6538633-p00015-c7c275da17c5",
+      "document_id": "pmc6538633",
+      "section": "Data Records",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Data Records",
+        "paragraph_ordinal": 13,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par15"
+      },
+      "content_sha256": "c7c275da17c588478e9a93af82f0b033f880391745c835f74c5290df6197bdcd",
+      "word_count": 136
+    },
+    {
+      "chunk_id": "pmc6538633-p00016-8363affce4b1",
+      "document_id": "pmc6538633",
+      "section": "Data Records",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Data Records",
+        "paragraph_ordinal": 14,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par16"
+      },
+      "content_sha256": "8363affce4b17d4771082196829d50821e77ddbe599ee001756962e3c7306724",
+      "word_count": 54
+    },
+    {
+      "chunk_id": "pmc6538633-p00017-a9664f8d43ec",
+      "document_id": "pmc6538633",
+      "section": "Technical Validation",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Technical Validation",
+        "paragraph_ordinal": 15,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par17"
+      },
+      "content_sha256": "a9664f8d43ec58d579de767e9145f9de11dff3fce0f65b4e4484548945758029",
+      "word_count": 78
+    },
+    {
+      "chunk_id": "pmc6538633-p00018-78155e5241cb",
+      "document_id": "pmc6538633",
+      "section": "Technical Validation",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Technical Validation",
+        "paragraph_ordinal": 16,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par18"
+      },
+      "content_sha256": "78155e5241cb0a21600379efdea521d7bbed471262017eb25529ab42dfec5c78",
+      "word_count": 157
+    },
+    {
+      "chunk_id": "pmc6538633-p00019-4000debe2c70",
+      "document_id": "pmc6538633",
+      "section": "Usage Notes",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Usage Notes",
+        "paragraph_ordinal": 17,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par19"
+      },
+      "content_sha256": "4000debe2c703ad1fdc5c62fd870f2478172b3dee56c077f915c0a5465988312",
+      "word_count": 45
+    },
+    {
+      "chunk_id": "pmc6538633-p00020-33decbea62fa",
+      "document_id": "pmc6538633",
+      "section": "Usage Notes",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Usage Notes",
+        "paragraph_ordinal": 18,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par20"
+      },
+      "content_sha256": "33decbea62fa74b7b7326c7d3d3583f8710ebfce1db360fad28b67a1498b51da",
+      "word_count": 4
+    },
+    {
+      "chunk_id": "pmc6538633-p00021-2e272ad1542a",
+      "document_id": "pmc6538633",
+      "section": "Usage Notes",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Usage Notes",
+        "paragraph_ordinal": 19,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par21"
+      },
+      "content_sha256": "2e272ad1542a76bea77866f03dd26cb8580a1d4a42f21aa1551332c6d5c01ca8",
+      "word_count": 3
+    },
+    {
+      "chunk_id": "pmc6538633-p00022-a75f63f4e27d",
+      "document_id": "pmc6538633",
+      "section": "Usage Notes",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Usage Notes",
+        "paragraph_ordinal": 20,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par22"
+      },
+      "content_sha256": "a75f63f4e27deec25451380f85701c25ca41f755ae0febb2e750ef39408456d6",
+      "word_count": 3
+    },
+    {
+      "chunk_id": "pmc6538633-p00023-460666c09a97",
+      "document_id": "pmc6538633",
+      "section": "Usage Notes",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Usage Notes",
+        "paragraph_ordinal": 21,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par23"
+      },
+      "content_sha256": "460666c09a97c08325c108a3d4ddc15fe2da2e4c2d98f6071617e7b81c31c1d0",
+      "word_count": 5
+    },
+    {
+      "chunk_id": "pmc6538633-p00024-6aadaddfb30e",
+      "document_id": "pmc6538633",
+      "section": "Usage Notes",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Usage Notes",
+        "paragraph_ordinal": 22,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par24"
+      },
+      "content_sha256": "6aadaddfb30e8638c15c9d5ffc6cd67d0d078dc48ccf92d4c3ce2fb587883875",
+      "word_count": 5
+    },
+    {
+      "chunk_id": "pmc6538633-p00025-efa3ea338de9",
+      "document_id": "pmc6538633",
+      "section": "Usage Notes",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Usage Notes",
+        "paragraph_ordinal": 23,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par25"
+      },
+      "content_sha256": "efa3ea338de9636c705d53b76025ec85457986d72f45dba7a9945e1db863d921",
+      "word_count": 3
+    },
+    {
+      "chunk_id": "pmc6538633-p00026-7f513fd167f5",
+      "document_id": "pmc6538633",
+      "section": "Usage Notes",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Usage Notes",
+        "paragraph_ordinal": 24,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par26"
+      },
+      "content_sha256": "7f513fd167f5c687c6609e7b749fb670d020463e576ae9a6a89d77018365017a",
+      "word_count": 3
+    },
+    {
+      "chunk_id": "pmc6538633-p00027-315eb91f804b",
+      "document_id": "pmc6538633",
+      "section": "Usage Notes",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Usage Notes",
+        "paragraph_ordinal": 25,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par27"
+      },
+      "content_sha256": "315eb91f804b945cb584d28645732b10a1dbc95a32388b0a628d975ca00c2b56",
+      "word_count": 8
+    },
+    {
+      "chunk_id": "pmc6538633-p00028-4176bbf7ae5a",
+      "document_id": "pmc6538633",
+      "section": "Usage Notes",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Usage Notes",
+        "paragraph_ordinal": 26,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par28"
+      },
+      "content_sha256": "4176bbf7ae5a22fe403fc46342bcc51044d301e57bc1877f66dee6466c87dc61",
+      "word_count": 1
+    },
+    {
+      "chunk_id": "pmc6538633-p00029-88b8fd5cd2c0",
+      "document_id": "pmc6538633",
+      "section": "Usage Notes",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Usage Notes",
+        "paragraph_ordinal": 27,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par29"
+      },
+      "content_sha256": "88b8fd5cd2c02e06a61a6377178cf56981076e5189bf6b7b5b061f9871a2e764",
+      "word_count": 2
+    },
+    {
+      "chunk_id": "pmc6538633-p00030-ac10cc937954",
+      "document_id": "pmc6538633",
+      "section": "Usage Notes",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Usage Notes",
+        "paragraph_ordinal": 28,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par30"
+      },
+      "content_sha256": "ac10cc937954d9a83e9200da6e9ddb21bfdaa85249deff360eefdfb8334091b6",
+      "word_count": 1
+    },
+    {
+      "chunk_id": "pmc6538633-p00031-86ac81265998",
+      "document_id": "pmc6538633",
+      "section": "Usage Notes",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Usage Notes",
+        "paragraph_ordinal": 29,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par31"
+      },
+      "content_sha256": "86ac81265998f61f919cc724e4856c9ac5bdf2a53f50b07f9e2ea280c6b40e1a",
+      "word_count": 9
+    },
+    {
+      "chunk_id": "pmc6538633-p00032-2dc04f51f689",
+      "document_id": "pmc6538633",
+      "section": "Usage Notes",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Usage Notes",
+        "paragraph_ordinal": 30,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par32"
+      },
+      "content_sha256": "2dc04f51f6892eda8ea653581578694f19da10b2e69502bacbeac50280d0392f",
+      "word_count": 2
+    },
+    {
+      "chunk_id": "pmc6538633-p00033-453f3051f972",
+      "document_id": "pmc6538633",
+      "section": "Usage Notes",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Usage Notes",
+        "paragraph_ordinal": 31,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par33"
+      },
+      "content_sha256": "453f3051f972672c2dea0ac7433863181b3e25100cbe697f0e2618c26fbd9071",
+      "word_count": 2
+    },
+    {
+      "chunk_id": "pmc6538633-p00034-0535b1640ef4",
+      "document_id": "pmc6538633",
+      "section": "Usage Notes",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Usage Notes",
+        "paragraph_ordinal": 32,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par34"
+      },
+      "content_sha256": "0535b1640ef480ccdfb595e2d815421864adc1ea3940ace02b7937436e847758",
+      "word_count": 3
+    },
+    {
+      "chunk_id": "pmc6538633-p00035-4d1f1b3486ae",
+      "document_id": "pmc6538633",
+      "section": "Usage Notes",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Usage Notes",
+        "paragraph_ordinal": 33,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par35"
+      },
+      "content_sha256": "4d1f1b3486ae4274b98a69bced4bbdbb530309f21faccfda854ce4e1438bf3ed",
+      "word_count": 4
+    },
+    {
+      "chunk_id": "pmc6538633-p00036-431c697d0b8c",
+      "document_id": "pmc6538633",
+      "section": "Usage Notes",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Usage Notes",
+        "paragraph_ordinal": 34,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par36"
+      },
+      "content_sha256": "431c697d0b8c50bd8cb58766d79f87019bb666fccbffa2a49f2140eed26e8250",
+      "word_count": 2
+    },
+    {
+      "chunk_id": "pmc6538633-p00037-bf80a439aacb",
+      "document_id": "pmc6538633",
+      "section": "Usage Notes",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Usage Notes",
+        "paragraph_ordinal": 35,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par37"
+      },
+      "content_sha256": "bf80a439aacbb63e649ab917a79520d2b15ef7dc20fe9dbe66363cc3c35dc2ec",
+      "word_count": 2
+    },
+    {
+      "chunk_id": "pmc6538633-p00038-8483e713651e",
+      "document_id": "pmc6538633",
+      "section": "Usage Notes",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Usage Notes",
+        "paragraph_ordinal": 36,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par38"
+      },
+      "content_sha256": "8483e713651ebb72de3aff20c630d97b182201d455c5cf8d65406d12ad57ce27",
+      "word_count": 3
+    },
+    {
+      "chunk_id": "pmc6538633-p00039-3e32b0724307",
+      "document_id": "pmc6538633",
+      "section": "Usage Notes",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Usage Notes",
+        "paragraph_ordinal": 37,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par39"
+      },
+      "content_sha256": "3e32b0724307627f36348bfeaeb7a6e205aecde3758b7de93103e483dc23266e",
+      "word_count": 2
+    },
+    {
+      "chunk_id": "pmc6538633-p00040-c552655d83cc",
+      "document_id": "pmc6538633",
+      "section": "Usage Notes",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Usage Notes",
+        "paragraph_ordinal": 38,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par40"
+      },
+      "content_sha256": "c552655d83cc391261a86028c91727b82e064c2e84325654719f2c80fba80690",
+      "word_count": 5
+    },
+    {
+      "chunk_id": "pmc6538633-p00041-1a4171d0b657",
+      "document_id": "pmc6538633",
+      "section": "Usage Notes",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Usage Notes",
+        "paragraph_ordinal": 39,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par41"
+      },
+      "content_sha256": "1a4171d0b657495397ad5b7bba2fe2742e75eb358ee0b91616bfefc9384ace18",
+      "word_count": 2
+    },
+    {
+      "chunk_id": "pmc6538633-p00042-1ec7297cd0ad",
+      "document_id": "pmc6538633",
+      "section": "Usage Notes",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Usage Notes",
+        "paragraph_ordinal": 40,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par42"
+      },
+      "content_sha256": "1ec7297cd0ad08bf813afb32d54aa4a62606e55a1643fd63a5ce1c4ecbb90ded",
+      "word_count": 2
+    },
+    {
+      "chunk_id": "pmc6538633-p00043-7c11827b7630",
+      "document_id": "pmc6538633",
+      "section": "Usage Notes",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Usage Notes",
+        "paragraph_ordinal": 41,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par43"
+      },
+      "content_sha256": "7c11827b76300649393e54c219dd527a061494f8e12028db8d0add6003f2d85f",
+      "word_count": 3
+    },
+    {
+      "chunk_id": "pmc6538633-p00044-11b253703e86",
+      "document_id": "pmc6538633",
+      "section": "Usage Notes",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Usage Notes",
+        "paragraph_ordinal": 42,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par44"
+      },
+      "content_sha256": "11b253703e869edd4a55b7f461afa822091452fc2dab4b5665c1b3ac5187e39c",
+      "word_count": 2
+    },
+    {
+      "chunk_id": "pmc6538633-p00045-e52a1813c460",
+      "document_id": "pmc6538633",
+      "section": "Usage Notes",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Usage Notes",
+        "paragraph_ordinal": 43,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par45"
+      },
+      "content_sha256": "e52a1813c46049513e6beb0b5c9e2acaf4b3b4120089e4b3cb2df44544d5df11",
+      "word_count": 1
+    },
+    {
+      "chunk_id": "pmc6538633-p00046-9461353a5aac",
+      "document_id": "pmc6538633",
+      "section": "Usage Notes",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Usage Notes",
+        "paragraph_ordinal": 44,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par46"
+      },
+      "content_sha256": "9461353a5aac51ceb3b26020650bc51221d734d25164d73fd815ac7a6c8f8196",
+      "word_count": 1
+    },
+    {
+      "chunk_id": "pmc6538633-p00047-39d4b54e0416",
+      "document_id": "pmc6538633",
+      "section": "Usage Notes",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Usage Notes",
+        "paragraph_ordinal": 45,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par47"
+      },
+      "content_sha256": "39d4b54e0416be65f3fcb26963ff2c5c40153a3b4044179d7d7c8a6ca2f2bf87",
+      "word_count": 1
+    },
+    {
+      "chunk_id": "pmc6538633-p00048-965694bbe0df",
+      "document_id": "pmc6538633",
+      "section": "Usage Notes",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Usage Notes",
+        "paragraph_ordinal": 46,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par48"
+      },
+      "content_sha256": "965694bbe0dfab7575df21b367ee8c9f2bb6b6eb8ebf05e2401c6205c825b966",
+      "word_count": 2
+    },
+    {
+      "chunk_id": "pmc6538633-p00049-d10b36aa74a5",
+      "document_id": "pmc6538633",
+      "section": "Usage Notes",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Usage Notes",
+        "paragraph_ordinal": 47,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par49"
+      },
+      "content_sha256": "d10b36aa74a59bcf4a88185837f658afaf3646eff2bb16c3928d0e9335e945d2",
+      "word_count": 1
+    },
+    {
+      "chunk_id": "pmc6538633-p00050-a07651e92571",
+      "document_id": "pmc6538633",
+      "section": "Usage Notes",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Usage Notes",
+        "paragraph_ordinal": 48,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par50"
+      },
+      "content_sha256": "a07651e925719c3d0891baf3dfac14a3603aad05149e0183d3447e3da30976db",
+      "word_count": 1
+    },
+    {
+      "chunk_id": "pmc6538633-p00051-f3345a3a8c09",
+      "document_id": "pmc6538633",
+      "section": "Usage Notes",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Usage Notes",
+        "paragraph_ordinal": 49,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par51"
+      },
+      "content_sha256": "f3345a3a8c097ea74acb8817d6539c4160fe1f02e77a6d1117f2965b67dfe29c",
+      "word_count": 124
+    },
+    {
+      "chunk_id": "pmc6538633-p00052-2a43189e725c",
+      "document_id": "pmc6538633",
+      "section": "Usage Notes",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Usage Notes",
+        "paragraph_ordinal": 50,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par52"
+      },
+      "content_sha256": "2a43189e725ca0a3be71b81186045a404c0b54834ae65f7a2fce450545e5ee55",
+      "word_count": 50
+    },
+    {
+      "chunk_id": "pmc6538633-p00053-189f125d0e64",
+      "document_id": "pmc6538633",
+      "section": "Usage Notes",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Usage Notes",
+        "paragraph_ordinal": 51,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par53"
+      },
+      "content_sha256": "189f125d0e64ff98170ade3396aa6df60e8af395af2c28d4ee2f4a5246f27891",
+      "word_count": 8
+    },
+    {
+      "chunk_id": "pmc6538633-p00054-cf4aa9896d07",
+      "document_id": "pmc6538633",
+      "section": "Usage Notes",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Usage Notes",
+        "paragraph_ordinal": 52,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par54"
+      },
+      "content_sha256": "cf4aa9896d07c3c39f27c9d915b46498f9736b48d4492059a22eb5ae9294fe53",
+      "word_count": 51
+    },
+    {
+      "chunk_id": "pmc6538633-p00055-23b616f75b62",
+      "document_id": "pmc6538633",
+      "section": "Usage Notes",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Usage Notes",
+        "paragraph_ordinal": 53,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par55"
+      },
+      "content_sha256": "23b616f75b625619e59d3b5ac82bdee6d1a0b553515532bc2baba0e8f908ef84",
+      "word_count": 7
+    },
+    {
+      "chunk_id": "pmc6538633-p00056-ea142c0bcb71",
+      "document_id": "pmc6538633",
+      "section": "Usage Notes",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Usage Notes",
+        "paragraph_ordinal": 54,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par56"
+      },
+      "content_sha256": "ea142c0bcb71a5d6c9df2bde8ad156dd8e46e96b52485b266f06edc96e9243e6",
+      "word_count": 5
+    },
+    {
+      "chunk_id": "pmc6538633-p00057-58a17da0b9b6",
+      "document_id": "pmc6538633",
+      "section": "Usage Notes",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Usage Notes",
+        "paragraph_ordinal": 55,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par57"
+      },
+      "content_sha256": "58a17da0b9b6868303f09f09314563b0732fbf962513ff17d472d39960d56505",
+      "word_count": 4
+    },
+    {
+      "chunk_id": "pmc6538633-p00058-179c1d54ed52",
+      "document_id": "pmc6538633",
+      "section": "Usage Notes",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Usage Notes",
+        "paragraph_ordinal": 56,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par58"
+      },
+      "content_sha256": "179c1d54ed52344e470de39f69dd12214683abd46aed1e02e1590eb8989c6618",
+      "word_count": 1
+    },
+    {
+      "chunk_id": "pmc6538633-p00059-ec664f115550",
+      "document_id": "pmc6538633",
+      "section": "Usage Notes",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Usage Notes",
+        "paragraph_ordinal": 57,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par59"
+      },
+      "content_sha256": "ec664f115550f342d1a8f446b8044834be46dc8173a423279f3514ef0140f571",
+      "word_count": 85
+    },
+    {
+      "chunk_id": "pmc6538633-p00060-78b180179b05",
+      "document_id": "pmc6538633",
+      "section": "Acknowledgements",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Acknowledgements",
+        "paragraph_ordinal": 58,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "78b180179b05f89e113dad9cf9b1f594052a082d6fc5ded1a19508f74ee2611e",
+      "word_count": 36
+    },
+    {
+      "chunk_id": "pmc6538633-p00061-f16097a2d60e",
+      "document_id": "pmc6538633",
+      "section": "Author Contributions",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Author Contributions",
+        "paragraph_ordinal": 59,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "f16097a2d60e807df759899ae751230bf4d808c4b636a9127a50b930aa72e2f5",
+      "word_count": 65
+    },
+    {
+      "chunk_id": "pmc6538633-p00062-9ce579fbb313",
+      "document_id": "pmc6538633",
+      "section": "Code Availability",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Code Availability",
+        "paragraph_ordinal": 60,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "9ce579fbb3136476aa99310b475a20df5d83516545eef48518df7b1bef6f36b7",
+      "word_count": 72
+    },
+    {
+      "chunk_id": "pmc6538633-p00063-9ba9761df944",
+      "document_id": "pmc6538633",
+      "section": "Competing Interests",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Competing Interests",
+        "paragraph_ordinal": 61,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par61"
+      },
+      "content_sha256": "9ba9761df944344679e71f50f98a25479ec835067d14e2f3d453b7d21c5f9a4f",
+      "word_count": 6
+    },
+    {
+      "chunk_id": "pmc6538633-p00064-bb2b57812875",
+      "document_id": "pmc6538633",
+      "section": "ISA-Tab metadata",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "ISA-Tab metadata",
+        "paragraph_ordinal": 62,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "bb2b5781287537a11f93fa26a7031ebb3e2f77b045d8e910d0c0b1a7b4a37819",
+      "word_count": 7
+    },
+    {
+      "chunk_id": "pmc6538633-p00065-9ce579fbb313",
+      "document_id": "pmc6538633",
+      "section": "Associated Data / Data Availability Statement",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Associated Data / Data Availability Statement",
+        "paragraph_ordinal": 63,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "9ce579fbb3136476aa99310b475a20df5d83516545eef48518df7b1bef6f36b7",
+      "word_count": 72
+    },
+    {
+      "chunk_id": "pmc10934912-p00001-89f61ebed9d3",
+      "document_id": "pmc10934912",
+      "section": "1. Introduction",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "1. Introduction",
+        "paragraph_ordinal": 1,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "89f61ebed9d34b9b0ac7b03851435b3d7e602c57ce0f6372c30d136b17d10f06",
+      "word_count": 204
+    },
+    {
+      "chunk_id": "pmc10934912-p00002-6e5d4282cf8d",
+      "document_id": "pmc10934912",
+      "section": "1. Introduction",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "1. Introduction",
+        "paragraph_ordinal": 2,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "6e5d4282cf8d6bca91d55f83457dd668349fa3cb439dbfe50ef209e13e3b6296",
+      "word_count": 136
+    },
+    {
+      "chunk_id": "pmc10934912-p00003-3e3087188088",
+      "document_id": "pmc10934912",
+      "section": "1. Introduction",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "1. Introduction",
+        "paragraph_ordinal": 3,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "3e3087188088ca658aa67ff69d493a1993338b9de94bca463d402d5954c8a1db",
+      "word_count": 220
+    },
+    {
+      "chunk_id": "pmc10934912-p00004-ff41639eef13",
+      "document_id": "pmc10934912",
+      "section": "1. Introduction",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "1. Introduction",
+        "paragraph_ordinal": 3,
+        "chunk_ordinal": 2,
+        "xml_node_id": null
+      },
+      "content_sha256": "ff41639eef1305e91ca93adef81d542712668c7a73fea2e7345b10d6bfb9fce4",
+      "word_count": 103
+    },
+    {
+      "chunk_id": "pmc10934912-p00005-f357618e415e",
+      "document_id": "pmc10934912",
+      "section": "1. Introduction",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "1. Introduction",
+        "paragraph_ordinal": 4,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "f357618e415ea7d51c3d6384468a3ad3852782617943d5b3aa221ed48a447c73",
+      "word_count": 132
+    },
+    {
+      "chunk_id": "pmc10934912-p00006-4d8ff57fdf10",
+      "document_id": "pmc10934912",
+      "section": "2. Materials and Methods / 2.1. Materials",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "2. Materials and Methods / 2.1. Materials",
+        "paragraph_ordinal": 5,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "4d8ff57fdf1098116ea2e47c40b998ecf6ec2d476206f9342f6318d43b415dce",
+      "word_count": 96
+    },
+    {
+      "chunk_id": "pmc10934912-p00007-d9acb2931569",
+      "document_id": "pmc10934912",
+      "section": "2. Materials and Methods / 2.2. Synthesis of CeZrPAl Support Materials / 2.2.1. Synthesis of CeZrPAl with Different Preparation Methods",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "2. Materials and Methods / 2.2. Synthesis of CeZrPAl Support Materials / 2.2.1. Synthesis of CeZrPAl with Different Preparation Methods",
+        "paragraph_ordinal": 6,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "d9acb2931569378d31fc4d5bdecc17cf0e99fcd9d19d8208ac41e6aa9149c8f2",
+      "word_count": 51
+    },
+    {
+      "chunk_id": "pmc10934912-p00008-6cd665641d6d",
+      "document_id": "pmc10934912",
+      "section": "2. Materials and Methods / 2.2. Synthesis of CeZrPAl Support Materials / 2.2.1. Synthesis of CeZrPAl with Different Preparation Methods",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "2. Materials and Methods / 2.2. Synthesis of CeZrPAl Support Materials / 2.2.1. Synthesis of CeZrPAl with Different Preparation Methods",
+        "paragraph_ordinal": 7,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "6cd665641d6d188ae09121b990e5bb3a25092ae94a4f4bab1f0c9772cefb6b53",
+      "word_count": 172
+    },
+    {
+      "chunk_id": "pmc10934912-p00009-49e057486902",
+      "document_id": "pmc10934912",
+      "section": "2. Materials and Methods / 2.2. Synthesis of CeZrPAl Support Materials / 2.2.1. Synthesis of CeZrPAl with Different Preparation Methods",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "2. Materials and Methods / 2.2. Synthesis of CeZrPAl Support Materials / 2.2.1. Synthesis of CeZrPAl with Different Preparation Methods",
+        "paragraph_ordinal": 8,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "49e057486902e5fd7246e1e6a62525f79079fac8087a3069281d553a393f9f28",
+      "word_count": 136
+    },
+    {
+      "chunk_id": "pmc10934912-p00010-bd31520d1f7f",
+      "document_id": "pmc10934912",
+      "section": "2. Materials and Methods / 2.2. Synthesis of CeZrPAl Support Materials / 2.2.1. Synthesis of CeZrPAl with Different Preparation Methods",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "2. Materials and Methods / 2.2. Synthesis of CeZrPAl Support Materials / 2.2.1. Synthesis of CeZrPAl with Different Preparation Methods",
+        "paragraph_ordinal": 9,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "bd31520d1f7f55575e49d70a0e19c7c71c03cfc69d4f25bbd42985dcdac27546",
+      "word_count": 157
+    },
+    {
+      "chunk_id": "pmc10934912-p00011-f99221dd4a6b",
+      "document_id": "pmc10934912",
+      "section": "2. Materials and Methods / 2.2. Synthesis of CeZrPAl Support Materials / 2.2.2. Synthesis of CeZrPAl with Different Phosphorus Contents",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "2. Materials and Methods / 2.2. Synthesis of CeZrPAl Support Materials / 2.2.2. Synthesis of CeZrPAl with Different Phosphorus Contents",
+        "paragraph_ordinal": 10,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "f99221dd4a6b9097cac631bce7120cf1a905a33a03e20cd66a3090eaf398876e",
+      "word_count": 100
+    },
+    {
+      "chunk_id": "pmc10934912-p00012-bf426050539b",
+      "document_id": "pmc10934912",
+      "section": "2. Materials and Methods / 2.2. Synthesis of CeZrPAl Support Materials / 2.2.3. Synthesis of Pd/CeZrPAl and Pd/CeZrAl Catalysts",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "2. Materials and Methods / 2.2. Synthesis of CeZrPAl Support Materials / 2.2.3. Synthesis of Pd/CeZrPAl and Pd/CeZrAl Catalysts",
+        "paragraph_ordinal": 11,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "bf426050539b4d4914e5e04c585256b89e4fb0764e477794e5861c7204198733",
+      "word_count": 132
+    },
+    {
+      "chunk_id": "pmc10934912-p00013-af3915a1e257",
+      "document_id": "pmc10934912",
+      "section": "2. Materials and Methods / 2.3. Characterizations of CeZrPAl Support Materials",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "2. Materials and Methods / 2.3. Characterizations of CeZrPAl Support Materials",
+        "paragraph_ordinal": 12,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "af3915a1e2572b23eaf5dc3c023bc53d792c24f951d86c2d6a833ee912ad624f",
+      "word_count": 71
+    },
+    {
+      "chunk_id": "pmc10934912-p00014-a0903ad77f54",
+      "document_id": "pmc10934912",
+      "section": "2. Materials and Methods / 2.3. Characterizations of CeZrPAl Support Materials",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "2. Materials and Methods / 2.3. Characterizations of CeZrPAl Support Materials",
+        "paragraph_ordinal": 13,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "a0903ad77f54d39e58878b79f207f680f182c8f4157c62640e646cb19568fc44",
+      "word_count": 57
+    },
+    {
+      "chunk_id": "pmc10934912-p00015-938f3195a922",
+      "document_id": "pmc10934912",
+      "section": "2. Materials and Methods / 2.3. Characterizations of CeZrPAl Support Materials",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "2. Materials and Methods / 2.3. Characterizations of CeZrPAl Support Materials",
+        "paragraph_ordinal": 14,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "938f3195a922c87773df253b8828d665033174669551915f78fd7cd500ca81e2",
+      "word_count": 69
+    },
+    {
+      "chunk_id": "pmc10934912-p00016-2918e22bbe9c",
+      "document_id": "pmc10934912",
+      "section": "2. Materials and Methods / 2.3. Characterizations of CeZrPAl Support Materials",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "2. Materials and Methods / 2.3. Characterizations of CeZrPAl Support Materials",
+        "paragraph_ordinal": 15,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "2918e22bbe9c9610c1f5d8940ef5994d8ccec9312decbeafb0c4198e39c6a36f",
+      "word_count": 66
+    },
+    {
+      "chunk_id": "pmc10934912-p00017-5a386a8ef3e7",
+      "document_id": "pmc10934912",
+      "section": "2. Materials and Methods / 2.3. Characterizations of CeZrPAl Support Materials",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "2. Materials and Methods / 2.3. Characterizations of CeZrPAl Support Materials",
+        "paragraph_ordinal": 16,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "5a386a8ef3e7a387285bc3b85b85c072bce8d10c1cea820edd2997bf96ad82ed",
+      "word_count": 24
+    },
+    {
+      "chunk_id": "pmc10934912-p00018-0efeb218caf5",
+      "document_id": "pmc10934912",
+      "section": "2. Materials and Methods / 2.3. Characterizations of CeZrPAl Support Materials",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "2. Materials and Methods / 2.3. Characterizations of CeZrPAl Support Materials",
+        "paragraph_ordinal": 17,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "0efeb218caf5e8ec58e3bdb8d683903951c290e182cd5f58a36448e9cb54866d",
+      "word_count": 160
+    },
+    {
+      "chunk_id": "pmc10934912-p00019-fcc756129833",
+      "document_id": "pmc10934912",
+      "section": "2. Materials and Methods / 2.4. Evaluation of C 3 H 8 Oxidation Activity",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "2. Materials and Methods / 2.4. Evaluation of C 3 H 8 Oxidation Activity",
+        "paragraph_ordinal": 18,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "fcc756129833ca097441775ce472ea09f87e7c22d824aa45abb37d2d704c184d",
+      "word_count": 195
+    },
+    {
+      "chunk_id": "pmc10934912-p00020-e2c59b30137c",
+      "document_id": "pmc10934912",
+      "section": "2. Materials and Methods / 2.4. Evaluation of C 3 H 8 Oxidation Activity",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "2. Materials and Methods / 2.4. Evaluation of C 3 H 8 Oxidation Activity",
+        "paragraph_ordinal": 19,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "e2c59b30137c6ae28458ae6ba91932bf2bca12273f11739fda5382be6ee8714d",
+      "word_count": 63
+    },
+    {
+      "chunk_id": "pmc10934912-p00021-d6c2d0adc15b",
+      "document_id": "pmc10934912",
+      "section": "3. Results and Discussion / 3.1. Properties of CeZrPAl Support Materials / 3.1.1. The Composition and Structure of CeZrPAl Supports",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "3. Results and Discussion / 3.1. Properties of CeZrPAl Support Materials / 3.1.1. The Composition and Structure of CeZrPAl Supports",
+        "paragraph_ordinal": 20,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "d6c2d0adc15b15f01c032b9d59fdb08038ca66c0b211c235e383d8871becf7f7",
+      "word_count": 220
+    },
+    {
+      "chunk_id": "pmc10934912-p00022-ad9a18d17a78",
+      "document_id": "pmc10934912",
+      "section": "3. Results and Discussion / 3.1. Properties of CeZrPAl Support Materials / 3.1.1. The Composition and Structure of CeZrPAl Supports",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "3. Results and Discussion / 3.1. Properties of CeZrPAl Support Materials / 3.1.1. The Composition and Structure of CeZrPAl Supports",
+        "paragraph_ordinal": 20,
+        "chunk_ordinal": 2,
+        "xml_node_id": null
+      },
+      "content_sha256": "ad9a18d17a78306e1af456d6f01772205df24de73e3f4143ee488960a9b15d20",
+      "word_count": 146
+    },
+    {
+      "chunk_id": "pmc10934912-p00023-39d1a92c0e92",
+      "document_id": "pmc10934912",
+      "section": "3. Results and Discussion / 3.1. Properties of CeZrPAl Support Materials / 3.1.1. The Composition and Structure of CeZrPAl Supports",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "3. Results and Discussion / 3.1. Properties of CeZrPAl Support Materials / 3.1.1. The Composition and Structure of CeZrPAl Supports",
+        "paragraph_ordinal": 21,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "39d1a92c0e92252471851027965144c1030450ae18a1dc92e7f74f82ba7fd51b",
+      "word_count": 220
+    },
+    {
+      "chunk_id": "pmc10934912-p00024-28e0f41102f3",
+      "document_id": "pmc10934912",
+      "section": "3. Results and Discussion / 3.1. Properties of CeZrPAl Support Materials / 3.1.1. The Composition and Structure of CeZrPAl Supports",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "3. Results and Discussion / 3.1. Properties of CeZrPAl Support Materials / 3.1.1. The Composition and Structure of CeZrPAl Supports",
+        "paragraph_ordinal": 21,
+        "chunk_ordinal": 2,
+        "xml_node_id": null
+      },
+      "content_sha256": "28e0f41102f3d649c2eb994e8e9c3f253642b8b2604764f58553cfb96f4c1a84",
+      "word_count": 147
+    },
+    {
+      "chunk_id": "pmc10934912-p00025-0490dbe600ad",
+      "document_id": "pmc10934912",
+      "section": "3. Results and Discussion / 3.1. Properties of CeZrPAl Support Materials / 3.1.1. The Composition and Structure of CeZrPAl Supports",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "3. Results and Discussion / 3.1. Properties of CeZrPAl Support Materials / 3.1.1. The Composition and Structure of CeZrPAl Supports",
+        "paragraph_ordinal": 22,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "0490dbe600adc7781b94d7281cce53f101c941f1aa1ebefbf0fa1bace4c1789b",
+      "word_count": 220
+    },
+    {
+      "chunk_id": "pmc10934912-p00026-f6c9a101f378",
+      "document_id": "pmc10934912",
+      "section": "3. Results and Discussion / 3.1. Properties of CeZrPAl Support Materials / 3.1.1. The Composition and Structure of CeZrPAl Supports",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "3. Results and Discussion / 3.1. Properties of CeZrPAl Support Materials / 3.1.1. The Composition and Structure of CeZrPAl Supports",
+        "paragraph_ordinal": 22,
+        "chunk_ordinal": 2,
+        "xml_node_id": null
+      },
+      "content_sha256": "f6c9a101f3785559277a7a841d64292f516d2d2ad98a8866b9190858e5f4a475",
+      "word_count": 83
+    },
+    {
+      "chunk_id": "pmc10934912-p00027-83f481cc293b",
+      "document_id": "pmc10934912",
+      "section": "3. Results and Discussion / 3.1. Properties of CeZrPAl Support Materials / 3.1.2. Texture Properties of CeZrPAl Supports",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "3. Results and Discussion / 3.1. Properties of CeZrPAl Support Materials / 3.1.2. Texture Properties of CeZrPAl Supports",
+        "paragraph_ordinal": 23,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "83f481cc293bfe46d754a88d14a5f4df64f79a8a7febec7f94c37711285946d7",
+      "word_count": 220
+    },
+    {
+      "chunk_id": "pmc10934912-p00028-5d3cfd7b10db",
+      "document_id": "pmc10934912",
+      "section": "3. Results and Discussion / 3.1. Properties of CeZrPAl Support Materials / 3.1.2. Texture Properties of CeZrPAl Supports",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "3. Results and Discussion / 3.1. Properties of CeZrPAl Support Materials / 3.1.2. Texture Properties of CeZrPAl Supports",
+        "paragraph_ordinal": 23,
+        "chunk_ordinal": 2,
+        "xml_node_id": null
+      },
+      "content_sha256": "5d3cfd7b10db656618024ae62f680ca77abb43afaa2e1b2c58d2bb9dc8b5190d",
+      "word_count": 143
+    },
+    {
+      "chunk_id": "pmc10934912-p00029-7396d38c8292",
+      "document_id": "pmc10934912",
+      "section": "3. Results and Discussion / 3.1. Properties of CeZrPAl Support Materials / 3.1.2. Texture Properties of CeZrPAl Supports",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "3. Results and Discussion / 3.1. Properties of CeZrPAl Support Materials / 3.1.2. Texture Properties of CeZrPAl Supports",
+        "paragraph_ordinal": 24,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "7396d38c829264a85882121ac03a5991745c86bbc1e7b4fa1a1564e5b89b8272",
+      "word_count": 220
+    },
+    {
+      "chunk_id": "pmc10934912-p00030-31403c26b0d6",
+      "document_id": "pmc10934912",
+      "section": "3. Results and Discussion / 3.1. Properties of CeZrPAl Support Materials / 3.1.2. Texture Properties of CeZrPAl Supports",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "3. Results and Discussion / 3.1. Properties of CeZrPAl Support Materials / 3.1.2. Texture Properties of CeZrPAl Supports",
+        "paragraph_ordinal": 24,
+        "chunk_ordinal": 2,
+        "xml_node_id": null
+      },
+      "content_sha256": "31403c26b0d63d825439f1f9db506c46cfb4ffb551431e5cf501b387d5f417c8",
+      "word_count": 220
+    },
+    {
+      "chunk_id": "pmc10934912-p00031-0f6cc138b18f",
+      "document_id": "pmc10934912",
+      "section": "3. Results and Discussion / 3.1. Properties of CeZrPAl Support Materials / 3.1.2. Texture Properties of CeZrPAl Supports",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "3. Results and Discussion / 3.1. Properties of CeZrPAl Support Materials / 3.1.2. Texture Properties of CeZrPAl Supports",
+        "paragraph_ordinal": 24,
+        "chunk_ordinal": 3,
+        "xml_node_id": null
+      },
+      "content_sha256": "0f6cc138b18fb279550cf790e4a261f2f9365dc884967fb77e4aa2d78a5c0ba3",
+      "word_count": 40
+    },
+    {
+      "chunk_id": "pmc10934912-p00032-eb6a47d417fe",
+      "document_id": "pmc10934912",
+      "section": "3. Results and Discussion / 3.1. Properties of CeZrPAl Support Materials / 3.1.2. Texture Properties of CeZrPAl Supports",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "3. Results and Discussion / 3.1. Properties of CeZrPAl Support Materials / 3.1.2. Texture Properties of CeZrPAl Supports",
+        "paragraph_ordinal": 25,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "eb6a47d417feafdf6b36dadeee55a64614529f7d0b0e476199a8ff43b9b6fc1f",
+      "word_count": 201
+    },
+    {
+      "chunk_id": "pmc10934912-p00033-dfd9cc02cc1f",
+      "document_id": "pmc10934912",
+      "section": "3. Results and Discussion / 3.1. Properties of CeZrPAl Support Materials / 3.1.2. Texture Properties of CeZrPAl Supports",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "3. Results and Discussion / 3.1. Properties of CeZrPAl Support Materials / 3.1.2. Texture Properties of CeZrPAl Supports",
+        "paragraph_ordinal": 26,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "dfd9cc02cc1ff7b38075e97278e62bc49074881288a9452e63506337f80b3ca3",
+      "word_count": 220
+    },
+    {
+      "chunk_id": "pmc10934912-p00034-b49856c3c223",
+      "document_id": "pmc10934912",
+      "section": "3. Results and Discussion / 3.1. Properties of CeZrPAl Support Materials / 3.1.2. Texture Properties of CeZrPAl Supports",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "3. Results and Discussion / 3.1. Properties of CeZrPAl Support Materials / 3.1.2. Texture Properties of CeZrPAl Supports",
+        "paragraph_ordinal": 26,
+        "chunk_ordinal": 2,
+        "xml_node_id": null
+      },
+      "content_sha256": "b49856c3c2237725c78c6b0cd7c0051dacf60f7a5ff0b808365fe1d6090b7962",
+      "word_count": 103
+    },
+    {
+      "chunk_id": "pmc10934912-p00035-405d14eff5b5",
+      "document_id": "pmc10934912",
+      "section": "3. Results and Discussion / 3.1. Properties of CeZrPAl Support Materials / 3.1.2. Texture Properties of CeZrPAl Supports",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "3. Results and Discussion / 3.1. Properties of CeZrPAl Support Materials / 3.1.2. Texture Properties of CeZrPAl Supports",
+        "paragraph_ordinal": 27,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "405d14eff5b56fa852c1a9aa006c7f29399a479254cd451ae605b6a3d76813ae",
+      "word_count": 202
+    },
+    {
+      "chunk_id": "pmc10934912-p00036-37cfa32266d6",
+      "document_id": "pmc10934912",
+      "section": "3. Results and Discussion / 3.1. Properties of CeZrPAl Support Materials / 3.1.2. Texture Properties of CeZrPAl Supports",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "3. Results and Discussion / 3.1. Properties of CeZrPAl Support Materials / 3.1.2. Texture Properties of CeZrPAl Supports",
+        "paragraph_ordinal": 28,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "37cfa32266d6bd4a6396720999552b16aab6c3159502eaecf31a2199f2402ef8",
+      "word_count": 88
+    },
+    {
+      "chunk_id": "pmc10934912-p00037-f6919cefccbd",
+      "document_id": "pmc10934912",
+      "section": "3. Results and Discussion / 3.1. Properties of CeZrPAl Support Materials / 3.1.3. Oxygen Storage Capacity (OSC) of CeZrPAl Supports",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "3. Results and Discussion / 3.1. Properties of CeZrPAl Support Materials / 3.1.3. Oxygen Storage Capacity (OSC) of CeZrPAl Supports",
+        "paragraph_ordinal": 29,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "f6919cefccbdb25f9beef053d8bc238e0e6e8effc9d6894a45e648f919f25684",
+      "word_count": 220
+    },
+    {
+      "chunk_id": "pmc10934912-p00038-1d6e0eb23882",
+      "document_id": "pmc10934912",
+      "section": "3. Results and Discussion / 3.1. Properties of CeZrPAl Support Materials / 3.1.3. Oxygen Storage Capacity (OSC) of CeZrPAl Supports",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "3. Results and Discussion / 3.1. Properties of CeZrPAl Support Materials / 3.1.3. Oxygen Storage Capacity (OSC) of CeZrPAl Supports",
+        "paragraph_ordinal": 29,
+        "chunk_ordinal": 2,
+        "xml_node_id": null
+      },
+      "content_sha256": "1d6e0eb2388237e45397e209cbfed976cd392d02017c44fed31e35adbef4505f",
+      "word_count": 89
+    },
+    {
+      "chunk_id": "pmc10934912-p00039-92eb3be7fdfb",
+      "document_id": "pmc10934912",
+      "section": "3. Results and Discussion / 3.1. Properties of CeZrPAl Support Materials / 3.1.3. Oxygen Storage Capacity (OSC) of CeZrPAl Supports",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "3. Results and Discussion / 3.1. Properties of CeZrPAl Support Materials / 3.1.3. Oxygen Storage Capacity (OSC) of CeZrPAl Supports",
+        "paragraph_ordinal": 30,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "92eb3be7fdfb36735060b770a0cb829af72cb029d4ce6867d53a5a39a025a49e",
+      "word_count": 40
+    },
+    {
+      "chunk_id": "pmc10934912-p00040-5f02781f93d8",
+      "document_id": "pmc10934912",
+      "section": "3. Results and Discussion / 3.2. Effect of P Additive Amount on Supports’ Properties",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "3. Results and Discussion / 3.2. Effect of P Additive Amount on Supports’ Properties",
+        "paragraph_ordinal": 31,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "5f02781f93d8d8de413e1a1914c8cda35dc86bb6a302be9f1704e1ef90f02d92",
+      "word_count": 34
+    },
+    {
+      "chunk_id": "pmc10934912-p00041-2644e8cd921a",
+      "document_id": "pmc10934912",
+      "section": "3. Results and Discussion / 3.2. Effect of P Additive Amount on Supports’ Properties / 3.2.1. Texture Properties of CeZrPAl Supports",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "3. Results and Discussion / 3.2. Effect of P Additive Amount on Supports’ Properties / 3.2.1. Texture Properties of CeZrPAl Supports",
+        "paragraph_ordinal": 32,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "2644e8cd921aed7d49a79fa8bcdb79533de821d217d02d04b9bdc1ee47947b4f",
+      "word_count": 220
+    },
+    {
+      "chunk_id": "pmc10934912-p00042-46ba5c501dc2",
+      "document_id": "pmc10934912",
+      "section": "3. Results and Discussion / 3.2. Effect of P Additive Amount on Supports’ Properties / 3.2.1. Texture Properties of CeZrPAl Supports",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "3. Results and Discussion / 3.2. Effect of P Additive Amount on Supports’ Properties / 3.2.1. Texture Properties of CeZrPAl Supports",
+        "paragraph_ordinal": 32,
+        "chunk_ordinal": 2,
+        "xml_node_id": null
+      },
+      "content_sha256": "46ba5c501dc2739299744dae97e80211e3d3ba5179c833d746b726199d5c195a",
+      "word_count": 220
+    },
+    {
+      "chunk_id": "pmc10934912-p00043-94f3590d1aae",
+      "document_id": "pmc10934912",
+      "section": "3. Results and Discussion / 3.2. Effect of P Additive Amount on Supports’ Properties / 3.2.1. Texture Properties of CeZrPAl Supports",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "3. Results and Discussion / 3.2. Effect of P Additive Amount on Supports’ Properties / 3.2.1. Texture Properties of CeZrPAl Supports",
+        "paragraph_ordinal": 32,
+        "chunk_ordinal": 3,
+        "xml_node_id": null
+      },
+      "content_sha256": "94f3590d1aae04275b651073ef5905edd1029a603c1ad935305e61002fc9f5a2",
+      "word_count": 159
+    },
+    {
+      "chunk_id": "pmc10934912-p00044-88a32e5202c1",
+      "document_id": "pmc10934912",
+      "section": "3. Results and Discussion / 3.2. Effect of P Additive Amount on Supports’ Properties / 3.2.1. Texture Properties of CeZrPAl Supports",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "3. Results and Discussion / 3.2. Effect of P Additive Amount on Supports’ Properties / 3.2.1. Texture Properties of CeZrPAl Supports",
+        "paragraph_ordinal": 33,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "88a32e5202c1842545cc42a2f8631659cf97c3cb8a2247524f1aeae7063f6439",
+      "word_count": 220
+    },
+    {
+      "chunk_id": "pmc10934912-p00045-67219397b414",
+      "document_id": "pmc10934912",
+      "section": "3. Results and Discussion / 3.2. Effect of P Additive Amount on Supports’ Properties / 3.2.1. Texture Properties of CeZrPAl Supports",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "3. Results and Discussion / 3.2. Effect of P Additive Amount on Supports’ Properties / 3.2.1. Texture Properties of CeZrPAl Supports",
+        "paragraph_ordinal": 33,
+        "chunk_ordinal": 2,
+        "xml_node_id": null
+      },
+      "content_sha256": "67219397b4146872d24eb4e17715b54527180433867c3c572c87b5ff88c6021c",
+      "word_count": 65
+    },
+    {
+      "chunk_id": "pmc10934912-p00046-1072358fe246",
+      "document_id": "pmc10934912",
+      "section": "3. Results and Discussion / 3.2. Effect of P Additive Amount on Supports’ Properties / 3.2.1. Texture Properties of CeZrPAl Supports",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "3. Results and Discussion / 3.2. Effect of P Additive Amount on Supports’ Properties / 3.2.1. Texture Properties of CeZrPAl Supports",
+        "paragraph_ordinal": 34,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "1072358fe2467af9b7bdfe9cac2e648150f045cc76a2b75831f5fe59af221d6a",
+      "word_count": 109
+    },
+    {
+      "chunk_id": "pmc10934912-p00047-c00461277f3b",
+      "document_id": "pmc10934912",
+      "section": "3. Results and Discussion / 3.2. Effect of P Additive Amount on Supports’ Properties / 3.2.2. Textural Properties of CeZrPAl Supports with Different P Contents",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "3. Results and Discussion / 3.2. Effect of P Additive Amount on Supports’ Properties / 3.2.2. Textural Properties of CeZrPAl Supports with Different P Contents",
+        "paragraph_ordinal": 35,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "c00461277f3b2667bb0e9e6faf15a50f2bb7a86331dbb56b2d464b8c3b4ac2ca",
+      "word_count": 220
+    },
+    {
+      "chunk_id": "pmc10934912-p00048-54577a4bf761",
+      "document_id": "pmc10934912",
+      "section": "3. Results and Discussion / 3.2. Effect of P Additive Amount on Supports’ Properties / 3.2.2. Textural Properties of CeZrPAl Supports with Different P Contents",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "3. Results and Discussion / 3.2. Effect of P Additive Amount on Supports’ Properties / 3.2.2. Textural Properties of CeZrPAl Supports with Different P Contents",
+        "paragraph_ordinal": 35,
+        "chunk_ordinal": 2,
+        "xml_node_id": null
+      },
+      "content_sha256": "54577a4bf7610edfaf1306734d8ebe35a8393d7467d899296ab083539523b957",
+      "word_count": 220
+    },
+    {
+      "chunk_id": "pmc10934912-p00049-2acaf0f93fbf",
+      "document_id": "pmc10934912",
+      "section": "3. Results and Discussion / 3.2. Effect of P Additive Amount on Supports’ Properties / 3.2.2. Textural Properties of CeZrPAl Supports with Different P Contents",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "3. Results and Discussion / 3.2. Effect of P Additive Amount on Supports’ Properties / 3.2.2. Textural Properties of CeZrPAl Supports with Different P Contents",
+        "paragraph_ordinal": 35,
+        "chunk_ordinal": 3,
+        "xml_node_id": null
+      },
+      "content_sha256": "2acaf0f93fbfa730b15f03bff561b4d190def9a92a1a27cfb3b170af3d6ef496",
+      "word_count": 79
+    },
+    {
+      "chunk_id": "pmc10934912-p00050-8f90ce9d42bc",
+      "document_id": "pmc10934912",
+      "section": "3. Results and Discussion / 3.2. Effect of P Additive Amount on Supports’ Properties / 3.2.2. Textural Properties of CeZrPAl Supports with Different P Contents",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "3. Results and Discussion / 3.2. Effect of P Additive Amount on Supports’ Properties / 3.2.2. Textural Properties of CeZrPAl Supports with Different P Contents",
+        "paragraph_ordinal": 36,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "8f90ce9d42bc68ae3690866acb85b92502728d1b19fd79d74b8cb88036740ff9",
+      "word_count": 220
+    },
+    {
+      "chunk_id": "pmc10934912-p00051-2356675a686a",
+      "document_id": "pmc10934912",
+      "section": "3. Results and Discussion / 3.2. Effect of P Additive Amount on Supports’ Properties / 3.2.2. Textural Properties of CeZrPAl Supports with Different P Contents",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "3. Results and Discussion / 3.2. Effect of P Additive Amount on Supports’ Properties / 3.2.2. Textural Properties of CeZrPAl Supports with Different P Contents",
+        "paragraph_ordinal": 36,
+        "chunk_ordinal": 2,
+        "xml_node_id": null
+      },
+      "content_sha256": "2356675a686aaaa0ee160264e5baf39aa299806d78ce0cae51d6b86deabef8d9",
+      "word_count": 80
+    },
+    {
+      "chunk_id": "pmc10934912-p00052-e763dff6eb32",
+      "document_id": "pmc10934912",
+      "section": "3. Results and Discussion / 3.2. Effect of P Additive Amount on Supports’ Properties / 3.2.2. Textural Properties of CeZrPAl Supports with Different P Contents",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "3. Results and Discussion / 3.2. Effect of P Additive Amount on Supports’ Properties / 3.2.2. Textural Properties of CeZrPAl Supports with Different P Contents",
+        "paragraph_ordinal": 37,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "e763dff6eb32f758349549f1b61cd94411c3e045a1a2c468d173fc29f4ed6f4a",
+      "word_count": 163
+    },
+    {
+      "chunk_id": "pmc10934912-p00053-bebdeb477aae",
+      "document_id": "pmc10934912",
+      "section": "3. Results and Discussion / 3.2. Effect of P Additive Amount on Supports’ Properties / 3.2.2. Textural Properties of CeZrPAl Supports with Different P Contents",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "3. Results and Discussion / 3.2. Effect of P Additive Amount on Supports’ Properties / 3.2.2. Textural Properties of CeZrPAl Supports with Different P Contents",
+        "paragraph_ordinal": 38,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "bebdeb477aae82e35f526aeb69a6b6395454fa996a196b1dc8dc9556e17f5078",
+      "word_count": 190
+    },
+    {
+      "chunk_id": "pmc10934912-p00054-e639c408d3ad",
+      "document_id": "pmc10934912",
+      "section": "3. Results and Discussion / 3.2. Effect of P Additive Amount on Supports’ Properties / 3.2.2. Textural Properties of CeZrPAl Supports with Different P Contents",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "3. Results and Discussion / 3.2. Effect of P Additive Amount on Supports’ Properties / 3.2.2. Textural Properties of CeZrPAl Supports with Different P Contents",
+        "paragraph_ordinal": 39,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "e639c408d3ade0af1eb659863e71f5840629f592d2eeaaf8d9aaf9c4460ae5ea",
+      "word_count": 220
+    },
+    {
+      "chunk_id": "pmc10934912-p00055-5dd6403125d3",
+      "document_id": "pmc10934912",
+      "section": "3. Results and Discussion / 3.2. Effect of P Additive Amount on Supports’ Properties / 3.2.2. Textural Properties of CeZrPAl Supports with Different P Contents",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "3. Results and Discussion / 3.2. Effect of P Additive Amount on Supports’ Properties / 3.2.2. Textural Properties of CeZrPAl Supports with Different P Contents",
+        "paragraph_ordinal": 39,
+        "chunk_ordinal": 2,
+        "xml_node_id": null
+      },
+      "content_sha256": "5dd6403125d3cf75ce5e3d9297cbe2525b20351a09f86a6f95ec6169ea637b2e",
+      "word_count": 124
+    },
+    {
+      "chunk_id": "pmc10934912-p00056-308b4b3e3062",
+      "document_id": "pmc10934912",
+      "section": "3. Results and Discussion / 3.2. Effect of P Additive Amount on Supports’ Properties / 3.2.3. Oxygen Storage Capacity (OSC) of CeZrPAl Supports with Different P Contents",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "3. Results and Discussion / 3.2. Effect of P Additive Amount on Supports’ Properties / 3.2.3. Oxygen Storage Capacity (OSC) of CeZrPAl Supports with Different P Contents",
+        "paragraph_ordinal": 40,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "308b4b3e3062469d7176c81913e83a523ccd63d3adc37cf165cbf5a188c57aa3",
+      "word_count": 192
+    },
+    {
+      "chunk_id": "pmc10934912-p00057-e022772bfe5e",
+      "document_id": "pmc10934912",
+      "section": "3. Results and Discussion / 3.2. Effect of P Additive Amount on Supports’ Properties / 3.2.4. Activity of C 3 H 8 Oxidation",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "3. Results and Discussion / 3.2. Effect of P Additive Amount on Supports’ Properties / 3.2.4. Activity of C 3 H 8 Oxidation",
+        "paragraph_ordinal": 41,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "e022772bfe5e692733ea2b4a2d800e9512024504874c03c852d4e86334ae378c",
+      "word_count": 220
+    },
+    {
+      "chunk_id": "pmc10934912-p00058-dada7ba0ee85",
+      "document_id": "pmc10934912",
+      "section": "3. Results and Discussion / 3.2. Effect of P Additive Amount on Supports’ Properties / 3.2.4. Activity of C 3 H 8 Oxidation",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "3. Results and Discussion / 3.2. Effect of P Additive Amount on Supports’ Properties / 3.2.4. Activity of C 3 H 8 Oxidation",
+        "paragraph_ordinal": 41,
+        "chunk_ordinal": 2,
+        "xml_node_id": null
+      },
+      "content_sha256": "dada7ba0ee85ab690c6d304b8295fa6fa28634cce1d7ce5749ff506650007abc",
+      "word_count": 167
+    },
+    {
+      "chunk_id": "pmc10934912-p00059-0b6fbcf21ad8",
+      "document_id": "pmc10934912",
+      "section": "3. Results and Discussion / 3.2. Effect of P Additive Amount on Supports’ Properties / 3.2.4. Activity of C 3 H 8 Oxidation",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "3. Results and Discussion / 3.2. Effect of P Additive Amount on Supports’ Properties / 3.2.4. Activity of C 3 H 8 Oxidation",
+        "paragraph_ordinal": 42,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "0b6fbcf21ad8642c3fd6773b74d7ab2e47fa6935ce654eab5eee013ece810131",
+      "word_count": 220
+    },
+    {
+      "chunk_id": "pmc10934912-p00060-a6a6d7e34d49",
+      "document_id": "pmc10934912",
+      "section": "3. Results and Discussion / 3.2. Effect of P Additive Amount on Supports’ Properties / 3.2.4. Activity of C 3 H 8 Oxidation",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "3. Results and Discussion / 3.2. Effect of P Additive Amount on Supports’ Properties / 3.2.4. Activity of C 3 H 8 Oxidation",
+        "paragraph_ordinal": 42,
+        "chunk_ordinal": 2,
+        "xml_node_id": null
+      },
+      "content_sha256": "a6a6d7e34d49f3afcea3a7156fda8febd740ffa26ff6506af2176b4cdbef6b56",
+      "word_count": 220
+    },
+    {
+      "chunk_id": "pmc10934912-p00061-a0ac9393a0b1",
+      "document_id": "pmc10934912",
+      "section": "3. Results and Discussion / 3.2. Effect of P Additive Amount on Supports’ Properties / 3.2.4. Activity of C 3 H 8 Oxidation",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "3. Results and Discussion / 3.2. Effect of P Additive Amount on Supports’ Properties / 3.2.4. Activity of C 3 H 8 Oxidation",
+        "paragraph_ordinal": 42,
+        "chunk_ordinal": 3,
+        "xml_node_id": null
+      },
+      "content_sha256": "a0ac9393a0b1a7dc89c6eeb1382d52f207303114c9b4e36c21c610a79b3c012f",
+      "word_count": 76
+    },
+    {
+      "chunk_id": "pmc10934912-p00062-05d743dd59a8",
+      "document_id": "pmc10934912",
+      "section": "3. Results and Discussion / 3.2. Effect of P Additive Amount on Supports’ Properties / 3.2.4. Activity of C 3 H 8 Oxidation",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "3. Results and Discussion / 3.2. Effect of P Additive Amount on Supports’ Properties / 3.2.4. Activity of C 3 H 8 Oxidation",
+        "paragraph_ordinal": 43,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "05d743dd59a8f159e402662e982e1b5194f6165df7113b93a29b68ce4b1f044c",
+      "word_count": 133
+    },
+    {
+      "chunk_id": "pmc10934912-p00063-ea2383be60bd",
+      "document_id": "pmc10934912",
+      "section": "3. Results and Discussion / 3.2. Effect of P Additive Amount on Supports’ Properties / 3.2.4. Activity of C 3 H 8 Oxidation",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "3. Results and Discussion / 3.2. Effect of P Additive Amount on Supports’ Properties / 3.2.4. Activity of C 3 H 8 Oxidation",
+        "paragraph_ordinal": 44,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "ea2383be60bd6e3bce41078482c75b23f684cb21889ea821ff4ff13e4d8781a6",
+      "word_count": 220
+    },
+    {
+      "chunk_id": "pmc10934912-p00064-23b60e5c8a8e",
+      "document_id": "pmc10934912",
+      "section": "3. Results and Discussion / 3.2. Effect of P Additive Amount on Supports’ Properties / 3.2.4. Activity of C 3 H 8 Oxidation",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "3. Results and Discussion / 3.2. Effect of P Additive Amount on Supports’ Properties / 3.2.4. Activity of C 3 H 8 Oxidation",
+        "paragraph_ordinal": 44,
+        "chunk_ordinal": 2,
+        "xml_node_id": null
+      },
+      "content_sha256": "23b60e5c8a8e31fbbb65669fa46f417425f97e34fdccf41bc84f9b352ef62913",
+      "word_count": 69
+    },
+    {
+      "chunk_id": "pmc10934912-p00065-992d22c3e384",
+      "document_id": "pmc10934912",
+      "section": "3. Results and Discussion / 3.2. Effect of P Additive Amount on Supports’ Properties / 3.2.4. Activity of C 3 H 8 Oxidation",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "3. Results and Discussion / 3.2. Effect of P Additive Amount on Supports’ Properties / 3.2.4. Activity of C 3 H 8 Oxidation",
+        "paragraph_ordinal": 45,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "992d22c3e384887fefa7e1074f488157adbd135c96073c4fc923ad9de5632c23",
+      "word_count": 130
+    },
+    {
+      "chunk_id": "pmc10934912-p00066-c5051b72a370",
+      "document_id": "pmc10934912",
+      "section": "4. Conclusions",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "4. Conclusions",
+        "paragraph_ordinal": 46,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "c5051b72a37011e039676efea67ed6b4660260197b25f488b4eb9352c6e7f8cb",
+      "word_count": 220
+    },
+    {
+      "chunk_id": "pmc10934912-p00067-a64156c1106c",
+      "document_id": "pmc10934912",
+      "section": "4. Conclusions",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "4. Conclusions",
+        "paragraph_ordinal": 46,
+        "chunk_ordinal": 2,
+        "xml_node_id": null
+      },
+      "content_sha256": "a64156c1106ca3b11981df23a61ff270f999fac295f71de6ce6ca1e38932ff33",
+      "word_count": 151
+    },
+    {
+      "chunk_id": "pmc10934912-p00068-db8eb4855686",
+      "document_id": "pmc10934912",
+      "section": "Acknowledgments",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Acknowledgments",
+        "paragraph_ordinal": 47,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "db8eb4855686c16ba8b67b2da4f8d26ac42148de4dc007c68af01976a0149e71",
+      "word_count": 14
+    },
+    {
+      "chunk_id": "pmc10934912-p00069-52f315880961",
+      "document_id": "pmc10934912",
+      "section": "Supplementary Materials",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Supplementary Materials",
+        "paragraph_ordinal": 48,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "52f3158809619a070924e47b5b8fb493a96539b6e75e194a5e61df4ee4b33f3b",
+      "word_count": 146
+    },
+    {
+      "chunk_id": "pmc10934912-p00070-30d7c0809706",
+      "document_id": "pmc10934912",
+      "section": "Author Contributions",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Author Contributions",
+        "paragraph_ordinal": 49,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "30d7c08097069d707efd4e15d0294dec32b9579103517594167bf3112385fb1f",
+      "word_count": 31
+    },
+    {
+      "chunk_id": "pmc10934912-p00071-a3014a36534d",
+      "document_id": "pmc10934912",
+      "section": "Institutional Review Board Statement",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Institutional Review Board Statement",
+        "paragraph_ordinal": 50,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "a3014a36534d5612e7e04f74fc455b30bd0101d370991d349923efd6cc69ebc0",
+      "word_count": 2
+    },
+    {
+      "chunk_id": "pmc10934912-p00072-a3014a36534d",
+      "document_id": "pmc10934912",
+      "section": "Informed Consent Statement",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Informed Consent Statement",
+        "paragraph_ordinal": 51,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "a3014a36534d5612e7e04f74fc455b30bd0101d370991d349923efd6cc69ebc0",
+      "word_count": 2
+    },
+    {
+      "chunk_id": "pmc10934912-p00073-007f8702a975",
+      "document_id": "pmc10934912",
+      "section": "Data Availability Statement",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Data Availability Statement",
+        "paragraph_ordinal": 52,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "007f8702a9752b9e705db9689e4f2a9e7a20ae0633303fc8edd8dda5a07a28c9",
+      "word_count": 6
+    },
+    {
+      "chunk_id": "pmc10934912-p00074-84b994e56c97",
+      "document_id": "pmc10934912",
+      "section": "Conflicts of Interest",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Conflicts of Interest",
+        "paragraph_ordinal": 53,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "84b994e56c97b187e59304059d8405c7fcd878b03f953d16d1e101309901ab14",
+      "word_count": 74
+    },
+    {
+      "chunk_id": "pmc10934912-p00075-bce8ec4bacd2",
+      "document_id": "pmc10934912",
+      "section": "Funding Statement",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Funding Statement",
+        "paragraph_ordinal": 54,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "bce8ec4bacd2dd19a6b861b737c84c74ebe91365373df5e1f232c5b3297e1f99",
+      "word_count": 59
+    },
+    {
+      "chunk_id": "pmc10934912-p00076-007f8702a975",
+      "document_id": "pmc10934912",
+      "section": "Associated Data / Data Availability Statement",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Associated Data / Data Availability Statement",
+        "paragraph_ordinal": 55,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "007f8702a9752b9e705db9689e4f2a9e7a20ae0633303fc8edd8dda5a07a28c9",
+      "word_count": 6
+    },
+    {
+      "chunk_id": "pmc4335811-p00001-3b13e4a38f5a",
+      "document_id": "pmc4335811",
+      "section": "Introduction",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Introduction",
+        "paragraph_ordinal": 1,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "3b13e4a38f5a3f66ce67adc2e234d440c2351979bd06ceeaace1dbf5ae260990",
+      "word_count": 81
+    },
+    {
+      "chunk_id": "pmc4335811-p00002-87b08799a7d6",
+      "document_id": "pmc4335811",
+      "section": "Introduction",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Introduction",
+        "paragraph_ordinal": 2,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "87b08799a7d653702ab3c8e15b33c86d7d624877c2fb4e1d07d64cd43f97740c",
+      "word_count": 104
+    },
+    {
+      "chunk_id": "pmc4335811-p00003-7100c7c5d508",
+      "document_id": "pmc4335811",
+      "section": "Introduction",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Introduction",
+        "paragraph_ordinal": 3,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "7100c7c5d50893f8973d74c1a3f474da21e89f5ccf40c4a1ac67698f6b861a27",
+      "word_count": 220
+    },
+    {
+      "chunk_id": "pmc4335811-p00004-14f59aa3cfe6",
+      "document_id": "pmc4335811",
+      "section": "Introduction",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Introduction",
+        "paragraph_ordinal": 3,
+        "chunk_ordinal": 2,
+        "xml_node_id": null
+      },
+      "content_sha256": "14f59aa3cfe635e368e545eaead7a8207421942e01068bd228211d329ea2d188",
+      "word_count": 88
+    },
+    {
+      "chunk_id": "pmc4335811-p00005-947c25f585e6",
+      "document_id": "pmc4335811",
+      "section": "Introduction",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Introduction",
+        "paragraph_ordinal": 4,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "947c25f585e6432058b18f7de66da190457ed01bd5c06160e34d4ecf110921cb",
+      "word_count": 83
+    },
+    {
+      "chunk_id": "pmc4335811-p00006-baaaed023bbd",
+      "document_id": "pmc4335811",
+      "section": "Introduction",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Introduction",
+        "paragraph_ordinal": 5,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "baaaed023bbda3e46a9bb915646906a87ce3c61271e7c2bfa1d2aecc54d1a9cc",
+      "word_count": 182
+    },
+    {
+      "chunk_id": "pmc4335811-p00007-7f52fc80e21d",
+      "document_id": "pmc4335811",
+      "section": "Introduction",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Introduction",
+        "paragraph_ordinal": 6,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "7f52fc80e21d0ec38a5e33a04475a17c735908611c50e0be6ee04def4ac25856",
+      "word_count": 166
+    },
+    {
+      "chunk_id": "pmc4335811-p00008-2adb3b0321a7",
+      "document_id": "pmc4335811",
+      "section": "Introduction",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Introduction",
+        "paragraph_ordinal": 7,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "2adb3b0321a7de2a4cdc8b5f0aceda700ebd80d8eeffea7862bc03368ca26e02",
+      "word_count": 126
+    },
+    {
+      "chunk_id": "pmc4335811-p00009-8ab79779702a",
+      "document_id": "pmc4335811",
+      "section": "Experimental Section / General Considerations",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Experimental Section / General Considerations",
+        "paragraph_ordinal": 8,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "8ab79779702a32b0632c38aad84977915fb442ee9692abbb2ccb214490051166",
+      "word_count": 156
+    },
+    {
+      "chunk_id": "pmc4335811-p00010-01a6729f7478",
+      "document_id": "pmc4335811",
+      "section": "Experimental Section / Sample Preparation",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Experimental Section / Sample Preparation",
+        "paragraph_ordinal": 9,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "01a6729f7478003e315c22bd4606f8dc73f3ed03c317f9b5fc526c1e1c966f0e",
+      "word_count": 35
+    },
+    {
+      "chunk_id": "pmc4335811-p00011-4546ba5f1d5f",
+      "document_id": "pmc4335811",
+      "section": "Experimental Section / X-ray Emission Spectroscopy",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Experimental Section / X-ray Emission Spectroscopy",
+        "paragraph_ordinal": 10,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "4546ba5f1d5fa5808af6dd84bb9d0e304da9a0d8afee6a4a2fcf71fb7978bfbe",
+      "word_count": 220
+    },
+    {
+      "chunk_id": "pmc4335811-p00012-4aea647e4015",
+      "document_id": "pmc4335811",
+      "section": "Experimental Section / X-ray Emission Spectroscopy",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Experimental Section / X-ray Emission Spectroscopy",
+        "paragraph_ordinal": 10,
+        "chunk_ordinal": 2,
+        "xml_node_id": null
+      },
+      "content_sha256": "4aea647e4015d3d1ac0b6b5f750056f199b4a333e0f4bf81a6fd4ed4bb64532e",
+      "word_count": 109
+    },
+    {
+      "chunk_id": "pmc4335811-p00013-e962df31a6c6",
+      "document_id": "pmc4335811",
+      "section": "Experimental Section / X-ray Emission Spectroscopy",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Experimental Section / X-ray Emission Spectroscopy",
+        "paragraph_ordinal": 11,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "e962df31a6c681a6ae1d291ae3114f78944d71674f2c86cae61d1bf5da5159c8",
+      "word_count": 118
+    },
+    {
+      "chunk_id": "pmc4335811-p00014-e4443784ac63",
+      "document_id": "pmc4335811",
+      "section": "Experimental Section / DFT Calculations",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Experimental Section / DFT Calculations",
+        "paragraph_ordinal": 12,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "e4443784ac635a6b503bb03ce221d98896396956b09cd38ec1e396d2e45da334",
+      "word_count": 86
+    },
+    {
+      "chunk_id": "pmc4335811-p00015-612f5063805a",
+      "document_id": "pmc4335811",
+      "section": "Experimental Section / DFT Calculations",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Experimental Section / DFT Calculations",
+        "paragraph_ordinal": 13,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "612f5063805a2ed08f497f279bcc51844f84724641b0967f238f889b9f464ccd",
+      "word_count": 78
+    },
+    {
+      "chunk_id": "pmc4335811-p00016-3e41b2601259",
+      "document_id": "pmc4335811",
+      "section": "Results and Discussion / Experimental Cr V2C XES: Fitting and Qualitative Trends",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and Discussion / Experimental Cr V2C XES: Fitting and Qualitative Trends",
+        "paragraph_ordinal": 14,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "3e41b26012598cb4a05ce9272ed24275d4b75c2274403730f1ca3b0452158df1",
+      "word_count": 164
+    },
+    {
+      "chunk_id": "pmc4335811-p00017-e37fc897b46f",
+      "document_id": "pmc4335811",
+      "section": "Results and Discussion / Experimental Cr V2C XES: Fitting and Qualitative Trends",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and Discussion / Experimental Cr V2C XES: Fitting and Qualitative Trends",
+        "paragraph_ordinal": 15,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "e37fc897b46fd9731aec264ab0e92630301b60ad32d62057f69be3e5efc880c9",
+      "word_count": 155
+    },
+    {
+      "chunk_id": "pmc4335811-p00018-a5ecd5498ac2",
+      "document_id": "pmc4335811",
+      "section": "Results and Discussion / Experimental Cr V2C XES: Fitting and Qualitative Trends",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and Discussion / Experimental Cr V2C XES: Fitting and Qualitative Trends",
+        "paragraph_ordinal": 16,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "a5ecd5498ac25ce723fd7837d5cb97445382eb90a7ccbc0e4d7c42687ee1097a",
+      "word_count": 213
+    },
+    {
+      "chunk_id": "pmc4335811-p00019-9ba46744463f",
+      "document_id": "pmc4335811",
+      "section": "Results and Discussion / Experimental Cr V2C XES: Fitting and Qualitative Trends",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and Discussion / Experimental Cr V2C XES: Fitting and Qualitative Trends",
+        "paragraph_ordinal": 17,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "9ba46744463f797d97b9f61251b5b926149782f09a88dbb4e0876769de6c7908",
+      "word_count": 88
+    },
+    {
+      "chunk_id": "pmc4335811-p00020-a4648b07cca5",
+      "document_id": "pmc4335811",
+      "section": "Results and Discussion / Calculated Cr V2C XES: Reproducing Experimental Data",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and Discussion / Calculated Cr V2C XES: Reproducing Experimental Data",
+        "paragraph_ordinal": 18,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "a4648b07cca540ec72faa306f3de8e1bf97ee5b3316c3545ced0fd7da62c8546",
+      "word_count": 171
+    },
+    {
+      "chunk_id": "pmc4335811-p00021-2a23ea346240",
+      "document_id": "pmc4335811",
+      "section": "Results and Discussion / Calculated Cr V2C XES: Reproducing Experimental Data",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and Discussion / Calculated Cr V2C XES: Reproducing Experimental Data",
+        "paragraph_ordinal": 19,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "2a23ea3462404745ff05a857aaf33d1adc32d840ca93fa9310cd205f366dc77b",
+      "word_count": 128
+    },
+    {
+      "chunk_id": "pmc4335811-p00022-c214492db799",
+      "document_id": "pmc4335811",
+      "section": "Results and Discussion / Calculated Cr V2C XES: Reproducing Experimental Data",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and Discussion / Calculated Cr V2C XES: Reproducing Experimental Data",
+        "paragraph_ordinal": 20,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "c214492db7994703aa9765ebffff7fa6a97b5fb17e91c5c46c38d6c8c4f8311d",
+      "word_count": 82
+    },
+    {
+      "chunk_id": "pmc4335811-p00023-5c3f94b7a783",
+      "document_id": "pmc4335811",
+      "section": "Results and Discussion / Calculated Cr V2C XES: Reproducing Experimental Data",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and Discussion / Calculated Cr V2C XES: Reproducing Experimental Data",
+        "paragraph_ordinal": 21,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "5c3f94b7a783c529dbdc1f4ba6e14c59e2c62418a7186ee713fa8acf122e4e1f",
+      "word_count": 122
+    },
+    {
+      "chunk_id": "pmc4335811-p00024-8c5c58e2710f",
+      "document_id": "pmc4335811",
+      "section": "Results and Discussion / Calculated Cr V2C XES: Reproducing Experimental Data",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and Discussion / Calculated Cr V2C XES: Reproducing Experimental Data",
+        "paragraph_ordinal": 22,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "8c5c58e2710f379189aa7e838b2c26d9c9850b1666417b1d1ba534afbd2eff2a",
+      "word_count": 56
+    },
+    {
+      "chunk_id": "pmc4335811-p00025-264b891a0caf",
+      "document_id": "pmc4335811",
+      "section": "Results and Discussion / Calculated Cr V2C XES Energies: Toward Identifying Unknown Ligands",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and Discussion / Calculated Cr V2C XES Energies: Toward Identifying Unknown Ligands",
+        "paragraph_ordinal": 23,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "264b891a0caf6d6a8497cb4d6a235610f97c9fb6ec6537367e416f73626ff2fa",
+      "word_count": 145
+    },
+    {
+      "chunk_id": "pmc4335811-p00026-336346b1e722",
+      "document_id": "pmc4335811",
+      "section": "Results and Discussion / Calculated Cr V2C XES Energies: Toward Identifying Unknown Ligands",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and Discussion / Calculated Cr V2C XES Energies: Toward Identifying Unknown Ligands",
+        "paragraph_ordinal": 24,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "336346b1e72222bce6ebb1c0d88de321fda56e78ecd653d0b2dfea75a3dcdf36",
+      "word_count": 66
+    },
+    {
+      "chunk_id": "pmc4335811-p00027-1618657c7267",
+      "document_id": "pmc4335811",
+      "section": "Results and Discussion / Calculated Cr V2C XES Energies: Toward Identifying Unknown Ligands",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and Discussion / Calculated Cr V2C XES Energies: Toward Identifying Unknown Ligands",
+        "paragraph_ordinal": 25,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "1618657c7267fe3ee783d366b812b6de9dffd27fbd02bafd30a3a60a7bfbdf70",
+      "word_count": 185
+    },
+    {
+      "chunk_id": "pmc4335811-p00028-84d0a3063278",
+      "document_id": "pmc4335811",
+      "section": "Results and Discussion / Cr V2C XES Intensities",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and Discussion / Cr V2C XES Intensities",
+        "paragraph_ordinal": 26,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "84d0a3063278109cc13990c58d89d5901bd03c6f0614750fc5616c2595d93a97",
+      "word_count": 220
+    },
+    {
+      "chunk_id": "pmc4335811-p00029-8bff25f58eff",
+      "document_id": "pmc4335811",
+      "section": "Results and Discussion / Cr V2C XES Intensities",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and Discussion / Cr V2C XES Intensities",
+        "paragraph_ordinal": 26,
+        "chunk_ordinal": 2,
+        "xml_node_id": null
+      },
+      "content_sha256": "8bff25f58eff8edaf537c6ac5fad56a4689b8eb9ba336adcf7d9170fe6812512",
+      "word_count": 42
+    },
+    {
+      "chunk_id": "pmc4335811-p00030-7d198bbc5b3c",
+      "document_id": "pmc4335811",
+      "section": "Results and Discussion / Cr V2C XES Intensities",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and Discussion / Cr V2C XES Intensities",
+        "paragraph_ordinal": 27,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "7d198bbc5b3ca0a3fdb1db801ba56c0d6d64164cdd6c0637aadfc4fb9774b7f2",
+      "word_count": 132
+    },
+    {
+      "chunk_id": "pmc4335811-p00031-e6ad8bc93e49",
+      "document_id": "pmc4335811",
+      "section": "Results and Discussion / Cr V2C XES Intensities",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and Discussion / Cr V2C XES Intensities",
+        "paragraph_ordinal": 28,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "e6ad8bc93e499a1a04d91f7a77ce9446a4117db3192d52b3cccc2c556f7e2f94",
+      "word_count": 220
+    },
+    {
+      "chunk_id": "pmc4335811-p00032-538181ff3a78",
+      "document_id": "pmc4335811",
+      "section": "Results and Discussion / Cr V2C XES Intensities",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and Discussion / Cr V2C XES Intensities",
+        "paragraph_ordinal": 28,
+        "chunk_ordinal": 2,
+        "xml_node_id": null
+      },
+      "content_sha256": "538181ff3a78e75121971cb7f824070e36cf939c5db3a57e8acd8f41679956ee",
+      "word_count": 93
+    },
+    {
+      "chunk_id": "pmc4335811-p00033-e8339244ca8c",
+      "document_id": "pmc4335811",
+      "section": "Results and Discussion / Cr V2C XES Intensities",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and Discussion / Cr V2C XES Intensities",
+        "paragraph_ordinal": 29,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "e8339244ca8ca78eaafcaf7faca9e95d6088a3d66b58034bc36088fdf0a6d332",
+      "word_count": 186
+    },
+    {
+      "chunk_id": "pmc4335811-p00034-6935268645c0",
+      "document_id": "pmc4335811",
+      "section": "Results and Discussion / Cr V2C XES Intensities",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and Discussion / Cr V2C XES Intensities",
+        "paragraph_ordinal": 30,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "6935268645c085943d2da3675d3351952f2e436ce4afa4daddf9de663d52b822",
+      "word_count": 120
+    },
+    {
+      "chunk_id": "pmc4335811-p00035-ce77ab115ebb",
+      "document_id": "pmc4335811",
+      "section": "Results and Discussion / Cr V2C XES Intensities",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and Discussion / Cr V2C XES Intensities",
+        "paragraph_ordinal": 31,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "ce77ab115ebb0a8da337c940280f501997cc5c828fb8d14494add00860724791",
+      "word_count": 220
+    },
+    {
+      "chunk_id": "pmc4335811-p00036-817dde48c743",
+      "document_id": "pmc4335811",
+      "section": "Results and Discussion / Cr V2C XES Intensities",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and Discussion / Cr V2C XES Intensities",
+        "paragraph_ordinal": 31,
+        "chunk_ordinal": 2,
+        "xml_node_id": null
+      },
+      "content_sha256": "817dde48c743cfafecb5e818696dca3443cbcff8929a324edfe8293c2ba04405",
+      "word_count": 33
+    },
+    {
+      "chunk_id": "pmc4335811-p00037-2d1dfc87c7a0",
+      "document_id": "pmc4335811",
+      "section": "Results and Discussion / Cr V2C XES Intensities",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and Discussion / Cr V2C XES Intensities",
+        "paragraph_ordinal": 32,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "2d1dfc87c7a02fbd2c98c1b7844ae05bb66790aa72ffa3c10d6c0ecc024534ed",
+      "word_count": 220
+    },
+    {
+      "chunk_id": "pmc4335811-p00038-d159e4478df7",
+      "document_id": "pmc4335811",
+      "section": "Results and Discussion / Cr V2C XES Intensities",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and Discussion / Cr V2C XES Intensities",
+        "paragraph_ordinal": 32,
+        "chunk_ordinal": 2,
+        "xml_node_id": null
+      },
+      "content_sha256": "d159e4478df7d0118fa13967b289bdfaf74299eeeeec5151b47aff11d0f41181",
+      "word_count": 53
+    },
+    {
+      "chunk_id": "pmc4335811-p00039-4e3f714d24da",
+      "document_id": "pmc4335811",
+      "section": "Conclusions",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Conclusions",
+        "paragraph_ordinal": 33,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "4e3f714d24da0916785fe6d99f31adb125db03ed457f2f0d790dbcbb81c7fd99",
+      "word_count": 111
+    },
+    {
+      "chunk_id": "pmc4335811-p00040-1ff04ccc40a5",
+      "document_id": "pmc4335811",
+      "section": "Conclusions",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Conclusions",
+        "paragraph_ordinal": 34,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "1ff04ccc40a5fd4156c220e97011776c2bb221bfbc18227543e3ee7c20ca9338",
+      "word_count": 167
+    },
+    {
+      "chunk_id": "pmc9396622-p00001-35b7ab5eee47",
+      "document_id": "pmc9396622",
+      "section": "Introduction",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Introduction",
+        "paragraph_ordinal": 1,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "35b7ab5eee473f0d61aaecc5aa865da41e525f1243a2412d9e13731e31cd6423",
+      "word_count": 104
+    },
+    {
+      "chunk_id": "pmc9396622-p00002-84cf0296dfe5",
+      "document_id": "pmc9396622",
+      "section": "Introduction",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Introduction",
+        "paragraph_ordinal": 2,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "84cf0296dfe5efe4058d29be6e6092d878085feccc95ba11869159fcbc26c5ef",
+      "word_count": 112
+    },
+    {
+      "chunk_id": "pmc9396622-p00003-703bf8abf458",
+      "document_id": "pmc9396622",
+      "section": "Introduction",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Introduction",
+        "paragraph_ordinal": 3,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "703bf8abf458586d5c7927859b42c927017b911adeef4fefa20c473fca5d2f11",
+      "word_count": 101
+    },
+    {
+      "chunk_id": "pmc9396622-p00004-850dc92441ed",
+      "document_id": "pmc9396622",
+      "section": "Introduction",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Introduction",
+        "paragraph_ordinal": 4,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "850dc92441eda36cb3519bbb70dbf24d86c31dfb397a0d9ab9d71dbb1b30662a",
+      "word_count": 98
+    },
+    {
+      "chunk_id": "pmc9396622-p00005-77bb4b4e35e2",
+      "document_id": "pmc9396622",
+      "section": "Introduction",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Introduction",
+        "paragraph_ordinal": 5,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "77bb4b4e35e29ac985a7d797f190366d8a8fe43d1231a2612b60f8b6977f3177",
+      "word_count": 151
+    },
+    {
+      "chunk_id": "pmc9396622-p00006-e51545106c8c",
+      "document_id": "pmc9396622",
+      "section": "Results and Discussion / Synthesis and Characterization of 1",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and Discussion / Synthesis and Characterization of 1",
+        "paragraph_ordinal": 6,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "e51545106c8c16b9a358e692f691d7ec7a9c8c7256a9edf7105789ba24a6d8a9",
+      "word_count": 203
+    },
+    {
+      "chunk_id": "pmc9396622-p00007-f9a201be026b",
+      "document_id": "pmc9396622",
+      "section": "Results and Discussion / Synthesis and Characterization of 1",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and Discussion / Synthesis and Characterization of 1",
+        "paragraph_ordinal": 7,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "f9a201be026b9987264b0a21ed5078801f8c4ebf435c58b910c8b9fd0a8930d9",
+      "word_count": 111
+    },
+    {
+      "chunk_id": "pmc9396622-p00008-cf8f388cf844",
+      "document_id": "pmc9396622",
+      "section": "Results and Discussion / Synthesis and Characterization of 1",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and Discussion / Synthesis and Characterization of 1",
+        "paragraph_ordinal": 8,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "cf8f388cf844b45dee4133e37769e3fc21f544344372916d2c0004586fdaad20",
+      "word_count": 66
+    },
+    {
+      "chunk_id": "pmc9396622-p00009-b7cacceb3b5c",
+      "document_id": "pmc9396622",
+      "section": "Results and Discussion / Synthesis and Characterization of 2",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and Discussion / Synthesis and Characterization of 2",
+        "paragraph_ordinal": 9,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "b7cacceb3b5ce11e5d9938cfaacad98240ed9f074b927a308a731e36b6185a89",
+      "word_count": 183
+    },
+    {
+      "chunk_id": "pmc9396622-p00010-9e054961e900",
+      "document_id": "pmc9396622",
+      "section": "Results and Discussion / Synthesis and Characterization of 2",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and Discussion / Synthesis and Characterization of 2",
+        "paragraph_ordinal": 10,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "9e054961e9005c2409ea36a5a500b8d2675099da33cef35c6f3c7b7bfb74aead",
+      "word_count": 220
+    },
+    {
+      "chunk_id": "pmc9396622-p00011-b8b4ab17e112",
+      "document_id": "pmc9396622",
+      "section": "Results and Discussion / Synthesis and Characterization of 2",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and Discussion / Synthesis and Characterization of 2",
+        "paragraph_ordinal": 10,
+        "chunk_ordinal": 2,
+        "xml_node_id": null
+      },
+      "content_sha256": "b8b4ab17e112b414647d9f92bf3e778aa0e5bfe3918d223d5bcc52b7fd23fc93",
+      "word_count": 106
+    },
+    {
+      "chunk_id": "pmc9396622-p00012-f23054ced671",
+      "document_id": "pmc9396622",
+      "section": "Results and Discussion / Synthesis and Characterization of 2",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and Discussion / Synthesis and Characterization of 2",
+        "paragraph_ordinal": 11,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "f23054ced67106508df6371845714b79f7e2805898859b49be74674a1a34dc48",
+      "word_count": 140
+    },
+    {
+      "chunk_id": "pmc9396622-p00013-641e3101eba4",
+      "document_id": "pmc9396622",
+      "section": "Results and Discussion / Synthesis and Characterization of 2",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and Discussion / Synthesis and Characterization of 2",
+        "paragraph_ordinal": 12,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "641e3101eba44a8a07dc41fa670e89f0ade8a275da6c422d5a4c4eaf10d401af",
+      "word_count": 114
+    },
+    {
+      "chunk_id": "pmc9396622-p00014-9eae837f6ba0",
+      "document_id": "pmc9396622",
+      "section": "Results and Discussion / Generation and Characterization of 3",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and Discussion / Generation and Characterization of 3",
+        "paragraph_ordinal": 13,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "9eae837f6ba0187960177ccedc272b1256c55ad6d58760d6bb4a80ab678f4a43",
+      "word_count": 97
+    },
+    {
+      "chunk_id": "pmc9396622-p00015-4b0a491fb5b8",
+      "document_id": "pmc9396622",
+      "section": "Results and Discussion / Generation and Characterization of 3",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and Discussion / Generation and Characterization of 3",
+        "paragraph_ordinal": 14,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "4b0a491fb5b885b7fad49145ae18ba5a63a846e080ec52ebc297bc77ea666ed7",
+      "word_count": 213
+    },
+    {
+      "chunk_id": "pmc9396622-p00016-99dac5c07197",
+      "document_id": "pmc9396622",
+      "section": "Results and Discussion / Generation and Characterization of 3",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and Discussion / Generation and Characterization of 3",
+        "paragraph_ordinal": 15,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "99dac5c071974349746b1f4de90c1180316a98865c3549efc77bcfa3d6acc008",
+      "word_count": 220
+    },
+    {
+      "chunk_id": "pmc9396622-p00017-63a3ca39968c",
+      "document_id": "pmc9396622",
+      "section": "Results and Discussion / Generation and Characterization of 3",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and Discussion / Generation and Characterization of 3",
+        "paragraph_ordinal": 15,
+        "chunk_ordinal": 2,
+        "xml_node_id": null
+      },
+      "content_sha256": "63a3ca39968c8f40625d613a5170489454dbd1305370bc143ce41e5d3b758956",
+      "word_count": 39
+    },
+    {
+      "chunk_id": "pmc9396622-p00018-24d6c9648427",
+      "document_id": "pmc9396622",
+      "section": "Results and Discussion / Hydrogenation Catalysis",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and Discussion / Hydrogenation Catalysis",
+        "paragraph_ordinal": 16,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "24d6c96484276fad130380859d06196086295980f6ee767912f1888d7b2855ec",
+      "word_count": 137
+    },
+    {
+      "chunk_id": "pmc9396622-p00019-b31a6f9451d6",
+      "document_id": "pmc9396622",
+      "section": "Results and Discussion / Hydrogenation Catalysis",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and Discussion / Hydrogenation Catalysis",
+        "paragraph_ordinal": 17,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "b31a6f9451d62f89f82b95608160230589196725ecde494610d0c0dedcf2abd6",
+      "word_count": 189
+    },
+    {
+      "chunk_id": "pmc9396622-p00020-6c512a358a07",
+      "document_id": "pmc9396622",
+      "section": "Results and Discussion / Hydrogenation Catalysis",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and Discussion / Hydrogenation Catalysis",
+        "paragraph_ordinal": 18,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "6c512a358a07b3c5c8cc55e367c656144fda2f1670d718a995d1d61c95f247f1",
+      "word_count": 90
+    },
+    {
+      "chunk_id": "pmc9396622-p00021-d61499225243",
+      "document_id": "pmc9396622",
+      "section": "Results and Discussion / Hydrogenation Catalysis",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and Discussion / Hydrogenation Catalysis",
+        "paragraph_ordinal": 19,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "d61499225243373fe30a58ba9762a16f8da0f5429bb67df155cb78cac7fb3370",
+      "word_count": 103
+    },
+    {
+      "chunk_id": "pmc9396622-p00022-b84a60a7e5e2",
+      "document_id": "pmc9396622",
+      "section": "Results and Discussion / Hydrogenation Catalysis",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and Discussion / Hydrogenation Catalysis",
+        "paragraph_ordinal": 20,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "b84a60a7e5e2212adfa31de877cd549203e95b76f41c9014e0dc729b273d84c6",
+      "word_count": 107
+    },
+    {
+      "chunk_id": "pmc9396622-p00023-2e41a7b5b563",
+      "document_id": "pmc9396622",
+      "section": "Results and Discussion / Computational Analysis",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and Discussion / Computational Analysis",
+        "paragraph_ordinal": 21,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "2e41a7b5b563e36ed1296ac5875c618b3a059887ecd7212d08b1083e5cbf5ead",
+      "word_count": 140
+    },
+    {
+      "chunk_id": "pmc9396622-p00024-3d5a69a7003c",
+      "document_id": "pmc9396622",
+      "section": "Results and Discussion / Computational Analysis",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and Discussion / Computational Analysis",
+        "paragraph_ordinal": 22,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "3d5a69a7003c990bb36301b0b93155ef187c6bc47f301ed0bb4236d318a9fd5a",
+      "word_count": 161
+    },
+    {
+      "chunk_id": "pmc9396622-p00025-15df5d1e81c3",
+      "document_id": "pmc9396622",
+      "section": "Results and Discussion / Computational Analysis",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and Discussion / Computational Analysis",
+        "paragraph_ordinal": 23,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "15df5d1e81c303a83b6aecb200acec50f4ed368ce0ff2453fbd2ff69065c9e6d",
+      "word_count": 158
+    },
+    {
+      "chunk_id": "pmc9396622-p00026-f86656f9e743",
+      "document_id": "pmc9396622",
+      "section": "Results and Discussion / Computational Analysis",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and Discussion / Computational Analysis",
+        "paragraph_ordinal": 24,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "f86656f9e743a92213f46b316c77cc99fc8544b0854d9aa5812bc30d7cc70681",
+      "word_count": 127
+    },
+    {
+      "chunk_id": "pmc9396622-p00027-e22f75f6d761",
+      "document_id": "pmc9396622",
+      "section": "Results and Discussion / Computational Analysis",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and Discussion / Computational Analysis",
+        "paragraph_ordinal": 25,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "e22f75f6d7619cfa7225ded831b0c8cde669ec9ffded515e97dd0879ee4102c4",
+      "word_count": 199
+    },
+    {
+      "chunk_id": "pmc9396622-p00028-15102dadee0e",
+      "document_id": "pmc9396622",
+      "section": "Results and Discussion / Computational Analysis",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and Discussion / Computational Analysis",
+        "paragraph_ordinal": 26,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "15102dadee0e0d0543bbb0e2c7a41cb4822b4e309403c2bcdb4cab7ceac34029",
+      "word_count": 58
+    },
+    {
+      "chunk_id": "pmc9396622-p00029-305d8f27e4d9",
+      "document_id": "pmc9396622",
+      "section": "Conclusions",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Conclusions",
+        "paragraph_ordinal": 27,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "305d8f27e4d944cb71fb3f89dd173eeb4d7664d2b758125ab472e0997c4c01d4",
+      "word_count": 156
+    },
+    {
+      "chunk_id": "pmc9396622-p00030-87145b71c976",
+      "document_id": "pmc9396622",
+      "section": "Experimental Section / General Methods",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Experimental Section / General Methods",
+        "paragraph_ordinal": 28,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "87145b71c9763c8d322ae353d35243a5c00630dcd4b7436467201fc9f453fba7",
+      "word_count": 144
+    },
+    {
+      "chunk_id": "pmc9396622-p00031-cf34b87d22f6",
+      "document_id": "pmc9396622",
+      "section": "Experimental Section / General Methods",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Experimental Section / General Methods",
+        "paragraph_ordinal": 29,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "cf34b87d22f687b353e7da53dc5d8fe37e62bb5cc9c9b0015d442794bc1151c6",
+      "word_count": 170
+    },
+    {
+      "chunk_id": "pmc9396622-p00032-218e4c95c2c7",
+      "document_id": "pmc9396622",
+      "section": "Experimental Section / General Methods",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Experimental Section / General Methods",
+        "paragraph_ordinal": 30,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "218e4c95c2c7d22d87265c1cc03db75552c85af2f8d100f9c82a6787cebde0ee",
+      "word_count": 163
+    },
+    {
+      "chunk_id": "pmc9396622-p00033-56879ffa05b8",
+      "document_id": "pmc9396622",
+      "section": "Experimental Section / Co( t Bu,Tol DHP)Cl (1)",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Experimental Section / Co( t Bu,Tol DHP)Cl (1)",
+        "paragraph_ordinal": 31,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "56879ffa05b840e58a86d5a92ab81f01faf98b587e077c21558f98a9dbbc5824",
+      "word_count": 220
+    },
+    {
+      "chunk_id": "pmc9396622-p00034-a3181dba2642",
+      "document_id": "pmc9396622",
+      "section": "Experimental Section / Co( t Bu,Tol DHP)Cl (1)",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Experimental Section / Co( t Bu,Tol DHP)Cl (1)",
+        "paragraph_ordinal": 31,
+        "chunk_ordinal": 2,
+        "xml_node_id": null
+      },
+      "content_sha256": "a3181dba26427081d27f823fac4c0258965bc7ba6a33d8c4b110a52cf660716d",
+      "word_count": 86
+    },
+    {
+      "chunk_id": "pmc9396622-p00035-17af1d444cb1",
+      "document_id": "pmc9396622",
+      "section": "Experimental Section / Co( t Bu,Tol DHP)OTf (2)",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Experimental Section / Co( t Bu,Tol DHP)OTf (2)",
+        "paragraph_ordinal": 32,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "17af1d444cb1bfa6b229803cf8687decd51af485ba41c589be31d17a58253a0d",
+      "word_count": 220
+    },
+    {
+      "chunk_id": "pmc9396622-p00036-b6b43d94fd19",
+      "document_id": "pmc9396622",
+      "section": "Experimental Section / Co( t Bu,Tol DHP)OTf (2)",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Experimental Section / Co( t Bu,Tol DHP)OTf (2)",
+        "paragraph_ordinal": 32,
+        "chunk_ordinal": 2,
+        "xml_node_id": null
+      },
+      "content_sha256": "b6b43d94fd19a8b2bcac1929085bb95b11746f8d45881525b2d879eca9bc5d92",
+      "word_count": 37
+    },
+    {
+      "chunk_id": "pmc9396622-p00037-ba5376562c33",
+      "document_id": "pmc9396622",
+      "section": "Experimental Section / Reactivity with H 2",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Experimental Section / Reactivity with H 2",
+        "paragraph_ordinal": 33,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "ba5376562c33ac0a1284588b0ceeb086f91b1e4ab6ec8e4af88acb16c2e01788",
+      "word_count": 207
+    },
+    {
+      "chunk_id": "pmc9396622-p00038-40c3422b14f7",
+      "document_id": "pmc9396622",
+      "section": "Experimental Section / Preparation of IR samples of 3 / Nujol Mull",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Experimental Section / Preparation of IR samples of 3 / Nujol Mull",
+        "paragraph_ordinal": 34,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "40c3422b14f711cfff8283bfa02d2e5da3812686d8704b311dd57cd36cbcd642",
+      "word_count": 61
+    },
+    {
+      "chunk_id": "pmc9396622-p00039-2b14dbc638d1",
+      "document_id": "pmc9396622",
+      "section": "Experimental Section / Preparation of IR samples of 3 / Thin Film on KBr Plate",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Experimental Section / Preparation of IR samples of 3 / Thin Film on KBr Plate",
+        "paragraph_ordinal": 35,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "2b14dbc638d10ac3f75f12a92a228304d3283087b643cb6b145ee967153fa7d3",
+      "word_count": 56
+    },
+    {
+      "chunk_id": "pmc9396622-p00040-f9535a735da3",
+      "document_id": "pmc9396622",
+      "section": "Experimental Section / General Catalytic Hydrogenation Procedures and Products / Procedure for 1% Loading",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Experimental Section / General Catalytic Hydrogenation Procedures and Products / Procedure for 1% Loading",
+        "paragraph_ordinal": 36,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "f9535a735da3e572461aae86ac44e77122476a5a0751f4ec97b4ee0bf6a2590e",
+      "word_count": 144
+    },
+    {
+      "chunk_id": "pmc9396622-p00041-b84dff6f2b50",
+      "document_id": "pmc9396622",
+      "section": "Experimental Section / General Catalytic Hydrogenation Procedures and Products / Procedure for 2.5% Loading",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Experimental Section / General Catalytic Hydrogenation Procedures and Products / Procedure for 2.5% Loading",
+        "paragraph_ordinal": 37,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "b84dff6f2b50b745aad389f4be3b026ba534a2385acd19c3dfcfdb42c4d0aef1",
+      "word_count": 16
+    },
+    {
+      "chunk_id": "pmc9396622-p00042-a5671676d4e9",
+      "document_id": "pmc9396622",
+      "section": "Experimental Section / General Catalytic Hydrogenation Procedures and Products / Procedure for 2.5% Loading with NaBAr 4 F",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Experimental Section / General Catalytic Hydrogenation Procedures and Products / Procedure for 2.5% Loading with NaBAr 4 F",
+        "paragraph_ordinal": 38,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "a5671676d4e93094ad88843c439f78e2d173afdd7357ba494e8c715377c99289",
+      "word_count": 39
+    },
+    {
+      "chunk_id": "pmc9396622-p00043-7c2185d137bd",
+      "document_id": "pmc9396622",
+      "section": "Experimental Section / General Catalytic Hydrogenation Procedures and Products / Procedure for 10% Loading",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Experimental Section / General Catalytic Hydrogenation Procedures and Products / Procedure for 10% Loading",
+        "paragraph_ordinal": 39,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "7c2185d137bd36ab868ad7245b6815712db69c4cd4634c79e0ad303d1e4bfd3c",
+      "word_count": 108
+    },
+    {
+      "chunk_id": "pmc6222785-p00001-02d4ced4f810",
+      "document_id": "pmc6222785",
+      "section": "1. Introduction",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "1. Introduction",
+        "paragraph_ordinal": 1,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "02d4ced4f8109d9691a18f284ae5ff651dbd6d670ada1712920b763da1e0614e",
+      "word_count": 188
+    },
+    {
+      "chunk_id": "pmc6222785-p00002-0b1542245f0d",
+      "document_id": "pmc6222785",
+      "section": "1. Introduction",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "1. Introduction",
+        "paragraph_ordinal": 2,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "0b1542245f0da131da572d9ad864332cf4311f783b160bf9440cab3bcfdc4252",
+      "word_count": 220
+    },
+    {
+      "chunk_id": "pmc6222785-p00003-bd3e2ec0e626",
+      "document_id": "pmc6222785",
+      "section": "1. Introduction",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "1. Introduction",
+        "paragraph_ordinal": 2,
+        "chunk_ordinal": 2,
+        "xml_node_id": null
+      },
+      "content_sha256": "bd3e2ec0e626e72a3495f354a8fc0229c710c2a8b6d48038a5fd2e13c8dc226c",
+      "word_count": 124
+    },
+    {
+      "chunk_id": "pmc6222785-p00004-05bbaee644e7",
+      "document_id": "pmc6222785",
+      "section": "1. Introduction",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "1. Introduction",
+        "paragraph_ordinal": 3,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "05bbaee644e76fd3b1feda8efb453ced0b45b569bf29983450d7ca9611847825",
+      "word_count": 215
+    },
+    {
+      "chunk_id": "pmc6222785-p00005-196dfad572e6",
+      "document_id": "pmc6222785",
+      "section": "1. Introduction",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "1. Introduction",
+        "paragraph_ordinal": 4,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "196dfad572e6edbd2d14ca92493ba7d5a7c72a2478b67bc3b7ff99117aa029e8",
+      "word_count": 147
+    },
+    {
+      "chunk_id": "pmc6222785-p00006-c6f9da77e173",
+      "document_id": "pmc6222785",
+      "section": "1. Introduction",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "1. Introduction",
+        "paragraph_ordinal": 5,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "c6f9da77e1732c9e5f85d7087a098e1592c42a3b0326207ee1fb4d3b4eb7f81b",
+      "word_count": 206
+    },
+    {
+      "chunk_id": "pmc6222785-p00007-4220681ad8f9",
+      "document_id": "pmc6222785",
+      "section": "1. Introduction",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "1. Introduction",
+        "paragraph_ordinal": 6,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "4220681ad8f9c722f804995bd8e2520eb227f87d8a0a41cee5121568a916044c",
+      "word_count": 209
+    },
+    {
+      "chunk_id": "pmc6222785-p00008-d7c6c3417dbd",
+      "document_id": "pmc6222785",
+      "section": "2. Results and Discussion / 2.1. Acidity and Basicity of the Chlorometallate ILs",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "2. Results and Discussion / 2.1. Acidity and Basicity of the Chlorometallate ILs",
+        "paragraph_ordinal": 7,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "d7c6c3417dbd384f13841e4589fd7cd1da128753627f2c5e1ed61b492b32cd68",
+      "word_count": 135
+    },
+    {
+      "chunk_id": "pmc6222785-p00009-5c23423b41b7",
+      "document_id": "pmc6222785",
+      "section": "2. Results and Discussion / 2.1. Acidity and Basicity of the Chlorometallate ILs",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "2. Results and Discussion / 2.1. Acidity and Basicity of the Chlorometallate ILs",
+        "paragraph_ordinal": 8,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "5c23423b41b7a6b0f8222dacd8c4468bd187284365505d3ed60aedd8ddd10936",
+      "word_count": 220
+    },
+    {
+      "chunk_id": "pmc6222785-p00010-884a6c61b1b0",
+      "document_id": "pmc6222785",
+      "section": "2. Results and Discussion / 2.1. Acidity and Basicity of the Chlorometallate ILs",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "2. Results and Discussion / 2.1. Acidity and Basicity of the Chlorometallate ILs",
+        "paragraph_ordinal": 8,
+        "chunk_ordinal": 2,
+        "xml_node_id": null
+      },
+      "content_sha256": "884a6c61b1b016f73f71479052fdaf7bc99e79a6cdd85aa2604b993d39339114",
+      "word_count": 106
+    },
+    {
+      "chunk_id": "pmc6222785-p00011-98846c6f8668",
+      "document_id": "pmc6222785",
+      "section": "2. Results and Discussion / 2.1. Acidity and Basicity of the Chlorometallate ILs",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "2. Results and Discussion / 2.1. Acidity and Basicity of the Chlorometallate ILs",
+        "paragraph_ordinal": 9,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "98846c6f8668a5d3ddcfeebd8603899a5857be4a12f2c126063f1248d3e3f316",
+      "word_count": 59
+    },
+    {
+      "chunk_id": "pmc6222785-p00012-de0220f46dbb",
+      "document_id": "pmc6222785",
+      "section": "2. Results and Discussion / 2.1. Acidity and Basicity of the Chlorometallate ILs",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "2. Results and Discussion / 2.1. Acidity and Basicity of the Chlorometallate ILs",
+        "paragraph_ordinal": 10,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "de0220f46dbba3bff71cba1e9d25fcd6aadf4775a0ab8b96bfde87e344e6ecb6",
+      "word_count": 175
+    },
+    {
+      "chunk_id": "pmc6222785-p00013-d8d949250e9f",
+      "document_id": "pmc6222785",
+      "section": "2. Results and Discussion / 2.2. Acidity and Basicity of the Mixed Chlorometallate ILs",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "2. Results and Discussion / 2.2. Acidity and Basicity of the Mixed Chlorometallate ILs",
+        "paragraph_ordinal": 11,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "d8d949250e9f044a330021ebd589a75abd54eb9727388604d39136936152805c",
+      "word_count": 99
+    },
+    {
+      "chunk_id": "pmc6222785-p00014-f60f58357e9d",
+      "document_id": "pmc6222785",
+      "section": "2. Results and Discussion / 2.2. Acidity and Basicity of the Mixed Chlorometallate ILs",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "2. Results and Discussion / 2.2. Acidity and Basicity of the Mixed Chlorometallate ILs",
+        "paragraph_ordinal": 12,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "f60f58357e9d7988494314895dff7ecdb43a8fbc799e6025cdbd4589b0c29829",
+      "word_count": 196
+    },
+    {
+      "chunk_id": "pmc6222785-p00015-2a627324c5bd",
+      "document_id": "pmc6222785",
+      "section": "2. Results and Discussion / 2.2. Acidity and Basicity of the Mixed Chlorometallate ILs",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "2. Results and Discussion / 2.2. Acidity and Basicity of the Mixed Chlorometallate ILs",
+        "paragraph_ordinal": 13,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "2a627324c5bd3b4b6c8a2fe82932fdaa63457b9f235424e19e8a430498927541",
+      "word_count": 220
+    },
+    {
+      "chunk_id": "pmc6222785-p00016-ac148fdbeb42",
+      "document_id": "pmc6222785",
+      "section": "2. Results and Discussion / 2.2. Acidity and Basicity of the Mixed Chlorometallate ILs",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "2. Results and Discussion / 2.2. Acidity and Basicity of the Mixed Chlorometallate ILs",
+        "paragraph_ordinal": 13,
+        "chunk_ordinal": 2,
+        "xml_node_id": null
+      },
+      "content_sha256": "ac148fdbeb42a183791f400405209732901d2646d2ede29eb7938cc832a7018b",
+      "word_count": 93
+    },
+    {
+      "chunk_id": "pmc6222785-p00017-c96d776b4adc",
+      "document_id": "pmc6222785",
+      "section": "2. Results and Discussion / 2.2. Acidity and Basicity of the Mixed Chlorometallate ILs",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "2. Results and Discussion / 2.2. Acidity and Basicity of the Mixed Chlorometallate ILs",
+        "paragraph_ordinal": 14,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "c96d776b4adc0692353b269e349c9a92611cf7ffda7c74f08d64dfcfbf77d47e",
+      "word_count": 77
+    },
+    {
+      "chunk_id": "pmc6222785-p00018-c4c1a0279c54",
+      "document_id": "pmc6222785",
+      "section": "2. Results and Discussion / 2.2. Acidity and Basicity of the Mixed Chlorometallate ILs",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "2. Results and Discussion / 2.2. Acidity and Basicity of the Mixed Chlorometallate ILs",
+        "paragraph_ordinal": 15,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "c4c1a0279c54f63802eef51e432aa32471b80fb3f0a41dbfabeb5cebfb38d60e",
+      "word_count": 216
+    },
+    {
+      "chunk_id": "pmc6222785-p00019-c3851f67f93f",
+      "document_id": "pmc6222785",
+      "section": "2. Results and Discussion / 2.2. Acidity and Basicity of the Mixed Chlorometallate ILs",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "2. Results and Discussion / 2.2. Acidity and Basicity of the Mixed Chlorometallate ILs",
+        "paragraph_ordinal": 16,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "c3851f67f93f336cd4de4171b4f97a1a93760dc29aab9c53b73e33286e7b8a0c",
+      "word_count": 220
+    },
+    {
+      "chunk_id": "pmc6222785-p00020-f8f3ee5510a9",
+      "document_id": "pmc6222785",
+      "section": "2. Results and Discussion / 2.2. Acidity and Basicity of the Mixed Chlorometallate ILs",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "2. Results and Discussion / 2.2. Acidity and Basicity of the Mixed Chlorometallate ILs",
+        "paragraph_ordinal": 16,
+        "chunk_ordinal": 2,
+        "xml_node_id": null
+      },
+      "content_sha256": "f8f3ee5510a9437a6ba59c4f6ef59391d2c49ceee4170841deee3f9e80c98ce5",
+      "word_count": 88
+    },
+    {
+      "chunk_id": "pmc6222785-p00021-9f8057bf9a34",
+      "document_id": "pmc6222785",
+      "section": "2. Results and Discussion / 2.3. Analysis of Fukui Function for Mixed Chlorometallate ILs",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "2. Results and Discussion / 2.3. Analysis of Fukui Function for Mixed Chlorometallate ILs",
+        "paragraph_ordinal": 17,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "9f8057bf9a343fae6631535ca74ecc218c9db5ef9d270eca6ec031c5649cf36c",
+      "word_count": 22
+    },
+    {
+      "chunk_id": "pmc6222785-p00022-77c5df34badf",
+      "document_id": "pmc6222785",
+      "section": "2. Results and Discussion / 2.3. Analysis of Fukui Function for Mixed Chlorometallate ILs",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "2. Results and Discussion / 2.3. Analysis of Fukui Function for Mixed Chlorometallate ILs",
+        "paragraph_ordinal": 18,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "77c5df34badf2cb4a248907ba3a7735703ced9d166ba142c9a7b7107b2015028",
+      "word_count": 80
+    },
+    {
+      "chunk_id": "pmc6222785-p00023-d0bdd0dc22ea",
+      "document_id": "pmc6222785",
+      "section": "2. Results and Discussion / 2.3. Analysis of Fukui Function for Mixed Chlorometallate ILs",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "2. Results and Discussion / 2.3. Analysis of Fukui Function for Mixed Chlorometallate ILs",
+        "paragraph_ordinal": 19,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "d0bdd0dc22ea8d22ad237f37632b3b47cae91be09889aed579e203728554a99e",
+      "word_count": 24
+    },
+    {
+      "chunk_id": "pmc6222785-p00024-2f8e6e72aaaa",
+      "document_id": "pmc6222785",
+      "section": "2. Results and Discussion / 2.3. Analysis of Fukui Function for Mixed Chlorometallate ILs",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "2. Results and Discussion / 2.3. Analysis of Fukui Function for Mixed Chlorometallate ILs",
+        "paragraph_ordinal": 20,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "2f8e6e72aaaa3a47f41e44b6a180521c369867c4ceadabb9cf467f18ccbc56b8",
+      "word_count": 220
+    },
+    {
+      "chunk_id": "pmc6222785-p00025-fa48b3cf7a6e",
+      "document_id": "pmc6222785",
+      "section": "2. Results and Discussion / 2.3. Analysis of Fukui Function for Mixed Chlorometallate ILs",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "2. Results and Discussion / 2.3. Analysis of Fukui Function for Mixed Chlorometallate ILs",
+        "paragraph_ordinal": 20,
+        "chunk_ordinal": 2,
+        "xml_node_id": null
+      },
+      "content_sha256": "fa48b3cf7a6ea184a917d2921e9af3cdfb0597202011dac525d5e183beb2c3f1",
+      "word_count": 78
+    },
+    {
+      "chunk_id": "pmc6222785-p00026-858e8fc605f7",
+      "document_id": "pmc6222785",
+      "section": "2. Results and Discussion / 2.3. Analysis of Fukui Function for Mixed Chlorometallate ILs",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "2. Results and Discussion / 2.3. Analysis of Fukui Function for Mixed Chlorometallate ILs",
+        "paragraph_ordinal": 21,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "858e8fc605f72102c1a2de99d18298cc726cd05317f6e92d2c90c772ffe1e749",
+      "word_count": 220
+    },
+    {
+      "chunk_id": "pmc6222785-p00027-88c6e152f5ef",
+      "document_id": "pmc6222785",
+      "section": "2. Results and Discussion / 2.3. Analysis of Fukui Function for Mixed Chlorometallate ILs",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "2. Results and Discussion / 2.3. Analysis of Fukui Function for Mixed Chlorometallate ILs",
+        "paragraph_ordinal": 21,
+        "chunk_ordinal": 2,
+        "xml_node_id": null
+      },
+      "content_sha256": "88c6e152f5efddb5902a065d094d202c75ba224d3beabd708b3c087d84460277",
+      "word_count": 88
+    },
+    {
+      "chunk_id": "pmc6222785-p00028-2ee39db9c204",
+      "document_id": "pmc6222785",
+      "section": "2. Results and Discussion / 2.3. Analysis of Fukui Function for Mixed Chlorometallate ILs",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "2. Results and Discussion / 2.3. Analysis of Fukui Function for Mixed Chlorometallate ILs",
+        "paragraph_ordinal": 22,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "2ee39db9c204c740c08989bed8b4d93267fc67947563b5046947cb187b9956f1",
+      "word_count": 40
+    },
+    {
+      "chunk_id": "pmc6222785-p00029-8555e6461c14",
+      "document_id": "pmc6222785",
+      "section": "2. Results and Discussion / 2.3. Analysis of Fukui Function for Mixed Chlorometallate ILs",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "2. Results and Discussion / 2.3. Analysis of Fukui Function for Mixed Chlorometallate ILs",
+        "paragraph_ordinal": 23,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "8555e6461c140cd298161ca8f5a3f434bd3c194e4418f6ff7165c2979802dc31",
+      "word_count": 165
+    },
+    {
+      "chunk_id": "pmc6222785-p00030-b6369cf144cb",
+      "document_id": "pmc6222785",
+      "section": "2. Results and Discussion / 2.3. Analysis of Fukui Function for Mixed Chlorometallate ILs",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "2. Results and Discussion / 2.3. Analysis of Fukui Function for Mixed Chlorometallate ILs",
+        "paragraph_ordinal": 24,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "b6369cf144cb42d39a10d2471b56de495566eb99085d28c5d1ee99db058c75fb",
+      "word_count": 220
+    },
+    {
+      "chunk_id": "pmc6222785-p00031-fb6e0eefc394",
+      "document_id": "pmc6222785",
+      "section": "2. Results and Discussion / 2.3. Analysis of Fukui Function for Mixed Chlorometallate ILs",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "2. Results and Discussion / 2.3. Analysis of Fukui Function for Mixed Chlorometallate ILs",
+        "paragraph_ordinal": 24,
+        "chunk_ordinal": 2,
+        "xml_node_id": null
+      },
+      "content_sha256": "fb6e0eefc394ac8cac5d44fbac101009d4c86ede740053c280543969e0a686a2",
+      "word_count": 102
+    },
+    {
+      "chunk_id": "pmc6222785-p00032-1e64ed187f85",
+      "document_id": "pmc6222785",
+      "section": "3. Methods",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "3. Methods",
+        "paragraph_ordinal": 25,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "1e64ed187f85cc43f51dd311ad5c84543862c1dafe11c200e9bd66a98793f94f",
+      "word_count": 207
+    },
+    {
+      "chunk_id": "pmc6222785-p00033-d14beeea74ca",
+      "document_id": "pmc6222785",
+      "section": "3. Methods",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "3. Methods",
+        "paragraph_ordinal": 26,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "d14beeea74caa13a58aac5e3e38433a4b8c1978c676e9c7048ba898652f485b1",
+      "word_count": 180
+    },
+    {
+      "chunk_id": "pmc6222785-p00034-7d3b81179444",
+      "document_id": "pmc6222785",
+      "section": "3. Methods",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "3. Methods",
+        "paragraph_ordinal": 27,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "7d3b81179444aab229c7c97103845e2c8a9dc027464ed46cf667a6056d6e3b89",
+      "word_count": 30
+    },
+    {
+      "chunk_id": "pmc6222785-p00035-9b4cbf5370c4",
+      "document_id": "pmc6222785",
+      "section": "3. Methods",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "3. Methods",
+        "paragraph_ordinal": 28,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "9b4cbf5370c4b77640021883b02acce31608ecd4a1780915912ef8886e293872",
+      "word_count": 150
+    },
+    {
+      "chunk_id": "pmc6222785-p00036-d7934a75d9a6",
+      "document_id": "pmc6222785",
+      "section": "3. Methods",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "3. Methods",
+        "paragraph_ordinal": 29,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "d7934a75d9a6159a32ab52732482742e30fd56232f978525465c6246dc92d4df",
+      "word_count": 89
+    },
+    {
+      "chunk_id": "pmc6222785-p00037-1cb764695612",
+      "document_id": "pmc6222785",
+      "section": "3. Methods",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "3. Methods",
+        "paragraph_ordinal": 30,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "1cb764695612d730d01b0477e450eb02b6f5b12f2d162ace5950bb4489cb83f4",
+      "word_count": 88
+    },
+    {
+      "chunk_id": "pmc6222785-p00038-027d67d57fa6",
+      "document_id": "pmc6222785",
+      "section": "3. Methods",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "3. Methods",
+        "paragraph_ordinal": 31,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "027d67d57fa6872af7ab7a054326acedceb9b2927cfa4fe4b692fb0dcd9ffc87",
+      "word_count": 33
+    },
+    {
+      "chunk_id": "pmc6222785-p00039-cf335e1c393d",
+      "document_id": "pmc6222785",
+      "section": "4. Conclusions",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "4. Conclusions",
+        "paragraph_ordinal": 32,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "cf335e1c393dd5fd299741273b277cff776887fda65ca98bedc5b11ca50311e7",
+      "word_count": 205
+    },
+    {
+      "chunk_id": "pmc6222785-p00040-7dba9dd8d52d",
+      "document_id": "pmc6222785",
+      "section": "Acknowledgments",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Acknowledgments",
+        "paragraph_ordinal": 33,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "7dba9dd8d52d1c320605ae938c85ed7df7c1385d1d4351123fde939cb0b321e6",
+      "word_count": 33
+    },
+    {
+      "chunk_id": "pmc6222785-p00041-da3fb86e326b",
+      "document_id": "pmc6222785",
+      "section": "Supplementary Materials",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Supplementary Materials",
+        "paragraph_ordinal": 34,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "da3fb86e326b95f87d0928bbeea4e0ddcc53f4a65f1de978562d77586e646310",
+      "word_count": 28
+    },
+    {
+      "chunk_id": "pmc6222785-p00042-01b1bb15c478",
+      "document_id": "pmc6222785",
+      "section": "Author Contributions",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Author Contributions",
+        "paragraph_ordinal": 35,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "01b1bb15c478e4a3f66cd458e8d9041d52386a7a855b0d1c0a6663a13e35ba15",
+      "word_count": 13
+    },
+    {
+      "chunk_id": "pmc6222785-p00043-3c69cb9a32d8",
+      "document_id": "pmc6222785",
+      "section": "Funding",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Funding",
+        "paragraph_ordinal": 36,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "3c69cb9a32d815738bec079c74344963920a6cabe40e2b0d2b04f8308826d100",
+      "word_count": 20
+    },
+    {
+      "chunk_id": "pmc6222785-p00044-3f223d9cf407",
+      "document_id": "pmc6222785",
+      "section": "Conflicts of Interest",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Conflicts of Interest",
+        "paragraph_ordinal": 37,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "3f223d9cf407986517454dc4e630aabeb610adfcac7cc6ef0233fd4ee3343685",
+      "word_count": 7
+    },
+    {
+      "chunk_id": "pmc12550025-p00001-7c499206c6ad",
+      "document_id": "pmc12550025",
+      "section": "Introduction",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Introduction",
+        "paragraph_ordinal": 1,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par4"
+      },
+      "content_sha256": "7c499206c6ad031cc909dad8f6673b636867367e3d813d506f1d37198d962c30",
+      "word_count": 71
+    },
+    {
+      "chunk_id": "pmc12550025-p00002-aa81e3e9087a",
+      "document_id": "pmc12550025",
+      "section": "Introduction",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Introduction",
+        "paragraph_ordinal": 2,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par5"
+      },
+      "content_sha256": "aa81e3e9087a024b5ed7a1e30c2d2fabfb7c5637abd23f7ad3b981459d81d285",
+      "word_count": 115
+    },
+    {
+      "chunk_id": "pmc12550025-p00003-aebe540dafc1",
+      "document_id": "pmc12550025",
+      "section": "Introduction",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Introduction",
+        "paragraph_ordinal": 3,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par6"
+      },
+      "content_sha256": "aebe540dafc1494b30bad2f73cee43572682deca9fb6b84e2a5cc7cf19549bfe",
+      "word_count": 83
+    },
+    {
+      "chunk_id": "pmc12550025-p00004-cf775a5ca6e6",
+      "document_id": "pmc12550025",
+      "section": "Introduction",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Introduction",
+        "paragraph_ordinal": 4,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par7"
+      },
+      "content_sha256": "cf775a5ca6e6b677560d8dbbb18961b25b6371e6ed3fbe6f19171deb03a80f49",
+      "word_count": 179
+    },
+    {
+      "chunk_id": "pmc12550025-p00005-dc808d18eeda",
+      "document_id": "pmc12550025",
+      "section": "Introduction",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Introduction",
+        "paragraph_ordinal": 5,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par8"
+      },
+      "content_sha256": "dc808d18eedaf429767b34431244bc58f87189731cc5c66f32714e060f5a3433",
+      "word_count": 86
+    },
+    {
+      "chunk_id": "pmc12550025-p00006-ed258b45aa6e",
+      "document_id": "pmc12550025",
+      "section": "Introduction",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Introduction",
+        "paragraph_ordinal": 6,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par9"
+      },
+      "content_sha256": "ed258b45aa6ed3785ec99c73b18951961ea7720ff3b6231e1c489abc4c79c3ac",
+      "word_count": 127
+    },
+    {
+      "chunk_id": "pmc12550025-p00007-3c7576d193e9",
+      "document_id": "pmc12550025",
+      "section": "Introduction",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Introduction",
+        "paragraph_ordinal": 7,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par10"
+      },
+      "content_sha256": "3c7576d193e9fb60196a3403dd03c8681697bf4a374f99ac900003d280b7e995",
+      "word_count": 53
+    },
+    {
+      "chunk_id": "pmc12550025-p00008-5fe96d49a51e",
+      "document_id": "pmc12550025",
+      "section": "Results and discussion / Method Overview",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and discussion / Method Overview",
+        "paragraph_ordinal": 8,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par14"
+      },
+      "content_sha256": "5fe96d49a51e1d5e4aff33a79cc517acc1f9fcad692f059b5aab2a3c805acc69",
+      "word_count": 141
+    },
+    {
+      "chunk_id": "pmc12550025-p00009-99876369e16f",
+      "document_id": "pmc12550025",
+      "section": "Results and discussion / Method Overview",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and discussion / Method Overview",
+        "paragraph_ordinal": 9,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par15"
+      },
+      "content_sha256": "99876369e16fa714c6a6d2135b513ab3535a9ee3dfd1bcd2e363c7a1068a9d90",
+      "word_count": 204
+    },
+    {
+      "chunk_id": "pmc12550025-p00010-b7f741d4d4d9",
+      "document_id": "pmc12550025",
+      "section": "Results and discussion / Catalytic activity prediction performance",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and discussion / Catalytic activity prediction performance",
+        "paragraph_ordinal": 10,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par16"
+      },
+      "content_sha256": "b7f741d4d4d9003e81eb686989ed8373d94c0880313fefd83ba34548ddfb3527",
+      "word_count": 79
+    },
+    {
+      "chunk_id": "pmc12550025-p00011-d90e7b1177df",
+      "document_id": "pmc12550025",
+      "section": "Results and discussion / Catalytic activity prediction performance",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and discussion / Catalytic activity prediction performance",
+        "paragraph_ordinal": 11,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par17"
+      },
+      "content_sha256": "d90e7b1177dfda986a1ddceadf88c6471654cc15f928fa99898036d734c05120",
+      "word_count": 220
+    },
+    {
+      "chunk_id": "pmc12550025-p00012-d0472ea074e6",
+      "document_id": "pmc12550025",
+      "section": "Results and discussion / Catalytic activity prediction performance",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and discussion / Catalytic activity prediction performance",
+        "paragraph_ordinal": 11,
+        "chunk_ordinal": 2,
+        "xml_node_id": "Par17"
+      },
+      "content_sha256": "d0472ea074e6e2e5d768c4527484cfda2af5c9cce05c77938fd339d25c1d53b0",
+      "word_count": 220
+    },
+    {
+      "chunk_id": "pmc12550025-p00013-5e59385bc050",
+      "document_id": "pmc12550025",
+      "section": "Results and discussion / Catalytic activity prediction performance",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and discussion / Catalytic activity prediction performance",
+        "paragraph_ordinal": 11,
+        "chunk_ordinal": 3,
+        "xml_node_id": "Par17"
+      },
+      "content_sha256": "5e59385bc0509eddbeaeda3286115dd5fc3756eeb95f2321481027617418122f",
+      "word_count": 66
+    },
+    {
+      "chunk_id": "pmc12550025-p00014-315c7b0b8e98",
+      "document_id": "pmc12550025",
+      "section": "Results and discussion / Catalytic activity prediction performance",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and discussion / Catalytic activity prediction performance",
+        "paragraph_ordinal": 12,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par18"
+      },
+      "content_sha256": "315c7b0b8e98a3a230bf97ee606732e3e69a62d2cbb36b48e3ad3b0f6364a240",
+      "word_count": 220
+    },
+    {
+      "chunk_id": "pmc12550025-p00015-290b5352fb9f",
+      "document_id": "pmc12550025",
+      "section": "Results and discussion / Catalytic activity prediction performance",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and discussion / Catalytic activity prediction performance",
+        "paragraph_ordinal": 12,
+        "chunk_ordinal": 2,
+        "xml_node_id": "Par18"
+      },
+      "content_sha256": "290b5352fb9ffa97145b5402600f2a4a27c32b9ef2139b97c7fab7106523a119",
+      "word_count": 89
+    },
+    {
+      "chunk_id": "pmc12550025-p00016-ae5d04554bb9",
+      "document_id": "pmc12550025",
+      "section": "Results and discussion / Latent space analysis",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and discussion / Latent space analysis",
+        "paragraph_ordinal": 13,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par19"
+      },
+      "content_sha256": "ae5d04554bb9a044d764c32272466f6c773ba212aa1f3512da435ed3a0b5a994",
+      "word_count": 130
+    },
+    {
+      "chunk_id": "pmc12550025-p00017-38f9beee5129",
+      "document_id": "pmc12550025",
+      "section": "Results and discussion / Latent space analysis",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and discussion / Latent space analysis",
+        "paragraph_ordinal": 14,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par20"
+      },
+      "content_sha256": "38f9beee51291a561af234ad0dc0b4cf6be35d9f168d5f3e1b5970a75f0155cc",
+      "word_count": 107
+    },
+    {
+      "chunk_id": "pmc12550025-p00018-af4819296267",
+      "document_id": "pmc12550025",
+      "section": "Results and discussion / Catalyst generation performance",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and discussion / Catalyst generation performance",
+        "paragraph_ordinal": 15,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par21"
+      },
+      "content_sha256": "af48192962670d3a890af20c1bb59645fdc748291cc130f5ead5330e2325d864",
+      "word_count": 200
+    },
+    {
+      "chunk_id": "pmc12550025-p00019-2eac4c472ab8",
+      "document_id": "pmc12550025",
+      "section": "Results and discussion / Catalyst generation performance",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and discussion / Catalyst generation performance",
+        "paragraph_ordinal": 16,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par22"
+      },
+      "content_sha256": "2eac4c472ab8b992059af7583032228c848ce45a1a68d637bef3cf2d6eb652e4",
+      "word_count": 220
+    },
+    {
+      "chunk_id": "pmc12550025-p00020-5a864651f986",
+      "document_id": "pmc12550025",
+      "section": "Results and discussion / Catalyst generation performance",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and discussion / Catalyst generation performance",
+        "paragraph_ordinal": 16,
+        "chunk_ordinal": 2,
+        "xml_node_id": "Par22"
+      },
+      "content_sha256": "5a864651f986fa776e8c7af887cde7dd3ebed44e85742dd6457f27333441e74f",
+      "word_count": 37
+    },
+    {
+      "chunk_id": "pmc12550025-p00021-5af8901dad1c",
+      "document_id": "pmc12550025",
+      "section": "Results and discussion / Catalyst generation performance",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and discussion / Catalyst generation performance",
+        "paragraph_ordinal": 17,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par23"
+      },
+      "content_sha256": "5af8901dad1cf115f2e2beed364aa60a8990bb92e9c94bcaa83f53c717d157dc",
+      "word_count": 82
+    },
+    {
+      "chunk_id": "pmc12550025-p00022-307e22ae1bd0",
+      "document_id": "pmc12550025",
+      "section": "Results and discussion / Catalyst generation performance",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and discussion / Catalyst generation performance",
+        "paragraph_ordinal": 18,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par24"
+      },
+      "content_sha256": "307e22ae1bd07af58feece9ae3bd4f14bdeb122763580e2f46444736c3159489",
+      "word_count": 117
+    },
+    {
+      "chunk_id": "pmc12550025-p00023-b0f524782179",
+      "document_id": "pmc12550025",
+      "section": "Results and discussion / Case studies",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and discussion / Case studies",
+        "paragraph_ordinal": 19,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par25"
+      },
+      "content_sha256": "b0f524782179855b103bc849a1eeadaacf31d8fc115190c240bf644c51015bc7",
+      "word_count": 34
+    },
+    {
+      "chunk_id": "pmc12550025-p00024-a6d2f5fa97aa",
+      "document_id": "pmc12550025",
+      "section": "Results and discussion / Case studies / Lewis acid-mediated Suzuki-Miyaura cross-coupling (L-SM)",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and discussion / Case studies / Lewis acid-mediated Suzuki-Miyaura cross-coupling (L-SM)",
+        "paragraph_ordinal": 20,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par26"
+      },
+      "content_sha256": "a6d2f5fa97aae0c92e619e5ae8a43196182e3d6d78d1a598020c0d1ab24411ef",
+      "word_count": 69
+    },
+    {
+      "chunk_id": "pmc12550025-p00025-83c0a7030a4b",
+      "document_id": "pmc12550025",
+      "section": "Results and discussion / Case studies / Lewis acid-mediated Suzuki-Miyaura cross-coupling (L-SM)",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and discussion / Case studies / Lewis acid-mediated Suzuki-Miyaura cross-coupling (L-SM)",
+        "paragraph_ordinal": 21,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par27"
+      },
+      "content_sha256": "83c0a7030a4bdd569425850da3a005490aa1a2b3feb05ab0404cd86252a555d5",
+      "word_count": 132
+    },
+    {
+      "chunk_id": "pmc12550025-p00026-094c3af4c3d2",
+      "document_id": "pmc12550025",
+      "section": "Results and discussion / Case studies / Lewis acid-mediated Suzuki-Miyaura cross-coupling (L-SM)",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and discussion / Case studies / Lewis acid-mediated Suzuki-Miyaura cross-coupling (L-SM)",
+        "paragraph_ordinal": 22,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par28"
+      },
+      "content_sha256": "094c3af4c3d2e3d2bdc51993733cd018b2866cb840d796530fa19e724aec0e75",
+      "word_count": 170
+    },
+    {
+      "chunk_id": "pmc12550025-p00027-a25a631718e6",
+      "document_id": "pmc12550025",
+      "section": "Results and discussion / Case studies / Lewis acid-mediated Suzuki-Miyaura cross-coupling (L-SM)",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and discussion / Case studies / Lewis acid-mediated Suzuki-Miyaura cross-coupling (L-SM)",
+        "paragraph_ordinal": 23,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par29"
+      },
+      "content_sha256": "a25a631718e63112978e714400599e645b6e744e3b8aa4f356af6a52f6b76d86",
+      "word_count": 220
+    },
+    {
+      "chunk_id": "pmc12550025-p00028-495c42880283",
+      "document_id": "pmc12550025",
+      "section": "Results and discussion / Case studies / Lewis acid-mediated Suzuki-Miyaura cross-coupling (L-SM)",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and discussion / Case studies / Lewis acid-mediated Suzuki-Miyaura cross-coupling (L-SM)",
+        "paragraph_ordinal": 23,
+        "chunk_ordinal": 2,
+        "xml_node_id": "Par29"
+      },
+      "content_sha256": "495c428802834301d17357d2fa31a55b671302055f7b5e2a9bfa8ec2cc7a0be0",
+      "word_count": 33
+    },
+    {
+      "chunk_id": "pmc12550025-p00029-bee58f508d0a",
+      "document_id": "pmc12550025",
+      "section": "Results and discussion / Case studies / Lewis acid-mediated Suzuki-Miyaura cross-coupling (L-SM)",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and discussion / Case studies / Lewis acid-mediated Suzuki-Miyaura cross-coupling (L-SM)",
+        "paragraph_ordinal": 24,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par30"
+      },
+      "content_sha256": "bee58f508d0a5af716c4eadaac956ddde21d4a5d1a9db70cc95cbeea3ef82ff2",
+      "word_count": 89
+    },
+    {
+      "chunk_id": "pmc12550025-p00030-bc8faf040af2",
+      "document_id": "pmc12550025",
+      "section": "Results and discussion / Case studies / C-C cross-coupling (CC)",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and discussion / Case studies / C-C cross-coupling (CC)",
+        "paragraph_ordinal": 25,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par31"
+      },
+      "content_sha256": "bc8faf040af2bc4bc550465649dd37397ea4929d3951822ddb110521f5858a88",
+      "word_count": 220
+    },
+    {
+      "chunk_id": "pmc12550025-p00031-b36c8fbd7496",
+      "document_id": "pmc12550025",
+      "section": "Results and discussion / Case studies / C-C cross-coupling (CC)",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and discussion / Case studies / C-C cross-coupling (CC)",
+        "paragraph_ordinal": 25,
+        "chunk_ordinal": 2,
+        "xml_node_id": "Par31"
+      },
+      "content_sha256": "b36c8fbd7496447d02bc06a4af9fbdd9109b3e4cf1cd7d591cf5c3b9a2243c28",
+      "word_count": 44
+    },
+    {
+      "chunk_id": "pmc12550025-p00032-a82e381e0147",
+      "document_id": "pmc12550025",
+      "section": "Results and discussion / Case studies / C-C cross-coupling (CC)",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and discussion / Case studies / C-C cross-coupling (CC)",
+        "paragraph_ordinal": 26,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par32"
+      },
+      "content_sha256": "a82e381e0147d2a3cf207e1659311a94d5cef2c36ede4df2673f2f657ca3edeb",
+      "word_count": 160
+    },
+    {
+      "chunk_id": "pmc12550025-p00033-0ea9ac792f30",
+      "document_id": "pmc12550025",
+      "section": "Results and discussion / Case studies / C-C cross-coupling (CC)",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and discussion / Case studies / C-C cross-coupling (CC)",
+        "paragraph_ordinal": 27,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par33"
+      },
+      "content_sha256": "0ea9ac792f30635aa671d62992ca4b145b7915835d64d709ff1ed50fe0f69383",
+      "word_count": 220
+    },
+    {
+      "chunk_id": "pmc12550025-p00034-8ea33a58d1b4",
+      "document_id": "pmc12550025",
+      "section": "Results and discussion / Case studies / C-C cross-coupling (CC)",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and discussion / Case studies / C-C cross-coupling (CC)",
+        "paragraph_ordinal": 27,
+        "chunk_ordinal": 2,
+        "xml_node_id": "Par33"
+      },
+      "content_sha256": "8ea33a58d1b4c9c86a71b1b5cd5d1efbeb5703985add3217ad98ffab0e51b818",
+      "word_count": 84
+    },
+    {
+      "chunk_id": "pmc12550025-p00035-d35b27b9d249",
+      "document_id": "pmc12550025",
+      "section": "Results and discussion / Case studies / Asymmetric Pictet-Spengler (PS)",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and discussion / Case studies / Asymmetric Pictet-Spengler (PS)",
+        "paragraph_ordinal": 28,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par34"
+      },
+      "content_sha256": "d35b27b9d2496ec04138d2336212a1c50720ba552c25073c6cb73b6684ba23e2",
+      "word_count": 105
+    },
+    {
+      "chunk_id": "pmc12550025-p00036-e2ca3e3e2498",
+      "document_id": "pmc12550025",
+      "section": "Results and discussion / Case studies / Asymmetric Pictet-Spengler (PS)",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and discussion / Case studies / Asymmetric Pictet-Spengler (PS)",
+        "paragraph_ordinal": 29,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par35"
+      },
+      "content_sha256": "e2ca3e3e249835c11aa7744779ee8710304d5f6b31f80f9ede5f78546cb9a803",
+      "word_count": 125
+    },
+    {
+      "chunk_id": "pmc12550025-p00037-b85a56be49cc",
+      "document_id": "pmc12550025",
+      "section": "Results and discussion / Case studies / Asymmetric Pictet-Spengler (PS)",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Results and discussion / Case studies / Asymmetric Pictet-Spengler (PS)",
+        "paragraph_ordinal": 30,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par36"
+      },
+      "content_sha256": "b85a56be49cccf25f48d98d5ab63c9b416e7f95eb6531bebce02fa6d6e03401d",
+      "word_count": 114
+    },
+    {
+      "chunk_id": "pmc12550025-p00038-5fb0d8e2bb65",
+      "document_id": "pmc12550025",
+      "section": "Conclusions",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Conclusions",
+        "paragraph_ordinal": 31,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par37"
+      },
+      "content_sha256": "5fb0d8e2bb6563969e552c8067a3f10706d3970dbb4000fdc5f8512a778a1449",
+      "word_count": 136
+    },
+    {
+      "chunk_id": "pmc12550025-p00039-3d932cef77f5",
+      "document_id": "pmc12550025",
+      "section": "Conclusions",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Conclusions",
+        "paragraph_ordinal": 32,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par38"
+      },
+      "content_sha256": "3d932cef77f50ac87deefcf9c1df3dad72afe06d9d7c9b62defaa857b19ba0a7",
+      "word_count": 118
+    },
+    {
+      "chunk_id": "pmc12550025-p00040-08d13da4212a",
+      "document_id": "pmc12550025",
+      "section": "Conclusions",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Conclusions",
+        "paragraph_ordinal": 33,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par39"
+      },
+      "content_sha256": "08d13da4212a7f72bc848a0e9263ac84373b9baae379400da624ab8faf22d0e2",
+      "word_count": 171
+    },
+    {
+      "chunk_id": "pmc12550025-p00041-fbbf3286ea30",
+      "document_id": "pmc12550025",
+      "section": "Conclusions",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Conclusions",
+        "paragraph_ordinal": 34,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par40"
+      },
+      "content_sha256": "fbbf3286ea30dadf6cc1fad02548874c97a0db9933d8a9ffa060d462ac0c6bbe",
+      "word_count": 71
+    },
+    {
+      "chunk_id": "pmc12550025-p00042-e219de79526a",
+      "document_id": "pmc12550025",
+      "section": "Methods / Reaction data",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Methods / Reaction data",
+        "paragraph_ordinal": 35,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par41"
+      },
+      "content_sha256": "e219de79526a3e9393e582de264941d2104c62951759a0872f83f53618b6cf8b",
+      "word_count": 192
+    },
+    {
+      "chunk_id": "pmc12550025-p00043-7ba1fbb8089f",
+      "document_id": "pmc12550025",
+      "section": "Methods / Reaction data",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Methods / Reaction data",
+        "paragraph_ordinal": 36,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par42"
+      },
+      "content_sha256": "7ba1fbb8089f2fdc6626765e69bb6efd0b7d4e1b5954d15c9b7f2956871d1a9a",
+      "word_count": 59
+    },
+    {
+      "chunk_id": "pmc12550025-p00044-e067fbe32cf1",
+      "document_id": "pmc12550025",
+      "section": "Methods / Reaction data",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Methods / Reaction data",
+        "paragraph_ordinal": 37,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par43"
+      },
+      "content_sha256": "e067fbe32cf10f74beba5789d053cc2c2bc9afc11ec0b0e1b715611aea44bdcd",
+      "word_count": 220
+    },
+    {
+      "chunk_id": "pmc12550025-p00045-90294b8915f5",
+      "document_id": "pmc12550025",
+      "section": "Methods / Reaction data",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Methods / Reaction data",
+        "paragraph_ordinal": 37,
+        "chunk_ordinal": 2,
+        "xml_node_id": "Par43"
+      },
+      "content_sha256": "90294b8915f5869619c211f3097cf4316ec6f7888745744382ef398f30506dac",
+      "word_count": 70
+    },
+    {
+      "chunk_id": "pmc12550025-p00046-ad5206890391",
+      "document_id": "pmc12550025",
+      "section": "Methods / Reaction data",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Methods / Reaction data",
+        "paragraph_ordinal": 38,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par44"
+      },
+      "content_sha256": "ad5206890391659b2bff3774287e6b2aa1b184620c94d915e212f29b9e04a555",
+      "word_count": 66
+    },
+    {
+      "chunk_id": "pmc12550025-p00047-28a9136222a8",
+      "document_id": "pmc12550025",
+      "section": "Methods / Data representation",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Methods / Data representation",
+        "paragraph_ordinal": 39,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par45"
+      },
+      "content_sha256": "28a9136222a8f783a93401db6132a7230c0f91235862f890d3630bb6e95b4a93",
+      "word_count": 44
+    },
+    {
+      "chunk_id": "pmc12550025-p00048-dddfac16ecc7",
+      "document_id": "pmc12550025",
+      "section": "Methods / Data representation",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Methods / Data representation",
+        "paragraph_ordinal": 40,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par46"
+      },
+      "content_sha256": "dddfac16ecc7512bc6ff06bab16f2c92721d8d3edb5b886aae939ad783b16efc",
+      "word_count": 220
+    },
+    {
+      "chunk_id": "pmc12550025-p00049-8ad0d4c2e472",
+      "document_id": "pmc12550025",
+      "section": "Methods / Data representation",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Methods / Data representation",
+        "paragraph_ordinal": 40,
+        "chunk_ordinal": 2,
+        "xml_node_id": "Par46"
+      },
+      "content_sha256": "8ad0d4c2e472f15a1ca452abaea6e08e19ce76183cc0cb7f1c2546cd66bb65bc",
+      "word_count": 168
+    },
+    {
+      "chunk_id": "pmc12550025-p00050-7c4a3bed5197",
+      "document_id": "pmc12550025",
+      "section": "Methods / Data representation",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Methods / Data representation",
+        "paragraph_ordinal": 41,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par47"
+      },
+      "content_sha256": "7c4a3bed51975d58439414182aa0faf4022861dc88364d6da57a01888a3e52da",
+      "word_count": 137
+    },
+    {
+      "chunk_id": "pmc12550025-p00051-a66cf2ac7789",
+      "document_id": "pmc12550025",
+      "section": "Methods / Data representation",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Methods / Data representation",
+        "paragraph_ordinal": 42,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par48"
+      },
+      "content_sha256": "a66cf2ac7789047c89e5f1ab571d97a532046eb9923237e3359ed5d1d33618ae",
+      "word_count": 31
+    },
+    {
+      "chunk_id": "pmc12550025-p00052-bf5f923d8605",
+      "document_id": "pmc12550025",
+      "section": "Methods / Model architecture",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Methods / Model architecture",
+        "paragraph_ordinal": 43,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par49"
+      },
+      "content_sha256": "bf5f923d86050fb9565e4d900766ab6ef0eef60e0d20c7bc7df2c78d3f685916",
+      "word_count": 54
+    },
+    {
+      "chunk_id": "pmc12550025-p00053-a186cc6278ec",
+      "document_id": "pmc12550025",
+      "section": "Methods / Model architecture",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Methods / Model architecture",
+        "paragraph_ordinal": 44,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par50"
+      },
+      "content_sha256": "a186cc6278ecff63416ff2ccada9d10c9d3f07c0fe8f579e2fd302db86675206",
+      "word_count": 75
+    },
+    {
+      "chunk_id": "pmc12550025-p00054-52974206986a",
+      "document_id": "pmc12550025",
+      "section": "Methods / Model architecture",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Methods / Model architecture",
+        "paragraph_ordinal": 45,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par51"
+      },
+      "content_sha256": "52974206986a5eada94bdefbf48693613f0d5338d1f2e9d9a5890c4d8bcc0d5f",
+      "word_count": 97
+    },
+    {
+      "chunk_id": "pmc12550025-p00055-5d77b8fa0de2",
+      "document_id": "pmc12550025",
+      "section": "Methods / Model architecture",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Methods / Model architecture",
+        "paragraph_ordinal": 46,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par52"
+      },
+      "content_sha256": "5d77b8fa0de28b193079fe22ce436de66aae557cc80e61f3101139c53a690b87",
+      "word_count": 28
+    },
+    {
+      "chunk_id": "pmc12550025-p00056-b0ac9f9786f8",
+      "document_id": "pmc12550025",
+      "section": "Methods / Model architecture",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Methods / Model architecture",
+        "paragraph_ordinal": 47,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par56"
+      },
+      "content_sha256": "b0ac9f9786f863cad6fc453783c27c73cd4bdde0e2899f25cb998ea95d0f31ea",
+      "word_count": 81
+    },
+    {
+      "chunk_id": "pmc12550025-p00057-fb030ebdea5c",
+      "document_id": "pmc12550025",
+      "section": "Methods / Model architecture",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Methods / Model architecture",
+        "paragraph_ordinal": 48,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par57"
+      },
+      "content_sha256": "fb030ebdea5ce9b065953df5833e81c41b0bcc3e940c76206e9693c1c6907af2",
+      "word_count": 220
+    },
+    {
+      "chunk_id": "pmc12550025-p00058-5eb34c9dbe62",
+      "document_id": "pmc12550025",
+      "section": "Methods / Model architecture",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Methods / Model architecture",
+        "paragraph_ordinal": 48,
+        "chunk_ordinal": 2,
+        "xml_node_id": "Par57"
+      },
+      "content_sha256": "5eb34c9dbe62ac6a3580fe68629d4e0f84a53f2bf38625cbabf0745e2aeb09ec",
+      "word_count": 36
+    },
+    {
+      "chunk_id": "pmc12550025-p00059-7ff18f11aa55",
+      "document_id": "pmc12550025",
+      "section": "Methods / Training schema",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Methods / Training schema",
+        "paragraph_ordinal": 49,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par58"
+      },
+      "content_sha256": "7ff18f11aa55fecfc4b40629a77380833b3a2d8804e8aaacd9dddbb389297030",
+      "word_count": 202
+    },
+    {
+      "chunk_id": "pmc12550025-p00060-efae69e351ed",
+      "document_id": "pmc12550025",
+      "section": "Methods / Catalyst generation",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Methods / Catalyst generation",
+        "paragraph_ordinal": 50,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par59"
+      },
+      "content_sha256": "efae69e351ed2527b270aabcdc27be93535ffc47c9d0fea34b2c3edddc8c2596",
+      "word_count": 66
+    },
+    {
+      "chunk_id": "pmc12550025-p00061-31814dcae656",
+      "document_id": "pmc12550025",
+      "section": "Methods / Catalyst generation",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Methods / Catalyst generation",
+        "paragraph_ordinal": 51,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par63"
+      },
+      "content_sha256": "31814dcae656c9752eb4f6a168cf28443f400f61373b1ed0b2d05d452c089dd7",
+      "word_count": 178
+    },
+    {
+      "chunk_id": "pmc12550025-p00062-265b4790f72f",
+      "document_id": "pmc12550025",
+      "section": "Methods / Generation optimization",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Methods / Generation optimization",
+        "paragraph_ordinal": 52,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par64"
+      },
+      "content_sha256": "265b4790f72f9f15b910f756ab3782908367ed37155ad397da3b6095ebedcb66",
+      "word_count": 132
+    },
+    {
+      "chunk_id": "pmc12550025-p00063-4226941f78f8",
+      "document_id": "pmc12550025",
+      "section": "Methods / Generation optimization",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Methods / Generation optimization",
+        "paragraph_ordinal": 53,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par65"
+      },
+      "content_sha256": "4226941f78f8ebc3936b63e4344299f51d81da217c350764cbb4227fb3768bf0",
+      "word_count": 73
+    },
+    {
+      "chunk_id": "pmc12550025-p00064-09e8b8a866f1",
+      "document_id": "pmc12550025",
+      "section": "Methods / Generation optimization",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Methods / Generation optimization",
+        "paragraph_ordinal": 54,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par66"
+      },
+      "content_sha256": "09e8b8a866f1ddff07a32799ac126c50d42099f5c2b774656a5a9d8a2fc61420",
+      "word_count": 11
+    },
+    {
+      "chunk_id": "pmc12550025-p00065-747c2da446b0",
+      "document_id": "pmc12550025",
+      "section": "Methods / Generated catalyst validation using DFT",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Methods / Generated catalyst validation using DFT",
+        "paragraph_ordinal": 55,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par69"
+      },
+      "content_sha256": "747c2da446b08f00ba76fe04fa87af20bc1daeb683fde35ef817fcb543dc6d42",
+      "word_count": 109
+    },
+    {
+      "chunk_id": "pmc12550025-p00066-ab3703ebfb3e",
+      "document_id": "pmc12550025",
+      "section": "Acknowledgements",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Acknowledgements",
+        "paragraph_ordinal": 56,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "ab3703ebfb3ec6502c9610941c475beca4e9666839ad1ef9b3bb058179e1b8d4",
+      "word_count": 51
+    },
+    {
+      "chunk_id": "pmc12550025-p00067-f91d0c0f5a0b",
+      "document_id": "pmc12550025",
+      "section": "Author contributions",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Author contributions",
+        "paragraph_ordinal": 57,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "f91d0c0f5a0b157a7463956fa20dd726b3a93602d173a19e3a2bdefe0b93754c",
+      "word_count": 44
+    },
+    {
+      "chunk_id": "pmc12550025-p00068-801d73b55990",
+      "document_id": "pmc12550025",
+      "section": "Peer review / Peer review information",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Peer review / Peer review information",
+        "paragraph_ordinal": 58,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par70"
+      },
+      "content_sha256": "801d73b559908b8f50fbef1f146186fb10891df42bb5afff0dfe7a5cbd993a0e",
+      "word_count": 21
+    },
+    {
+      "chunk_id": "pmc12550025-p00069-d57335a05bd9",
+      "document_id": "pmc12550025",
+      "section": "Data availability",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Data availability",
+        "paragraph_ordinal": 59,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "d57335a05bd9e817021733f86c7444e5197df8203f912d6a60c9e2899b0c6acf",
+      "word_count": 10
+    },
+    {
+      "chunk_id": "pmc12550025-p00070-6ec83f3d32c4",
+      "document_id": "pmc12550025",
+      "section": "Code availability",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Code availability",
+        "paragraph_ordinal": 60,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "6ec83f3d32c4454b4b0b20326655e7e4980a56b742073d922eafd4bda245f36f",
+      "word_count": 8
+    },
+    {
+      "chunk_id": "pmc12550025-p00071-9ba9761df944",
+      "document_id": "pmc12550025",
+      "section": "Competing interests",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Competing interests",
+        "paragraph_ordinal": 61,
+        "chunk_ordinal": 1,
+        "xml_node_id": "Par71"
+      },
+      "content_sha256": "9ba9761df944344679e71f50f98a25479ec835067d14e2f3d453b7d21c5f9a4f",
+      "word_count": 6
+    },
+    {
+      "chunk_id": "pmc12550025-p00072-a9e564cb3938",
+      "document_id": "pmc12550025",
+      "section": "Supplementary information",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Supplementary information",
+        "paragraph_ordinal": 62,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "a9e564cb3938b219e5c7d00f0e412e4484aff8e0e8f12cd94e77a90eecc8100b",
+      "word_count": 9
+    },
+    {
+      "chunk_id": "pmc12550025-p00073-d57335a05bd9",
+      "document_id": "pmc12550025",
+      "section": "Associated Data / Data Availability Statement",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Associated Data / Data Availability Statement",
+        "paragraph_ordinal": 63,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "d57335a05bd9e817021733f86c7444e5197df8203f912d6a60c9e2899b0c6acf",
+      "word_count": 10
+    },
+    {
+      "chunk_id": "pmc12550025-p00074-6ec83f3d32c4",
+      "document_id": "pmc12550025",
+      "section": "Associated Data / Data Availability Statement",
+      "source_locator": {
+        "kind": "XML_PARAGRAPH",
+        "section_path": "Associated Data / Data Availability Statement",
+        "paragraph_ordinal": 64,
+        "chunk_ordinal": 1,
+        "xml_node_id": null
+      },
+      "content_sha256": "6ec83f3d32c4454b4b0b20326655e7e4980a56b742073d922eafd4bda245f36f",
+      "word_count": 8
+    }
+  ]
+}

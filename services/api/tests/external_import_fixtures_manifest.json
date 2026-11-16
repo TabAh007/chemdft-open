@@ -1,0 +1,1638 @@
+{
+ "cclib_commit": "b1364ecf5ac21042c5a37ed5446771217e0431ea",
+ "description": "Third-party Gaussian/ORCA fixtures are NOT committed. Each entry pins the upstream commit URL and SHA-256; fetch with tools/fetch_external_import_fixtures.py. Expectations come from the spike fixture gate (docs/implementation/external_import_spike).",
+ "fixtures": {
+  "g09-dvb-ir": {
+   "charge": 0,
+   "chemdft_gate": "ACCEPT",
+   "engine_version": "Gaussian 09 Rev D.01",
+   "info_warn_codes": [],
+   "job_from_log": "freq",
+   "license": "BSD-3-Clause (cclib/cclib@b1364ecf)",
+   "major_attributes": [
+    "atomnos",
+    "atomcoords",
+    "charge",
+    "mult",
+    "scfenergies",
+    "moenergies",
+    "homos",
+    "optdone",
+    "geovalues",
+    "vibfreqs",
+    "vibirs",
+    "vibdisps",
+    "zpve",
+    "enthalpy",
+    "freeenergy",
+    "temperature",
+    "pressure"
+   ],
+   "method_basis_from_log_echo": "b3lyp/sto-3g",
+   "multiplicity": 1,
+   "natom": 20,
+   "output_sha256": "4579ececdbcd8223324c6107de4f1a95e597c7d4a77ebc6b7faf361563c08932",
+   "reject_codes": [],
+   "tags": [
+    "freq",
+    "ir"
+   ],
+   "termination": "COMPLETED",
+   "upstream_url": "https://raw.githubusercontent.com/cclib/cclib/b1364ecf5ac21042c5a37ed5446771217e0431ea/data/Gaussian/basicGaussian09/dvb_ir.out"
+  },
+  "g09-dvb-opt": {
+   "charge": 0,
+   "chemdft_gate": "ACCEPT",
+   "engine_version": "Gaussian 09 Rev D.01",
+   "info_warn_codes": [],
+   "job_from_log": "opt",
+   "license": "BSD-3-Clause (cclib/cclib@b1364ecf)",
+   "major_attributes": [
+    "atomnos",
+    "atomcoords",
+    "charge",
+    "mult",
+    "scfenergies",
+    "moenergies",
+    "homos",
+    "optdone",
+    "geovalues"
+   ],
+   "method_basis_from_log_echo": "b3lyp/sto-3g",
+   "multiplicity": 1,
+   "natom": 20,
+   "output_sha256": "d34f5af69182ea68bfbe1231a76b6408adacf7631e03e8f70c12a62d758086ba",
+   "reject_codes": [],
+   "tags": [
+    "optimization",
+    "closed-shell"
+   ],
+   "termination": "COMPLETED",
+   "upstream_url": "https://raw.githubusercontent.com/cclib/cclib/b1364ecf5ac21042c5a37ed5446771217e0431ea/data/Gaussian/basicGaussian09/dvb_gopt.out"
+  },
+  "g09-dvb-raman": {
+   "charge": 0,
+   "chemdft_gate": "ACCEPT",
+   "engine_version": "Gaussian 09 Rev D.01",
+   "info_warn_codes": [],
+   "job_from_log": "freq+raman",
+   "license": "BSD-3-Clause (cclib/cclib@b1364ecf)",
+   "major_attributes": [
+    "atomnos",
+    "atomcoords",
+    "charge",
+    "mult",
+    "scfenergies",
+    "moenergies",
+    "homos",
+    "optdone",
+    "geovalues",
+    "vibfreqs",
+    "vibirs",
+    "vibramans",
+    "vibdisps",
+    "zpve",
+    "enthalpy",
+    "freeenergy",
+    "temperature",
+    "pressure"
+   ],
+   "method_basis_from_log_echo": "rb3lyp/sto-3g",
+   "multiplicity": 1,
+   "natom": 20,
+   "output_sha256": "73a7d4a91fb531f9a7c6e19580f6c6bfb38f2404ff56102ce2a0e1a1bfd23fe5",
+   "reject_codes": [],
+   "tags": [
+    "raman",
+    "freq",
+    "ir"
+   ],
+   "termination": "COMPLETED",
+   "upstream_url": "https://raw.githubusercontent.com/cclib/cclib/b1364ecf5ac21042c5a37ed5446771217e0431ea/data/Gaussian/basicGaussian09/dvb_raman.out"
+  },
+  "g09-dvb-td": {
+   "charge": 0,
+   "chemdft_gate": "ACCEPT",
+   "engine_version": "Gaussian 09 Rev D.01",
+   "info_warn_codes": [],
+   "job_from_log": "td",
+   "license": "BSD-3-Clause (cclib/cclib@b1364ecf)",
+   "major_attributes": [
+    "atomnos",
+    "atomcoords",
+    "charge",
+    "mult",
+    "scfenergies",
+    "moenergies",
+    "homos",
+    "etenergies",
+    "etoscs",
+    "etsyms"
+   ],
+   "method_basis_from_log_echo": "b3lyp/sto-3g",
+   "multiplicity": 1,
+   "natom": 20,
+   "output_sha256": "01619fecb8ca4d80b1ddfddb6cb9dc1983e52e23616e20ac0e4f1a6bb55462e0",
+   "reject_codes": [],
+   "tags": [
+    "excited-states"
+   ],
+   "termination": "COMPLETED",
+   "upstream_url": "https://raw.githubusercontent.com/cclib/cclib/b1364ecf5ac21042c5a37ed5446771217e0431ea/data/Gaussian/basicGaussian09/dvb_td.out"
+  },
+  "g16-acetone-linked": {
+   "charge": 0,
+   "chemdft_gate": "REJECT",
+   "engine_version": "Gaussian 16 Rev C.01",
+   "info_warn_codes": [],
+   "job_from_log": "linked opt\u2192freq (2 jobs)",
+   "license": "MIT (patonlab/GoodVibes@744cbfd5)",
+   "major_attributes": [
+    "atomnos",
+    "atomcoords",
+    "charge",
+    "mult",
+    "scfenergies",
+    "moenergies",
+    "homos",
+    "optdone",
+    "geovalues"
+   ],
+   "method_basis_from_log_echo": "B3LYP/6-311G(d,p)",
+   "multiplicity": 1,
+   "natom": 10,
+   "output_sha256": "6bd246d829606660c12ce73404cbda2765f93606d1a69a1578d764676a592be3",
+   "reject_codes": [
+    "MULTIPLE_JOBS_NOT_SUPPORTED_V1"
+   ],
+   "tags": [
+    "multi-job",
+    "opt+freq"
+   ],
+   "termination": "COMPLETED",
+   "upstream_url": "https://raw.githubusercontent.com/patonlab/GoodVibes/744cbfd5b93bf5cb4a8551655d5c29542eb92fb9/tests/g16/03_acetone_linked_opt_freq.log"
+  },
+  "g16-benzene-sp": {
+   "charge": 0,
+   "chemdft_gate": "ACCEPT",
+   "engine_version": "Gaussian 16 Rev C.01",
+   "info_warn_codes": [],
+   "job_from_log": "sp",
+   "license": "MIT (patonlab/GoodVibes@744cbfd5)",
+   "major_attributes": [
+    "atomnos",
+    "atomcoords",
+    "charge",
+    "mult",
+    "scfenergies",
+    "moenergies",
+    "homos"
+   ],
+   "method_basis_from_log_echo": "B3LYP/6-311+G(d,p)",
+   "multiplicity": 1,
+   "natom": 12,
+   "output_sha256": "c0cbb718366242e90dfd0de90474a75cb9e4890394532077565494b95b9c1302",
+   "reject_codes": [],
+   "tags": [
+    "single-point",
+    "closed-shell"
+   ],
+   "termination": "COMPLETED",
+   "upstream_url": "https://raw.githubusercontent.com/patonlab/GoodVibes/744cbfd5b93bf5cb4a8551655d5c29542eb92fb9/tests/g16/20_benzene_singlepoint.log"
+  },
+  "g16-ch2-triplet": {
+   "charge": 0,
+   "chemdft_gate": "REJECT",
+   "engine_version": "Gaussian 16 Rev C.01",
+   "info_warn_codes": [
+    "ATOMMASSES_CONCATENATED_BY_CCLIB"
+   ],
+   "job_from_log": "opt+freq",
+   "license": "MIT (patonlab/GoodVibes@744cbfd5)",
+   "major_attributes": [
+    "atomnos",
+    "atomcoords",
+    "charge",
+    "mult",
+    "scfenergies",
+    "moenergies",
+    "homos",
+    "optdone",
+    "geovalues",
+    "vibfreqs",
+    "vibirs",
+    "vibdisps",
+    "zpve",
+    "enthalpy",
+    "freeenergy",
+    "temperature",
+    "pressure"
+   ],
+   "method_basis_from_log_echo": "UMP2/cc-pVDZ",
+   "multiplicity": 3,
+   "natom": 3,
+   "output_sha256": "0a7333a5b7965980e5ed881d1addeb99c7fa49c6127bf11f00af7afe77b7a8d8",
+   "reject_codes": [
+    "CORRELATED_METHOD_NOT_SUPPORTED_V1"
+   ],
+   "tags": [
+    "open-shell",
+    "opt+freq"
+   ],
+   "termination": "COMPLETED",
+   "upstream_url": "https://raw.githubusercontent.com/patonlab/GoodVibes/744cbfd5b93bf5cb4a8551655d5c29542eb92fb9/tests/g16/05_methylene_triplet_carbene.log"
+  },
+  "g16-cs2-linear-freq": {
+   "charge": 0,
+   "chemdft_gate": "ACCEPT",
+   "engine_version": "Gaussian 16 Rev C.01",
+   "info_warn_codes": [
+    "ATOMMASSES_ABSENT"
+   ],
+   "job_from_log": "opt+freq",
+   "license": "MIT (patonlab/GoodVibes@744cbfd5)",
+   "major_attributes": [
+    "atomnos",
+    "atomcoords",
+    "charge",
+    "mult",
+    "scfenergies",
+    "moenergies",
+    "homos",
+    "optdone",
+    "geovalues",
+    "vibfreqs",
+    "vibirs",
+    "vibdisps",
+    "zpve",
+    "enthalpy",
+    "freeenergy",
+    "temperature",
+    "pressure"
+   ],
+   "method_basis_from_log_echo": "B3LYP/6-311+G(2df,p)",
+   "multiplicity": 1,
+   "natom": 3,
+   "output_sha256": "f8b96e00886c2fde635939e4013dcf8c7f90d6cf467825638051f762ef9594c9",
+   "reject_codes": [],
+   "tags": [
+    "linear",
+    "freq"
+   ],
+   "termination": "COMPLETED",
+   "upstream_url": "https://raw.githubusercontent.com/patonlab/GoodVibes/744cbfd5b93bf5cb4a8551655d5c29542eb92fb9/tests/g16/23_cs2_linear_anharmonic_noraman.log"
+  },
+  "g16-dvb-opt": {
+   "charge": 0,
+   "chemdft_gate": "ACCEPT",
+   "engine_version": "Gaussian 16 Rev A.03",
+   "info_warn_codes": [],
+   "job_from_log": "opt",
+   "license": "BSD-3-Clause (cclib/cclib@b1364ecf)",
+   "major_attributes": [
+    "atomnos",
+    "atomcoords",
+    "charge",
+    "mult",
+    "scfenergies",
+    "moenergies",
+    "homos",
+    "optdone",
+    "geovalues"
+   ],
+   "method_basis_from_log_echo": "b3lyp/sto-3g",
+   "multiplicity": 1,
+   "natom": 20,
+   "output_sha256": "f4e280b32b0d9f25ac7a21cfe47e810fe5cecb8b669e8d9751329a0ffded260d",
+   "reject_codes": [],
+   "tags": [
+    "optimization",
+    "closed-shell"
+   ],
+   "termination": "COMPLETED",
+   "upstream_url": "https://raw.githubusercontent.com/cclib/cclib/b1364ecf5ac21042c5a37ed5446771217e0431ea/data/Gaussian/basicGaussian16/dvb_gopt.out"
+  },
+  "g16-dvb-raman": {
+   "charge": 0,
+   "chemdft_gate": "ACCEPT",
+   "engine_version": "Gaussian 16 Rev A.03",
+   "info_warn_codes": [],
+   "job_from_log": "freq+raman",
+   "license": "BSD-3-Clause (cclib/cclib@b1364ecf)",
+   "major_attributes": [
+    "atomnos",
+    "atomcoords",
+    "charge",
+    "mult",
+    "scfenergies",
+    "moenergies",
+    "homos",
+    "optdone",
+    "geovalues",
+    "vibfreqs",
+    "vibirs",
+    "vibramans",
+    "vibdisps",
+    "zpve",
+    "enthalpy",
+    "freeenergy",
+    "temperature",
+    "pressure"
+   ],
+   "method_basis_from_log_echo": "rb3lyp/sto-3g",
+   "multiplicity": 1,
+   "natom": 20,
+   "output_sha256": "fc97b8c179dbad721262be6077be893b13b785b36f8ae3493a1dd4b3d4bf18b9",
+   "reject_codes": [],
+   "tags": [
+    "raman",
+    "freq",
+    "ir"
+   ],
+   "termination": "COMPLETED",
+   "upstream_url": "https://raw.githubusercontent.com/cclib/cclib/b1364ecf5ac21042c5a37ed5446771217e0431ea/data/Gaussian/basicGaussian16/dvb_raman.out"
+  },
+  "g16-dvb-td": {
+   "charge": 0,
+   "chemdft_gate": "ACCEPT",
+   "engine_version": "Gaussian 16 Rev A.03",
+   "info_warn_codes": [],
+   "job_from_log": "td",
+   "license": "BSD-3-Clause (cclib/cclib@b1364ecf)",
+   "major_attributes": [
+    "atomnos",
+    "atomcoords",
+    "charge",
+    "mult",
+    "scfenergies",
+    "moenergies",
+    "homos",
+    "etenergies",
+    "etoscs",
+    "etsyms"
+   ],
+   "method_basis_from_log_echo": "b3lyp/sto-3g",
+   "multiplicity": 1,
+   "natom": 20,
+   "output_sha256": "c9255c92b829a4d2072ffca262be4dd9212f35a9c75d84c1fe8eb5969c166eef",
+   "reject_codes": [],
+   "tags": [
+    "excited-states"
+   ],
+   "termination": "COMPLETED",
+   "upstream_url": "https://raw.githubusercontent.com/cclib/cclib/b1364ecf5ac21042c5a37ed5446771217e0431ea/data/Gaussian/basicGaussian16/dvb_td.out"
+  },
+  "g16-ethane-opt-freq": {
+   "charge": 0,
+   "chemdft_gate": "ACCEPT",
+   "engine_version": "Gaussian 16 Rev C.01",
+   "info_warn_codes": [
+    "ATOMMASSES_CONCATENATED_BY_CCLIB"
+   ],
+   "job_from_log": "opt+freq",
+   "license": "MIT (patonlab/GoodVibes@744cbfd5)",
+   "major_attributes": [
+    "atomnos",
+    "atomcoords",
+    "charge",
+    "mult",
+    "scfenergies",
+    "moenergies",
+    "homos",
+    "optdone",
+    "geovalues",
+    "vibfreqs",
+    "vibirs",
+    "vibdisps",
+    "zpve",
+    "enthalpy",
+    "freeenergy",
+    "temperature",
+    "pressure"
+   ],
+   "method_basis_from_log_echo": "B3LYP/6-311+G(d,p)",
+   "multiplicity": 1,
+   "natom": 8,
+   "output_sha256": "f274b016562af471d0ccba524a4bba0473e35a4703d7bae36f9e2353fa0d036a",
+   "reject_codes": [],
+   "tags": [
+    "opt+freq",
+    "closed-shell",
+    "freq"
+   ],
+   "termination": "COMPLETED",
+   "upstream_url": "https://raw.githubusercontent.com/patonlab/GoodVibes/744cbfd5b93bf5cb4a8551655d5c29542eb92fb9/tests/g16/02_ethane_opt_freq_T398_P2.log"
+  },
+  "g16-fe-scf-fail": {
+   "charge": 0,
+   "chemdft_gate": "REJECT",
+   "engine_version": "Gaussian 16 Rev C.01",
+   "info_warn_codes": [],
+   "job_from_log": "opt+freq",
+   "license": "MIT (patonlab/GoodVibes@744cbfd5)",
+   "major_attributes": [
+    "atomnos",
+    "atomcoords",
+    "charge",
+    "mult",
+    "scfenergies"
+   ],
+   "method_basis_from_log_echo": "UB3LYP/6-31G(d)",
+   "multiplicity": 5,
+   "natom": 25,
+   "output_sha256": "f7758ca5b40e0602084fccfb0db27760dafa1dc7054c6238fff39300211646e4",
+   "reject_codes": [
+    "ERROR_TERMINATION",
+    "OPTIMIZATION_NOT_CONVERGED",
+    "SCF_NOT_CONVERGED"
+   ],
+   "tags": [
+    "unconverged-scf"
+   ],
+   "termination": "ERROR_TERMINATION",
+   "upstream_url": "https://raw.githubusercontent.com/patonlab/GoodVibes/744cbfd5b93bf5cb4a8551655d5c29542eb92fb9/tests/g16/51_err_scf_convergence_fe_complex.log"
+  },
+  "g16-hcn-linear-freq": {
+   "charge": 0,
+   "chemdft_gate": "ACCEPT",
+   "engine_version": "Gaussian 16 Rev C.01",
+   "info_warn_codes": [
+    "ATOMMASSES_ABSENT"
+   ],
+   "job_from_log": "opt+freq",
+   "license": "MIT (patonlab/GoodVibes@744cbfd5)",
+   "major_attributes": [
+    "atomnos",
+    "atomcoords",
+    "charge",
+    "mult",
+    "scfenergies",
+    "moenergies",
+    "homos",
+    "optdone",
+    "geovalues",
+    "vibfreqs",
+    "vibirs",
+    "vibdisps",
+    "zpve",
+    "enthalpy",
+    "freeenergy",
+    "temperature",
+    "pressure"
+   ],
+   "method_basis_from_log_echo": "M062X/6-311+G(d,p)",
+   "multiplicity": 1,
+   "natom": 3,
+   "output_sha256": "f62a67e2c211c0fcce454e8cf695b8213ef1f3846dc6bb25c2f10764e87098d0",
+   "reject_codes": [],
+   "tags": [
+    "linear",
+    "freq",
+    "opt+freq"
+   ],
+   "termination": "COMPLETED",
+   "upstream_url": "https://raw.githubusercontent.com/patonlab/GoodVibes/744cbfd5b93bf5cb4a8551655d5c29542eb92fb9/tests/g16/22_hcn_linear_freq_noraman.log"
+  },
+  "g16-nh3-ts-imaginary": {
+   "charge": 0,
+   "chemdft_gate": "REJECT",
+   "engine_version": "Gaussian 16 Rev C.01",
+   "info_warn_codes": [
+    "ATOMMASSES_ABSENT",
+    "IMAGINARY_FREQUENCIES_PRESENT"
+   ],
+   "job_from_log": "opt(ts)+freq",
+   "license": "MIT (patonlab/GoodVibes@744cbfd5)",
+   "major_attributes": [
+    "atomnos",
+    "atomcoords",
+    "charge",
+    "mult",
+    "scfenergies",
+    "moenergies",
+    "homos",
+    "optdone",
+    "geovalues",
+    "vibfreqs",
+    "vibirs",
+    "vibdisps",
+    "zpve",
+    "enthalpy",
+    "freeenergy",
+    "temperature",
+    "pressure"
+   ],
+   "method_basis_from_log_echo": "MP2/6-311+G(d,p)",
+   "multiplicity": 1,
+   "natom": 4,
+   "output_sha256": "28771c713c302e15763ecbcc92d6c1d44e4ad62a1e7b951c63cf827edb898aed",
+   "reject_codes": [
+    "CORRELATED_METHOD_NOT_SUPPORTED_V1"
+   ],
+   "tags": [
+    "imaginary",
+    "opt+freq",
+    "nonlinear",
+    "correlated-mp2"
+   ],
+   "termination": "COMPLETED",
+   "upstream_url": "https://raw.githubusercontent.com/patonlab/GoodVibes/744cbfd5b93bf5cb4a8551655d5c29542eb92fb9/tests/g16/48_ts_nh3_umbrella_inversion.log"
+  },
+  "g16-o2anion-doublet": {
+   "charge": -1,
+   "chemdft_gate": "ACCEPT",
+   "engine_version": "Gaussian 16 Rev C.01",
+   "info_warn_codes": [
+    "ATOMMASSES_ABSENT"
+   ],
+   "job_from_log": "opt+freq",
+   "license": "MIT (patonlab/GoodVibes@744cbfd5)",
+   "major_attributes": [
+    "atomnos",
+    "atomcoords",
+    "charge",
+    "mult",
+    "scfenergies",
+    "moenergies",
+    "homos",
+    "optdone",
+    "geovalues",
+    "vibfreqs",
+    "vibirs",
+    "vibdisps",
+    "zpve",
+    "enthalpy",
+    "freeenergy",
+    "temperature",
+    "pressure"
+   ],
+   "method_basis_from_log_echo": "UB3LYP/aug-cc-pVTZ",
+   "multiplicity": 2,
+   "natom": 2,
+   "output_sha256": "c44a8c5bd4bc42924e48cf47f2dad7417d0fa6b30123030b1cbc9bc660790af3",
+   "reject_codes": [],
+   "tags": [
+    "open-shell",
+    "opt+freq"
+   ],
+   "termination": "COMPLETED",
+   "upstream_url": "https://raw.githubusercontent.com/patonlab/GoodVibes/744cbfd5b93bf5cb4a8551655d5c29542eb92fb9/tests/g16/16_o2_superoxide_anion.log"
+  },
+  "g16-opt-notconverged": {
+   "charge": 0,
+   "chemdft_gate": "REJECT",
+   "engine_version": "Gaussian 16 Rev C.01",
+   "info_warn_codes": [],
+   "job_from_log": "opt+freq",
+   "license": "MIT (patonlab/GoodVibes@744cbfd5)",
+   "major_attributes": [
+    "atomnos",
+    "atomcoords",
+    "charge",
+    "mult",
+    "scfenergies",
+    "moenergies",
+    "homos",
+    "optdone",
+    "geovalues"
+   ],
+   "method_basis_from_log_echo": "B3LYP/6-31G(d)",
+   "multiplicity": 1,
+   "natom": 15,
+   "output_sha256": "c7f83b8df9d5dee8ca016c5d45968af57e477a04d4fc186a6447557e78cb35cb",
+   "reject_codes": [
+    "ERROR_TERMINATION",
+    "OPTIMIZATION_NOT_CONVERGED"
+   ],
+   "tags": [
+    "unconverged-opt"
+   ],
+   "termination": "ERROR_TERMINATION",
+   "upstream_url": "https://raw.githubusercontent.com/patonlab/GoodVibes/744cbfd5b93bf5cb4a8551655d5c29542eb92fb9/tests/g16/52_err_opt_not_converged_maxcycles.log"
+  },
+  "g16-sn2-ts-imaginary": {
+   "charge": -1,
+   "chemdft_gate": "ACCEPT",
+   "engine_version": "Gaussian 16 Rev C.01",
+   "info_warn_codes": [
+    "ATOMMASSES_ABSENT",
+    "IMAGINARY_FREQUENCIES_PRESENT"
+   ],
+   "job_from_log": "opt(ts)+freq",
+   "license": "MIT (patonlab/GoodVibes@744cbfd5)",
+   "major_attributes": [
+    "atomnos",
+    "atomcoords",
+    "charge",
+    "mult",
+    "scfenergies",
+    "moenergies",
+    "homos",
+    "optdone",
+    "geovalues",
+    "vibfreqs",
+    "vibirs",
+    "vibdisps",
+    "zpve",
+    "enthalpy",
+    "freeenergy",
+    "temperature",
+    "pressure"
+   ],
+   "method_basis_from_log_echo": "B3LYP/6-311+G(d,p)",
+   "multiplicity": 1,
+   "natom": 6,
+   "output_sha256": "b5c263598d0b480a5e28885af1c2ecb4767b7655dec78dd9ab9d83141a051c60",
+   "reject_codes": [],
+   "tags": [
+    "imaginary",
+    "opt+freq",
+    "dft",
+    "anion"
+   ],
+   "termination": "COMPLETED",
+   "upstream_url": "https://raw.githubusercontent.com/patonlab/GoodVibes/744cbfd5b93bf5cb4a8551655d5c29542eb92fb9/tests/g16/44_ts_sn2_identity_chloride.log"
+  },
+  "g16-timed-out": {
+   "charge": 0,
+   "chemdft_gate": "REJECT",
+   "engine_version": "Gaussian 16 Rev C.01",
+   "info_warn_codes": [],
+   "job_from_log": "opt+freq",
+   "license": "MIT (patonlab/GoodVibes@744cbfd5)",
+   "major_attributes": [
+    "atomnos",
+    "atomcoords",
+    "charge",
+    "mult",
+    "scfenergies",
+    "moenergies",
+    "homos",
+    "optdone",
+    "geovalues"
+   ],
+   "method_basis_from_log_echo": "B3LYP/6-31G(d)",
+   "multiplicity": 1,
+   "natom": 9,
+   "output_sha256": "b3cd5dd63cf0127fa7a8829f83e1b9cb8d761292cbf4ddcf18a03fe48bd093e1",
+   "reject_codes": [
+    "INCOMPLETE_OUTPUT"
+   ],
+   "tags": [
+    "truncated"
+   ],
+   "termination": "INCOMPLETE",
+   "upstream_url": "https://raw.githubusercontent.com/patonlab/GoodVibes/744cbfd5b93bf5cb4a8551655d5c29542eb92fb9/tests/g16/56_err_timed_out.log"
+  },
+  "g16-water-hf-freq": {
+   "charge": 0,
+   "chemdft_gate": "ACCEPT",
+   "engine_version": "Gaussian 16 Rev C.01",
+   "info_warn_codes": [],
+   "job_from_log": "freq",
+   "license": "MIT (patonlab/GoodVibes@744cbfd5)",
+   "major_attributes": [
+    "atomnos",
+    "atomcoords",
+    "charge",
+    "mult",
+    "scfenergies",
+    "moenergies",
+    "homos",
+    "geovalues",
+    "vibfreqs",
+    "vibirs",
+    "vibramans",
+    "vibdisps",
+    "zpve",
+    "enthalpy",
+    "freeenergy",
+    "temperature",
+    "pressure"
+   ],
+   "method_basis_from_log_echo": "HF/6-31G(d)",
+   "multiplicity": 1,
+   "natom": 3,
+   "output_sha256": "6aa634ccd8f071f0a34e90d10165cc2af601cc00d1865dd9dbf1b1304a121eea",
+   "reject_codes": [],
+   "tags": [
+    "nonlinear",
+    "closed-shell",
+    "freq",
+    "ir"
+   ],
+   "termination": "COMPLETED",
+   "upstream_url": "https://raw.githubusercontent.com/patonlab/GoodVibes/744cbfd5b93bf5cb4a8551655d5c29542eb92fb9/tests/g16/01a_water_hf_freq.log"
+  },
+  "g16-wrong-charge-mult": {
+   "charge": 0,
+   "chemdft_gate": "REJECT",
+   "engine_version": "Gaussian 16 Rev C.01",
+   "info_warn_codes": [],
+   "job_from_log": "opt+freq",
+   "license": "MIT (patonlab/GoodVibes@744cbfd5)",
+   "major_attributes": [
+    "atomnos",
+    "atomcoords",
+    "charge",
+    "mult"
+   ],
+   "method_basis_from_log_echo": "B3LYP/6-31G(d)",
+   "multiplicity": 2,
+   "natom": 3,
+   "output_sha256": "62255d2cd6baa210d10a165961f15cebce8abf7ac1070a64d25ff33f289ffd39",
+   "reject_codes": [
+    "ERROR_TERMINATION",
+    "OPTIMIZATION_NOT_CONVERGED"
+   ],
+   "tags": [
+    "error-termination"
+   ],
+   "termination": "ERROR_TERMINATION",
+   "upstream_url": "https://raw.githubusercontent.com/patonlab/GoodVibes/744cbfd5b93bf5cb4a8551655d5c29542eb92fb9/tests/g16/53_err_wrong_charge_multiplicity.log"
+  },
+  "orca5-benzene-sp": {
+   "charge": 0,
+   "chemdft_gate": "ACCEPT",
+   "engine_version": "ORCA 5.0.4",
+   "info_warn_codes": [],
+   "job_from_log": "sp",
+   "license": "MIT (patonlab/GoodVibes@744cbfd5)",
+   "major_attributes": [
+    "atomnos",
+    "atomcoords",
+    "charge",
+    "mult",
+    "scfenergies",
+    "moenergies",
+    "homos"
+   ],
+   "method_basis_from_log_echo": "B3LYP 6-311+G(d,p) D3BJ",
+   "multiplicity": 1,
+   "natom": 12,
+   "output_sha256": "4eb9679d672e881cd4cd8c236783efa2e7e41a7e4c0df33340039c0ae0479028",
+   "reject_codes": [],
+   "tags": [
+    "single-point",
+    "closed-shell"
+   ],
+   "termination": "COMPLETED",
+   "upstream_url": "https://raw.githubusercontent.com/patonlab/GoodVibes/744cbfd5b93bf5cb4a8551655d5c29542eb92fb9/tests/orca5/20_benzene_singlepoint.out"
+  },
+  "orca5-dvb-ir": {
+   "charge": 0,
+   "chemdft_gate": "ACCEPT",
+   "engine_version": "ORCA 5.0.1",
+   "info_warn_codes": [],
+   "job_from_log": "freq",
+   "license": "BSD-3-Clause (cclib/cclib@b1364ecf)",
+   "major_attributes": [
+    "atomnos",
+    "atomcoords",
+    "charge",
+    "mult",
+    "scfenergies",
+    "moenergies",
+    "homos",
+    "vibfreqs",
+    "vibirs",
+    "vibdisps",
+    "zpve",
+    "enthalpy",
+    "freeenergy",
+    "temperature",
+    "pressure"
+   ],
+   "method_basis_from_log_echo": "rks b3lyp sto-3g",
+   "multiplicity": 1,
+   "natom": 20,
+   "output_sha256": "deb64567281a4673849812a63fc7b1147c33d1c4ad3b67f6b3bf7ec03ab1046c",
+   "reject_codes": [],
+   "tags": [
+    "freq",
+    "ir"
+   ],
+   "termination": "COMPLETED",
+   "upstream_url": "https://raw.githubusercontent.com/cclib/cclib/b1364ecf5ac21042c5a37ed5446771217e0431ea/data/ORCA/basicORCA5.0/dvb_ir.out"
+  },
+  "orca5-fe-scf-fail": {
+   "charge": 0,
+   "chemdft_gate": "REJECT",
+   "engine_version": "ORCA 5.0.4",
+   "info_warn_codes": [],
+   "job_from_log": "opt+freq",
+   "license": "MIT (patonlab/GoodVibes@744cbfd5)",
+   "major_attributes": [
+    "atomnos",
+    "atomcoords",
+    "charge",
+    "mult",
+    "scfenergies",
+    "geovalues"
+   ],
+   "method_basis_from_log_echo": "UKS B3LYP 6-31G(d)",
+   "multiplicity": 5,
+   "natom": 29,
+   "output_sha256": "c03f20fa2351e39e325c13dc41eef4932564dbd6a7d9cb62ab3cc133e61bc038",
+   "reject_codes": [
+    "ERROR_TERMINATION",
+    "OPTIMIZATION_NOT_CONVERGED",
+    "SCF_NOT_CONVERGED"
+   ],
+   "tags": [
+    "unconverged-scf"
+   ],
+   "termination": "ERROR_TERMINATION",
+   "upstream_url": "https://raw.githubusercontent.com/patonlab/GoodVibes/744cbfd5b93bf5cb4a8551655d5c29542eb92fb9/tests/orca5/51_err_scf_convergence_fe_complex.out"
+  },
+  "orca5-hcn-linear-freq": {
+   "charge": 0,
+   "chemdft_gate": "ACCEPT",
+   "engine_version": "ORCA 5.0.4",
+   "info_warn_codes": [],
+   "job_from_log": "opt+freq",
+   "license": "MIT (patonlab/GoodVibes@744cbfd5)",
+   "major_attributes": [
+    "atomnos",
+    "atomcoords",
+    "charge",
+    "mult",
+    "scfenergies",
+    "moenergies",
+    "homos",
+    "optdone",
+    "geovalues",
+    "vibfreqs",
+    "vibirs",
+    "vibdisps",
+    "zpve",
+    "enthalpy",
+    "freeenergy",
+    "temperature",
+    "pressure"
+   ],
+   "method_basis_from_log_echo": "M062X 6-311+G(d,p)",
+   "multiplicity": 1,
+   "natom": 3,
+   "output_sha256": "b54285985eb266a047a028c30840e20eef3e3360fceb80f194ec952eaa9db7bb",
+   "reject_codes": [],
+   "tags": [
+    "linear",
+    "freq",
+    "opt+freq"
+   ],
+   "termination": "COMPLETED",
+   "upstream_url": "https://raw.githubusercontent.com/patonlab/GoodVibes/744cbfd5b93bf5cb4a8551655d5c29542eb92fb9/tests/orca5/22_hcn_linear_freq_noraman.out"
+  },
+  "orca5-nh3-ts-imaginary": {
+   "charge": 0,
+   "chemdft_gate": "ACCEPT",
+   "engine_version": "ORCA 5.0.4",
+   "info_warn_codes": [
+    "IMAGINARY_FREQUENCIES_PRESENT"
+   ],
+   "job_from_log": "opt(ts)+freq",
+   "license": "MIT (patonlab/GoodVibes@744cbfd5)",
+   "major_attributes": [
+    "atomnos",
+    "atomcoords",
+    "charge",
+    "mult",
+    "scfenergies",
+    "moenergies",
+    "homos",
+    "optdone",
+    "geovalues",
+    "vibfreqs",
+    "vibirs",
+    "vibdisps",
+    "zpve",
+    "enthalpy",
+    "freeenergy",
+    "temperature",
+    "pressure"
+   ],
+   "method_basis_from_log_echo": "wB97M-V 6-311+G(d,p)",
+   "multiplicity": 1,
+   "natom": 4,
+   "output_sha256": "76205a4a721704de5e2963fcca0bdbe50e85e4d3bcbf300d67c7b930b53cc584",
+   "reject_codes": [],
+   "tags": [
+    "imaginary",
+    "opt+freq",
+    "nonlinear"
+   ],
+   "termination": "COMPLETED",
+   "upstream_url": "https://raw.githubusercontent.com/patonlab/GoodVibes/744cbfd5b93bf5cb4a8551655d5c29542eb92fb9/tests/orca5/48_ts_nh3_umbrella_inversion.out"
+  },
+  "orca5-opt-freq-complete": {
+   "charge": 0,
+   "chemdft_gate": "ACCEPT",
+   "engine_version": "ORCA 5.0.4",
+   "info_warn_codes": [],
+   "job_from_log": "opt+freq",
+   "license": "MIT (patonlab/GoodVibes@744cbfd5)",
+   "major_attributes": [
+    "atomnos",
+    "atomcoords",
+    "charge",
+    "mult",
+    "scfenergies",
+    "moenergies",
+    "homos",
+    "optdone",
+    "geovalues",
+    "vibfreqs",
+    "vibirs",
+    "vibdisps",
+    "zpve",
+    "enthalpy",
+    "freeenergy",
+    "temperature",
+    "pressure"
+   ],
+   "method_basis_from_log_echo": "B3LYP 6-31G(d)",
+   "multiplicity": 1,
+   "natom": 9,
+   "output_sha256": "252c07bbd17dcf87898f004f865d05aafde784377b304dbe4cb8cf2c7aaaa850",
+   "reject_codes": [],
+   "tags": [
+    "opt+freq",
+    "complete"
+   ],
+   "termination": "COMPLETED",
+   "upstream_url": "https://raw.githubusercontent.com/patonlab/GoodVibes/744cbfd5b93bf5cb4a8551655d5c29542eb92fb9/tests/orca5/56_err_timed_out.out"
+  },
+  "orca5-sn2-ts-imaginary": {
+   "charge": -1,
+   "chemdft_gate": "ACCEPT",
+   "engine_version": "ORCA 5.0.4",
+   "info_warn_codes": [
+    "IMAGINARY_FREQUENCIES_PRESENT"
+   ],
+   "job_from_log": "opt(ts)+freq",
+   "license": "MIT (patonlab/GoodVibes@744cbfd5)",
+   "major_attributes": [
+    "atomnos",
+    "atomcoords",
+    "charge",
+    "mult",
+    "scfenergies",
+    "moenergies",
+    "homos",
+    "optdone",
+    "geovalues",
+    "vibfreqs",
+    "vibirs",
+    "vibdisps",
+    "zpve",
+    "enthalpy",
+    "freeenergy",
+    "temperature",
+    "pressure"
+   ],
+   "method_basis_from_log_echo": "B3LYP 6-311+G(d,p)",
+   "multiplicity": 1,
+   "natom": 6,
+   "output_sha256": "6a9508ac432bfc2fdea5ea4f73d0608cc0b826e93913fdd2d04ab0e8e96238ea",
+   "reject_codes": [],
+   "tags": [
+    "imaginary",
+    "opt+freq",
+    "dft",
+    "anion"
+   ],
+   "termination": "COMPLETED",
+   "upstream_url": "https://raw.githubusercontent.com/patonlab/GoodVibes/744cbfd5b93bf5cb4a8551655d5c29542eb92fb9/tests/orca5/44_ts_sn2_identity_chloride.out"
+  },
+  "orca5-water-hf-freq": {
+   "charge": 0,
+   "chemdft_gate": "ACCEPT",
+   "engine_version": "ORCA 5.0.4",
+   "info_warn_codes": [],
+   "job_from_log": "freq",
+   "license": "MIT (patonlab/GoodVibes@744cbfd5)",
+   "major_attributes": [
+    "atomnos",
+    "atomcoords",
+    "charge",
+    "mult",
+    "scfenergies",
+    "moenergies",
+    "homos",
+    "vibfreqs",
+    "vibirs",
+    "vibdisps",
+    "zpve",
+    "enthalpy",
+    "freeenergy",
+    "temperature",
+    "pressure"
+   ],
+   "method_basis_from_log_echo": "HF 6-31G(d)",
+   "multiplicity": 1,
+   "natom": 3,
+   "output_sha256": "8e45cf5d83bd2082c36f27dee8351225a02300fe5dca9888f607c9dbd4b9d8c3",
+   "reject_codes": [],
+   "tags": [
+    "nonlinear",
+    "closed-shell",
+    "freq",
+    "ir"
+   ],
+   "termination": "COMPLETED",
+   "upstream_url": "https://raw.githubusercontent.com/patonlab/GoodVibes/744cbfd5b93bf5cb4a8551655d5c29542eb92fb9/tests/orca5/01a_water_hf_freq.out"
+  },
+  "orca6-benzene-sp": {
+   "charge": 0,
+   "chemdft_gate": "ACCEPT",
+   "engine_version": "ORCA 6.1.0",
+   "info_warn_codes": [],
+   "job_from_log": "sp",
+   "license": "MIT (patonlab/GoodVibes@744cbfd5)",
+   "major_attributes": [
+    "atomnos",
+    "atomcoords",
+    "charge",
+    "mult",
+    "scfenergies",
+    "moenergies",
+    "homos"
+   ],
+   "method_basis_from_log_echo": "B3LYP 6-311+G(d,p) D3BJ",
+   "multiplicity": 1,
+   "natom": 12,
+   "output_sha256": "97025fd399864cf911aab536a81009164f3dd98a3d5678343c6f75f5ceeeceae",
+   "reject_codes": [],
+   "tags": [
+    "single-point",
+    "closed-shell"
+   ],
+   "termination": "COMPLETED",
+   "upstream_url": "https://raw.githubusercontent.com/patonlab/GoodVibes/744cbfd5b93bf5cb4a8551655d5c29542eb92fb9/tests/orca6/20_benzene_singlepoint.out"
+  },
+  "orca6-ch2-triplet": {
+   "charge": 0,
+   "chemdft_gate": "REJECT",
+   "engine_version": "ORCA 6.1.0",
+   "info_warn_codes": [],
+   "job_from_log": "opt+freq",
+   "license": "MIT (patonlab/GoodVibes@744cbfd5)",
+   "major_attributes": [
+    "atomnos",
+    "atomcoords",
+    "charge",
+    "mult",
+    "scfenergies",
+    "moenergies",
+    "homos",
+    "optdone",
+    "geovalues",
+    "vibfreqs",
+    "vibirs",
+    "vibdisps",
+    "zpve",
+    "enthalpy",
+    "freeenergy",
+    "temperature",
+    "pressure"
+   ],
+   "method_basis_from_log_echo": "UHF MP2 cc-pVDZ",
+   "multiplicity": 3,
+   "natom": 3,
+   "output_sha256": "4bf6ae49c01060a0b1a7cd6e40c508e4746bf30c1a0818ba0e7f255356a11ad3",
+   "reject_codes": [
+    "CORRELATED_METHOD_NOT_SUPPORTED_V1"
+   ],
+   "tags": [
+    "open-shell",
+    "opt+freq"
+   ],
+   "termination": "COMPLETED",
+   "upstream_url": "https://raw.githubusercontent.com/patonlab/GoodVibes/744cbfd5b93bf5cb4a8551655d5c29542eb92fb9/tests/orca6/05_methylene_triplet_carbene.out"
+  },
+  "orca6-cs2-linear-freq": {
+   "charge": 0,
+   "chemdft_gate": "ACCEPT",
+   "engine_version": "ORCA 6.1.0",
+   "info_warn_codes": [],
+   "job_from_log": "opt+freq",
+   "license": "MIT (patonlab/GoodVibes@744cbfd5)",
+   "major_attributes": [
+    "atomnos",
+    "atomcoords",
+    "charge",
+    "mult",
+    "scfenergies",
+    "moenergies",
+    "homos",
+    "optdone",
+    "geovalues",
+    "vibfreqs",
+    "vibirs",
+    "vibdisps",
+    "zpve",
+    "enthalpy",
+    "freeenergy",
+    "temperature",
+    "pressure"
+   ],
+   "method_basis_from_log_echo": "B3LYP 6-311+G(2df,2p)",
+   "multiplicity": 1,
+   "natom": 3,
+   "output_sha256": "901c513ab0ade9dee027182d898e1ed80c6342ae5672e805248881d5fb246d08",
+   "reject_codes": [],
+   "tags": [
+    "linear",
+    "freq"
+   ],
+   "termination": "COMPLETED",
+   "upstream_url": "https://raw.githubusercontent.com/patonlab/GoodVibes/744cbfd5b93bf5cb4a8551655d5c29542eb92fb9/tests/orca6/23_cs2_linear_anharmonic_noraman.out"
+  },
+  "orca6-dvb-opt": {
+   "charge": 0,
+   "chemdft_gate": "ACCEPT",
+   "engine_version": "ORCA 6.0.0",
+   "info_warn_codes": [],
+   "job_from_log": "opt",
+   "license": "BSD-3-Clause (cclib/cclib@b1364ecf)",
+   "major_attributes": [
+    "atomnos",
+    "atomcoords",
+    "charge",
+    "mult",
+    "scfenergies",
+    "moenergies",
+    "homos",
+    "optdone",
+    "geovalues"
+   ],
+   "method_basis_from_log_echo": "rks b3lyp sto-3g",
+   "multiplicity": 1,
+   "natom": 20,
+   "output_sha256": "3f1722c8807dc5198f978119056cec1e16a02bca80ea0ef21d1d222ea0871c07",
+   "reject_codes": [],
+   "tags": [
+    "optimization",
+    "closed-shell"
+   ],
+   "termination": "COMPLETED",
+   "upstream_url": "https://raw.githubusercontent.com/cclib/cclib/b1364ecf5ac21042c5a37ed5446771217e0431ea/data/ORCA/basicORCA6.0/dvb_gopt.out"
+  },
+  "orca6-dvb-raman": {
+   "charge": 0,
+   "chemdft_gate": "ACCEPT",
+   "engine_version": "ORCA 6.0.1",
+   "info_warn_codes": [],
+   "job_from_log": "freq+raman",
+   "license": "BSD-3-Clause (cclib/cclib@b1364ecf)",
+   "major_attributes": [
+    "atomnos",
+    "atomcoords",
+    "charge",
+    "mult",
+    "scfenergies",
+    "moenergies",
+    "homos",
+    "vibfreqs",
+    "vibirs",
+    "vibramans",
+    "vibdisps",
+    "zpve",
+    "enthalpy",
+    "freeenergy",
+    "temperature",
+    "pressure"
+   ],
+   "method_basis_from_log_echo": "b3lyp sto-3g usesym",
+   "multiplicity": 1,
+   "natom": 20,
+   "output_sha256": "3fe60a75fc691c43cbfed85583d505597fc62505adceaefcc910f3f064ba1a04",
+   "reject_codes": [],
+   "tags": [
+    "raman",
+    "freq",
+    "ir"
+   ],
+   "termination": "COMPLETED",
+   "upstream_url": "https://raw.githubusercontent.com/cclib/cclib/b1364ecf5ac21042c5a37ed5446771217e0431ea/data/ORCA/basicORCA6.0/dvb_raman.out"
+  },
+  "orca6-dvb-td": {
+   "charge": 0,
+   "chemdft_gate": "ACCEPT",
+   "engine_version": "ORCA 6.0.0",
+   "info_warn_codes": [],
+   "job_from_log": "td",
+   "license": "BSD-3-Clause (cclib/cclib@b1364ecf)",
+   "major_attributes": [
+    "atomnos",
+    "atomcoords",
+    "charge",
+    "mult",
+    "scfenergies",
+    "moenergies",
+    "homos",
+    "etenergies",
+    "etoscs",
+    "etsyms"
+   ],
+   "method_basis_from_log_echo": "rks b3lyp sto-3g",
+   "multiplicity": 1,
+   "natom": 20,
+   "output_sha256": "83f7efb587c941ea6a5ce2b9edc63eb1df5feeaf8ec4f527c70331a1fd95154a",
+   "reject_codes": [],
+   "tags": [
+    "excited-states"
+   ],
+   "termination": "COMPLETED",
+   "upstream_url": "https://raw.githubusercontent.com/cclib/cclib/b1364ecf5ac21042c5a37ed5446771217e0431ea/data/ORCA/basicORCA6.0/dvb_td.out"
+  },
+  "orca6-ethane-opt-freq": {
+   "charge": 0,
+   "chemdft_gate": "ACCEPT",
+   "engine_version": "ORCA 6.1.0",
+   "info_warn_codes": [],
+   "job_from_log": "opt+freq",
+   "license": "MIT (patonlab/GoodVibes@744cbfd5)",
+   "major_attributes": [
+    "atomnos",
+    "atomcoords",
+    "charge",
+    "mult",
+    "scfenergies",
+    "moenergies",
+    "homos",
+    "optdone",
+    "geovalues",
+    "vibfreqs",
+    "vibirs",
+    "vibdisps",
+    "zpve",
+    "enthalpy",
+    "freeenergy",
+    "temperature",
+    "pressure"
+   ],
+   "method_basis_from_log_echo": "B3LYP 6-311+G(d,p)",
+   "multiplicity": 1,
+   "natom": 8,
+   "output_sha256": "fbc249324660ecbfc4ef09b6442122bb41b96c71a2e424c5f2c90e0633362fc7",
+   "reject_codes": [],
+   "tags": [
+    "opt+freq",
+    "closed-shell",
+    "freq"
+   ],
+   "termination": "COMPLETED",
+   "upstream_url": "https://raw.githubusercontent.com/patonlab/GoodVibes/744cbfd5b93bf5cb4a8551655d5c29542eb92fb9/tests/orca6/02_ethane_opt_freq_thermo.out"
+  },
+  "orca6-fe-scf-fail": {
+   "charge": 0,
+   "chemdft_gate": "REJECT",
+   "engine_version": "ORCA 6.1.0",
+   "info_warn_codes": [],
+   "job_from_log": "opt+freq",
+   "license": "MIT (patonlab/GoodVibes@744cbfd5)",
+   "major_attributes": [
+    "atomnos",
+    "atomcoords",
+    "charge",
+    "mult",
+    "scfenergies"
+   ],
+   "method_basis_from_log_echo": "UKS B3LYP 6-31G(d)",
+   "multiplicity": 5,
+   "natom": 29,
+   "output_sha256": "4b0b782d54b898043dcbac1ea08b959bf067f2867ea25a05d3a19513f2527ba1",
+   "reject_codes": [
+    "ERROR_TERMINATION",
+    "OPTIMIZATION_NOT_CONVERGED",
+    "SCF_NOT_CONVERGED"
+   ],
+   "tags": [
+    "unconverged-scf"
+   ],
+   "termination": "ERROR_TERMINATION",
+   "upstream_url": "https://raw.githubusercontent.com/patonlab/GoodVibes/744cbfd5b93bf5cb4a8551655d5c29542eb92fb9/tests/orca6/51_err_scf_convergence_fe_complex.out"
+  },
+  "orca6-formaldehyde-td": {
+   "charge": 0,
+   "chemdft_gate": "ACCEPT",
+   "engine_version": "ORCA 6.1.0",
+   "info_warn_codes": [],
+   "job_from_log": "td",
+   "license": "MIT (patonlab/GoodVibes@744cbfd5)",
+   "major_attributes": [
+    "atomnos",
+    "atomcoords",
+    "charge",
+    "mult",
+    "scfenergies",
+    "moenergies",
+    "homos",
+    "etenergies",
+    "etoscs",
+    "etsyms"
+   ],
+   "method_basis_from_log_echo": "BP86 def2-SVP",
+   "multiplicity": 1,
+   "natom": 4,
+   "output_sha256": "d794b0a3f2bb554739db95849bb2411f6e327539d8af79fd52004ab987e558a9",
+   "reject_codes": [],
+   "tags": [
+    "excited-states",
+    "tddft-singlet-sp",
+    "provenance-note: shipped .inp (Opt Freq iroot 1) does not match the log echo (TD-DFT single point)"
+   ],
+   "termination": "COMPLETED",
+   "upstream_url": "https://raw.githubusercontent.com/patonlab/GoodVibes/744cbfd5b93bf5cb4a8551655d5c29542eb92fb9/tests/orca6/13_formaldehyde_tddft_s1.out"
+  },
+  "orca6-hcn-linear-freq": {
+   "charge": 0,
+   "chemdft_gate": "ACCEPT",
+   "engine_version": "ORCA 6.1.0",
+   "info_warn_codes": [],
+   "job_from_log": "opt+freq",
+   "license": "MIT (patonlab/GoodVibes@744cbfd5)",
+   "major_attributes": [
+    "atomnos",
+    "atomcoords",
+    "charge",
+    "mult",
+    "scfenergies",
+    "moenergies",
+    "homos",
+    "optdone",
+    "geovalues",
+    "vibfreqs",
+    "vibirs",
+    "vibdisps",
+    "zpve",
+    "enthalpy",
+    "freeenergy",
+    "temperature",
+    "pressure"
+   ],
+   "method_basis_from_log_echo": "M062X 6-311+G(d,p)",
+   "multiplicity": 1,
+   "natom": 3,
+   "output_sha256": "831cfbbae696dae08420d1660741a7c4913317d08ea68766b9c955694f06374c",
+   "reject_codes": [],
+   "tags": [
+    "linear",
+    "freq",
+    "opt+freq"
+   ],
+   "termination": "COMPLETED",
+   "upstream_url": "https://raw.githubusercontent.com/patonlab/GoodVibes/744cbfd5b93bf5cb4a8551655d5c29542eb92fb9/tests/orca6/22_hcn_linear_freq_noraman.out"
+  },
+  "orca6-nh3-ts-imaginary": {
+   "charge": 0,
+   "chemdft_gate": "ACCEPT",
+   "engine_version": "ORCA 6.1.0",
+   "info_warn_codes": [
+    "IMAGINARY_FREQUENCIES_PRESENT"
+   ],
+   "job_from_log": "opt(ts)+freq",
+   "license": "MIT (patonlab/GoodVibes@744cbfd5)",
+   "major_attributes": [
+    "atomnos",
+    "atomcoords",
+    "charge",
+    "mult",
+    "scfenergies",
+    "moenergies",
+    "homos",
+    "optdone",
+    "geovalues",
+    "vibfreqs",
+    "vibirs",
+    "vibdisps",
+    "zpve",
+    "enthalpy",
+    "freeenergy",
+    "temperature",
+    "pressure"
+   ],
+   "method_basis_from_log_echo": "wB97M-V 6-311+G(d,p)",
+   "multiplicity": 1,
+   "natom": 4,
+   "output_sha256": "2dcbd32cd4033742f79a871529cf881302232a7d875e9309c8564d3c317acfce",
+   "reject_codes": [],
+   "tags": [
+    "imaginary",
+    "opt+freq",
+    "nonlinear"
+   ],
+   "termination": "COMPLETED",
+   "upstream_url": "https://raw.githubusercontent.com/patonlab/GoodVibes/744cbfd5b93bf5cb4a8551655d5c29542eb92fb9/tests/orca6/48_ts_nh3_umbrella_inversion.out"
+  },
+  "orca6-o2anion-doublet": {
+   "charge": -1,
+   "chemdft_gate": "ACCEPT",
+   "engine_version": "ORCA 6.1.0",
+   "info_warn_codes": [],
+   "job_from_log": "opt+freq",
+   "license": "MIT (patonlab/GoodVibes@744cbfd5)",
+   "major_attributes": [
+    "atomnos",
+    "atomcoords",
+    "charge",
+    "mult",
+    "scfenergies",
+    "moenergies",
+    "homos",
+    "optdone",
+    "geovalues",
+    "vibfreqs",
+    "vibirs",
+    "vibdisps",
+    "zpve",
+    "enthalpy",
+    "freeenergy",
+    "temperature",
+    "pressure"
+   ],
+   "method_basis_from_log_echo": "UKS B3LYP aug-cc-pVTZ",
+   "multiplicity": 2,
+   "natom": 2,
+   "output_sha256": "d5941e732b34489ba0101ac16d1a1daeffe685171547a28bf8b9d9b6b0fbb381",
+   "reject_codes": [],
+   "tags": [
+    "open-shell",
+    "opt+freq"
+   ],
+   "termination": "COMPLETED",
+   "upstream_url": "https://raw.githubusercontent.com/patonlab/GoodVibes/744cbfd5b93bf5cb4a8551655d5c29542eb92fb9/tests/orca6/16_o2_superoxide_anion.out"
+  },
+  "orca6-opt-notconverged": {
+   "charge": 0,
+   "chemdft_gate": "REJECT",
+   "engine_version": "ORCA 6.1.0",
+   "info_warn_codes": [],
+   "job_from_log": "opt+freq",
+   "license": "MIT (patonlab/GoodVibes@744cbfd5)",
+   "major_attributes": [
+    "atomnos",
+    "atomcoords",
+    "charge",
+    "mult",
+    "scfenergies",
+    "moenergies",
+    "homos",
+    "optdone",
+    "geovalues"
+   ],
+   "method_basis_from_log_echo": "B3LYP 6-31G(d)",
+   "multiplicity": 1,
+   "natom": 15,
+   "output_sha256": "2bf75760c82166acc8e69a377c9e3e0256ec36e698c775efa018ef8c7889cd56",
+   "reject_codes": [
+    "OPTIMIZATION_NOT_CONVERGED"
+   ],
+   "tags": [
+    "unconverged-opt"
+   ],
+   "termination": "COMPLETED",
+   "upstream_url": "https://raw.githubusercontent.com/patonlab/GoodVibes/744cbfd5b93bf5cb4a8551655d5c29542eb92fb9/tests/orca6/52_err_opt_not_converged_maxcycles.out"
+  },
+  "orca6-sn2-ts-imaginary": {
+   "charge": -1,
+   "chemdft_gate": "ACCEPT",
+   "engine_version": "ORCA 6.1.0",
+   "info_warn_codes": [
+    "IMAGINARY_FREQUENCIES_PRESENT"
+   ],
+   "job_from_log": "opt(ts)+freq",
+   "license": "MIT (patonlab/GoodVibes@744cbfd5)",
+   "major_attributes": [
+    "atomnos",
+    "atomcoords",
+    "charge",
+    "mult",
+    "scfenergies",
+    "moenergies",
+    "homos",
+    "optdone",
+    "geovalues",
+    "vibfreqs",
+    "vibirs",
+    "vibdisps",
+    "zpve",
+    "enthalpy",
+    "freeenergy",
+    "temperature",
+    "pressure"
+   ],
+   "method_basis_from_log_echo": "B3LYP 6-311+G(d,p)",
+   "multiplicity": 1,
+   "natom": 6,
+   "output_sha256": "5670793170ee3d48ad34188619b11460385660c727b66327d6c1b8eace4d6c0b",
+   "reject_codes": [],
+   "tags": [
+    "imaginary",
+    "opt+freq",
+    "dft",
+    "anion"
+   ],
+   "termination": "COMPLETED",
+   "upstream_url": "https://raw.githubusercontent.com/patonlab/GoodVibes/744cbfd5b93bf5cb4a8551655d5c29542eb92fb9/tests/orca6/44_ts_sn2_identity_chloride.out"
+  },
+  "orca6-timed-out": {
+   "charge": 0,
+   "chemdft_gate": "REJECT",
+   "engine_version": "ORCA 6.1.0",
+   "info_warn_codes": [],
+   "job_from_log": "opt+freq",
+   "license": "MIT (patonlab/GoodVibes@744cbfd5)",
+   "major_attributes": [
+    "atomnos",
+    "atomcoords",
+    "charge",
+    "mult",
+    "scfenergies",
+    "moenergies",
+    "homos",
+    "geovalues"
+   ],
+   "method_basis_from_log_echo": "B3LYP 6-31G(d)",
+   "multiplicity": 1,
+   "natom": 9,
+   "output_sha256": "2312425a330559da73fa9e45322dd6b72135f20a005bc9bb19762a62daf457df",
+   "reject_codes": [
+    "INCOMPLETE_OUTPUT",
+    "OPTIMIZATION_NOT_CONVERGED"
+   ],
+   "tags": [
+    "truncated"
+   ],
+   "termination": "INCOMPLETE",
+   "upstream_url": "https://raw.githubusercontent.com/patonlab/GoodVibes/744cbfd5b93bf5cb4a8551655d5c29542eb92fb9/tests/orca6/56_err_timed_out.out"
+  },
+  "orca6-water-hf-freq": {
+   "charge": 0,
+   "chemdft_gate": "ACCEPT",
+   "engine_version": "ORCA 6.1.0",
+   "info_warn_codes": [],
+   "job_from_log": "freq",
+   "license": "MIT (patonlab/GoodVibes@744cbfd5)",
+   "major_attributes": [
+    "atomnos",
+    "atomcoords",
+    "charge",
+    "mult",
+    "scfenergies",
+    "moenergies",
+    "homos",
+    "vibfreqs",
+    "vibirs",
+    "vibdisps",
+    "zpve",
+    "enthalpy",
+    "freeenergy",
+    "temperature",
+    "pressure"
+   ],
+   "method_basis_from_log_echo": "HF 6-31G(d)",
+   "multiplicity": 1,
+   "natom": 3,
+   "output_sha256": "ba31151f44d3b5d9aa9a0f2d826ceed8568eb0c533dc5f9171c2a4face15e422",
+   "reject_codes": [],
+   "tags": [
+    "nonlinear",
+    "closed-shell",
+    "freq",
+    "ir"
+   ],
+   "termination": "COMPLETED",
+   "upstream_url": "https://raw.githubusercontent.com/patonlab/GoodVibes/744cbfd5b93bf5cb4a8551655d5c29542eb92fb9/tests/orca6/01a_water_hf_freq.out"
+  },
+  "orca6-wrong-charge-mult": {
+   "charge": 0,
+   "chemdft_gate": "REJECT",
+   "engine_version": "ORCA 6.1.0",
+   "info_warn_codes": [],
+   "job_from_log": "opt+freq",
+   "license": "MIT (patonlab/GoodVibes@744cbfd5)",
+   "major_attributes": [
+    "atomnos",
+    "atomcoords",
+    "charge"
+   ],
+   "method_basis_from_log_echo": "B3LYP 6-31G(d)",
+   "multiplicity": 2,
+   "natom": 3,
+   "output_sha256": "de7ec937dd2072a4a571eecd1a4748e96810fd180fcc28ca27871008ae7235dd",
+   "reject_codes": [
+    "INCOMPLETE_OUTPUT",
+    "NO_SCF_ENERGY",
+    "OPTIMIZATION_NOT_CONVERGED"
+   ],
+   "tags": [
+    "error-termination"
+   ],
+   "termination": "INCOMPLETE",
+   "upstream_url": "https://raw.githubusercontent.com/patonlab/GoodVibes/744cbfd5b93bf5cb4a8551655d5c29542eb92fb9/tests/orca6/53_err_wrong_charge_multiplicity.out"
+  }
+ }
+}

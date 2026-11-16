@@ -1,0 +1,54 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata from this file."
+title: ChemDFT
+type: software
+version: "0.0.60"
+date-released: "2026-11-15"
+doi: 10.5281/zenodo.24082321
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.24082321
+    description: "All-versions (concept) DOI"
+  - type: doi
+    value: 10.5281/zenodo.24082322
+    description: "Version 0.0.26 open-core snapshot"
+  - type: doi
+    value: 10.5281/zenodo.24122997
+    description: "Version 0.0.36 open-core snapshot"
+  - type: doi
+    value: 10.5281/zenodo.24148448
+    description: "Version 0.0.40 open-core snapshot"
+  - type: doi
+    value: 10.5281/zenodo.24183501
+    description: "Version 0.0.46 open-core snapshot"
+  - type: doi
+    value: 10.5281/zenodo.24201081
+    description: "Version 0.0.50 open-core snapshot"
+  - type: doi
+    value: 10.5281/zenodo.24204004
+    description: "Version 0.0.51 open-core snapshot"
+  - type: doi
+    value: 10.5281/zenodo.24207715
+    description: "Version 0.0.52 open-core snapshot"
+  - type: doi
+    value: 10.5281/zenodo.24209616
+    description: "Version 0.0.53 open-core snapshot"
+  - type: doi
+    value: 10.5281/zenodo.24219804
+    description: "Version 0.0.57 open-core snapshot"
+# `license` covers all ChemDFT first-party code (owner decision 2026-11-13); third-party material and artwork are
+# excluded. See LICENSE.md and docs/implementation/RELEASES_AND_LICENSE.md.
+license: Apache-2.0
+authors:
+  - given-names: Tabriz
+    family-names: Ahmadli
+    email: tab@chemdft.com
+    affiliation: chemdft.com
+    orcid: "https://orcid.org/0009-0006-0198-5253"
+repository-code: "https://github.com/TabAh007/ChemDFT"
+url: "https://chemdft.com"
+abstract: "Computational chemistry workbench where an AI Scientist plans and explains and every scientific value comes from a verified engine."
+keywords:
+  - "computational chemistry"
+  - "density functional theory"
+  - "PySCF"

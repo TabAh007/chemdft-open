@@ -1,0 +1,1272 @@
+{
+  "benchmark_id": "retrieval-policy-dev-v1",
+  "partition": "HOLDOUT",
+  "qrels": [
+    {
+      "acceptable_targets": [
+        {
+          "content_sha256": "e9008d856dc2c328b736365c0c115280fa3083fd714b7f0d2c5d5e88648a3b83",
+          "evidence_excerpt": "number of sites are 4, 9, and 10 for the A 1 , L1 2 , and L1 0 surfaces respectively",
+          "expected_chunk_id": "pmc6538633-p00004-e9008d856dc2",
+          "expected_document_id": "pmc6538633",
+          "expected_page": null,
+          "source_locator": {
+            "chunk_ordinal": 1,
+            "kind": "XML_PARAGRAPH",
+            "paragraph_ordinal": 4,
+            "section_path": "Background & Summary",
+            "xml_node_id": "Par7"
+          },
+          "source_xml_sha256": "d4da038c12aa3a303db89511130966713fcc99b92f5534441c551e35d708215f"
+        }
+      ],
+      "alternate_targets": [],
+      "assistant_recommendation": "CANDIDATE_ANSWERABLE",
+      "assistant_review_notes": "Authored from direct source paragraph inspection; target chunk content and XML hashes validated. No retrieval rankings or model scores were consulted. Human review required.",
+      "document_title": "High-throughput calculations of catalytic properties of bimetallic alloy surfaces",
+      "evidence_excerpt": "number of sites are 4, 9, and 10 for the A 1 , L1 2 , and L1 0 surfaces respectively",
+      "expected_chunk_id": "pmc6538633-p00004-e9008d856dc2",
+      "expected_document_id": "pmc6538633",
+      "expected_page": null,
+      "language": "en",
+      "leakage_group_id": null,
+      "no_answer": false,
+      "query": "How many unique sites were sampled for A1, L1₂, and L1₀ surfaces, respectively?",
+      "query_class": "numeric_value",
+      "query_id": "rpdev1-a006",
+      "review_date": "2026-09-24",
+      "review_decision": "APPROVE",
+      "review_notes": "Approved unchanged per the owner-provided independent review; primary target and source integrity validated against the pinned corpus.",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review-2026-09-24",
+      "source_locator": {
+        "chunk_ordinal": 1,
+        "kind": "XML_PARAGRAPH",
+        "paragraph_ordinal": 4,
+        "section_path": "Background & Summary",
+        "xml_node_id": "Par7"
+      }
+    },
+    {
+      "acceptable_targets": [
+        {
+          "content_sha256": "d9acb2931569378d31fc4d5bdecc17cf0e99fcd9d19d8208ac41e6aa9149c8f2",
+          "evidence_excerpt": "composition of the materials is as follows: 74 wt.% Al 2 O 3 , 20 wt.% CeO 2 -ZrO 2 (Ce:Zr = 1:1, molar ratio), and 6 wt.% P 2 O 5",
+          "expected_chunk_id": "pmc10934912-p00007-d9acb2931569",
+          "expected_document_id": "pmc10934912",
+          "expected_page": null,
+          "source_locator": {
+            "chunk_ordinal": 1,
+            "kind": "XML_PARAGRAPH",
+            "paragraph_ordinal": 6,
+            "section_path": "2. Materials and Methods / 2.2. Synthesis of CeZrPAl Support Materials / 2.2.1. Synthesis of CeZrPAl with Different Preparation Methods",
+            "xml_node_id": null
+          },
+          "source_xml_sha256": "47dce5ff7ad22b3039795c129a6a750dc5c6359096e62db0f7be1fece321256f"
+        }
+      ],
+      "alternate_targets": [],
+      "assistant_recommendation": "CANDIDATE_ANSWERABLE",
+      "assistant_review_notes": "Authored from direct source paragraph inspection; target chunk content and XML hashes validated. No retrieval rankings or model scores were consulted. Human review required.",
+      "document_title": "The Effect P Additive on the CeZrAl Support Properties and the Activity of the Pd Catalysts in Propane Oxidation",
+      "evidence_excerpt": "composition of the materials is as follows: 74 wt.% Al 2 O 3 , 20 wt.% CeO 2 -ZrO 2 (Ce:Zr = 1:1, molar ratio), and 6 wt.% P 2 O 5",
+      "expected_chunk_id": "pmc10934912-p00007-d9acb2931569",
+      "expected_document_id": "pmc10934912",
+      "expected_page": null,
+      "language": "en",
+      "leakage_group_id": "answer-ce-zr-ratio",
+      "no_answer": false,
+      "query": "What is the mass composition of the CeZrPAl support oxide?",
+      "query_class": "formula",
+      "query_id": "rpdev1-a012",
+      "review_date": "2026-09-24",
+      "review_decision": "APPROVE",
+      "review_notes": "Approved unchanged per the owner-provided independent review; primary target and source integrity validated against the pinned corpus.",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review-2026-09-24",
+      "source_locator": {
+        "chunk_ordinal": 1,
+        "kind": "XML_PARAGRAPH",
+        "paragraph_ordinal": 6,
+        "section_path": "2. Materials and Methods / 2.2. Synthesis of CeZrPAl Support Materials / 2.2.1. Synthesis of CeZrPAl with Different Preparation Methods",
+        "xml_node_id": null
+      }
+    },
+    {
+      "acceptable_targets": [
+        {
+          "content_sha256": "d9acb2931569378d31fc4d5bdecc17cf0e99fcd9d19d8208ac41e6aa9149c8f2",
+          "evidence_excerpt": "Ce:Zr = 1:1, molar ratio",
+          "expected_chunk_id": "pmc10934912-p00007-d9acb2931569",
+          "expected_document_id": "pmc10934912",
+          "expected_page": null,
+          "source_locator": {
+            "chunk_ordinal": 1,
+            "kind": "XML_PARAGRAPH",
+            "paragraph_ordinal": 6,
+            "section_path": "2. Materials and Methods / 2.2. Synthesis of CeZrPAl Support Materials / 2.2.1. Synthesis of CeZrPAl with Different Preparation Methods",
+            "xml_node_id": null
+          },
+          "source_xml_sha256": "47dce5ff7ad22b3039795c129a6a750dc5c6359096e62db0f7be1fece321256f"
+        }
+      ],
+      "alternate_targets": [],
+      "assistant_recommendation": "CANDIDATE_ANSWERABLE",
+      "assistant_review_notes": "Authored from direct source paragraph inspection; target chunk content and XML hashes validated. No retrieval rankings or model scores were consulted. Human review required.",
+      "document_title": "The Effect P Additive on the CeZrAl Support Properties and the Activity of the Pd Catalysts in Propane Oxidation",
+      "evidence_excerpt": "Ce:Zr = 1:1, molar ratio",
+      "expected_chunk_id": "pmc10934912-p00007-d9acb2931569",
+      "expected_document_id": "pmc10934912",
+      "expected_page": null,
+      "language": "ru",
+      "leakage_group_id": "answer-ce-zr-ratio",
+      "no_answer": false,
+      "query": "Для CeZrPAl какое молярное отношение Ce к Zr указано в составе?",
+      "query_class": "cross_language",
+      "query_id": "rpdev1-a013",
+      "review_date": "2026-09-24",
+      "review_decision": "APPROVE",
+      "review_notes": "Approved unchanged per the owner-provided independent review; primary target and source integrity validated against the pinned corpus.",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review-2026-09-24",
+      "source_locator": {
+        "chunk_ordinal": 1,
+        "kind": "XML_PARAGRAPH",
+        "paragraph_ordinal": 6,
+        "section_path": "2. Materials and Methods / 2.2. Synthesis of CeZrPAl Support Materials / 2.2.1. Synthesis of CeZrPAl with Different Preparation Methods",
+        "xml_node_id": null
+      }
+    },
+    {
+      "acceptable_targets": [
+        {
+          "content_sha256": "f99221dd4a6b9097cac631bce7120cf1a905a33a03e20cd66a3090eaf398876e",
+          "evidence_excerpt": "0 wt.%, 2 wt.%, 6 wt.%, 10 wt.%",
+          "expected_chunk_id": "pmc10934912-p00011-f99221dd4a6b",
+          "expected_document_id": "pmc10934912",
+          "expected_page": null,
+          "source_locator": {
+            "chunk_ordinal": 1,
+            "kind": "XML_PARAGRAPH",
+            "paragraph_ordinal": 10,
+            "section_path": "2. Materials and Methods / 2.2. Synthesis of CeZrPAl Support Materials / 2.2.2. Synthesis of CeZrPAl with Different Phosphorus Contents",
+            "xml_node_id": null
+          },
+          "source_xml_sha256": "47dce5ff7ad22b3039795c129a6a750dc5c6359096e62db0f7be1fece321256f"
+        }
+      ],
+      "alternate_targets": [],
+      "assistant_recommendation": "CANDIDATE_ANSWERABLE",
+      "assistant_review_notes": "Authored from direct source paragraph inspection; target chunk content and XML hashes validated. No retrieval rankings or model scores were consulted. Human review required.",
+      "document_title": "The Effect P Additive on the CeZrAl Support Properties and the Activity of the Pd Catalysts in Propane Oxidation",
+      "evidence_excerpt": "0 wt.%, 2 wt.%, 6 wt.%, 10 wt.%",
+      "expected_chunk_id": "pmc10934912-p00011-f99221dd4a6b",
+      "expected_document_id": "pmc10934912",
+      "expected_page": null,
+      "language": "en",
+      "leakage_group_id": null,
+      "no_answer": false,
+      "query": "Which P₂O₅ contents were prepared for the CeZrPAl support series?",
+      "query_class": "numeric_value",
+      "query_id": "rpdev1-a018",
+      "review_date": "2026-09-24",
+      "review_decision": "APPROVE",
+      "review_notes": "Approved unchanged per the owner-provided independent review; primary target and source integrity validated against the pinned corpus.",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review-2026-09-24",
+      "source_locator": {
+        "chunk_ordinal": 1,
+        "kind": "XML_PARAGRAPH",
+        "paragraph_ordinal": 10,
+        "section_path": "2. Materials and Methods / 2.2. Synthesis of CeZrPAl Support Materials / 2.2.2. Synthesis of CeZrPAl with Different Phosphorus Contents",
+        "xml_node_id": null
+      }
+    },
+    {
+      "acceptable_targets": [
+        {
+          "content_sha256": "7396d38c829264a85882121ac03a5991745c86bbc1e7b4fa1a1564e5b89b8272",
+          "evidence_excerpt": "36.7%, 41.4%, and 30.3%, respectively",
+          "expected_chunk_id": "pmc10934912-p00029-7396d38c8292",
+          "expected_document_id": "pmc10934912",
+          "expected_page": null,
+          "source_locator": {
+            "chunk_ordinal": 1,
+            "kind": "XML_PARAGRAPH",
+            "paragraph_ordinal": 24,
+            "section_path": "3. Results and Discussion / 3.1. Properties of CeZrPAl Support Materials / 3.1.2. Texture Properties of CeZrPAl Supports",
+            "xml_node_id": null
+          },
+          "source_xml_sha256": "47dce5ff7ad22b3039795c129a6a750dc5c6359096e62db0f7be1fece321256f"
+        }
+      ],
+      "alternate_targets": [],
+      "assistant_recommendation": "CANDIDATE_ANSWERABLE",
+      "assistant_review_notes": "Authored from direct source paragraph inspection; target chunk content and XML hashes validated. No retrieval rankings or model scores were consulted. Human review required.",
+      "document_title": "The Effect P Additive on the CeZrAl Support Properties and the Activity of the Pd Catalysts in Propane Oxidation",
+      "evidence_excerpt": "36.7%, 41.4%, and 30.3%, respectively",
+      "expected_chunk_id": "pmc10934912-p00029-7396d38c8292",
+      "expected_document_id": "pmc10934912",
+      "expected_page": null,
+      "language": "en",
+      "leakage_group_id": null,
+      "no_answer": false,
+      "query": "How did surface Ce³⁺ percentages compare among sol–gel, impregnation, and mechanical mixing?",
+      "query_class": "numeric_value",
+      "query_id": "rpdev1-a026",
+      "review_date": "2026-09-24",
+      "review_decision": "APPROVE",
+      "review_notes": "Approved unchanged per the owner-provided independent review; primary target and source integrity validated against the pinned corpus.",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review-2026-09-24",
+      "source_locator": {
+        "chunk_ordinal": 1,
+        "kind": "XML_PARAGRAPH",
+        "paragraph_ordinal": 24,
+        "section_path": "3. Results and Discussion / 3.1. Properties of CeZrPAl Support Materials / 3.1.2. Texture Properties of CeZrPAl Supports",
+        "xml_node_id": null
+      }
+    },
+    {
+      "acceptable_targets": [
+        {
+          "content_sha256": "fcc756129833ca097441775ce472ea09f87e7c22d824aa45abb37d2d704c184d",
+          "evidence_excerpt": "atmospheric pressure",
+          "expected_chunk_id": "pmc10934912-p00019-fcc756129833",
+          "expected_document_id": "pmc10934912",
+          "expected_page": null,
+          "source_locator": {
+            "chunk_ordinal": 1,
+            "kind": "XML_PARAGRAPH",
+            "paragraph_ordinal": 18,
+            "section_path": "2. Materials and Methods / 2.4. Evaluation of C 3 H 8 Oxidation Activity",
+            "xml_node_id": null
+          },
+          "source_xml_sha256": "47dce5ff7ad22b3039795c129a6a750dc5c6359096e62db0f7be1fece321256f"
+        }
+      ],
+      "alternate_targets": [],
+      "assistant_recommendation": "CANDIDATE_ANSWERABLE",
+      "assistant_review_notes": "Authored from direct source paragraph inspection; target chunk content and XML hashes validated. No retrieval rankings or model scores were consulted. Human review required.",
+      "document_title": "The Effect P Additive on the CeZrAl Support Properties and the Activity of the Pd Catalysts in Propane Oxidation",
+      "evidence_excerpt": "atmospheric pressure",
+      "expected_chunk_id": "pmc10934912-p00019-fcc756129833",
+      "expected_document_id": "pmc10934912",
+      "expected_page": null,
+      "language": "en",
+      "leakage_group_id": null,
+      "no_answer": false,
+      "query": "What reactor pressure and catalyst mass were used in the propane-oxidation test?",
+      "query_class": "experimental_condition",
+      "query_id": "rpdev1-a029",
+      "review_date": "2026-09-24",
+      "review_decision": "APPROVE",
+      "review_notes": "Approved unchanged per the owner-provided independent review; primary target and source integrity validated against the pinned corpus.",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review-2026-09-24",
+      "source_locator": {
+        "chunk_ordinal": 1,
+        "kind": "XML_PARAGRAPH",
+        "paragraph_ordinal": 18,
+        "section_path": "2. Materials and Methods / 2.4. Evaluation of C 3 H 8 Oxidation Activity",
+        "xml_node_id": null
+      }
+    },
+    {
+      "acceptable_targets": [
+        {
+          "content_sha256": "3e41b26012598cb4a05ce9272ed24275d4b75c2274403730f1ca3b0452158df1",
+          "evidence_excerpt": "C, N, O, P, Cl, and S",
+          "expected_chunk_id": "pmc4335811-p00016-3e41b2601259",
+          "expected_document_id": "pmc4335811",
+          "expected_page": null,
+          "source_locator": {
+            "chunk_ordinal": 1,
+            "kind": "XML_PARAGRAPH",
+            "paragraph_ordinal": 14,
+            "section_path": "Results and Discussion / Experimental Cr V2C XES: Fitting and Qualitative Trends",
+            "xml_node_id": null
+          },
+          "source_xml_sha256": "8c9598fefa3c1e604f116e436d550e148cf1240e2fb1c793e0a20e1409cfba71"
+        }
+      ],
+      "alternate_targets": [],
+      "assistant_recommendation": "CANDIDATE_ANSWERABLE",
+      "assistant_review_notes": "Authored from direct source paragraph inspection; target chunk content and XML hashes validated. No retrieval rankings or model scores were consulted. Human review required.",
+      "document_title": "Ligand-Sensitive But Not Ligand-Diagnostic: Evaluating Cr Valence-to-Core X-ray Emission Spectroscopy as a Probe of Inner-Sphere Coordination",
+      "evidence_excerpt": "C, N, O, P, Cl, and S",
+      "expected_chunk_id": "pmc4335811-p00016-3e41b2601259",
+      "expected_document_id": "pmc4335811",
+      "expected_page": null,
+      "language": "en",
+      "leakage_group_id": null,
+      "no_answer": false,
+      "query": "Which donor atoms were represented among the chromium-complex ligands?",
+      "query_class": "named_compound",
+      "query_id": "rpdev1-a031",
+      "review_date": "2026-09-24",
+      "review_decision": "APPROVE",
+      "review_notes": "Approved unchanged per the owner-provided independent review; primary target and source integrity validated against the pinned corpus.",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review-2026-09-24",
+      "source_locator": {
+        "chunk_ordinal": 1,
+        "kind": "XML_PARAGRAPH",
+        "paragraph_ordinal": 14,
+        "section_path": "Results and Discussion / Experimental Cr V2C XES: Fitting and Qualitative Trends",
+        "xml_node_id": null
+      }
+    },
+    {
+      "acceptable_targets": [
+        {
+          "content_sha256": "e37fc897b46fd9731aec264ab0e92630301b60ad32d62057f69be3e5efc880c9",
+          "evidence_excerpt": "pseudo-Voigt least-squares fits",
+          "expected_chunk_id": "pmc4335811-p00017-e37fc897b46f",
+          "expected_document_id": "pmc4335811",
+          "expected_page": null,
+          "source_locator": {
+            "chunk_ordinal": 1,
+            "kind": "XML_PARAGRAPH",
+            "paragraph_ordinal": 15,
+            "section_path": "Results and Discussion / Experimental Cr V2C XES: Fitting and Qualitative Trends",
+            "xml_node_id": null
+          },
+          "source_xml_sha256": "8c9598fefa3c1e604f116e436d550e148cf1240e2fb1c793e0a20e1409cfba71"
+        }
+      ],
+      "alternate_targets": [],
+      "assistant_recommendation": "CANDIDATE_ANSWERABLE",
+      "assistant_review_notes": "Authored from direct source paragraph inspection; target chunk content and XML hashes validated. No retrieval rankings or model scores were consulted. Human review required.",
+      "document_title": "Ligand-Sensitive But Not Ligand-Diagnostic: Evaluating Cr Valence-to-Core X-ray Emission Spectroscopy as a Probe of Inner-Sphere Coordination",
+      "evidence_excerpt": "pseudo-Voigt least-squares fits",
+      "expected_chunk_id": "pmc4335811-p00017-e37fc897b46f",
+      "expected_document_id": "pmc4335811",
+      "expected_page": null,
+      "language": "en",
+      "leakage_group_id": null,
+      "no_answer": false,
+      "query": "How were the V2C XES peak maxima fitted?",
+      "query_class": "method_basis",
+      "query_id": "rpdev1-a032",
+      "review_date": "2026-09-24",
+      "review_decision": "APPROVE",
+      "review_notes": "Approved unchanged per the owner-provided independent review; primary target and source integrity validated against the pinned corpus.",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review-2026-09-24",
+      "source_locator": {
+        "chunk_ordinal": 1,
+        "kind": "XML_PARAGRAPH",
+        "paragraph_ordinal": 15,
+        "section_path": "Results and Discussion / Experimental Cr V2C XES: Fitting and Qualitative Trends",
+        "xml_node_id": null
+      }
+    },
+    {
+      "acceptable_targets": [
+        {
+          "content_sha256": "a4648b07cca540ec72faa306f3de8e1bf97ee5b3316c3545ced0fd7da62c8546",
+          "evidence_excerpt": "R 2 = 0.99",
+          "expected_chunk_id": "pmc4335811-p00020-a4648b07cca5",
+          "expected_document_id": "pmc4335811",
+          "expected_page": null,
+          "source_locator": {
+            "chunk_ordinal": 1,
+            "kind": "XML_PARAGRAPH",
+            "paragraph_ordinal": 18,
+            "section_path": "Results and Discussion / Calculated Cr V2C XES: Reproducing Experimental Data",
+            "xml_node_id": null
+          },
+          "source_xml_sha256": "8c9598fefa3c1e604f116e436d550e148cf1240e2fb1c793e0a20e1409cfba71"
+        }
+      ],
+      "alternate_targets": [],
+      "assistant_recommendation": "CANDIDATE_ANSWERABLE",
+      "assistant_review_notes": "Authored from direct source paragraph inspection; target chunk content and XML hashes validated. No retrieval rankings or model scores were consulted. Human review required.",
+      "document_title": "Ligand-Sensitive But Not Ligand-Diagnostic: Evaluating Cr Valence-to-Core X-ray Emission Spectroscopy as a Probe of Inner-Sphere Coordination",
+      "evidence_excerpt": "R 2 = 0.99",
+      "expected_chunk_id": "pmc4335811-p00020-a4648b07cca5",
+      "expected_document_id": "pmc4335811",
+      "expected_page": null,
+      "language": "en",
+      "leakage_group_id": null,
+      "no_answer": false,
+      "query": "What coefficient of determination was reported for the experimental-versus-calculated V2C band-energy correlation?",
+      "query_class": "numeric_value",
+      "query_id": "rpdev1-a035",
+      "review_date": "2026-09-24",
+      "review_decision": "APPROVE",
+      "review_notes": "Approved unchanged per the owner-provided independent review; primary target and source integrity validated against the pinned corpus.",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review-2026-09-24",
+      "source_locator": {
+        "chunk_ordinal": 1,
+        "kind": "XML_PARAGRAPH",
+        "paragraph_ordinal": 18,
+        "section_path": "Results and Discussion / Calculated Cr V2C XES: Reproducing Experimental Data",
+        "xml_node_id": null
+      }
+    },
+    {
+      "acceptable_targets": [
+        {
+          "content_sha256": "a4648b07cca540ec72faa306f3de8e1bf97ee5b3316c3545ced0fd7da62c8546",
+          "evidence_excerpt": "66.0 ± 0.8 eV",
+          "expected_chunk_id": "pmc4335811-p00020-a4648b07cca5",
+          "expected_document_id": "pmc4335811",
+          "expected_page": null,
+          "source_locator": {
+            "chunk_ordinal": 1,
+            "kind": "XML_PARAGRAPH",
+            "paragraph_ordinal": 18,
+            "section_path": "Results and Discussion / Calculated Cr V2C XES: Reproducing Experimental Data",
+            "xml_node_id": null
+          },
+          "source_xml_sha256": "8c9598fefa3c1e604f116e436d550e148cf1240e2fb1c793e0a20e1409cfba71"
+        }
+      ],
+      "alternate_targets": [],
+      "assistant_recommendation": "CANDIDATE_ANSWERABLE",
+      "assistant_review_notes": "Authored from direct source paragraph inspection; target chunk content and XML hashes validated. No retrieval rankings or model scores were consulted. Human review required.",
+      "document_title": "Ligand-Sensitive But Not Ligand-Diagnostic: Evaluating Cr Valence-to-Core X-ray Emission Spectroscopy as a Probe of Inner-Sphere Coordination",
+      "evidence_excerpt": "66.0 ± 0.8 eV",
+      "expected_chunk_id": "pmc4335811-p00020-a4648b07cca5",
+      "expected_document_id": "pmc4335811",
+      "expected_page": null,
+      "language": "en",
+      "leakage_group_id": null,
+      "no_answer": false,
+      "query": "What scalar correction was found for BP86/def2-TZVP-ZORA V2C calculations?",
+      "query_class": "numeric_unit",
+      "query_id": "rpdev1-a036",
+      "review_date": "2026-09-24",
+      "review_decision": "APPROVE",
+      "review_notes": "Approved unchanged per the owner-provided independent review; primary target and source integrity validated against the pinned corpus.",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review-2026-09-24",
+      "source_locator": {
+        "chunk_ordinal": 1,
+        "kind": "XML_PARAGRAPH",
+        "paragraph_ordinal": 18,
+        "section_path": "Results and Discussion / Calculated Cr V2C XES: Reproducing Experimental Data",
+        "xml_node_id": null
+      }
+    },
+    {
+      "acceptable_targets": [
+        {
+          "content_sha256": "2a23ea3462404745ff05a857aaf33d1adc32d840ca93fa9310cd205f366dc77b",
+          "evidence_excerpt": "0.68 ± 0.06 eV",
+          "expected_chunk_id": "pmc4335811-p00021-2a23ea346240",
+          "expected_document_id": "pmc4335811",
+          "expected_page": null,
+          "source_locator": {
+            "chunk_ordinal": 1,
+            "kind": "XML_PARAGRAPH",
+            "paragraph_ordinal": 19,
+            "section_path": "Results and Discussion / Calculated Cr V2C XES: Reproducing Experimental Data",
+            "xml_node_id": null
+          },
+          "source_xml_sha256": "8c9598fefa3c1e604f116e436d550e148cf1240e2fb1c793e0a20e1409cfba71"
+        }
+      ],
+      "alternate_targets": [],
+      "assistant_recommendation": "CANDIDATE_ANSWERABLE",
+      "assistant_review_notes": "Authored from direct source paragraph inspection; target chunk content and XML hashes validated. No retrieval rankings or model scores were consulted. Human review required.",
+      "document_title": "Ligand-Sensitive But Not Ligand-Diagnostic: Evaluating Cr Valence-to-Core X-ray Emission Spectroscopy as a Probe of Inner-Sphere Coordination",
+      "evidence_excerpt": "0.68 ± 0.06 eV",
+      "expected_chunk_id": "pmc4335811-p00021-2a23ea346240",
+      "expected_document_id": "pmc4335811",
+      "expected_page": null,
+      "language": "en",
+      "leakage_group_id": null,
+      "no_answer": false,
+      "query": "What mean absolute energy difference resulted from scalar-corrected BP86 data?",
+      "query_class": "numeric_unit",
+      "query_id": "rpdev1-a037",
+      "review_date": "2026-09-24",
+      "review_decision": "APPROVE",
+      "review_notes": "Approved unchanged per the owner-provided independent review; primary target and source integrity validated against the pinned corpus.",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review-2026-09-24",
+      "source_locator": {
+        "chunk_ordinal": 1,
+        "kind": "XML_PARAGRAPH",
+        "paragraph_ordinal": 19,
+        "section_path": "Results and Discussion / Calculated Cr V2C XES: Reproducing Experimental Data",
+        "xml_node_id": null
+      }
+    },
+    {
+      "acceptable_targets": [
+        {
+          "content_sha256": "8c5c58e2710f379189aa7e838b2c26d9c9850b1666417b1d1ba534afbd2eff2a",
+          "evidence_excerpt": "within 0.5 eV of the experimental value",
+          "expected_chunk_id": "pmc4335811-p00024-8c5c58e2710f",
+          "expected_document_id": "pmc4335811",
+          "expected_page": null,
+          "source_locator": {
+            "chunk_ordinal": 1,
+            "kind": "XML_PARAGRAPH",
+            "paragraph_ordinal": 22,
+            "section_path": "Results and Discussion / Calculated Cr V2C XES: Reproducing Experimental Data",
+            "xml_node_id": null
+          },
+          "source_xml_sha256": "8c9598fefa3c1e604f116e436d550e148cf1240e2fb1c793e0a20e1409cfba71"
+        },
+        {
+          "content_sha256": "264b891a0caf6d6a8497cb4d6a235610f97c9fb6ec6537367e416f73626ff2fa",
+          "evidence_excerpt": "Cr V2C XES energies with an acceptably small error of 0.5 eV",
+          "expected_chunk_id": "pmc4335811-p00025-264b891a0caf",
+          "expected_document_id": "pmc4335811",
+          "expected_page": null,
+          "source_locator": {
+            "chunk_ordinal": 1,
+            "kind": "XML_PARAGRAPH",
+            "paragraph_ordinal": 23,
+            "section_path": "Results and Discussion / Calculated Cr V2C XES Energies: Toward Identifying Unknown Ligands",
+            "xml_node_id": null
+          },
+          "source_xml_sha256": "8c9598fefa3c1e604f116e436d550e148cf1240e2fb1c793e0a20e1409cfba71"
+        },
+        {
+          "content_sha256": "4e3f714d24da0916785fe6d99f31adb125db03ed457f2f0d790dbcbb81c7fd99",
+          "evidence_excerpt": "DFT consistently predicts Cr V2C XES band energies within 0.5 eV",
+          "expected_chunk_id": "pmc4335811-p00039-4e3f714d24da",
+          "expected_document_id": "pmc4335811",
+          "expected_page": null,
+          "source_locator": {
+            "chunk_ordinal": 1,
+            "kind": "XML_PARAGRAPH",
+            "paragraph_ordinal": 33,
+            "section_path": "Conclusions",
+            "xml_node_id": null
+          },
+          "source_xml_sha256": "8c9598fefa3c1e604f116e436d550e148cf1240e2fb1c793e0a20e1409cfba71"
+        }
+      ],
+      "alternate_targets": [
+        {
+          "content_sha256": "264b891a0caf6d6a8497cb4d6a235610f97c9fb6ec6537367e416f73626ff2fa",
+          "evidence_excerpt": "Cr V2C XES energies with an acceptably small error of 0.5 eV",
+          "expected_chunk_id": "pmc4335811-p00025-264b891a0caf",
+          "expected_document_id": "pmc4335811",
+          "expected_page": null,
+          "source_locator": {
+            "chunk_ordinal": 1,
+            "kind": "XML_PARAGRAPH",
+            "paragraph_ordinal": 23,
+            "section_path": "Results and Discussion / Calculated Cr V2C XES Energies: Toward Identifying Unknown Ligands",
+            "xml_node_id": null
+          },
+          "source_xml_sha256": "8c9598fefa3c1e604f116e436d550e148cf1240e2fb1c793e0a20e1409cfba71"
+        },
+        {
+          "content_sha256": "4e3f714d24da0916785fe6d99f31adb125db03ed457f2f0d790dbcbb81c7fd99",
+          "evidence_excerpt": "DFT consistently predicts Cr V2C XES band energies within 0.5 eV",
+          "expected_chunk_id": "pmc4335811-p00039-4e3f714d24da",
+          "expected_document_id": "pmc4335811",
+          "expected_page": null,
+          "source_locator": {
+            "chunk_ordinal": 1,
+            "kind": "XML_PARAGRAPH",
+            "paragraph_ordinal": 33,
+            "section_path": "Conclusions",
+            "xml_node_id": null
+          },
+          "source_xml_sha256": "8c9598fefa3c1e604f116e436d550e148cf1240e2fb1c793e0a20e1409cfba71"
+        }
+      ],
+      "assistant_recommendation": "CANDIDATE_ANSWERABLE",
+      "assistant_review_notes": "Authored from direct source paragraph inspection; target chunk content and XML hashes validated. No retrieval rankings or model scores were consulted. Human review required.",
+      "document_title": "Ligand-Sensitive But Not Ligand-Diagnostic: Evaluating Cr Valence-to-Core X-ray Emission Spectroscopy as a Probe of Inner-Sphere Coordination",
+      "evidence_excerpt": "within 0.5 eV of the experimental value",
+      "expected_chunk_id": "pmc4335811-p00024-8c5c58e2710f",
+      "expected_document_id": "pmc4335811",
+      "expected_page": null,
+      "language": "en",
+      "leakage_group_id": null,
+      "no_answer": false,
+      "query": "What is the reported accuracy scale of calculated Cr V2C XES energies relative to experiment?",
+      "query_class": "semantic",
+      "query_id": "rpdev1-a039",
+      "review_date": "2026-09-24",
+      "review_decision": "CORRECT",
+      "review_notes": "Added two independently sufficient results/conclusion chunks that report the approximate 0.5 eV accuracy; primary target retained.",
+      "review_status": "CORRECTED",
+      "reviewer": "external-human-review-2026-09-24",
+      "source_locator": {
+        "chunk_ordinal": 1,
+        "kind": "XML_PARAGRAPH",
+        "paragraph_ordinal": 22,
+        "section_path": "Results and Discussion / Calculated Cr V2C XES: Reproducing Experimental Data",
+        "xml_node_id": null
+      }
+    },
+    {
+      "acceptable_targets": [
+        {
+          "content_sha256": "9eae837f6ba0187960177ccedc272b1256c55ad6d58760d6bb4a80ab678f4a43",
+          "evidence_excerpt": "taking over 48 h for complete conversion at −25 ° C",
+          "expected_chunk_id": "pmc9396622-p00014-9eae837f6ba0",
+          "expected_document_id": "pmc9396622",
+          "expected_page": null,
+          "source_locator": {
+            "chunk_ordinal": 1,
+            "kind": "XML_PARAGRAPH",
+            "paragraph_ordinal": 13,
+            "section_path": "Results and Discussion / Generation and Characterization of 3",
+            "xml_node_id": null
+          },
+          "source_xml_sha256": "59f8dcd53b6866d8c6cfbc8af938fdf9eb0c04e8c23e1f9558ead7a265c16e3f"
+        }
+      ],
+      "alternate_targets": [],
+      "assistant_recommendation": "CANDIDATE_ANSWERABLE",
+      "assistant_review_notes": "Authored from direct source paragraph inspection; target chunk content and XML hashes validated. No retrieval rankings or model scores were consulted. Human review required.",
+      "document_title": "Cobalt-Catalyzed Hydrogenation Reactions Enabled by Ligand-Based Storage of Dihydrogen",
+      "evidence_excerpt": "taking over 48 h for complete conversion at −25 ° C",
+      "expected_chunk_id": "pmc9396622-p00014-9eae837f6ba0",
+      "expected_document_id": "pmc9396622",
+      "expected_page": null,
+      "language": "en",
+      "leakage_group_id": null,
+      "no_answer": false,
+      "query": "At what temperature and over what time did complex 3 form from complex 2 and H₂?",
+      "query_class": "experimental_condition",
+      "query_id": "rpdev1-a046",
+      "review_date": "2026-09-24",
+      "review_decision": "APPROVE",
+      "review_notes": "Approved unchanged per the owner-provided independent review; primary target and source integrity validated against the pinned corpus.",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review-2026-09-24",
+      "source_locator": {
+        "chunk_ordinal": 1,
+        "kind": "XML_PARAGRAPH",
+        "paragraph_ordinal": 13,
+        "section_path": "Results and Discussion / Generation and Characterization of 3",
+        "xml_node_id": null
+      }
+    },
+    {
+      "acceptable_targets": [
+        {
+          "content_sha256": "24d6c96484276fad130380859d06196086295980f6ee767912f1888d7b2855ec",
+          "evidence_excerpt": "79(6)% conversion to hexane with 1% catalyst loading of 2",
+          "expected_chunk_id": "pmc9396622-p00018-24d6c9648427",
+          "expected_document_id": "pmc9396622",
+          "expected_page": null,
+          "source_locator": {
+            "chunk_ordinal": 1,
+            "kind": "XML_PARAGRAPH",
+            "paragraph_ordinal": 16,
+            "section_path": "Results and Discussion / Hydrogenation Catalysis",
+            "xml_node_id": null
+          },
+          "source_xml_sha256": "59f8dcd53b6866d8c6cfbc8af938fdf9eb0c04e8c23e1f9558ead7a265c16e3f"
+        }
+      ],
+      "alternate_targets": [],
+      "assistant_recommendation": "CANDIDATE_ANSWERABLE",
+      "assistant_review_notes": "Authored from direct source paragraph inspection; target chunk content and XML hashes validated. No retrieval rankings or model scores were consulted. Human review required.",
+      "document_title": "Cobalt-Catalyzed Hydrogenation Reactions Enabled by Ligand-Based Storage of Dihydrogen",
+      "evidence_excerpt": "79(6)% conversion to hexane with 1% catalyst loading of 2",
+      "expected_chunk_id": "pmc9396622-p00018-24d6c9648427",
+      "expected_document_id": "pmc9396622",
+      "expected_page": null,
+      "language": "en",
+      "leakage_group_id": null,
+      "no_answer": false,
+      "query": "Under 1 atm H₂ at 23 °C with 1% complex 2, what conversion of 1-hexene to hexane was observed?",
+      "query_class": "numeric_unit",
+      "query_id": "rpdev1-a048",
+      "review_date": "2026-09-24",
+      "review_decision": "APPROVE",
+      "review_notes": "Approved unchanged per the owner-provided independent review; primary target and source integrity validated against the pinned corpus.",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review-2026-09-24",
+      "source_locator": {
+        "chunk_ordinal": 1,
+        "kind": "XML_PARAGRAPH",
+        "paragraph_ordinal": 16,
+        "section_path": "Results and Discussion / Hydrogenation Catalysis",
+        "xml_node_id": null
+      }
+    },
+    {
+      "acceptable_targets": [
+        {
+          "content_sha256": "d7c6c3417dbd384f13841e4589fd7cd1da128753627f2c5e1ed61b492b32cd68",
+          "evidence_excerpt": "[(C 2 H 5 ) 3 NH]Cl-AlCl 3",
+          "expected_chunk_id": "pmc6222785-p00008-d7c6c3417dbd",
+          "expected_document_id": "pmc6222785",
+          "expected_page": null,
+          "source_locator": {
+            "chunk_ordinal": 1,
+            "kind": "XML_PARAGRAPH",
+            "paragraph_ordinal": 7,
+            "section_path": "2. Results and Discussion / 2.1. Acidity and Basicity of the Chlorometallate ILs",
+            "xml_node_id": null
+          },
+          "source_xml_sha256": "1f5fe262a48117c5af255a2ef18630246a07ad457f12afe169edbd113b0ee81e"
+        }
+      ],
+      "alternate_targets": [],
+      "assistant_recommendation": "CANDIDATE_ANSWERABLE",
+      "assistant_review_notes": "Authored from direct source paragraph inspection; target chunk content and XML hashes validated. No retrieval rankings or model scores were consulted. Human review required.",
+      "document_title": "Lewis Acidity and Basicity of Mixed Chlorometallate Ionic Liquids: Investigations from Surface Analysis and Fukui Function",
+      "evidence_excerpt": "[(C 2 H 5 ) 3 NH]Cl-AlCl 3",
+      "expected_chunk_id": "pmc6222785-p00008-d7c6c3417dbd",
+      "expected_document_id": "pmc6222785",
+      "expected_page": null,
+      "language": "en",
+      "leakage_group_id": null,
+      "no_answer": false,
+      "query": "Which two chloroaluminate ionic liquids and two comparison non-chloroaluminate liquids were studied?",
+      "query_class": "named_compound",
+      "query_id": "rpdev1-a053",
+      "review_date": "2026-09-24",
+      "review_decision": "APPROVE",
+      "review_notes": "Approved unchanged per the owner-provided independent review; primary target and source integrity validated against the pinned corpus.",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review-2026-09-24",
+      "source_locator": {
+        "chunk_ordinal": 1,
+        "kind": "XML_PARAGRAPH",
+        "paragraph_ordinal": 7,
+        "section_path": "2. Results and Discussion / 2.1. Acidity and Basicity of the Chlorometallate ILs",
+        "xml_node_id": null
+      }
+    },
+    {
+      "acceptable_targets": [
+        {
+          "content_sha256": "5c23423b41b7a6b0f8222dacd8c4468bd187284365505d3ed60aedd8ddd10936",
+          "evidence_excerpt": "value of V s,max could reach to 48.275 kcal/mol",
+          "expected_chunk_id": "pmc6222785-p00009-5c23423b41b7",
+          "expected_document_id": "pmc6222785",
+          "expected_page": null,
+          "source_locator": {
+            "chunk_ordinal": 1,
+            "kind": "XML_PARAGRAPH",
+            "paragraph_ordinal": 8,
+            "section_path": "2. Results and Discussion / 2.1. Acidity and Basicity of the Chlorometallate ILs",
+            "xml_node_id": null
+          },
+          "source_xml_sha256": "1f5fe262a48117c5af255a2ef18630246a07ad457f12afe169edbd113b0ee81e"
+        }
+      ],
+      "alternate_targets": [],
+      "assistant_recommendation": "CANDIDATE_ANSWERABLE",
+      "assistant_review_notes": "Authored from direct source paragraph inspection; target chunk content and XML hashes validated. No retrieval rankings or model scores were consulted. Human review required.",
+      "document_title": "Lewis Acidity and Basicity of Mixed Chlorometallate Ionic Liquids: Investigations from Surface Analysis and Fukui Function",
+      "evidence_excerpt": "value of V s,max could reach to 48.275 kcal/mol",
+      "expected_chunk_id": "pmc6222785-p00009-5c23423b41b7",
+      "expected_document_id": "pmc6222785",
+      "expected_page": null,
+      "language": "en",
+      "leakage_group_id": "answer-il-vsmax-48",
+      "no_answer": false,
+      "query": "What maximum surface electrostatic potential was reported for the [C₄mim]⁺ cation example?",
+      "query_class": "numeric_unit",
+      "query_id": "rpdev1-a055",
+      "review_date": "2026-09-24",
+      "review_decision": "APPROVE",
+      "review_notes": "Approved unchanged per the owner-provided independent review; primary target and source integrity validated against the pinned corpus.",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review-2026-09-24",
+      "source_locator": {
+        "chunk_ordinal": 1,
+        "kind": "XML_PARAGRAPH",
+        "paragraph_ordinal": 8,
+        "section_path": "2. Results and Discussion / 2.1. Acidity and Basicity of the Chlorometallate ILs",
+        "xml_node_id": null
+      }
+    },
+    {
+      "acceptable_targets": [
+        {
+          "content_sha256": "2a627324c5bd3b4b6c8a2fe82932fdaa63457b9f235424e19e8a430498927541",
+          "evidence_excerpt": "the acidity of [(C 2 H 5 ) 3 NH]Cl-AlCl 3 -CuCl is larger",
+          "expected_chunk_id": "pmc6222785-p00015-2a627324c5bd",
+          "expected_document_id": "pmc6222785",
+          "expected_page": null,
+          "source_locator": {
+            "chunk_ordinal": 1,
+            "kind": "XML_PARAGRAPH",
+            "paragraph_ordinal": 13,
+            "section_path": "2. Results and Discussion / 2.2. Acidity and Basicity of the Mixed Chlorometallate ILs",
+            "xml_node_id": null
+          },
+          "source_xml_sha256": "1f5fe262a48117c5af255a2ef18630246a07ad457f12afe169edbd113b0ee81e"
+        }
+      ],
+      "alternate_targets": [],
+      "assistant_recommendation": "CANDIDATE_ANSWERABLE",
+      "assistant_review_notes": "Authored from direct source paragraph inspection; target chunk content and XML hashes validated. No retrieval rankings or model scores were consulted. Human review required.",
+      "document_title": "Lewis Acidity and Basicity of Mixed Chlorometallate Ionic Liquids: Investigations from Surface Analysis and Fukui Function",
+      "evidence_excerpt": "the acidity of [(C 2 H 5 ) 3 NH]Cl-AlCl 3 -CuCl is larger",
+      "expected_chunk_id": "pmc6222785-p00015-2a627324c5bd",
+      "expected_document_id": "pmc6222785",
+      "expected_page": null,
+      "language": "en",
+      "leakage_group_id": null,
+      "no_answer": false,
+      "query": "What did the Gutmann acceptor-number comparison indicate about the CuCl-containing triethylammonium liquid?",
+      "query_class": "semantic",
+      "query_id": "rpdev1-a059",
+      "review_date": "2026-09-24",
+      "review_decision": "APPROVE",
+      "review_notes": "Approved unchanged per the owner-provided independent review; primary target and source integrity validated against the pinned corpus.",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review-2026-09-24",
+      "source_locator": {
+        "chunk_ordinal": 1,
+        "kind": "XML_PARAGRAPH",
+        "paragraph_ordinal": 13,
+        "section_path": "2. Results and Discussion / 2.2. Acidity and Basicity of the Mixed Chlorometallate ILs",
+        "xml_node_id": null
+      }
+    },
+    {
+      "acceptable_targets": [
+        {
+          "content_sha256": "99876369e16fa714c6a6d2135b513ab3535a9ee3dfd1bcd2e363c7a1068a9d90",
+          "evidence_excerpt": "Conditional Variational Autoencoder (CVAE) integrated with property prediction",
+          "expected_chunk_id": "pmc12550025-p00009-99876369e16f",
+          "expected_document_id": "pmc12550025",
+          "expected_page": null,
+          "source_locator": {
+            "chunk_ordinal": 1,
+            "kind": "XML_PARAGRAPH",
+            "paragraph_ordinal": 9,
+            "section_path": "Results and discussion / Method Overview",
+            "xml_node_id": "Par15"
+          },
+          "source_xml_sha256": "726fdf30f7a41398d613bc28d3aa1dcf8a6a642b4f22bbfaaebd9bef75041cb3"
+        },
+        {
+          "content_sha256": "bf5f923d86050fb9565e4d900766ab6ef0eef60e0d20c7bc7df2c78d3f685916",
+          "evidence_excerpt": "three main modules: catalyst embedding module, condition embedding module, and autoencoder module",
+          "expected_chunk_id": "pmc12550025-p00052-bf5f923d8605",
+          "expected_document_id": "pmc12550025",
+          "expected_page": null,
+          "source_locator": {
+            "chunk_ordinal": 1,
+            "kind": "XML_PARAGRAPH",
+            "paragraph_ordinal": 43,
+            "section_path": "Methods / Model architecture",
+            "xml_node_id": "Par49"
+          },
+          "source_xml_sha256": "726fdf30f7a41398d613bc28d3aa1dcf8a6a642b4f22bbfaaebd9bef75041cb3"
+        }
+      ],
+      "alternate_targets": [
+        {
+          "content_sha256": "bf5f923d86050fb9565e4d900766ab6ef0eef60e0d20c7bc7df2c78d3f685916",
+          "evidence_excerpt": "three main modules: catalyst embedding module, condition embedding module, and autoencoder module",
+          "expected_chunk_id": "pmc12550025-p00052-bf5f923d8605",
+          "expected_document_id": "pmc12550025",
+          "expected_page": null,
+          "source_locator": {
+            "chunk_ordinal": 1,
+            "kind": "XML_PARAGRAPH",
+            "paragraph_ordinal": 43,
+            "section_path": "Methods / Model architecture",
+            "xml_node_id": "Par49"
+          },
+          "source_xml_sha256": "726fdf30f7a41398d613bc28d3aa1dcf8a6a642b4f22bbfaaebd9bef75041cb3"
+        }
+      ],
+      "assistant_recommendation": "CANDIDATE_ANSWERABLE",
+      "assistant_review_notes": "Authored from direct source paragraph inspection; target chunk content and XML hashes validated. No retrieval rankings or model scores were consulted. Human review required.",
+      "document_title": "Reaction-conditioned generative model for catalyst design and optimization with CatDRX",
+      "evidence_excerpt": "Conditional Variational Autoencoder (CVAE) integrated with property prediction",
+      "expected_chunk_id": "pmc12550025-p00009-99876369e16f",
+      "expected_document_id": "pmc12550025",
+      "expected_page": null,
+      "language": "en",
+      "leakage_group_id": null,
+      "no_answer": false,
+      "query": "What is the model architecture called, and which three modules does it contain?",
+      "query_class": "method_basis",
+      "query_id": "rpdev1-a062",
+      "review_date": "2026-09-24",
+      "review_decision": "CORRECT",
+      "review_notes": "Added the Methods architecture paragraph independently naming the CVAE and all three requested modules; primary target retained.",
+      "review_status": "CORRECTED",
+      "reviewer": "external-human-review-2026-09-24",
+      "source_locator": {
+        "chunk_ordinal": 1,
+        "kind": "XML_PARAGRAPH",
+        "paragraph_ordinal": 9,
+        "section_path": "Results and discussion / Method Overview",
+        "xml_node_id": "Par15"
+      }
+    },
+    {
+      "acceptable_targets": [
+        {
+          "content_sha256": "b7f741d4d4d9003e81eb686989ed8373d94c0880313fefd83ba34548ddfb3527",
+          "evidence_excerpt": "root mean squared error (RMSE) and mean absolute error (MAE)",
+          "expected_chunk_id": "pmc12550025-p00010-b7f741d4d4d9",
+          "expected_document_id": "pmc12550025",
+          "expected_page": null,
+          "source_locator": {
+            "chunk_ordinal": 1,
+            "kind": "XML_PARAGRAPH",
+            "paragraph_ordinal": 10,
+            "section_path": "Results and discussion / Catalytic activity prediction performance",
+            "xml_node_id": "Par16"
+          },
+          "source_xml_sha256": "726fdf30f7a41398d613bc28d3aa1dcf8a6a642b4f22bbfaaebd9bef75041cb3"
+        }
+      ],
+      "alternate_targets": [],
+      "assistant_recommendation": "CANDIDATE_ANSWERABLE",
+      "assistant_review_notes": "Authored from direct source paragraph inspection; target chunk content and XML hashes validated. No retrieval rankings or model scores were consulted. Human review required.",
+      "document_title": "Reaction-conditioned generative model for catalyst design and optimization with CatDRX",
+      "evidence_excerpt": "root mean squared error (RMSE) and mean absolute error (MAE)",
+      "expected_chunk_id": "pmc12550025-p00010-b7f741d4d4d9",
+      "expected_document_id": "pmc12550025",
+      "expected_page": null,
+      "language": "en",
+      "leakage_group_id": null,
+      "no_answer": false,
+      "query": "Which prediction metrics are reported in the CatDRX model comparison?",
+      "query_class": "method_basis",
+      "query_id": "rpdev1-a063",
+      "review_date": "2026-09-24",
+      "review_decision": "APPROVE",
+      "review_notes": "Approved unchanged per the owner-provided independent review; primary target and source integrity validated against the pinned corpus.",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review-2026-09-24",
+      "source_locator": {
+        "chunk_ordinal": 1,
+        "kind": "XML_PARAGRAPH",
+        "paragraph_ordinal": 10,
+        "section_path": "Results and discussion / Catalytic activity prediction performance",
+        "xml_node_id": "Par16"
+      }
+    },
+    {
+      "acceptable_targets": [
+        {
+          "content_sha256": "8ad0d4c2e472f15a1ca452abaea6e08e19ce76183cc0cb7f1c2546cd66bb65bc",
+          "evidence_excerpt": "total dimensionality of the matrix representation is 100 + (100 × 68) + (100 × 100 × 6) = 66900 dimensions",
+          "expected_chunk_id": "pmc12550025-p00049-8ad0d4c2e472",
+          "expected_document_id": "pmc12550025",
+          "expected_page": null,
+          "source_locator": {
+            "chunk_ordinal": 2,
+            "kind": "XML_PARAGRAPH",
+            "paragraph_ordinal": 40,
+            "section_path": "Methods / Data representation",
+            "xml_node_id": "Par46"
+          },
+          "source_xml_sha256": "726fdf30f7a41398d613bc28d3aa1dcf8a6a642b4f22bbfaaebd9bef75041cb3"
+        }
+      ],
+      "alternate_targets": [],
+      "assistant_recommendation": "CANDIDATE_ANSWERABLE",
+      "assistant_review_notes": "Authored from direct source paragraph inspection; target chunk content and XML hashes validated. No retrieval rankings or model scores were consulted. Human review required.",
+      "document_title": "Reaction-conditioned generative model for catalyst design and optimization with CatDRX",
+      "evidence_excerpt": "total dimensionality of the matrix representation is 100 + (100 × 68) + (100 × 100 × 6) = 66900 dimensions",
+      "expected_chunk_id": "pmc12550025-p00049-8ad0d4c2e472",
+      "expected_document_id": "pmc12550025",
+      "expected_page": null,
+      "language": "en",
+      "leakage_group_id": null,
+      "no_answer": false,
+      "query": "What catalyst-matrix dimensions result from 100 nodes, 68 atom types, and 6 bond types?",
+      "query_class": "numeric_value",
+      "query_id": "rpdev1-a066",
+      "review_date": "2026-09-24",
+      "review_decision": "APPROVE",
+      "review_notes": "Approved unchanged per the owner-provided independent review; primary target and source integrity validated against the pinned corpus.",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review-2026-09-24",
+      "source_locator": {
+        "chunk_ordinal": 2,
+        "kind": "XML_PARAGRAPH",
+        "paragraph_ordinal": 40,
+        "section_path": "Methods / Data representation",
+        "xml_node_id": "Par46"
+      }
+    },
+    {
+      "acceptable_targets": [
+        {
+          "content_sha256": "5c23423b41b7a6b0f8222dacd8c4468bd187284365505d3ed60aedd8ddd10936",
+          "evidence_excerpt": "value of V s,max could reach to 48.275 kcal/mol",
+          "expected_chunk_id": "pmc6222785-p00009-5c23423b41b7",
+          "expected_document_id": "pmc6222785",
+          "expected_page": null,
+          "source_locator": {
+            "chunk_ordinal": 1,
+            "kind": "XML_PARAGRAPH",
+            "paragraph_ordinal": 8,
+            "section_path": "2. Results and Discussion / 2.1. Acidity and Basicity of the Chlorometallate ILs",
+            "xml_node_id": null
+          },
+          "source_xml_sha256": "1f5fe262a48117c5af255a2ef18630246a07ad457f12afe169edbd113b0ee81e"
+        }
+      ],
+      "alternate_targets": [],
+      "assistant_recommendation": "CANDIDATE_ANSWERABLE",
+      "assistant_review_notes": "Authored from direct source paragraph inspection; target chunk content and XML hashes validated. No retrieval rankings or model scores were consulted. Human review required.",
+      "document_title": "Lewis Acidity and Basicity of Mixed Chlorometallate Ionic Liquids: Investigations from Surface Analysis and Fukui Function",
+      "evidence_excerpt": "value of V s,max could reach to 48.275 kcal/mol",
+      "expected_chunk_id": "pmc6222785-p00009-5c23423b41b7",
+      "expected_document_id": "pmc6222785",
+      "expected_page": null,
+      "language": "ru",
+      "leakage_group_id": "answer-il-vsmax-48",
+      "no_answer": false,
+      "query": "По статье, какое значение Vₛ,max достигалось для [C₄mim]⁺?",
+      "query_class": "cross_language",
+      "query_id": "rpdev1-a070",
+      "review_date": "2026-09-24",
+      "review_decision": "APPROVE",
+      "review_notes": "Approved unchanged per the owner-provided independent review; primary target and source integrity validated against the pinned corpus.",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review-2026-09-24",
+      "source_locator": {
+        "chunk_ordinal": 1,
+        "kind": "XML_PARAGRAPH",
+        "paragraph_ordinal": 8,
+        "section_path": "2. Results and Discussion / 2.1. Acidity and Basicity of the Chlorometallate ILs",
+        "xml_node_id": null
+      }
+    },
+    {
+      "acceptable_targets": [],
+      "alternate_targets": [],
+      "assistant_recommendation": "APPROVE",
+      "assistant_review_notes": "Corpus-wide scan of all 342 chunks; candidate-specific terms/synonyms checked: ZnO/zinc oxide, DLS/dynamic light scattering, z-average, hydrodynamic diameter, particle-size distribution; particle-size hits refer to Pd catalyst particles, not ZnO DLS. This is an assistant recommendation only; human status remains UNREVIEWED.",
+      "document_title": "",
+      "evidence_excerpt": "",
+      "expected_chunk_id": null,
+      "expected_document_id": null,
+      "expected_page": null,
+      "language": "en",
+      "leakage_group_id": "negative-zno-dls",
+      "no_answer": true,
+      "query": "What DLS z-average diameter was measured for ZnO nanoparticles?",
+      "query_class": "numeric_value",
+      "query_id": "rpdev1-n003",
+      "review_date": "2026-09-24",
+      "review_decision": "APPROVE",
+      "review_notes": "Approved per the owner-provided independent review after deterministic corpus-wide inspection of all 342 authoring chunks; no direct answer found.",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review-2026-09-24",
+      "source_locator": {
+        "kind": "CORPUS_WIDE"
+      }
+    },
+    {
+      "acceptable_targets": [],
+      "alternate_targets": [],
+      "assistant_recommendation": "APPROVE",
+      "assistant_review_notes": "Corpus-wide scan of all 342 chunks; candidate-specific terms/synonyms checked: Ru/ruthenium, turnover frequency/TOF, 298 K, catalyst; Ru occurs as an alloy element/dataset token, not a Ru-catalyst measurement at the requested condition. This is an assistant recommendation only; human status remains UNREVIEWED.",
+      "document_title": "",
+      "evidence_excerpt": "",
+      "expected_chunk_id": null,
+      "expected_document_id": null,
+      "expected_page": null,
+      "language": "en",
+      "leakage_group_id": null,
+      "no_answer": true,
+      "query": "What turnover frequency was measured for a Ru catalyst at 298 K?",
+      "query_class": "experimental_condition",
+      "query_id": "rpdev1-n005",
+      "review_date": "2026-09-24",
+      "review_decision": "APPROVE",
+      "review_notes": "Approved per the owner-provided independent review after deterministic corpus-wide inspection of all 342 authoring chunks; no direct answer found.",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review-2026-09-24",
+      "source_locator": {
+        "kind": "CORPUS_WIDE"
+      }
+    },
+    {
+      "acceptable_targets": [],
+      "alternate_targets": [],
+      "assistant_recommendation": "APPROVE",
+      "assistant_review_notes": "Corpus-wide scan of all 342 chunks; candidate-specific terms/synonyms checked: cc-pVTZ, total energy, chromium complexes; basis-set and energy terms occur in unrelated computational methods/dataset context, not the specified Cr-complex result. This is an assistant recommendation only; human status remains UNREVIEWED.",
+      "document_title": "",
+      "evidence_excerpt": "",
+      "expected_chunk_id": null,
+      "expected_document_id": null,
+      "expected_page": null,
+      "language": "en",
+      "leakage_group_id": null,
+      "no_answer": true,
+      "query": "What cc-pVTZ total energy was reported for the chromium complexes?",
+      "query_class": "method_basis",
+      "query_id": "rpdev1-n016",
+      "review_date": "2026-09-24",
+      "review_decision": "APPROVE",
+      "review_notes": "Approved per the owner-provided independent review after deterministic corpus-wide inspection of all 342 authoring chunks; no direct answer found.",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review-2026-09-24",
+      "source_locator": {
+        "kind": "CORPUS_WIDE"
+      }
+    },
+    {
+      "acceptable_targets": [],
+      "alternate_targets": [],
+      "assistant_recommendation": "APPROVE",
+      "assistant_review_notes": "Corpus-wide scan of all 342 chunks; candidate-specific terms/synonyms checked: diffusion coefficient/diffusivity, chlorometallate ions, aqueous/water; water and diffusion-like terms are not a measured ionic diffusion coefficient in the retained corpus. This is an assistant recommendation only; human status remains UNREVIEWED.",
+      "document_title": "",
+      "evidence_excerpt": "",
+      "expected_chunk_id": null,
+      "expected_document_id": null,
+      "expected_page": null,
+      "language": "en",
+      "leakage_group_id": "negative-chlorometallate-transport",
+      "no_answer": true,
+      "query": "What diffusion coefficient was measured for the chlorometallate ions in water?",
+      "query_class": "semantic",
+      "query_id": "rpdev1-n020",
+      "review_date": "2026-09-24",
+      "review_decision": "APPROVE",
+      "review_notes": "Approved per the owner-provided independent review after deterministic corpus-wide inspection of all 342 authoring chunks; no direct answer found.",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review-2026-09-24",
+      "source_locator": {
+        "kind": "CORPUS_WIDE"
+      }
+    },
+    {
+      "acceptable_targets": [],
+      "alternate_targets": [],
+      "assistant_recommendation": "APPROVE",
+      "assistant_review_notes": "Corpus-wide scan of all 342 chunks; candidate-specific terms/synonyms checked: methane oxidation, copper-zinc/Cu-Zn catalyst, activation energy; propane oxidation and methane-related contexts were checked; neither reports the specified Cu-Zn methane result. This is an assistant recommendation only; human status remains UNREVIEWED.",
+      "document_title": "",
+      "evidence_excerpt": "",
+      "expected_chunk_id": null,
+      "expected_document_id": null,
+      "expected_page": null,
+      "language": "en",
+      "leakage_group_id": null,
+      "no_answer": true,
+      "query": "What activation energy was measured for methane oxidation on a copper-zinc catalyst?",
+      "query_class": "named_material",
+      "query_id": "rpdev1-n022",
+      "review_date": "2026-09-24",
+      "review_decision": "APPROVE",
+      "review_notes": "Approved per the owner-provided independent review after deterministic corpus-wide inspection of all 342 authoring chunks; no direct answer found.",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review-2026-09-24",
+      "source_locator": {
+        "kind": "CORPUS_WIDE"
+      }
+    },
+    {
+      "acceptable_targets": [],
+      "alternate_targets": [],
+      "assistant_recommendation": "APPROVE",
+      "assistant_review_notes": "Corpus-wide scan of all 342 chunks; candidate-specific terms/synonyms checked: Russian and English equivalents for ZnO/zinc oxide, DLS, particle size/diameter; particle-size hits refer to Pd, not ZnO or DLS. This is an assistant recommendation only; human status remains UNREVIEWED.",
+      "document_title": "",
+      "evidence_excerpt": "",
+      "expected_chunk_id": null,
+      "expected_document_id": null,
+      "expected_page": null,
+      "language": "ru",
+      "leakage_group_id": "negative-zno-dls",
+      "no_answer": true,
+      "query": "Какой средний размер частиц ZnO измерен методом DLS?",
+      "query_class": "numeric_value",
+      "query_id": "rpdev1-n027",
+      "review_date": "2026-09-24",
+      "review_decision": "APPROVE",
+      "review_notes": "Approved per the owner-provided independent review after deterministic corpus-wide inspection of all 342 authoring chunks; no direct answer found.",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review-2026-09-24",
+      "source_locator": {
+        "kind": "CORPUS_WIDE"
+      }
+    },
+    {
+      "acceptable_targets": [],
+      "alternate_targets": [],
+      "assistant_recommendation": "APPROVE",
+      "assistant_review_notes": "Corpus-wide scan of all 342 chunks; candidate-specific terms/synonyms checked: Russian and English equivalents for chlorometallate/chloride complexes, diffusion coefficient, water; no relevant diffusion measurement found. This is an assistant recommendation only; human status remains UNREVIEWED.",
+      "document_title": "",
+      "evidence_excerpt": "",
+      "expected_chunk_id": null,
+      "expected_document_id": null,
+      "expected_page": null,
+      "language": "ru",
+      "leakage_group_id": "negative-chlorometallate-transport",
+      "no_answer": true,
+      "query": "Какой коэффициент диффузии хлоридных комплексов в воде указан в статье?",
+      "query_class": "semantic",
+      "query_id": "rpdev1-n028",
+      "review_date": "2026-09-24",
+      "review_decision": "APPROVE",
+      "review_notes": "Approved per the owner-provided independent review after deterministic corpus-wide inspection of all 342 authoring chunks; no direct answer found.",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review-2026-09-24",
+      "source_locator": {
+        "kind": "CORPUS_WIDE"
+      }
+    },
+    {
+      "acceptable_targets": [],
+      "alternate_targets": [],
+      "assistant_recommendation": "APPROVE",
+      "assistant_review_notes": "Corpus-wide scan of all 342 chunks; candidate-specific terms/synonyms checked: mixed English/Russian equivalents for zeta potential, chlorometallate/chloride complexes, aqueous solution; no such property is present; generic magnetic/electrolyte terms are unrelated. This is an assistant recommendation only; human status remains UNREVIEWED.",
+      "document_title": "",
+      "evidence_excerpt": "",
+      "expected_chunk_id": null,
+      "expected_document_id": null,
+      "expected_page": null,
+      "language": "mixed",
+      "leakage_group_id": "negative-chlorometallate-transport",
+      "no_answer": true,
+      "query": "What zeta potential was measured for хлоридные комплексы in aqueous solution?",
+      "query_class": "named_compound",
+      "query_id": "rpdev1-n029",
+      "review_date": "2026-09-24",
+      "review_decision": "APPROVE",
+      "review_notes": "Approved per the owner-provided independent review after deterministic corpus-wide inspection of all 342 authoring chunks; no direct answer found.",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review-2026-09-24",
+      "source_locator": {
+        "kind": "CORPUS_WIDE"
+      }
+    },
+    {
+      "acceptable_targets": [],
+      "alternate_targets": [],
+      "assistant_recommendation": "CANDIDATE_NO_ANSWER",
+      "assistant_review_notes": "Candidate checked against the full chunk text for ORD accession, accession number, pre-training identifier, and dataset ID terminology; no accession identifying this specific subset was located. Human review remains required.",
+      "document_title": "",
+      "evidence_excerpt": "",
+      "expected_chunk_id": null,
+      "expected_document_id": null,
+      "expected_page": null,
+      "language": "en",
+      "leakage_group_id": null,
+      "no_answer": true,
+      "query": "What Open Reaction Database accession identifies the exact 52,448-reaction pre-training subset used by CatDRX?",
+      "query_class": "identifier",
+      "query_id": "rpdev1-n030",
+      "review_date": "2026-09-24",
+      "review_decision": "APPROVE",
+      "review_notes": "Approved per the owner-provided independent review after deterministic corpus-wide inspection of all 342 authoring chunks; no direct answer found.",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review-2026-09-24",
+      "source_locator": {
+        "kind": "CORPUS_WIDE"
+      }
+    }
+  ],
+  "qrels_sha256": "9cb8b50648cedf9a7fd702a4ddf7224280d233aacdb56817b845638023edc2f7",
+  "schema_version": "1.0",
+  "split_sha256": "161443e1c6d5982645f56655181477b83af7da50d1e61f686100ff4bad6c9758",
+  "status": "FROZEN"
+}

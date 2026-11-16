@@ -1,0 +1,55 @@
+.DS_Store
+.obsidian/
+*.pdf
+*.png
+
+# JavaScript / Next.js
+node_modules/
+.next/
+.next-e2e/
+.next-isolated-e2e/
+.next-*/
+.next-auth-e2e/
+build-e2e/
+out/
+coverage/
+playwright-report/
+test-results/
+.playwright-cli/
+output/playwright/
+output/
+timer.dat
+*.tsbuildinfo
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+.scientific-venv/
+
+# Runtime data and local configuration
+.chemdft/
+.env
+.env.local
+.env.*.local
+
+# Impeccable review artifacts are local evidence, not product source
+.impeccable/
+
+# Blind benchmark content belongs outside the repository; opaque metadata only.
+chemdft-holdout-v2/
+blind-holdout-corpus.json
+blind-holdout-qrels.json
+blind-holdout-review-record.md
+blind-holdout-freeze.json
+blind-holdout-evaluation-claim.json
+blind-holdout-result.json
+blind-holdout-opened-for-diagnostics.json
+
+# Phase -1 is documentation-only. Local vault state and source PDFs remain
+# outside Git until repository/data retention policy is established in Phase 1.
+
+# Owner artwork rasterised for the PDF exports (release 0.0.24); must be committed
+!services/api/src/chemdft_api/assets/brand/*.png

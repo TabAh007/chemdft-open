@@ -1,0 +1,141 @@
+/*
+ * Paper vs ChemDFT. The same restraint as Claims, Compare and Jobs: white panels on the canvas, hairline borders, no shadows,
+ * ChemDFT blue for selection and focus, amber only for "this cannot be compared as it stands". Nothing is coloured as better
+ * or worse: a difference is a number the server sent, not a verdict. The layout follows the width the page is given
+ * (container queries), so it reflows with the AI Scientist dock open.
+ */
+
+.page {
+  container: comparison / inline-size;
+  display: flex;
+  flex-direction: column;
+  height: calc(100dvh - 76px - 26px);
+  min-height: 420px;
+  min-width: 0;
+  padding: 14px 20px 12px;
+  gap: 0;
+  color: var(--cdf-ink);
+  font-size: 0.8125rem;
+  line-height: 1.4;
+}
+.page :is(a, button, select, summary, input, [tabindex]):focus-visible { outline: 2px solid var(--cdf-focus); outline-offset: 2px; }
+.page h1, .page h2, .page h3, .page p, .page dl, .page dd { margin: 0; }
+
+.heading { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 8px 16px; margin-bottom: 8px; }
+.heading > div:first-child { flex: 1 1 360px; min-width: 0; }
+.heading h1 { margin: 2px 0 2px; font-size: 1.625rem; letter-spacing: -0.02em; }
+.lede { color: var(--cdf-ink-muted); font-size: 0.8125rem; max-width: 70ch; }
+.headingActions { display: flex; align-items: flex-end; flex-wrap: wrap; justify-content: flex-end; gap: 8px; flex: none; }
+.headingActions :global(.bp6-button) { min-height: var(--cdf-control-h); }
+
+.summary { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 18px; margin-bottom: 8px; padding: 6px 12px; border: 1px solid var(--cdf-line); border-radius: var(--cdf-radius-2); background: var(--cdf-surface); }
+.summary > div { display: inline-flex; align-items: baseline; gap: 6px; min-width: 0; }
+.summary span { color: var(--cdf-ink-muted); font-size: 0.8125rem; }
+.summary strong { font-size: 1rem; font-variant-numeric: tabular-nums; }
+
+.toolbar { align-items: end; }
+.quick { display: inline-flex; align-self: end; border: 1px solid var(--cdf-line-strong); border-radius: var(--cdf-radius-1); overflow: hidden; }
+.quick button { display: inline-flex; align-items: center; gap: 4px; min-height: var(--cdf-control-h); padding: 0 10px; border: 0; border-right: 1px solid var(--cdf-line); background: var(--cdf-surface); color: var(--cdf-ink); font: inherit; font-size: 0.8125rem; cursor: pointer; }
+.quick button:last-child { border-right: 0; }
+.quick button[aria-pressed="true"] { background: var(--cdf-accent-soft); color: var(--cdf-accent); font-weight: 700; }
+.toolbar :global(select) { width: 150px; }
+.toolbar :global(.claims-search) { flex: 1 1 150px !important; }
+
+.layout { display: grid; flex: 1; min-height: 0; grid-template-columns: minmax(0, 1fr) clamp(320px, 30cqw, 400px); gap: 10px; }
+.main, .inspector { min-width: 0; border: 1px solid var(--cdf-line); border-radius: var(--cdf-radius-2); background: var(--cdf-surface); }
+.main { overflow: auto; }
+.inspector { overflow: auto; padding: 12px; }
+/* With the AI panel open (container 640-940 px) the inspector stays a narrower column beside the rows, so both stay usable; the rows scroll sideways inside their own box. */
+@container comparison (max-width: 940px) {
+  .layout { grid-template-columns: minmax(0, 1fr) clamp(240px, 34cqw, 300px); }
+  .lede { display: none; }
+}
+/* Only a very narrow content area stacks the inspector under the rows. */
+@container comparison (max-width: 640px) {
+  .layout { grid-template-columns: minmax(0, 1fr); grid-template-rows: minmax(0, 1fr) minmax(140px, 32%); }
+  /* The Agreement view needs its full height: stacked, the whole layout scrolls once instead of the plot scrolling inside a short box. */
+  .layout:has(.agreement) { grid-template-rows: auto minmax(140px, auto); overflow-y: auto; align-content: start; }
+  .main:has(.agreement) { overflow: visible; }
+}
+
+/* The matrix: a real table, each row styled as a two-sided strip (paper | relation | ChemDFT). */
+.table { width: 100%; table-layout: fixed; border-collapse: collapse; text-align: left; }
+.table thead { position: sticky; top: 0; z-index: 2; background: var(--cdf-panel); color: var(--cdf-ink-muted); }
+.table thead th { padding: 7px 10px; border-bottom: 1px solid var(--cdf-line); font-size: 0.75rem; font-weight: 700; white-space: nowrap; }
+.table thead th:nth-child(1) { width: 18%; }
+.table thead th:nth-child(2), .table thead th:nth-child(4) { width: 28%; }
+.table thead th:nth-child(3) { width: 26%; }
+.section th { padding: 6px 10px; border-bottom: 1px solid var(--cdf-line); background: var(--cdf-canvas); color: var(--cdf-ink); font-size: 0.75rem; letter-spacing: 0.055em; text-transform: uppercase; }
+.section th span { float: right; color: var(--cdf-ink-muted); font-variant-numeric: tabular-nums; }
+.row { cursor: pointer; outline: none; }
+.row td { padding: 9px 10px; border-bottom: 1px solid var(--cdf-panel-strong); vertical-align: top; overflow-wrap: anywhere; }
+.row:has(+ .auxRow) td { border-bottom: 0; padding-bottom: 4px; }
+.row:hover td, .auxRow:hover td { background: var(--cdf-canvas); }
+.row:focus-visible td { outline: 2px solid var(--cdf-focus); outline-offset: -2px; }
+.row[aria-selected="true"] td, .auxRow[data-selected="true"] td { background: var(--cdf-accent-soft); }
+.row[aria-selected="true"] td:first-child, .auxRow[data-selected="true"] td { box-shadow: inset 3px 0 var(--cdf-accent); }
+.topicCell strong, .topicCell small { display: block; }
+.topicCell small { margin-top: 3px; color: var(--cdf-ink-muted); font-size: 0.75rem; }
+.mono { font-family: var(--cdf-font-data); }
+
+.claim { display: grid; gap: 3px; padding-bottom: 6px; }
+.claim + .claim { padding-top: 6px; border-top: 1px dashed var(--cdf-line); }
+.claimValue { font-size: 1rem; font-weight: 600; font-variant-numeric: tabular-nums; }
+.qualifier { color: var(--cdf-ink); font-style: italic; font-size: 0.8125rem; }
+.uncertainty { color: var(--cdf-ink-muted); font-size: 0.8125rem; }
+.claimMeta { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; color: var(--cdf-ink-muted); font-size: 0.8125rem; }
+.jump { display: inline-flex; align-items: center; gap: 3px; color: var(--cdf-accent); font-weight: 600; text-decoration: none; }
+.jump:hover { text-decoration: underline; }
+.noLink, .empty { color: var(--cdf-ink-muted); font-size: 0.8125rem; font-style: italic; }
+
+.relationCell { font-variant-numeric: tabular-nums; }
+.relation { display: inline-block; padding: 1px 6px; border: 1px solid var(--cdf-line-strong); border-radius: var(--cdf-radius-1); background: var(--cdf-surface); color: var(--cdf-ink); font-size: 0.8125rem; font-weight: 700; }
+.relation[data-code="UNRESOLVED"], .relation[data-code="NOT_DIRECTLY_COMPARABLE"], .relation[data-code="SEMANTICS_DIFFER"] { border-color: var(--cdf-warning); color: var(--cdf-warning); }
+.delta { display: grid; gap: 1px; margin-top: 6px; }
+.delta small { color: var(--cdf-ink-muted); font-size: 0.75rem; }
+.deltaValue { font-family: var(--cdf-font-data); font-size: 0.8125rem; font-weight: 600; overflow-wrap: anywhere; }
+
+.auxRow td { padding: 0 10px 9px; border-bottom: 1px solid var(--cdf-panel-strong); }
+.why { display: grid; gap: 3px; padding: 7px 10px; border: 1px solid color-mix(in srgb, var(--cdf-warning) 45%, var(--cdf-surface)); border-left: 3px solid var(--cdf-warning); border-radius: var(--cdf-radius-1); background: color-mix(in srgb, var(--cdf-warning) 8%, var(--cdf-surface)); font-size: 0.8125rem; }
+.why strong { display: flex; align-items: center; gap: 5px; font-size: 0.8125rem; }
+.why p span, .rule span { margin-right: 6px; color: var(--cdf-ink-muted); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+.rule { color: var(--cdf-ink-muted); font-size: 0.8125rem; padding-left: 2px; }
+
+/* Inspector */
+.inspectorTitle { display: flex; align-items: center; justify-content: space-between; gap: 8px; color: var(--cdf-ink-muted); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; }
+.inspector h2 { margin: 8px 0 2px; font-size: 1rem; }
+.caption { color: var(--cdf-ink-muted); font-size: 0.8125rem; }
+.warning { margin: 8px 0; padding: 7px 9px; border-left: 3px solid var(--cdf-warning); background: color-mix(in srgb, var(--cdf-warning) 8%, var(--cdf-surface)); font-size: 0.8125rem; }
+.detailSection { margin-top: 10px; padding-top: 8px; border-top: 1px solid var(--cdf-line); }
+.detailSection h3 { margin-bottom: 6px; color: var(--cdf-ink-muted); font-size: 0.75rem; letter-spacing: 0.07em; text-transform: uppercase; }
+.detailClaim { display: grid; gap: 4px; padding: 6px 0; }
+.detailClaim + .detailClaim { border-top: 1px dashed var(--cdf-line); }
+.detailValue { font-size: 1rem; font-weight: 600; font-variant-numeric: tabular-nums; }
+.record { display: grid; grid-template-columns: 92px minmax(0, 1fr); gap: 3px 8px; margin: 4px 0; font-size: 0.8125rem; }
+.record dt { color: var(--cdf-ink-muted); }
+.record dd { min-width: 0; overflow-wrap: anywhere; }
+.qualifier span, .uncertainty span { margin-right: 4px; font-style: normal; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: var(--cdf-ink-muted); }
+
+/* Agreement view */
+.agreement { display: grid; gap: 10px; padding: 12px; }
+.agreement > .plotGroups { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); }
+.plotGroup { display: grid; gap: 6px; }
+.plotGroup h3 { font-size: 1rem; }
+.plotGroup h3 small { color: var(--cdf-ink-muted); font-weight: 400; }
+.plotCanvas { width: min(100%, 420px); aspect-ratio: 1 / 1; border: 1px solid var(--cdf-line); border-radius: var(--cdf-radius-1); }
+.plotTable summary, .excluded summary { cursor: pointer; color: var(--cdf-accent); font-size: 0.8125rem; }
+.plotTable table { width: 100%; margin-top: 6px; border-collapse: collapse; font-size: 0.8125rem; }
+.plotTable th, .plotTable td { padding: 4px 8px; border-bottom: 1px solid var(--cdf-panel-strong); text-align: left; font-weight: 400; }
+.plotTable thead th { color: var(--cdf-ink-muted); font-weight: 700; font-size: 0.75rem; }
+.plotTable tbody tr { cursor: pointer; }
+.plotTable tbody tr[data-selected="true"] { background: var(--cdf-accent-soft); }
+.excluded ul { margin: 6px 0 0; padding: 0; list-style: none; display: grid; gap: 3px; font-size: 0.8125rem; color: var(--cdf-ink-muted); }
+.excluded strong { color: var(--cdf-ink); margin-right: 6px; }
+
+/* Shared Claims classes used on this page, held to the same minimum text size. */
+.page :global(.claim-authority), .page :global(.claim-inactive-tag) { font-size: 0.75rem; }
+.page :global(.claims-toolbar label) { font-size: 0.75rem; }
+.page :global(.claims-chips), .page :global(.claims-hidden-selection) { font-size: 0.8125rem; }
+.page :global(.claim-fields dt), .page :global(.claim-fields dd), .page :global(.claim-unit) { font-size: 0.8125rem; }
+.page :global(.claims-eyebrow) { font-size: 0.75rem !important; }
+.inspector small { font-size: 0.75rem; }

@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "benchmark_id": "retrieval-policy-dev-v1",
+  "freeze_commit": "ebffedacffee8f280f1b189c314668afdf32fc14",
+  "recorded_at": "2026-09-24",
+  "benchmark_status": "FROZEN_VALID",
+  "dev_status": "VALID_FOR_POLICY_DEVELOPMENT",
+  "blind_evaluation_status": "CONTAMINATED_FOR_BLIND_EVAL",
+  "affected_partition": "HOLDOUT",
+  "allowed_use": "NON_BLIND_DIAGNOSTICS_ONLY",
+  "final_blind_certification_allowed": false,
+  "contamination_reason": "One holdout query plaintext was accidentally exposed during a broad source search before model scoring.",
+  "holdout_judgments_seen": false,
+  "holdout_target_chunks_inspected_for_tuning": false,
+  "retrieval_scoring_before_contamination": false,
+  "holdout_rankings_seen": false,
+  "holdout_metrics_seen": false,
+  "policy_selected_before_contamination": false,
+  "abstention_tuned_before_contamination": false,
+  "model_evaluation_ran": false,
+  "files_modified_during_aborted_attempt": false,
+  "counts": {
+    "corpus": {"documents": 6, "chunks": 342},
+    "qrels": {"total": 101, "answerable": 71, "no_answer": 30},
+    "dev": {"total": 71, "answerable": 50, "no_answer": 21},
+    "old_holdout": {"total": 30, "answerable": 21, "no_answer": 9}
+  },
+  "frozen_qrels_sha256": "9cb8b50648cedf9a7fd702a4ddf7224280d233aacdb56817b845638023edc2f7",
+  "split_sha256": "161443e1c6d5982645f56655181477b83af7da50d1e61f686100ff4bad6c9758",
+  "corpus_manifest_sha256": "1f9bd97fddd758463cfdb0814713a3d3673e8e9ab67ede4abdc52663be2503bc",
+  "chunk_inventory_sha256": "0cced278caafbda97b1b22d8a499a6aaa1a73c17ab9e2ef700425524eebea94e",
+  "frozen_file_sha256": {
+    "retrieval-policy-dev-v1-qrels-frozen.json": "5708b2ec5fd406fe5ed3710b90fac251207fd92f466ca9f675bbf598a4295442",
+    "retrieval-policy-dev-v1-split-frozen.json": "d24f34bce8e84b3c5f9d47903fb5b6a410aaece57c0d9383e681b3083b47d4c7",
+    "retrieval-policy-dev-v1-manifest.json": "1f9bd97fddd758463cfdb0814713a3d3673e8e9ab67ede4abdc52663be2503bc",
+    "retrieval-policy-dev-v1-dev-qrels.json": "08402888b2e1dfe3f5571745d109122ea522a244f8f565dc2e30c933ecacc537",
+    "retrieval-policy-dev-v1-holdout-qrels.json": "11c09e02733f5721b03cf3e3e0ac6e6ca09fa5c8a0d8436f6f3474bd54a7dcc4"
+  },
+  "replacement": {
+    "benchmark_id": "blind-retrieval-holdout-v2",
+    "status": "NOT_YET_AUTHORED",
+    "contract_schema_version": 1
+  }
+}

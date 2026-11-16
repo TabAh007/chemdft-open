@@ -1,0 +1,33 @@
+&CONTROL
+ calculation='scf', prefix='cr2o3', outdir='./out', pseudo_dir='/var/tmp/qe/sssp2/mix-sssp-pbe-eff-lib-v2/library',
+ verbosity='high', tprnfor=.false., tstress=.false.
+/
+&SYSTEM
+ ibrav=5, celldm(1)=10.12792407, celldm(4)=0.5721023413, nat=10, ntyp=3,
+ ecutwfc=45.0, ecutrho=540.0, nspin=2, nbnd=60,
+ occupations='smearing', smearing='fd', degauss=0.01,
+ starting_magnetization(1)=0.5, starting_magnetization(2)=-0.5, starting_magnetization(3)=0.0
+/
+&ELECTRONS
+ conv_thr=1.0d-8, mixing_beta=0.3, electron_maxstep=200
+/
+ATOMIC_SPECIES
+ Cr1 51.9961 Cr.us.pbe.z_14.uspp.gbrv.v1.5.upf
+ Cr2 51.9961 Cr.us.pbe.z_14.uspp.gbrv.v1.5.upf
+ O 15.999 O.paw.pbe.z_6.ld1.psl.v0.1.upf
+ATOMIC_POSITIONS crystal
+ Cr2 0.84749 0.84749 0.84749
+ Cr2 0.34749 0.34749 0.34749
+ Cr1 0.15251 0.15251 0.15251
+ Cr1 0.65251 0.65251 0.65251
+ O 0.44430 0.05570 0.75000
+ O 0.05570 0.75000 0.44430
+ O 0.55570 0.94430 0.25000
+ O 0.25000 0.55570 0.94430
+ O 0.94430 0.25000 0.55570
+ O 0.75000 0.44430 0.05570
+K_POINTS automatic
+ 3 3 3 0 0 0
+HUBBARD (ortho-atomic)
+ U Cr1-3d 3.7
+ U Cr2-3d 3.7

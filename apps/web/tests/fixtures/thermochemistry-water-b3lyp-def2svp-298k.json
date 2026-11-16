@@ -1,0 +1,222 @@
+{
+ "adapter_version": "1.0.0",
+ "basis": "def2-svp",
+ "calculation_id": "a68cf393-5be4-4974-903a-d06900c8afac",
+ "calculation_input_hash": "e8de95eba1715c705acb2960fe09d53a01b3a23bb2f974161ef79b7916cb1644",
+ "components": {
+  "electronic": {
+   "cp_hartree_per_k": 0.0,
+   "cv_hartree_per_k": 0.0,
+   "energy_hartree": -76.35831535099847,
+   "enthalpy_hartree": -76.35831535099847,
+   "entropy_hartree_per_k": 0.0,
+   "gibbs_hartree": -76.35831535099847
+  },
+  "rotational": {
+   "cp_hartree_per_k": 4.750215777928532e-06,
+   "cv_hartree_per_k": 4.750215777928532e-06,
+   "energy_hartree": 0.0014162768341893916,
+   "enthalpy_hartree": 0.0014162768341893916,
+   "entropy_hartree_per_k": 1.6758345029789076e-05,
+   "gibbs_hartree": -0.003580223736442221
+  },
+  "translational": {
+   "cp_hartree_per_k": 7.917026296547553e-06,
+   "cv_hartree_per_k": 4.750215777928532e-06,
+   "energy_hartree": 0.0014162768341893916,
+   "enthalpy_hartree": 0.0023604613903156525,
+   "entropy_hartree_per_k": 5.515294252088886e-05,
+   "gibbs_hartree": -0.01408338842228736
+  },
+  "vibrational": {
+   "cp_hartree_per_k": 7.290180443044063e-08,
+   "cv_hartree_per_k": 7.290180443044063e-08,
+   "energy_hartree": 0.021227932129596176,
+   "enthalpy_hartree": 0.021227932129596176,
+   "entropy_hartree_per_k": 1.0378505441950191e-08,
+   "gibbs_hartree": 0.021224837778198658
+  }
+ },
+ "conditions": {
+  "assumptions": [
+   "Ideal gas",
+   "Rigid rotor",
+   "Harmonic oscillator (pure RRHO, no quasi-RRHO correction)",
+   "Gas phase; no solvation; no 1 M solution standard state",
+   "Electronic degeneracy limited to spin multiplicity"
+  ],
+  "gas_model": "ideal-gas",
+  "pressure_atm": 1.0,
+  "pressure_pa": 101325.0,
+  "reference_pressure_pa": 101325.0,
+  "standard_state": "ideal-gas-at-specified-pressure",
+  "temperature_k": 298.15,
+  "thermo_model": "ideal-gas-rrho"
+ },
+ "constants": {
+  "atomic_mass_kg": 1.660539040427164e-27,
+  "avogadro_per_mol": 6.022140857e+23,
+  "bohr_m": 5.2917721092e-11,
+  "boltzmann_j_per_k": 1.38064852e-23,
+  "hartree_j": 4.359744644911914e-18,
+  "planck_j_s": 6.62607004e-34,
+  "source": "pyscf.data.nist",
+  "speed_of_light_m_per_s": 299792458.0,
+  "thermochemical_calorie_j": 4.184
+ },
+ "corrections": {
+  "includes_zpe": true,
+  "reference": "electronic_energy_hartree",
+  "thermal_correction_enthalpy_hartree": 0.02500467035409315,
+  "thermal_correction_gibbs_hartree": 0.003561225619449715,
+  "thermal_correction_internal_energy_hartree": 0.024060485797974707
+ },
+ "diagnostics": {
+  "imaginary_mode_count": 0,
+  "imaginary_mode_policy": "reject",
+  "low_frequency_entropy_hartree_per_k": 0.0,
+  "low_frequency_minus_ts_hartree": 0.0,
+  "low_frequency_mode_indices": [],
+  "low_frequency_policy": "warn-below-threshold-pure-rrho-no-correction",
+  "low_frequency_threshold_cm1": 100.0,
+  "lowest_real_frequency_cm1": 1638.766824211474,
+  "stationarity": {
+   "criterion_rms_hartree_per_bohr": 0.0003,
+   "gradient_norm_hartree_per_bohr": 5.653350983349829e-06,
+   "gradient_rms_hartree_per_bohr": 1.8844503277832766e-06,
+   "passed": true,
+   "source": "optimization-trajectory-final-step",
+   "trajectory_step_index": 3
+  },
+  "warnings": []
+ },
+ "energy_artifact": {
+  "artifact_id": "150df810-d037-4a56-9bfa-b99a21a67da2",
+  "project_id": "f39aefcf-a1cd-4606-8f03-f9b18eadb96d",
+  "sha256": "8a23b6ac5bcdf7ee52dfe3b9eac2942891f3dd69027660e21fe40ea4f316fdfb"
+ },
+ "energy_artifact_sha256": "8a23b6ac5bcdf7ee52dfe3b9eac2942891f3dd69027660e21fe40ea4f316fdfb",
+ "energy_source_field": "total_energy_hartree",
+ "energy_unit": "Eh",
+ "engine": "pyscf",
+ "engine_version": "2.14.0",
+ "entropy_unit": "Eh/K",
+ "frequencies_cm1": [
+  1638.766824211474,
+  3791.449151438813,
+  3886.5633479926423
+ ],
+ "frequency_calculation_id": "cbb76d8f-7656-4e7d-bfb4-770ac2931585",
+ "frequency_result_id": "c89b3a61-d79e-4d41-be5c-da8677a48bc5",
+ "frequency_result_sha256": "d644947d2ec1c69170413952038b4574b72a71cf9d1b5724d8881ea9351b27c7",
+ "geometry_hash": "d7deab707ed9906ef694951cfcb08e319b60577623d485f91a37b4da09b79b4d",
+ "input_structure_hash": "e2188cf8ce6127e37a0f77644fc9ac872733faacb383d0ae563285efd26bfa87",
+ "input_structure_id": "b8de172f-886e-401a-8f71-e6a6f359f2ac",
+ "input_structure_version_id": "3bf481b5-4d38-4e93-bc0f-8a9afd50d14c",
+ "method": "b3lyp",
+ "molecule": {
+  "atom_identities": [
+   "O",
+   "H",
+   "H"
+  ],
+  "charge": 0,
+  "equilibrium_coordinates_angstrom": [
+   [
+    -0.008057058876404543,
+    9.122204939884336e-15,
+    -0.006268975949623479
+   ],
+   [
+    0.003942094106565064,
+    -1.16156685796677e-15,
+    0.9603639358774182
+   ],
+   [
+    0.9307342922848365,
+    1.1700083323215617e-14,
+    -0.23690440383013447
+   ]
+  ],
+  "mass_convention": "pyscf-isotope-average",
+  "multiplicity": 1,
+  "rotational_constants_ghz": [
+   781.0007449807795,
+   437.4185149087167,
+   280.3831138085239
+  ],
+  "rotor_type": "NONLINEAR",
+  "total_mass_amu": 18.015
+ },
+ "optimization_calculation_id": "a9f38a35-0332-4940-acdb-daba6c0074ef",
+ "optimization_result_id": "dc234052-6543-4fb6-a967-fac901dd2d52",
+ "optimization_result_sha256": "90ad7b0e80b7b27319755d7133ce2a54825bce2b162fbfe61fd02102c4e61236",
+ "parser_version": "1.0.0",
+ "payload_schema": "chemdft.thermochemistry",
+ "payload_schema_version": "1.0.0",
+ "producer": "local.pyscf.worker",
+ "result_sha256": "864cb15e01d902a96d2f14124ec85b203630ddfc680a705b2c785ec52fa4d81e",
+ "schema_version": "1.0.0",
+ "symmetry": {
+  "algorithm": "chemdft.proper-rotation-permutation-count",
+  "algorithm_version": "1.0.0",
+  "method": "proper-rotation-count",
+  "override_reason": null,
+  "pyscf_cross_check_agrees": true,
+  "pyscf_point_group_sigma": 2,
+  "rotational_symmetry_number": 2,
+  "source": "chemdft-proper-rotation-count",
+  "stability_tolerances_angstrom": [
+   0.01,
+   0.02,
+   0.04
+  ],
+  "tolerance_angstrom": 0.02
+ },
+ "task_type": "THERMOCHEMISTRY",
+ "thermo_api": "pyscf.hessian.thermo.thermo",
+ "thermodynamics": {
+  "cp_hartree_per_k": 1.2740143878906526e-05,
+  "cv_hartree_per_k": 9.573333360287504e-06,
+  "e0_plus_zpe_hartree": -76.33709016593656,
+  "electronic_energy_hartree": -76.35831535099847,
+  "enthalpy_hartree": -76.33331068064437,
+  "entropy_hartree_per_k": 7.192166605611989e-05,
+  "gibbs_free_energy_hartree": -76.35475412537902,
+  "internal_energy_hartree": -76.33425486520049,
+  "zpe_hartree": 0.021225185061904243
+ },
+ "validator_version": "1.0.0",
+ "vibrational_modes": [
+  {
+   "cv_hartree_per_k": 7.28818281793726e-08,
+   "entropy_hartree_per_k": 1.0377365764177896e-08,
+   "frequency_cm1": 1638.766824211474,
+   "index": 0,
+   "low_frequency": false,
+   "thermal_energy_hartree": 2.7467453455923733e-06,
+   "vibrational_temperature_k": 2357.8205948796412,
+   "zpe_hartree": 0.0037333855304407027
+  },
+  {
+   "cv_hartree_per_k": 1.2004785291371326e-11,
+   "entropy_hartree_per_k": 6.919920542113429e-13,
+   "frequency_cm1": 3791.449151438813,
+   "index": 1,
+   "low_frequency": false,
+   "thermal_energy_hartree": 1.9562537621789426e-10,
+   "vibrational_temperature_k": 5455.051177279491,
+   "zpe_hartree": 0.008637556723906883
+  },
+  {
+   "cv_hartree_per_k": 7.971465776670963e-12,
+   "entropy_hartree_per_k": 4.476857180834177e-13,
+   "frequency_cm1": 3886.5633479926423,
+   "index": 2,
+   "low_frequency": false,
+   "thermal_energy_hartree": 1.26720963384498e-10,
+   "vibrational_temperature_k": 5591.89932930866,
+   "zpe_hartree": 0.008854242807556657
+  }
+ ]
+}

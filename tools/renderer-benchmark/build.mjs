@@ -1,0 +1,11 @@
+import { build } from 'esbuild';
+import { mkdir, copyFile, writeFile } from 'node:fs/promises';
+import { gzipSync } from 'node:zlib';
+await mkdir('dist', { recursive: true });
+const result = await build({ entryPoints: ['src/benchmark.ts'], bundle: true, outdir: 'dist', format: 'esm', splitting: true, minify: true, metafile: true });
+await copyFile('index.html', 'dist/index.html');
+await copyFile('data/fields.json', 'dist/fields.json');
+const { readFile } = await import('node:fs/promises');
+const outputs = {};
+for (const [path, info] of Object.entries(result.metafile.outputs)) outputs[path] = { bytes: info.bytes, gzipBytes: gzipSync(await readFile(path)).length };
+await writeFile('../../output/foundation-ux/benchmark-bundles.json', JSON.stringify(outputs,null,2));

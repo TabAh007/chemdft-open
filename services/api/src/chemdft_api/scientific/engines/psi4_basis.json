@@ -1,0 +1,406 @@
+{
+  "def2-svp": {
+    "C": {
+      "ecp_electrons": 0,
+      "ecp_potentials": null,
+      "electron_shells": [
+        {
+          "angular_momentum": [
+            0
+          ],
+          "coefficients": [
+            [
+              0.8208956694109577,
+              1.4766449899186853,
+              2.1526124054156375,
+              2.108172246190159,
+              0.829099993344712
+            ]
+          ],
+          "exponents": [
+            1238.4016938,
+            186.29004992,
+            42.251176346,
+            11.676557932,
+            3.5930506482
+          ],
+          "harmonic_type": "spherical"
+        },
+        {
+          "angular_momentum": [
+            0
+          ],
+          "coefficients": [
+            [
+              0.36011833514154046
+            ]
+          ],
+          "exponents": [
+            0.40245147363
+          ],
+          "harmonic_type": "spherical"
+        },
+        {
+          "angular_momentum": [
+            0
+          ],
+          "coefficients": [
+            [
+              0.15510270516779276
+            ]
+          ],
+          "exponents": [
+            0.13090182668
+          ],
+          "harmonic_type": "spherical"
+        },
+        {
+          "angular_momentum": [
+            1
+          ],
+          "coefficients": [
+            [
+              1.3467645150960534,
+              1.0678070930713621,
+              0.5108735713891807
+            ]
+          ],
+          "exponents": [
+            9.4680970621,
+            2.0103545142,
+            0.54771004707
+          ],
+          "harmonic_type": "spherical"
+        },
+        {
+          "angular_momentum": [
+            1
+          ],
+          "coefficients": [
+            [
+              0.13604719769902957
+            ]
+          ],
+          "exponents": [
+            0.15268613795
+          ],
+          "harmonic_type": "spherical"
+        },
+        {
+          "angular_momentum": [
+            2
+          ],
+          "coefficients": [
+            [
+              1.1138249280646129
+            ]
+          ],
+          "exponents": [
+            0.8
+          ],
+          "harmonic_type": "spherical"
+        }
+      ]
+    },
+    "H": {
+      "ecp_electrons": 0,
+      "ecp_potentials": null,
+      "electron_shells": [
+        {
+          "angular_momentum": [
+            0
+          ],
+          "coefficients": [
+            [
+              0.16349038092266,
+              0.2773515509579712,
+              0.31575014520546046
+            ]
+          ],
+          "exponents": [
+            13.010701,
+            1.9622572,
+            0.44453796
+          ],
+          "harmonic_type": "spherical"
+        },
+        {
+          "angular_momentum": [
+            0
+          ],
+          "coefficients": [
+            [
+              0.1470772262171976
+            ]
+          ],
+          "exponents": [
+            0.12194962
+          ],
+          "harmonic_type": "spherical"
+        },
+        {
+          "angular_momentum": [
+            1
+          ],
+          "coefficients": [
+            [
+              1.0784563492462298
+            ]
+          ],
+          "exponents": [
+            0.8
+          ],
+          "harmonic_type": "spherical"
+        }
+      ]
+    },
+    "O": {
+      "ecp_electrons": 0,
+      "ecp_potentials": null,
+      "electron_shells": [
+        {
+          "angular_momentum": [
+            0
+          ],
+          "coefficients": [
+            [
+              -1.2615859724901695,
+              -2.2748500427418206,
+              -3.3479623286497575,
+              -3.3299980530970594,
+              -1.3203828288991972
+            ]
+          ],
+          "exponents": [
+            2266.1767785,
+            340.87010191,
+            77.363135167,
+            21.47964494,
+            6.6589433124
+          ],
+          "harmonic_type": "spherical"
+        },
+        {
+          "angular_momentum": [
+            0
+          ],
+          "coefficients": [
+            [
+              0.6083832300681314
+            ]
+          ],
+          "exponents": [
+            0.80975975668
+          ],
+          "harmonic_type": "spherical"
+        },
+        {
+          "angular_momentum": [
+            0
+          ],
+          "coefficients": [
+            [
+              0.25598119114643764
+            ]
+          ],
+          "exponents": [
+            0.25530772234
+          ],
+          "harmonic_type": "spherical"
+        },
+        {
+          "angular_momentum": [
+            1
+          ],
+          "coefficients": [
+            [
+              3.2460107641875786,
+              2.573495917266126,
+              1.1208372892488978
+            ]
+          ],
+          "exponents": [
+            17.721504317,
+            3.863550544,
+            1.0480920883
+          ],
+          "harmonic_type": "spherical"
+        },
+        {
+          "angular_momentum": [
+            1
+          ],
+          "coefficients": [
+            [
+              0.2856886380660861
+            ]
+          ],
+          "exponents": [
+            0.27641544411
+          ],
+          "harmonic_type": "spherical"
+        },
+        {
+          "angular_momentum": [
+            2
+          ],
+          "coefficients": [
+            [
+              2.2645224825069943
+            ]
+          ],
+          "exponents": [
+            1.2
+          ],
+          "harmonic_type": "spherical"
+        }
+      ]
+    }
+  },
+  "sto-3g": {
+    "C": {
+      "ecp_electrons": 0,
+      "ecp_potentials": null,
+      "electron_shells": [
+        {
+          "angular_momentum": [
+            0
+          ],
+          "coefficients": [
+            [
+              2.7078144539410984,
+              2.6188801560779353,
+              0.816190576306741
+            ]
+          ],
+          "exponents": [
+            71.616837,
+            13.045096,
+            3.5305122
+          ],
+          "harmonic_type": "spherical"
+        },
+        {
+          "angular_momentum": [
+            0
+          ],
+          "coefficients": [
+            [
+              -0.16001718998576922,
+              0.2140359175649541,
+              0.16153608924540666
+            ]
+          ],
+          "exponents": [
+            2.9412494,
+            0.6834831,
+            0.2222899
+          ],
+          "harmonic_type": "spherical"
+        },
+        {
+          "angular_momentum": [
+            1
+          ],
+          "coefficients": [
+            [
+              0.856044506884294,
+              0.5383037696069918,
+              0.0852763520684086
+            ]
+          ],
+          "exponents": [
+            2.9412494,
+            0.6834831,
+            0.2222899
+          ],
+          "harmonic_type": "spherical"
+        }
+      ]
+    },
+    "H": {
+      "ecp_electrons": 0,
+      "ecp_potentials": null,
+      "electron_shells": [
+        {
+          "angular_momentum": [
+            0
+          ],
+          "coefficients": [
+            [
+              0.2769343609526476,
+              0.2678388517525271,
+              0.0834736696169253
+            ]
+          ],
+          "exponents": [
+            3.42525091,
+            0.62391373,
+            0.1688554
+          ],
+          "harmonic_type": "spherical"
+        }
+      ]
+    },
+    "O": {
+      "ecp_electrons": 0,
+      "ecp_potentials": null,
+      "electron_shells": [
+        {
+          "angular_momentum": [
+            0
+          ],
+          "coefficients": [
+            [
+              4.25194328294372,
+              4.112293718431183,
+              1.2816225325813408
+            ]
+          ],
+          "exponents": [
+            130.70932,
+            23.808861,
+            6.4436083
+          ],
+          "harmonic_type": "spherical"
+        },
+        {
+          "angular_momentum": [
+            0
+          ],
+          "coefficients": [
+            [
+              -0.2394130029944771,
+              0.32023422913389127,
+              0.24168557075321612
+            ]
+          ],
+          "exponents": [
+            5.0331513,
+            1.1695961,
+            0.380389
+          ],
+          "harmonic_type": "spherical"
+        },
+        {
+          "angular_momentum": [
+            1
+          ],
+          "coefficients": [
+            [
+              1.6754501181141905,
+              1.0535680079948457,
+              0.16690289807574885
+            ]
+          ],
+          "exponents": [
+            5.0331513,
+            1.1695961,
+            0.380389
+          ],
+          "harmonic_type": "spherical"
+        }
+      ]
+    }
+  }
+}

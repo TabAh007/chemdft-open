@@ -1,0 +1,20 @@
+{
+  "note": "Shared by apps/web/tests/electronic-state.test.ts and services/api/tests/test_xyz_electronic_state.py. Atoms are atomic numbers. Passing parity is necessary, never sufficient.",
+  "cases": [
+    { "label": "H radical doublet", "z": [1], "charge": 0, "multiplicity": 2, "ok": true },
+    { "label": "H singlet: odd electrons", "z": [1], "charge": 0, "multiplicity": 1, "ok": false },
+    { "label": "H2 singlet", "z": [1, 1], "charge": 0, "multiplicity": 1, "ok": true },
+    { "label": "H2 doublet", "z": [1, 1], "charge": 0, "multiplicity": 2, "ok": false },
+    { "label": "H2 triplet", "z": [1, 1], "charge": 0, "multiplicity": 3, "ok": true },
+    { "label": "H triplet: more unpaired than electrons", "z": [1], "charge": 0, "multiplicity": 3, "ok": false },
+    { "label": "water neutral singlet", "z": [8, 1, 1], "charge": 0, "multiplicity": 1, "ok": true },
+    { "label": "F8: water +1 singlet (9 electrons)", "z": [8, 1, 1], "charge": 1, "multiplicity": 1, "ok": false },
+    { "label": "water +1 doublet", "z": [8, 1, 1], "charge": 1, "multiplicity": 2, "ok": true },
+    { "label": "NH4+ closed shell", "z": [7, 1, 1, 1, 1], "charge": 1, "multiplicity": 1, "ok": true },
+    { "label": "OH- closed shell", "z": [8, 1], "charge": -1, "multiplicity": 1, "ok": true },
+    { "label": "O2 singlet passes parity", "z": [8, 8], "charge": 0, "multiplicity": 1, "ok": true },
+    { "label": "O2 doublet", "z": [8, 8], "charge": 0, "multiplicity": 2, "ok": false },
+    { "label": "bare proton: no electrons", "z": [1], "charge": 1, "multiplicity": 1, "ok": false },
+    { "label": "multiplicity zero", "z": [1, 1], "charge": 0, "multiplicity": 0, "ok": false }
+  ]
+}

@@ -1,0 +1,9 @@
+Third-party components kept in this repository under their own licences.
+
+This identifier marks paths that hold code, data or build inputs belonging to another project. It is not a licence
+grant by ChemDFT. Each such path keeps the licence text of its own project alongside it (for example
+environments/crest-3.0.2-ewinfix-a1/licenses/COPYING and COPYING.LESSER for CREST, and
+services/api/src/chemdft_api/assets/ for 3Dmol.js, which is BSD-3-Clause).
+
+ChemDFT does not relicense these files. Redistributing them means obeying the upstream licence, including any source-offer
+or notice obligation. See docs/implementation/THIRD_PARTY_LICENCE_AUDIT.md.

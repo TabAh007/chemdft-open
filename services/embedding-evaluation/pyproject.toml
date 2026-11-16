@@ -1,0 +1,40 @@
+[project]
+name = "chemdft-embedding-evaluation"
+version = "0.1.0"
+license = {text = "Apache-2.0"}
+description = "Isolated ChemDFT document and molecular embedding evaluation harness"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+  "numpy==2.3.3",
+  "pandas==2.3.3",
+  "rdkit==2025.9.4",
+  "sentence-transformers==6.1.0",
+  "transformers==5.17.0",
+]
+
+[project.optional-dependencies]
+smi-ted = ["pytorch-fast-transformers==0.4.0"]
+
+[dependency-groups]
+dev = ["pytest==8.4.2", "ruff==0.14.0"]
+
+[build-system]
+requires = ["hatchling==1.27.0"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/embedding_eval"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.uv]
+no-build-isolation-package = ["pytorch-fast-transformers"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.format]
+quote-style = "double"

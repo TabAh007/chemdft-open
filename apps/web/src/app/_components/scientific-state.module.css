@@ -1,0 +1,90 @@
+.strip {
+  border: 1px solid var(--cdf-line);
+  border-left-width: 3px;
+  border-radius: var(--cdf-radius-2);
+  background: var(--cdf-surface);
+  padding: 8px 12px;
+  margin: 0 0 12px;
+  font-size: 12px;
+  color: var(--cdf-ink);
+}
+.current { border-left-color: var(--cdf-success); }
+.historical { border-left-color: var(--cdf-danger); background: #fdf3f3; }
+.uncertain { border-left-color: var(--cdf-warning); background: #fdf8ee; }
+
+.head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; }
+.headline { font-weight: 600; font-size: 13px; letter-spacing: 0.01em; }
+.axes { display: flex; flex-wrap: wrap; gap: 4px 16px; margin: 6px 0 0; padding: 0; list-style: none; }
+.axis { display: inline-flex; align-items: center; gap: 6px; }
+.axisName {
+  color: var(--cdf-ink-muted);
+  font-size: 10.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.notes { margin: 6px 0 0; padding-left: 16px; color: var(--cdf-ink-muted); line-height: 1.45; }
+.notes li + li { margin-top: 2px; }
+.stored { margin: 6px 0 0; color: var(--cdf-ink-muted); font-family: var(--cdf-font-data); font-size: 11px; }
+.actions { margin-left: auto; display: inline-flex; gap: 8px; align-items: center; }
+.linkButton {
+  appearance: none;
+  background: none;
+  border: 0;
+  padding: 0;
+  color: var(--cdf-accent);
+  font: inherit;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.linkButton:hover { color: var(--cdf-accent-hover); }
+.linkButton:focus-visible { outline: 2px solid var(--cdf-focus); outline-offset: 2px; }
+
+.inspector { margin-top: 10px; border-top: 1px solid var(--cdf-line); padding-top: 8px; }
+.inspector h4 { margin: 10px 0 4px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--cdf-ink-muted); }
+.inspector h4:first-child { margin-top: 0; }
+.kv { display: grid; grid-template-columns: minmax(150px, 220px) 1fr; gap: 2px 12px; margin: 0; }
+.kv dt { color: var(--cdf-ink-muted); }
+.kv dd { margin: 0; font-family: var(--cdf-font-data); font-size: 11px; overflow-wrap: anywhere; }
+@media (max-width: 640px) {
+  .kv { grid-template-columns: minmax(0, 1fr); gap: 4px; }
+  .kv dt:not(:first-child) { margin-top: 8px; }
+  .tableScroll .table { min-width: 35rem; }
+  .tableScroll .table th { white-space: nowrap; overflow-wrap: normal; }
+}
+.tableScroll { max-width: 100%; min-width: 0; overflow: auto; }
+.tableScroll:focus-visible { outline: 2px solid var(--cdf-focus); outline-offset: 2px; }
+.table { width: 100%; border-collapse: collapse; font-size: 11.5px; }
+.table th { text-align: left; font-weight: 600; color: var(--cdf-ink-muted); border-bottom: 1px solid var(--cdf-line); padding: 3px 8px 3px 0; }
+.table td { padding: 3px 8px 3px 0; vertical-align: top; border-bottom: 1px solid var(--cdf-panel); }
+.mono { font-family: var(--cdf-font-data); font-size: 11px; overflow-wrap: anywhere; }
+.muted { color: var(--cdf-ink-muted); }
+.warn { color: var(--cdf-warning); }
+
+.exportList { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.exportRow { border: 1px solid var(--cdf-line); border-radius: var(--cdf-radius-2); padding: 6px 8px; background: var(--cdf-panel); }
+.exportName { font-weight: 600; }
+.exportActions { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
+.exportButton {
+  appearance: none;
+  border: 1px solid var(--cdf-line-strong, var(--cdf-line));
+  background: var(--cdf-surface);
+  color: var(--cdf-ink);
+  border-radius: var(--cdf-radius-2);
+  font: inherit;
+  padding: 2px 8px;
+  cursor: pointer;
+}
+.exportButton:hover:not(:disabled) { border-color: var(--cdf-accent); color: var(--cdf-accent); }
+.exportButton:disabled { opacity: 0.6; cursor: progress; }
+.exportButton:focus-visible { outline: 2px solid var(--cdf-focus); outline-offset: 2px; }
+
+/* RW-3.2: exports grouped by deliverable; the archive's class is visible text, not a tooltip. */
+.exportGroup { margin-top: 8px; }
+.exportGroup + .exportGroup { padding-top: 6px; border-top: 1px solid var(--cdf-line); }
+.exportGroupTitle { margin: 0; color: var(--cdf-ink); font-size: 12px; font-weight: 650; }
+.exportGroup > p { margin: 2px 0 6px; }
+.archiveClass { margin: 4px 0 0; font-size: 11px; line-height: 1.45; overflow-wrap: anywhere; }
+.archiveReproducible { color: #1f5f3a; }
+.archiveProvenance { color: #7a4a00; }

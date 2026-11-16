@@ -1,0 +1,4 @@
+$opt
+ engine=rf
+ maxcycle=100
+$end

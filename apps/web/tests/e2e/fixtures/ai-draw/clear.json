@@ -1,0 +1,41 @@
+{
+ "schema_version": "1.0.0",
+ "status": "OK",
+ "label": "AI-drafted \u00b7 schematic",
+ "reply": "Cleared the drawing.",
+ "steps": [
+  {
+   "index": 0,
+   "op": {
+    "op": "clear_all"
+   },
+   "ok": true,
+   "error": null,
+   "suggestion": null,
+   "molfile": "\n     RDKit          2D\n\n  0  0  0  0  0  0  0  0  0  0999 V2000\nM  END\n",
+   "smiles": "",
+   "formula": "",
+   "new_atom_numbers": [],
+   "atom_count": 0,
+   "description": "Clear the drawing"
+  }
+ ],
+ "final": {
+  "molfile": "\n     RDKit          2D\n\n  0  0  0  0  0  0  0  0  0  0999 V2000\nM  END\n",
+  "smiles": "",
+  "formula": "",
+  "atom_count": 0
+ },
+ "clarify": null,
+ "reference_check": null,
+ "proposals": [],
+ "warnings": [],
+ "info": [],
+ "error_code": null,
+ "error": null,
+ "repaired": false,
+ "run_id": null,
+ "model": "nemotron-3.5-lightning-30b-a3b",
+ "input_tokens": 412,
+ "output_tokens": 64
+}

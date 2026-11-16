@@ -1,0 +1,6 @@
+# The repository ignores image files globally; these synthetic CC0 fixtures are
+# source data for this standalone benchmark and are safe to version.
+!data/
+!data/v1/
+!data/v1/images/
+!data/v1/images/*.png

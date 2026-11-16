@@ -1,0 +1,119 @@
+{
+  "_comment": "Golden record shared by apps/web/tests/citation-parity.test.ts and services/api/tests/test_citation_block.py. The expected text is what the web Cite panel builds. DOI values here are FAKE test strings, never a real DOI.",
+  "calculations": [
+    {
+      "name": "full record, no software DOI",
+      "facts": {
+        "calculationId": "11111111-2222-4333-8444-555555555555",
+        "jobId": "job-1",
+        "year": 2026,
+        "task": "Single-point energy",
+        "method": "HF",
+        "basis": "STO-3G",
+        "inputSha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "engineName": "pyscf",
+        "engineVersion": "2.14.0",
+        "appVersion": "0.0.28",
+        "softwareDoi": null
+      },
+      "apa": "ChemDFT. (2026). ChemDFT calculation 11111111-2222-4333-8444-555555555555: single-point energy at HF/STO-3G [Computational chemistry calculation record]. ChemDFT (Version 0.0.28). https://chemdft.com (Calculation 11111111-2222-4333-8444-555555555555; job job-1; input SHA-256 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa)",
+      "bibtex": "@misc{chemdft_calculation_111111112222,\n  organization = {ChemDFT},\n  title = {ChemDFT calculation 11111111-2222-4333-8444-555555555555: single-point energy at HF/STO-3G},\n  year = {2026},\n  howpublished = {ChemDFT 0.0.28, https://chemdft.com},\n  note = {Calculation 11111111-2222-4333-8444-555555555555; job job-1; input SHA-256 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa; pyscf 2.14.0; ChemDFT 0.0.28}\n}"
+    },
+    {
+      "name": "minimal record: no job, no engine, no basis, no year",
+      "facts": {
+        "calculationId": "11111111-2222-4333-8444-555555555555",
+        "jobId": null,
+        "year": null,
+        "task": "Single-point energy",
+        "method": "HF",
+        "basis": null,
+        "inputSha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "engineName": null,
+        "engineVersion": null,
+        "appVersion": "0.0.28",
+        "softwareDoi": null
+      },
+      "apa": "ChemDFT. (n.d.). ChemDFT calculation 11111111-2222-4333-8444-555555555555: single-point energy at HF [Computational chemistry calculation record]. ChemDFT (Version 0.0.28). https://chemdft.com (Calculation 11111111-2222-4333-8444-555555555555; input SHA-256 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa; ChemDFT 0.0.28)",
+      "bibtex": "@misc{chemdft_calculation_111111112222,\n  organization = {ChemDFT},\n  title = {ChemDFT calculation 11111111-2222-4333-8444-555555555555: single-point energy at HF},\n  howpublished = {ChemDFT 0.0.28, https://chemdft.com},\n  note = {Calculation 11111111-2222-4333-8444-555555555555; input SHA-256 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa; ChemDFT 0.0.28}\n}"
+    },
+    {
+      "name": "characters BibTeX must escape",
+      "facts": {
+        "calculationId": "11111111-2222-4333-8444-555555555555",
+        "jobId": "job-1",
+        "year": 2026,
+        "task": "Geometry optimization",
+        "method": "wB97X_D",
+        "basis": "def2-SVP&aug%",
+        "inputSha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "engineName": "pyscf",
+        "engineVersion": "2.14.0",
+        "appVersion": "0.0.28",
+        "softwareDoi": null
+      },
+      "apa": "ChemDFT. (2026). ChemDFT calculation 11111111-2222-4333-8444-555555555555: geometry optimization at wB97X_D/def2-SVP&aug% [Computational chemistry calculation record]. ChemDFT (Version 0.0.28). https://chemdft.com (Calculation 11111111-2222-4333-8444-555555555555; job job-1; input SHA-256 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa)",
+      "bibtex": "@misc{chemdft_calculation_111111112222,\n  organization = {ChemDFT},\n  title = {ChemDFT calculation 11111111-2222-4333-8444-555555555555: geometry optimization at wB97X\\_D/def2-SVP\\&aug\\%},\n  year = {2026},\n  howpublished = {ChemDFT 0.0.28, https://chemdft.com},\n  note = {Calculation 11111111-2222-4333-8444-555555555555; job job-1; input SHA-256 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa; pyscf 2.14.0; ChemDFT 0.0.28}\n}"
+    },
+    {
+      "name": "software DOI set",
+      "facts": {
+        "calculationId": "11111111-2222-4333-8444-555555555555",
+        "jobId": "job-1",
+        "year": 2026,
+        "task": "Single-point energy",
+        "method": "HF",
+        "basis": "STO-3G",
+        "inputSha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "engineName": "pyscf",
+        "engineVersion": "2.14.0",
+        "appVersion": "0.0.28",
+        "softwareDoi": "10.5281/zenodo.0000000"
+      },
+      "apa": "ChemDFT. (2026). ChemDFT calculation 11111111-2222-4333-8444-555555555555: single-point energy at HF/STO-3G [Computational chemistry calculation record]. ChemDFT (Version 0.0.28). https://chemdft.com (Calculation 11111111-2222-4333-8444-555555555555; job job-1; input SHA-256 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa)",
+      "bibtex": "@misc{chemdft_calculation_111111112222,\n  organization = {ChemDFT},\n  title = {ChemDFT calculation 11111111-2222-4333-8444-555555555555: single-point energy at HF/STO-3G},\n  year = {2026},\n  howpublished = {ChemDFT 0.0.28, https://chemdft.com},\n  note = {Calculation 11111111-2222-4333-8444-555555555555; job job-1; input SHA-256 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa; pyscf 2.14.0; ChemDFT 0.0.28; software DOI https://doi.org/10.5281/zenodo.0000000}\n}"
+    }
+  ],
+  "software": [
+    {
+      "name": "no DOI",
+      "meta": {
+        "title": "ChemDFT",
+        "version": "0.0.28",
+        "date_released": "2026-11-09",
+        "doi": null,
+        "repository_code": "https://github.com/TabAh007/ChemDFT",
+        "url": "https://chemdft.com",
+        "authors": [
+          {
+            "given_names": "Tabriz",
+            "family_names": "Ahmadli",
+            "orcid": "https://orcid.org/0009-0006-0198-5253"
+          }
+        ]
+      },
+      "apa": "Ahmadli, Tabriz. (2026). ChemDFT (Version 0.0.28) [Computer software]. https://chemdft.com (ORCID: https://orcid.org/0009-0006-0198-5253)",
+      "bibtex": "@software{chemdft,\n  author = {Ahmadli, Tabriz},\n  title = {ChemDFT},\n  version = {0.0.28},\n  year = {2026},\n  url = {https://chemdft.com},\n  note = {ORCID: https://orcid.org/0009-0006-0198-5253}\n}"
+    },
+    {
+      "name": "DOI set",
+      "meta": {
+        "title": "ChemDFT",
+        "version": "0.0.28",
+        "date_released": "2026-11-09",
+        "doi": "10.5281/zenodo.0000000",
+        "repository_code": "https://github.com/TabAh007/ChemDFT",
+        "url": "https://chemdft.com",
+        "authors": [
+          {
+            "given_names": "Tabriz",
+            "family_names": "Ahmadli",
+            "orcid": "https://orcid.org/0009-0006-0198-5253"
+          }
+        ]
+      },
+      "apa": "Ahmadli, Tabriz. (2026). ChemDFT (Version 0.0.28) [Computer software]. https://chemdft.com https://doi.org/10.5281/zenodo.0000000 (ORCID: https://orcid.org/0009-0006-0198-5253)",
+      "bibtex": "@software{chemdft,\n  author = {Ahmadli, Tabriz},\n  title = {ChemDFT},\n  version = {0.0.28},\n  year = {2026},\n  doi = {10.5281/zenodo.0000000},\n  url = {https://chemdft.com},\n  note = {ORCID: https://orcid.org/0009-0006-0198-5253}\n}"
+    }
+  ]
+}

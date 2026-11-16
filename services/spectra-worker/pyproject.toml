@@ -1,0 +1,25 @@
+[project]
+name = "chemdft-spectra-worker"
+version = "0.1.0"
+license = {text = "Apache-2.0"}
+description = "Isolated, resource-limited environment for experimental spectrum parsing, transforms and comparison"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "numpy>=2.0,<3",
+  "scipy>=1.13,<2",
+  # Baseline correction (arPLS, SNIP, imodpoly). BSD-3-Clause; runtime requires only numpy and scipy.
+  "pybaselines==1.2.1",
+]
+
+[dependency-groups]
+dev = [
+  "pytest==9.1.1",
+]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+pythonpath = ["src"]

@@ -1,0 +1,215 @@
+{
+  "benchmark": {
+    "id": "real-scientific-retrieval-v1",
+    "status": "FROZEN",
+    "query_count": 73,
+    "answerable_query_count": 69,
+    "no_answer_query_count": 4,
+    "document_count": 8,
+    "chunk_count": 349,
+    "chunker_version": "deterministic-scientific-v2",
+    "frozen_qrels_sha256": "a3943955b1c0fb163c1d2a4828bf417f8e13fa816b2c5c49c97c101b2e998d6d",
+    "corpus_manifest_sha256": "21e3a1fd05c88d764f30391e9c5b9870c30ddea7e705ad404218fb246c751f28",
+    "chunk_inventory_sha256": "a1b7541447ba6df2f30cc5bf630e37b114e6c7d9d17c6dd4550fcc8bb35d4d2c"
+  },
+  "runtime": {
+    "timestamp_utc": "2026-09-24T14:10:49.158928+00:00",
+    "git_commit": "086c76e1f0b6e6a3d6ceea14f3d8875a50316aef",
+    "evaluator_sha256": "b5286a0842904239180475199ca3d1b2ac28883fae6ad4d7cdf18a9d66e81b8c",
+    "python": "3.11.14 (main, Oct  9 2025, 16:16:55) [Clang 17.0.0 (clang-1700.0.13.3)]",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "hardware": "Apple M3",
+    "packages": {
+      "numpy": "2.3.3",
+      "sentence-transformers": "6.1.0",
+      "transformers": "5.17.0",
+      "torch": "2.14.0",
+      "huggingface-hub": "1.32.0"
+    },
+    "hf_home": "<local-path>/Library/Caches/ChemDFT/embedding-evaluation",
+    "offline": true
+  },
+  "configuration": {
+    "hybrid": "0.65 lexical + 0.35 cosine, current evaluation implementation",
+    "top_k": 5,
+    "exact_query_guardrail": false,
+    "bge_sparse_or_colbert": false,
+    "no_answer_threshold": 0.5,
+    "threshold_note": "Fixed exploratory threshold inherited from prior evaluation; not calibrated or tuned here.",
+    "ranking_repeats_for_latency": 5,
+    "input_text_path": "/tmp/chemdft-real-paper-v1-chunk-text.json",
+    "input_text_is_committed": false,
+    "input_text_sha256": "b05b22b33515976da7d93eed5a552787ac317b95a1d951c081409b7422b4e7c9"
+  },
+  "models": [
+    {
+      "name": "deterministic_hash_v1",
+      "provider": "fake",
+      "dimension": 64,
+      "document_embedding_seconds": 0.042037,
+      "document_embeddings_per_second": 8302.202,
+      "document_vectors_bytes_float32": 89344,
+      "query_embedding_ms_p50": 0.01075,
+      "query_embedding_ms_p95": 0.013484,
+      "revision": "Phase 9 DeterministicFakeEmbeddingGateway policy_version=fake-v1"
+    },
+    {
+      "name": "multilingual-e5-base",
+      "provider": "huggingface-local",
+      "dimension": 768,
+      "document_embedding_seconds": 7.078985,
+      "document_embeddings_per_second": 49.301,
+      "document_vectors_bytes_float32": 1072128,
+      "query_embedding_ms_p50": 11.215875,
+      "query_embedding_ms_p95": 13.338767,
+      "repository": "intfloat/multilingual-e5-base",
+      "revision": "d128750597153bb5987e10b1c3493a34e5a4502a",
+      "license": "MIT",
+      "query_prefix": "query: ",
+      "passage_prefix": "passage: ",
+      "device": "mps",
+      "model_files": {
+        "snapshot_path": "<local-path>/Library/Caches/ChemDFT/embedding-evaluation/hub/models--intfloat--multilingual-e5-base/snapshots/d128750597153bb5987e10b1c3493a34e5a4502a",
+        "files": [
+          {
+            "path": "1_Pooling/config.json",
+            "size_bytes": 200,
+            "sha256": "f586ab6c734af7b8d14d898bfa7faa886f23b46f86dd1730514309893af13d75"
+          },
+          {
+            "path": "README.md",
+            "size_bytes": 179345,
+            "sha256": "9d129cb0b912b55c7b5378f976a9c35ae4796c80466b659ad63930d8ca090fca"
+          },
+          {
+            "path": "config.json",
+            "size_bytes": 694,
+            "sha256": "9dab198f24c8c0879e481cf7822005d5ecbceedbacb390ffafa594e28d31bac4"
+          },
+          {
+            "path": "model.safetensors",
+            "size_bytes": 1112201288,
+            "sha256": "a18a44fad1d0b46ded15928144138cff1135d5cc8233bdd90be5f18822de09a7"
+          },
+          {
+            "path": "modules.json",
+            "size_bytes": 387,
+            "sha256": "c6e29747481e8b5dd2b58401966aeac910de39092f90cda9a704b1545f902b04"
+          },
+          {
+            "path": "sentence_bert_config.json",
+            "size_bytes": 57,
+            "sha256": "948201d8329907aae938fa62f9ceeed53f5694dacc2b87b9f3b78b37ee986529"
+          },
+          {
+            "path": "sentencepiece.bpe.model",
+            "size_bytes": 5069051,
+            "sha256": "cfc8146abe2a0488e9e2a0c56de7952f7c11ab059eca145a0a727afce0db2865"
+          },
+          {
+            "path": "special_tokens_map.json",
+            "size_bytes": 280,
+            "sha256": "06e405a36dfe4b9604f484f6a1e619af1a7f7d09e34a8555eb0b77b66318067f"
+          },
+          {
+            "path": "tokenizer.json",
+            "size_bytes": 17082660,
+            "sha256": "62c24cdc13d4c9952d63718d6c9fa4c287974249e16b7ade6d5a85e7bbb75626"
+          },
+          {
+            "path": "tokenizer_config.json",
+            "size_bytes": 418,
+            "sha256": "efb5c0d09722e5fe59a462cd2a9976ee216d55b037597d997cd3fe833216da15"
+          }
+        ],
+        "tree_sha256": "ce92b706035ea21dc4712120493ea6343ec6d6cd084ce51939611821a0850925"
+      }
+    },
+    {
+      "name": "bge-m3",
+      "provider": "huggingface-local",
+      "dimension": 1024,
+      "document_embedding_seconds": 90.74359,
+      "document_embeddings_per_second": 3.846,
+      "document_vectors_bytes_float32": 1429504,
+      "query_embedding_ms_p50": 60.6795,
+      "query_embedding_ms_p95": 258.937742,
+      "repository": "BAAI/bge-m3",
+      "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+      "license": "MIT",
+      "query_prefix": "",
+      "passage_prefix": "",
+      "device": "mps",
+      "model_files": {
+        "snapshot_path": "<local-path>/Library/Caches/ChemDFT/embedding-evaluation/hub/models--BAAI--bge-m3/snapshots/5617a9f61b028005a4858fdac845db406aefb181",
+        "files": [
+          {
+            "path": "1_Pooling/config.json",
+            "size_bytes": 191,
+            "sha256": "e54c164a07274f2eb45bb724f54a79d1efcc90c41573887cd9a29aeee0597352"
+          },
+          {
+            "path": "README.md",
+            "size_bytes": 15822,
+            "sha256": "0b81ccf9134e5874d620a86e6905062ea999e779c34eb1a7e65eaeb7fe00e450"
+          },
+          {
+            "path": "config.json",
+            "size_bytes": 687,
+            "sha256": "26159e7ad065073448460117eb24b7a4572f6f4e78eadff65dc0a11c052449fa"
+          },
+          {
+            "path": "config_sentence_transformers.json",
+            "size_bytes": 123,
+            "sha256": "1eef72430e7194a1e59680e635aed81ffa083f05668dbc5bb1c56c04c0999c38"
+          },
+          {
+            "path": "modules.json",
+            "size_bytes": 349,
+            "sha256": "84e40c8e006c9b1d6c122e02cba9b02458120b5fb0c87b746c41e0207cf642cf"
+          },
+          {
+            "path": "pytorch_model.bin",
+            "size_bytes": 2271145830,
+            "sha256": "b5e0ce3470abf5ef3831aa1bd5553b486803e83251590ab7ff35a117cf6aad38"
+          },
+          {
+            "path": "sentence_bert_config.json",
+            "size_bytes": 54,
+            "sha256": "eb9b44b13c0f52a3b3685c3b1cbdea1ba8b04bea123b98f61610048940776eb1"
+          },
+          {
+            "path": "sentencepiece.bpe.model",
+            "size_bytes": 5069051,
+            "sha256": "cfc8146abe2a0488e9e2a0c56de7952f7c11ab059eca145a0a727afce0db2865"
+          },
+          {
+            "path": "special_tokens_map.json",
+            "size_bytes": 964,
+            "sha256": "8c785abebea9ae3257b61681b4e6fd8365ceafde980c21970d001e834cf10835"
+          },
+          {
+            "path": "tokenizer.json",
+            "size_bytes": 17098108,
+            "sha256": "21106b6d7dab2952c1d496fb21d5dc9db75c28ed361a05f5020bbba27810dd08"
+          },
+          {
+            "path": "tokenizer_config.json",
+            "size_bytes": 444,
+            "sha256": "a62b2b6784f990259fddef5f16388693a8043be4f69179e6a5257eeb3f9abac4"
+          }
+        ],
+        "tree_sha256": "4eef35a3c015793d9c32fc4755e4abef36ff820bab3f482626dbade4111df9f8"
+      }
+    }
+  ],
+  "strategy_names": [
+    "lexical_only",
+    "deterministic_hash_v1_semantic_only",
+    "deterministic_64d_hybrid",
+    "multilingual_e5_base_semantic_only",
+    "multilingual_e5_base_hybrid",
+    "bge_m3_semantic_only",
+    "bge_m3_hybrid"
+  ]
+}

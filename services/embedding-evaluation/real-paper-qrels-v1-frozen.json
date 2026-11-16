@@ -1,0 +1,2336 @@
+{
+  "benchmark_id": "real-scientific-retrieval-v1",
+  "status": "FROZEN",
+  "corpus_manifest": "real-paper-v1-manifest.json",
+  "corpus_chunk_inventory": "real-paper-v1-chunks.json",
+  "authoring_method": "Manually authored from licensed source PDFs and Phase 9 parser/chunker output; no embedding models or rankings were run.",
+  "qrels": [
+    {
+      "query_id": "rpv1-001",
+      "source_spec_id": "ru_doi",
+      "query": "Which DOI identifies the study on crystalline-grid recognition?",
+      "language": "en",
+      "query_class": "identifier",
+      "expected_document_id": "fd1edfa8-99a5-51f2-ab6a-fe5033fb1af9",
+      "expected_benchmark_document_id": "ru-crystal-grid-2025",
+      "expected_page": 1,
+      "expected_chunk_id": "32feabb9-5f1c-5989-ac4c-e0adcbe13fd2",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "ru-crystal-grid-2025",
+          "document_id": "fd1edfa8-99a5-51f2-ab6a-fe5033fb1af9",
+          "page": 1,
+          "chunk_id": "32feabb9-5f1c-5989-ac4c-e0adcbe13fd2",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "c5fae51ab23b078653c24ef6b5d533667fe6d363b3c09e2a718d7323f052b5fc"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The opening page identifies the article with its DOI and research title.",
+      "document_title": "Application of mathematical methods and DBMS technologies for solving the problem of crystalline grid identification",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Approved per the supplied independent human review outcome; query, source target, page/chunk association, and license-backed corpus membership passed integrity checks."
+    },
+    {
+      "query_id": "rpv1-002",
+      "source_spec_id": "ru_formats",
+      "query": "Which two file formats are proposed as inputs for the lattice-recognition program?",
+      "language": "en",
+      "query_class": "method_basis",
+      "expected_document_id": "fd1edfa8-99a5-51f2-ab6a-fe5033fb1af9",
+      "expected_benchmark_document_id": "ru-crystal-grid-2025",
+      "expected_page": 2,
+      "expected_chunk_id": "a8c052a9-2e66-535e-81f2-f53886547776",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "ru-crystal-grid-2025",
+          "document_id": "fd1edfa8-99a5-51f2-ab6a-fe5033fb1af9",
+          "page": 2,
+          "chunk_id": "a8c052a9-2e66-535e-81f2-f53886547776",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "9a5cba56073ae1839b69182257b53ed0da22e9709bcd0f3440d1498d3b08efa2"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The paper names CIF and XYZ as alternative coordinate or structure inputs.",
+      "document_title": "Application of mathematical methods and DBMS technologies for solving the problem of crystalline grid identification",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Approved per the supplied independent human review outcome; query, source target, page/chunk association, and license-backed corpus membership passed integrity checks."
+    },
+    {
+      "query_id": "rpv1-003",
+      "source_spec_id": "ru_cell_fields",
+      "query": "Which database fields represent unit-cell edge lengths and angles?",
+      "language": "en",
+      "query_class": "table_derived",
+      "expected_document_id": "fd1edfa8-99a5-51f2-ab6a-fe5033fb1af9",
+      "expected_benchmark_document_id": "ru-crystal-grid-2025",
+      "expected_page": 5,
+      "expected_chunk_id": "a38aaf06-c50d-54f9-8817-668d8aafc959",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "ru-crystal-grid-2025",
+          "document_id": "fd1edfa8-99a5-51f2-ab6a-fe5033fb1af9",
+          "page": 5,
+          "chunk_id": "a38aaf06-c50d-54f9-8817-668d8aafc959",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "27e3176a2d99a3097d94b4207c1c793c36adf0f4975e88d7c2d350313ffb21d0"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The schema description lists three cell-length columns and three angular columns.",
+      "document_title": "Application of mathematical methods and DBMS technologies for solving the problem of crystalline grid identification",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Approved per the supplied independent human review outcome; query, source target, page/chunk association, and license-backed corpus membership passed integrity checks."
+    },
+    {
+      "query_id": "rpv1-004",
+      "source_spec_id": "ru_data_source",
+      "query": "Which open database was used as the source of known crystal records?",
+      "language": "en",
+      "query_class": "method_basis",
+      "expected_document_id": "fd1edfa8-99a5-51f2-ab6a-fe5033fb1af9",
+      "expected_benchmark_document_id": "ru-crystal-grid-2025",
+      "expected_page": 5,
+      "expected_chunk_id": "b4c60bd1-c429-5870-a5ab-ab097d84e046",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "ru-crystal-grid-2025",
+          "document_id": "fd1edfa8-99a5-51f2-ab6a-fe5033fb1af9",
+          "page": 5,
+          "chunk_id": "b4c60bd1-c429-5870-a5ab-ab097d84e046",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "b387bf8162d2901e7270b60c049a5a790226448f617c9a86f347d4e1686f16c6"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The implementation section names the Crystallographic Open Database.",
+      "document_title": "Application of mathematical methods and DBMS technologies for solving the problem of crystalline grid identification",
+      "review_status": "CORRECTED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Corrected taxonomy: the question asks for the crystallographic database/data source used by the methodology. Target, page, and chunk are unchanged and valid."
+    },
+    {
+      "query_id": "rpv1-005",
+      "source_spec_id": "ru_sample_size",
+      "query": "Approximately how many compounds were used in the application test?",
+      "language": "en",
+      "query_class": "numeric_value",
+      "expected_document_id": "fd1edfa8-99a5-51f2-ab6a-fe5033fb1af9",
+      "expected_benchmark_document_id": "ru-crystal-grid-2025",
+      "expected_page": 6,
+      "expected_chunk_id": "46d8f46c-a8d4-5fa6-8b38-bf3e812a9238",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "ru-crystal-grid-2025",
+          "document_id": "fd1edfa8-99a5-51f2-ab6a-fe5033fb1af9",
+          "page": 6,
+          "chunk_id": "46d8f46c-a8d4-5fa6-8b38-bf3e812a9238",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "204bc9c8f15e8e99d210a0355175a57b1e8ada1bac2eff5e74fa638ed89801e7"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The discussion describes a test set of about thirty simple substances.",
+      "document_title": "Application of mathematical methods and DBMS technologies for solving the problem of crystalline grid identification",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Approved per the supplied independent human review outcome; query, source target, page/chunk association, and license-backed corpus membership passed integrity checks."
+    },
+    {
+      "query_id": "rpv1-006",
+      "source_spec_id": "ru_classifier_semantics",
+      "query": "How does the proposed system choose a likely lattice type from ion coordinates?",
+      "language": "en",
+      "query_class": "semantic",
+      "expected_document_id": "fd1edfa8-99a5-51f2-ab6a-fe5033fb1af9",
+      "expected_benchmark_document_id": "ru-crystal-grid-2025",
+      "expected_page": 4,
+      "expected_chunk_id": "2d10f24b-b308-5e72-8a32-d100a60c89cb",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "ru-crystal-grid-2025",
+          "document_id": "fd1edfa8-99a5-51f2-ab6a-fe5033fb1af9",
+          "page": 4,
+          "chunk_id": "2d10f24b-b308-5e72-8a32-d100a60c89cb",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "0272501af8428a4f6177e658bfe82f8d895e2eadd9cc35d730e9d722658c7601"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The algorithm compares input ions with stored ion/material records and orders candidate matches by probability.",
+      "document_title": "Application of mathematical methods and DBMS technologies for solving the problem of crystalline grid identification",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Approved per the supplied independent human review outcome; query, source target, page/chunk association, and license-backed corpus membership passed integrity checks."
+    },
+    {
+      "query_id": "rpv1-007",
+      "source_spec_id": "ru_figure_result",
+      "query": "In the displayed example, which lattice class was retained as the result?",
+      "language": "en",
+      "query_class": "figure_derived",
+      "expected_document_id": "fd1edfa8-99a5-51f2-ab6a-fe5033fb1af9",
+      "expected_benchmark_document_id": "ru-crystal-grid-2025",
+      "expected_page": 6,
+      "expected_chunk_id": "4f1c7253-792c-513b-be45-97462954e511",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "ru-crystal-grid-2025",
+          "document_id": "fd1edfa8-99a5-51f2-ab6a-fe5033fb1af9",
+          "page": 6,
+          "chunk_id": "4f1c7253-792c-513b-be45-97462954e511",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "aea0d52aaf997b07b2c31c06b6915524d9f6cc97df0ef7809ab8fb2331819dae"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The output example reports several likely compounds and classifies their shared lattice as cubic.",
+      "document_title": "Application of mathematical methods and DBMS technologies for solving the problem of crystalline grid identification",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Approved per the supplied independent human review outcome; query, source target, page/chunk association, and license-backed corpus membership passed integrity checks."
+    },
+    {
+      "query_id": "rpv1-008",
+      "source_spec_id": "ru_russian_result",
+      "query": "Какие варианты получили наибольшую вероятность в демонстрационном примере и какова была эта вероятность?",
+      "language": "ru",
+      "query_class": "multilingual",
+      "expected_document_id": "fd1edfa8-99a5-51f2-ab6a-fe5033fb1af9",
+      "expected_benchmark_document_id": "ru-crystal-grid-2025",
+      "expected_page": 6,
+      "expected_chunk_id": "46d8f46c-a8d4-5fa6-8b38-bf3e812a9238",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "ru-crystal-grid-2025",
+          "document_id": "fd1edfa8-99a5-51f2-ab6a-fe5033fb1af9",
+          "page": 6,
+          "chunk_id": "46d8f46c-a8d4-5fa6-8b38-bf3e812a9238",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "204bc9c8f15e8e99d210a0355175a57b1e8ada1bac2eff5e74fa638ed89801e7"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "Two listed substances tie for the highest matching probability, 20.37% each.",
+      "document_title": "Application of mathematical methods and DBMS technologies for solving the problem of crystalline grid identification",
+      "review_status": "CORRECTED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Corrected singular wording to reflect the source tie. The hash-verified source PDF and production chunk on page 6 list potassium chloride and disodium oxide at 20.37% each; existing target retained."
+    },
+    {
+      "query_id": "rpv1-009",
+      "source_spec_id": "poly_doi",
+      "query": "Which DOI identifies the study of the Ac-NDGA nanostructured formulation?",
+      "language": "en",
+      "query_class": "identifier",
+      "expected_document_id": "5450ebd1-4ce1-552b-a5b0-ddc6f8fab7ee",
+      "expected_benchmark_document_id": "polymer-nanospheres-2020",
+      "expected_page": 1,
+      "expected_chunk_id": "6aea20d3-72ca-5a1e-b217-46b55ca31162",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "polymer-nanospheres-2020",
+          "document_id": "5450ebd1-4ce1-552b-a5b0-ddc6f8fab7ee",
+          "page": 1,
+          "chunk_id": "6aea20d3-72ca-5a1e-b217-46b55ca31162",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "a909bcc2e1ea91353c4df88af8d0060970017d62a6899d750f0ec220a9f17781"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The article header contains the DOI and the title describing the nanostructured analog.",
+      "document_title": "Facile synthesis and nanoscale features of a nanostructured nordihydroguaiaretic acid analog for therapeutic applications",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Approved per the supplied independent human review outcome; query, source target, page/chunk association, and license-backed corpus membership passed integrity checks."
+    },
+    {
+      "query_id": "rpv1-010",
+      "source_spec_id": "poly_compound",
+      "query": "What abbreviation is used for the acetylated nordihydroguaiaretic-acid analog?",
+      "language": "en",
+      "query_class": "named_compound",
+      "expected_document_id": "5450ebd1-4ce1-552b-a5b0-ddc6f8fab7ee",
+      "expected_benchmark_document_id": "polymer-nanospheres-2020",
+      "expected_page": 1,
+      "expected_chunk_id": "6aea20d3-72ca-5a1e-b217-46b55ca31162",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "polymer-nanospheres-2020",
+          "document_id": "5450ebd1-4ce1-552b-a5b0-ddc6f8fab7ee",
+          "page": 1,
+          "chunk_id": "6aea20d3-72ca-5a1e-b217-46b55ca31162",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "a909bcc2e1ea91353c4df88af8d0060970017d62a6899d750f0ec220a9f17781"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The article uses a short chemical name for the acetylated NDGA derivative.",
+      "document_title": "Facile synthesis and nanoscale features of a nanostructured nordihydroguaiaretic acid analog for therapeutic applications",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Approved per the supplied independent human review outcome; query, source target, page/chunk association, and license-backed corpus membership passed integrity checks."
+    },
+    {
+      "query_id": "rpv1-011",
+      "source_spec_id": "poly_mass",
+      "query": "What observed and calculated molecular masses are compared for Ac-NDGA?",
+      "language": "en",
+      "query_class": "numeric_value",
+      "expected_document_id": "5450ebd1-4ce1-552b-a5b0-ddc6f8fab7ee",
+      "expected_benchmark_document_id": "polymer-nanospheres-2020",
+      "expected_page": 6,
+      "expected_chunk_id": "91478901-3c43-5880-a68f-4dd8c449d74b",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "polymer-nanospheres-2020",
+          "document_id": "5450ebd1-4ce1-552b-a5b0-ddc6f8fab7ee",
+          "page": 6,
+          "chunk_id": "91478901-3c43-5880-a68f-4dd8c449d74b",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "6c8a7d6a8d23acec25cfaf4b0287b34a234b0d56896ac8b6554870b1d66b2b5c"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The mass-spectrometry discussion contrasts one observed mass with the calculated molecular mass.",
+      "document_title": "Facile synthesis and nanoscale features of a nanostructured nordihydroguaiaretic acid analog for therapeutic applications",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Approved per the supplied independent human review outcome; query, source target, page/chunk association, and license-backed corpus membership passed integrity checks."
+    },
+    {
+      "query_id": "rpv1-012",
+      "source_spec_id": "poly_dls_method",
+      "query": "Which instrument technique was used to measure nanosphere size distribution and zeta potential?",
+      "language": "en",
+      "query_class": "method_basis",
+      "expected_document_id": "5450ebd1-4ce1-552b-a5b0-ddc6f8fab7ee",
+      "expected_benchmark_document_id": "polymer-nanospheres-2020",
+      "expected_page": 4,
+      "expected_chunk_id": "0d0785f1-1034-529e-b885-51954c730249",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "polymer-nanospheres-2020",
+          "document_id": "5450ebd1-4ce1-552b-a5b0-ddc6f8fab7ee",
+          "page": 4,
+          "chunk_id": "0d0785f1-1034-529e-b885-51954c730249",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "3928a98bcb18d93b2a34af17786e822d791a0435cc219034714db2b597af3a2f"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The characterization procedure describes dynamic light scattering with a particle-size analyzer.",
+      "document_title": "Facile synthesis and nanoscale features of a nanostructured nordihydroguaiaretic acid analog for therapeutic applications",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Approved per the supplied independent human review outcome; query, source target, page/chunk association, and license-backed corpus membership passed integrity checks."
+    },
+    {
+      "query_id": "rpv1-013",
+      "source_spec_id": "poly_dls_conditions",
+      "query": "What sample preparation was used before the nanosphere DLS measurement?",
+      "language": "en",
+      "query_class": "experimental_condition",
+      "expected_document_id": "5450ebd1-4ce1-552b-a5b0-ddc6f8fab7ee",
+      "expected_benchmark_document_id": "polymer-nanospheres-2020",
+      "expected_page": 4,
+      "expected_chunk_id": "0d0785f1-1034-529e-b885-51954c730249",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "polymer-nanospheres-2020",
+          "document_id": "5450ebd1-4ce1-552b-a5b0-ddc6f8fab7ee",
+          "page": 4,
+          "chunk_id": "0d0785f1-1034-529e-b885-51954c730249",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "3928a98bcb18d93b2a34af17786e822d791a0435cc219034714db2b597af3a2f"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The procedure specifies a water suspension, sonication, and repeated instrument scans.",
+      "document_title": "Facile synthesis and nanoscale features of a nanostructured nordihydroguaiaretic acid analog for therapeutic applications",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Approved per the supplied independent human review outcome; query, source target, page/chunk association, and license-backed corpus membership passed integrity checks."
+    },
+    {
+      "query_id": "rpv1-014",
+      "source_spec_id": "poly_release",
+      "query": "What release fraction and time are reported in the abstract for the drug-loaded spheres?",
+      "language": "en",
+      "query_class": "numeric_value",
+      "expected_document_id": "5450ebd1-4ce1-552b-a5b0-ddc6f8fab7ee",
+      "expected_benchmark_document_id": "polymer-nanospheres-2020",
+      "expected_page": 1,
+      "expected_chunk_id": "6aea20d3-72ca-5a1e-b217-46b55ca31162",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "polymer-nanospheres-2020",
+          "document_id": "5450ebd1-4ce1-552b-a5b0-ddc6f8fab7ee",
+          "page": 1,
+          "chunk_id": "6aea20d3-72ca-5a1e-b217-46b55ca31162",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "a909bcc2e1ea91353c4df88af8d0060970017d62a6899d750f0ec220a9f17781"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The abstract reports a release fraction at a stated six-hour time point.",
+      "document_title": "Facile synthesis and nanoscale features of a nanostructured nordihydroguaiaretic acid analog for therapeutic applications",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Approved per the supplied independent human review outcome; query, source target, page/chunk association, and license-backed corpus membership passed integrity checks."
+    },
+    {
+      "query_id": "rpv1-015",
+      "source_spec_id": "poly_figure",
+      "query": "What does Figure 4 compare for the two nanosphere formulations?",
+      "language": "en",
+      "query_class": "figure_derived",
+      "expected_document_id": "5450ebd1-4ce1-552b-a5b0-ddc6f8fab7ee",
+      "expected_benchmark_document_id": "polymer-nanospheres-2020",
+      "expected_page": 8,
+      "expected_chunk_id": "670424f8-b518-5999-97a6-a200efb2e848",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "polymer-nanospheres-2020",
+          "document_id": "5450ebd1-4ce1-552b-a5b0-ddc6f8fab7ee",
+          "page": 8,
+          "chunk_id": "670424f8-b518-5999-97a6-a200efb2e848",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "f98884873a1aaa2305ccadd456c0d61a4ae0f33357eaf4f901680bb5c7ce8885"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The figure caption identifies DLS size distributions for the unloaded and drug-loaded formulations.",
+      "document_title": "Facile synthesis and nanoscale features of a nanostructured nordihydroguaiaretic acid analog for therapeutic applications",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Approved per the supplied independent human review outcome; query, source target, page/chunk association, and license-backed corpus membership passed integrity checks."
+    },
+    {
+      "query_id": "rpv1-016",
+      "source_spec_id": "poly_semantic",
+      "query": "Why were two polymers combined in the drug-carrier formulation?",
+      "language": "en",
+      "query_class": "semantic",
+      "expected_document_id": "5450ebd1-4ce1-552b-a5b0-ddc6f8fab7ee",
+      "expected_benchmark_document_id": "polymer-nanospheres-2020",
+      "expected_page": 6,
+      "expected_chunk_id": "19addd7c-8f88-5da5-8f2d-fe147780c45b",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "polymer-nanospheres-2020",
+          "document_id": "5450ebd1-4ce1-552b-a5b0-ddc6f8fab7ee",
+          "page": 6,
+          "chunk_id": "19addd7c-8f88-5da5-8f2d-fe147780c45b",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "5bfb8bdc92e6808ab4c6929ffe965bca2ba066573642b15e6c4905b7ff665084"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The discussion explains that the two polymer matrices provide complementary hydrophilic and hydrophobic behavior.",
+      "document_title": "Facile synthesis and nanoscale features of a nanostructured nordihydroguaiaretic acid analog for therapeutic applications",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Approved per the supplied independent human review outcome; query, source target, page/chunk association, and license-backed corpus membership passed integrity checks."
+    },
+    {
+      "query_id": "rpv1-017",
+      "source_spec_id": "oxide_doi",
+      "query": "Which DOI identifies the fungal synthesis study of silver and metal-oxide nanoparticles?",
+      "language": "en",
+      "query_class": "identifier",
+      "expected_document_id": "9f17af81-8835-5891-84b7-8e1831cef5a2",
+      "expected_benchmark_document_id": "metal-oxide-nanoparticles-2020",
+      "expected_page": 1,
+      "expected_chunk_id": "5e942df6-bbda-5bc2-a890-8a7b5cd224ac",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "metal-oxide-nanoparticles-2020",
+          "document_id": "9f17af81-8835-5891-84b7-8e1831cef5a2",
+          "page": 1,
+          "chunk_id": "5e942df6-bbda-5bc2-a890-8a7b5cd224ac",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "49cdac34e3e66bdd026c6d1c3e1ea076196d86edce53df1dae469f8e61359c5b"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The first page gives the DOI alongside the nanoparticle-synthesis title.",
+      "document_title": "Mycosinthetized Ag, CuO and ZnO nanoparticles from a promising Trichoderma harzianum strain and their antifungal potential against important phytopathogens",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Approved per the supplied independent human review outcome; query, source target, page/chunk association, and license-backed corpus membership passed integrity checks."
+    },
+    {
+      "query_id": "rpv1-018",
+      "source_spec_id": "oxide_species",
+      "query": "Which three nanoparticle materials are named in the study title?",
+      "language": "en",
+      "query_class": "formula",
+      "expected_document_id": "9f17af81-8835-5891-84b7-8e1831cef5a2",
+      "expected_benchmark_document_id": "metal-oxide-nanoparticles-2020",
+      "expected_page": 1,
+      "expected_chunk_id": "5e942df6-bbda-5bc2-a890-8a7b5cd224ac",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "metal-oxide-nanoparticles-2020",
+          "document_id": "9f17af81-8835-5891-84b7-8e1831cef5a2",
+          "page": 1,
+          "chunk_id": "5e942df6-bbda-5bc2-a890-8a7b5cd224ac",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "49cdac34e3e66bdd026c6d1c3e1ea076196d86edce53df1dae469f8e61359c5b"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The title names silver and two metal oxides made using the fungal strain.",
+      "document_title": "Mycosinthetized Ag, CuO and ZnO nanoparticles from a promising Trichoderma harzianum strain and their antifungal potential against important phytopathogens",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Approved per the supplied independent human review outcome; query, source target, page/chunk association, and license-backed corpus membership passed integrity checks."
+    },
+    {
+      "query_id": "rpv1-019",
+      "source_spec_id": "oxide_dls",
+      "query": "What average hydrodynamic diameter did DLS report for the Ag nanoparticles?",
+      "language": "en",
+      "query_class": "numeric_value",
+      "expected_document_id": "9f17af81-8835-5891-84b7-8e1831cef5a2",
+      "expected_benchmark_document_id": "metal-oxide-nanoparticles-2020",
+      "expected_page": 3,
+      "expected_chunk_id": "6985a28a-6001-5b0d-a493-91a0ca37c476",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "metal-oxide-nanoparticles-2020",
+          "document_id": "9f17af81-8835-5891-84b7-8e1831cef5a2",
+          "page": 3,
+          "chunk_id": "6985a28a-6001-5b0d-a493-91a0ca37c476",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "9ecef1c180f7965ec3689423b476280594a8cbf70bc6aa018111b84e943a9c3b"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The AgNP DLS result reports a mean hydrodynamic diameter of 582.4 nm ± 112.78 nm.",
+      "document_title": "Mycosinthetized Ag, CuO and ZnO nanoparticles from a promising Trichoderma harzianum strain and their antifungal potential against important phytopathogens",
+      "review_status": "CORRECTED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Corrected to one material. The source results chunk on page 3 reports AgNP mean hydrodynamic diameter 582.4 nm ± 112.78 nm together with its Z-average; the answer is fully contained in this single production chunk."
+    },
+    {
+      "query_id": "rpv1-020",
+      "source_spec_id": "oxide_xray",
+      "query": "What X-ray wavelength was used for the diffraction measurements?",
+      "language": "en",
+      "query_class": "method_basis",
+      "expected_document_id": "9f17af81-8835-5891-84b7-8e1831cef5a2",
+      "expected_benchmark_document_id": "metal-oxide-nanoparticles-2020",
+      "expected_page": 3,
+      "expected_chunk_id": "31d50555-48df-5534-9f6f-9285a7cbe383",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "metal-oxide-nanoparticles-2020",
+          "document_id": "9f17af81-8835-5891-84b7-8e1831cef5a2",
+          "page": 3,
+          "chunk_id": "31d50555-48df-5534-9f6f-9285a7cbe383",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "0f4c3461b1af40e83e25d9ceb94d665acf9ca44b57faff8a869a209d3d1e7a51"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The XRD method gives the weighted Cu-K-alpha wavelength used in the measurements.",
+      "document_title": "Mycosinthetized Ag, CuO and ZnO nanoparticles from a promising Trichoderma harzianum strain and their antifungal potential against important phytopathogens",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Approved per the supplied independent human review outcome; query, source target, page/chunk association, and license-backed corpus membership passed integrity checks."
+    },
+    {
+      "query_id": "rpv1-021",
+      "source_spec_id": "oxide_ph",
+      "query": "To what pH was the cell-free culture filtrate alkalinized when rapid nanoparticle precipitation occurred?",
+      "language": "en",
+      "query_class": "experimental_condition",
+      "expected_document_id": "9f17af81-8835-5891-84b7-8e1831cef5a2",
+      "expected_benchmark_document_id": "metal-oxide-nanoparticles-2020",
+      "expected_page": 3,
+      "expected_chunk_id": "6985a28a-6001-5b0d-a493-91a0ca37c476",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "metal-oxide-nanoparticles-2020",
+          "document_id": "9f17af81-8835-5891-84b7-8e1831cef5a2",
+          "page": 3,
+          "chunk_id": "6985a28a-6001-5b0d-a493-91a0ca37c476",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "9ecef1c180f7965ec3689423b476280594a8cbf70bc6aa018111b84e943a9c3b"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "Rapid precipitation followed alkalinization of the initial pH-6 filtrate to pH 12.",
+      "document_title": "Mycosinthetized Ag, CuO and ZnO nanoparticles from a promising Trichoderma harzianum strain and their antifungal potential against important phytopathogens",
+      "review_status": "CORRECTED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Corrected initial-versus-final pH wording. The hash-verified source PDF and existing production chunk on page 3 explicitly say the initial CFCF at pH 6 was alkalinized with NaOH to pH 12 before rapid precipitation; answer is pH 12."
+    },
+    {
+      "query_id": "rpv1-022",
+      "source_spec_id": "oxide_tga",
+      "query": "What temperature span was covered by the nanoparticle thermal-degradation analysis?",
+      "language": "en",
+      "query_class": "numeric_value",
+      "expected_document_id": "9f17af81-8835-5891-84b7-8e1831cef5a2",
+      "expected_benchmark_document_id": "metal-oxide-nanoparticles-2020",
+      "expected_page": 3,
+      "expected_chunk_id": "4f2046f6-918a-5268-bc94-9ec7bf63e917",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "metal-oxide-nanoparticles-2020",
+          "document_id": "9f17af81-8835-5891-84b7-8e1831cef5a2",
+          "page": 3,
+          "chunk_id": "4f2046f6-918a-5268-bc94-9ec7bf63e917",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "1e29b7f102eb24c35462adfbd6b163f3bf24867f7ddfa9b399ebc435f20b2fde"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The thermal-analysis passage specifies a nitrogen-atmosphere run over a broad heating range.",
+      "document_title": "Mycosinthetized Ag, CuO and ZnO nanoparticles from a promising Trichoderma harzianum strain and their antifungal potential against important phytopathogens",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Approved per the supplied independent human review outcome; query, source target, page/chunk association, and license-backed corpus membership passed integrity checks."
+    },
+    {
+      "query_id": "rpv1-023",
+      "source_spec_id": "oxide_figure",
+      "query": "Which measurements are combined in the zinc-oxide nanoparticle figure caption?",
+      "language": "en",
+      "query_class": "figure_derived",
+      "expected_document_id": "9f17af81-8835-5891-84b7-8e1831cef5a2",
+      "expected_benchmark_document_id": "metal-oxide-nanoparticles-2020",
+      "expected_page": 5,
+      "expected_chunk_id": "51fc5b08-a21f-5b26-a5f6-f251b85b397f",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "metal-oxide-nanoparticles-2020",
+          "document_id": "9f17af81-8835-5891-84b7-8e1831cef5a2",
+          "page": 5,
+          "chunk_id": "51fc5b08-a21f-5b26-a5f6-f251b85b397f",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "2f29a56756b9998b5c5f46dbbd4022860301f72a5437846bd87b2c309250e353"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The figure caption describes particle-size, microscopy, and diffraction evidence for the ZnO samples.",
+      "document_title": "Mycosinthetized Ag, CuO and ZnO nanoparticles from a promising Trichoderma harzianum strain and their antifungal potential against important phytopathogens",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Approved per the supplied independent human review outcome; query, source target, page/chunk association, and license-backed corpus membership passed integrity checks."
+    },
+    {
+      "query_id": "rpv1-024",
+      "source_spec_id": "oxide_ru_to_en",
+      "query": "Какой диапазон углов использовали для регистрации порошковой дифракционной картины?",
+      "language": "ru",
+      "query_class": "multilingual",
+      "expected_document_id": "9f17af81-8835-5891-84b7-8e1831cef5a2",
+      "expected_benchmark_document_id": "metal-oxide-nanoparticles-2020",
+      "expected_page": 3,
+      "expected_chunk_id": "77977f31-6543-5d21-8663-eac4cfa284c3",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "metal-oxide-nanoparticles-2020",
+          "document_id": "9f17af81-8835-5891-84b7-8e1831cef5a2",
+          "page": 3,
+          "chunk_id": "77977f31-6543-5d21-8663-eac4cfa284c3",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "427456bb3e8bdc2146e6b21ddf78af164c10c98fa4752dc86b7eafdb883c1c00"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The English experimental paragraph states the 2-theta scan interval for the diffraction patterns.",
+      "document_title": "Mycosinthetized Ag, CuO and ZnO nanoparticles from a promising Trichoderma harzianum strain and their antifungal potential against important phytopathogens",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Approved per the supplied independent human review outcome; query, source target, page/chunk association, and license-backed corpus membership passed integrity checks."
+    },
+    {
+      "query_id": "rpv1-025",
+      "source_spec_id": "xrd_doi",
+      "query": "Which DOI identifies the paper combining powder XRD with calorimetry to examine suspect medicines?",
+      "language": "en",
+      "query_class": "identifier",
+      "expected_document_id": "58511336-2551-5e7c-8102-6827c1b3f563",
+      "expected_benchmark_document_id": "counterfeit-drug-xrd-dsc-2018",
+      "expected_page": 1,
+      "expected_chunk_id": "8faa6a47-33b6-50f4-b08a-c1faf20d2525",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "counterfeit-drug-xrd-dsc-2018",
+          "document_id": "58511336-2551-5e7c-8102-6827c1b3f563",
+          "page": 1,
+          "chunk_id": "8faa6a47-33b6-50f4-b08a-c1faf20d2525",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "5f9ff1b39d8e351145b6bee56f8e35958602a2f9b832fdea46ad9a6b0332d58d"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The article's bibliographic header supplies the DOI for the diffraction-and-thermal study.",
+      "document_title": "Application of X-ray powder diffraction and differential scanning calorimetry for identification of counterfeit drugs",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Approved per the supplied independent human review outcome; query, source target, page/chunk association, and license-backed corpus membership passed integrity checks."
+    },
+    {
+      "query_id": "rpv1-026",
+      "source_spec_id": "xrd_drugs",
+      "query": "Which active substances are named among the medicines investigated?",
+      "language": "en",
+      "query_class": "named_compound",
+      "expected_document_id": "58511336-2551-5e7c-8102-6827c1b3f563",
+      "expected_benchmark_document_id": "counterfeit-drug-xrd-dsc-2018",
+      "expected_page": 9,
+      "expected_chunk_id": "1b8a8519-1d63-5ca7-a325-2fe2b15af771",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "counterfeit-drug-xrd-dsc-2018",
+          "document_id": "58511336-2551-5e7c-8102-6827c1b3f563",
+          "page": 9,
+          "chunk_id": "1b8a8519-1d63-5ca7-a325-2fe2b15af771",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "d96f11a1df90a022417426715061b2c1fa8bdff0a869bbac4f79b06b1e9178f3"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The materials section lists aspirin-related and vitamin-C products as the tested medicines.",
+      "document_title": "Application of X-ray powder diffraction and differential scanning calorimetry for identification of counterfeit drugs",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Approved per the supplied independent human review outcome; query, source target, page/chunk association, and license-backed corpus membership passed integrity checks."
+    },
+    {
+      "query_id": "rpv1-027",
+      "source_spec_id": "xrd_peak_tolerance",
+      "query": "What two 2-theta values are compared for the first diffraction line in Table 5?",
+      "language": "en",
+      "query_class": "numeric_value",
+      "expected_document_id": "58511336-2551-5e7c-8102-6827c1b3f563",
+      "expected_benchmark_document_id": "counterfeit-drug-xrd-dsc-2018",
+      "expected_page": 7,
+      "expected_chunk_id": "5aadd0ec-0eb5-5287-837e-a680d7a032ff",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "counterfeit-drug-xrd-dsc-2018",
+          "document_id": "58511336-2551-5e7c-8102-6827c1b3f563",
+          "page": 7,
+          "chunk_id": "5aadd0ec-0eb5-5287-837e-a680d7a032ff",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "a940975efd7383da62da5f9bb4a87f1e3d1eb220b48ea8b1f1399de885e44db0"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The table compares an ICDD reference position with the measured pattern position for its first line.",
+      "document_title": "Application of X-ray powder diffraction and differential scanning calorimetry for identification of counterfeit drugs",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Approved per the supplied independent human review outcome; query, source target, page/chunk association, and license-backed corpus membership passed integrity checks."
+    },
+    {
+      "query_id": "rpv1-028",
+      "source_spec_id": "xrd_methods",
+      "query": "Which pair of experimental methods is used to distinguish authentic from counterfeit samples?",
+      "language": "en",
+      "query_class": "method_basis",
+      "expected_document_id": "58511336-2551-5e7c-8102-6827c1b3f563",
+      "expected_benchmark_document_id": "counterfeit-drug-xrd-dsc-2018",
+      "expected_page": 9,
+      "expected_chunk_id": "1b8a8519-1d63-5ca7-a325-2fe2b15af771",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "counterfeit-drug-xrd-dsc-2018",
+          "document_id": "58511336-2551-5e7c-8102-6827c1b3f563",
+          "page": 9,
+          "chunk_id": "1b8a8519-1d63-5ca7-a325-2fe2b15af771",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "d96f11a1df90a022417426715061b2c1fa8bdff0a869bbac4f79b06b1e9178f3"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The article's conclusion relies on X-ray powder diffraction together with differential scanning calorimetry.",
+      "document_title": "Application of X-ray powder diffraction and differential scanning calorimetry for identification of counterfeit drugs",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Approved per the supplied independent human review outcome; query, source target, page/chunk association, and license-backed corpus membership passed integrity checks."
+    },
+    {
+      "query_id": "rpv1-029",
+      "source_spec_id": "xrd_scan",
+      "query": "What 2-theta interval was used in the powder X-ray measurements?",
+      "language": "en",
+      "query_class": "experimental_condition",
+      "expected_document_id": "58511336-2551-5e7c-8102-6827c1b3f563",
+      "expected_benchmark_document_id": "counterfeit-drug-xrd-dsc-2018",
+      "expected_page": 9,
+      "expected_chunk_id": "1b8a8519-1d63-5ca7-a325-2fe2b15af771",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "counterfeit-drug-xrd-dsc-2018",
+          "document_id": "58511336-2551-5e7c-8102-6827c1b3f563",
+          "page": 9,
+          "chunk_id": "1b8a8519-1d63-5ca7-a325-2fe2b15af771",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "d96f11a1df90a022417426715061b2c1fa8bdff0a869bbac4f79b06b1e9178f3"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The experimental method states the angular range and step used for the powder scan.",
+      "document_title": "Application of X-ray powder diffraction and differential scanning calorimetry for identification of counterfeit drugs",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Approved per the supplied independent human review outcome; query, source target, page/chunk association, and license-backed corpus membership passed integrity checks."
+    },
+    {
+      "query_id": "rpv1-030",
+      "source_spec_id": "xrd_thermal",
+      "query": "What approximate mass-loss range is described for aspirin-containing products?",
+      "language": "en",
+      "query_class": "numeric_value",
+      "expected_document_id": "58511336-2551-5e7c-8102-6827c1b3f563",
+      "expected_benchmark_document_id": "counterfeit-drug-xrd-dsc-2018",
+      "expected_page": 6,
+      "expected_chunk_id": "62b690dd-d38b-510f-8a43-8c22062eba46",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "counterfeit-drug-xrd-dsc-2018",
+          "document_id": "58511336-2551-5e7c-8102-6827c1b3f563",
+          "page": 6,
+          "chunk_id": "62b690dd-d38b-510f-8a43-8c22062eba46",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "5c779e8038eaf1108e3b9335cc6ef14ac4d4a61ddb17a8f1b15bf74ae3f142ea"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The thermal results report a product-dependent mass loss associated with possible dissociation.",
+      "document_title": "Application of X-ray powder diffraction and differential scanning calorimetry for identification of counterfeit drugs",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Approved per the supplied independent human review outcome; query, source target, page/chunk association, and license-backed corpus membership passed integrity checks."
+    },
+    {
+      "query_id": "rpv1-031",
+      "source_spec_id": "xrd_figure",
+      "query": "What thermal curves are presented in Figure 6?",
+      "language": "en",
+      "query_class": "figure_derived",
+      "expected_document_id": "58511336-2551-5e7c-8102-6827c1b3f563",
+      "expected_benchmark_document_id": "counterfeit-drug-xrd-dsc-2018",
+      "expected_page": 8,
+      "expected_chunk_id": "8080466f-4f09-5744-bad9-635b73666f13",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "counterfeit-drug-xrd-dsc-2018",
+          "document_id": "58511336-2551-5e7c-8102-6827c1b3f563",
+          "page": 8,
+          "chunk_id": "8080466f-4f09-5744-bad9-635b73666f13",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "fb1ef569dc2f2e03a08810ed5b9e9d4dc690d71b0396178016ac8c44db0322cf"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The caption identifies the DSC/TG curves for products containing acetylsalicylic acid.",
+      "document_title": "Application of X-ray powder diffraction and differential scanning calorimetry for identification of counterfeit drugs",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Approved per the supplied independent human review outcome; query, source target, page/chunk association, and license-backed corpus membership passed integrity checks."
+    },
+    {
+      "query_id": "rpv1-032",
+      "source_spec_id": "xrd_semantic",
+      "query": "Why do the authors combine diffraction and thermal analysis when screening medicines?",
+      "language": "en",
+      "query_class": "semantic",
+      "expected_document_id": "58511336-2551-5e7c-8102-6827c1b3f563",
+      "expected_benchmark_document_id": "counterfeit-drug-xrd-dsc-2018",
+      "expected_page": 6,
+      "expected_chunk_id": "62b690dd-d38b-510f-8a43-8c22062eba46",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "counterfeit-drug-xrd-dsc-2018",
+          "document_id": "58511336-2551-5e7c-8102-6827c1b3f563",
+          "page": 6,
+          "chunk_id": "62b690dd-d38b-510f-8a43-8c22062eba46",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "5c779e8038eaf1108e3b9335cc6ef14ac4d4a61ddb17a8f1b15bf74ae3f142ea"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The conclusion says the methods jointly help verify active ingredients and detect material changes.",
+      "document_title": "Application of X-ray powder diffraction and differential scanning calorimetry for identification of counterfeit drugs",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Approved per the supplied independent human review outcome; query, source target, page/chunk association, and license-backed corpus membership passed integrity checks."
+    },
+    {
+      "query_id": "rpv1-033",
+      "source_spec_id": "framework_doi",
+      "query": "Which DOI identifies the aqueous supramolecular organic framework study?",
+      "language": "en",
+      "query_class": "identifier",
+      "expected_document_id": "b6562c24-796e-5279-a966-fa595664db9e",
+      "expected_benchmark_document_id": "supramolecular-framework-water-2014",
+      "expected_page": 1,
+      "expected_chunk_id": "cd8b9208-a573-53c9-9705-5642bc240d57",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "supramolecular-framework-water-2014",
+          "document_id": "b6562c24-796e-5279-a966-fa595664db9e",
+          "page": 1,
+          "chunk_id": "cd8b9208-a573-53c9-9705-5642bc240d57",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "51c8648bb05bb93553cddf23b7da4fc031c7ac82ee36a50efb8aa1774dd26240"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The paper begins with the DOI for the three-dimensional framework and ion-sponge study.",
+      "document_title": "Three-dimensional periodic supramolecular organic framework ion sponge in water and microcrystals",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Approved per the supplied independent human review outcome; query, source target, page/chunk association, and license-backed corpus membership passed integrity checks."
+    },
+    {
+      "query_id": "rpv1-034",
+      "source_spec_id": "framework_material",
+      "query": "What label does the paper give to the 1_n·CB[8]_{2n} three-dimensional supramolecular framework?",
+      "language": "en",
+      "query_class": "named_compound",
+      "expected_document_id": "b6562c24-796e-5279-a966-fa595664db9e",
+      "expected_benchmark_document_id": "supramolecular-framework-water-2014",
+      "expected_page": 3,
+      "expected_chunk_id": "0d96cf07-b31b-502f-8fd9-4612318d6d09",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "supramolecular-framework-water-2014",
+          "document_id": "b6562c24-796e-5279-a966-fa595664db9e",
+          "page": 3,
+          "chunk_id": "0d96cf07-b31b-502f-8fd9-4612318d6d09",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "1bb341d06be3c4e331c819ecd7ae7468bb53e7c7c63cd8e715985af314113653"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The source names the 1_n·CB[8]_{2n} framework Com-Tetra.",
+      "document_title": "Three-dimensional periodic supramolecular organic framework ion sponge in water and microcrystals",
+      "review_status": "CORRECTED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Replaced tautological wording. The hash-verified source PDF and existing production chunk on page 3 identify the 1_n·CB[8]_{2n} supramolecular structure as Com-Tetra; target retained."
+    },
+    {
+      "query_id": "rpv1-035",
+      "source_spec_id": "framework_spacing",
+      "query": "What d-spacing was observed for the broad SAXS peak in water?",
+      "language": "en",
+      "query_class": "numeric_value",
+      "expected_document_id": "b6562c24-796e-5279-a966-fa595664db9e",
+      "expected_benchmark_document_id": "supramolecular-framework-water-2014",
+      "expected_page": 4,
+      "expected_chunk_id": "96ae3ce1-130e-5f1b-b8a4-55f9cbbf0e85",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "supramolecular-framework-water-2014",
+          "document_id": "b6562c24-796e-5279-a966-fa595664db9e",
+          "page": 4,
+          "chunk_id": "96ae3ce1-130e-5f1b-b8a4-55f9cbbf0e85",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "dc64e32137f2b2343a4ea73eb9d17c568dfdff3f5feaaa53a91209e54f0fe227"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The solution SAXS result reports an observed spacing and compares it with a modelled lattice plane.",
+      "document_title": "Three-dimensional periodic supramolecular organic framework ion sponge in water and microcrystals",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Approved per the supplied independent human review outcome; query, source target, page/chunk association, and license-backed corpus membership passed integrity checks."
+    },
+    {
+      "query_id": "rpv1-036",
+      "source_spec_id": "framework_saxs",
+      "query": "Which scattering technique provided the solution-phase periodicity evidence?",
+      "language": "en",
+      "query_class": "method_basis",
+      "expected_document_id": "b6562c24-796e-5279-a966-fa595664db9e",
+      "expected_benchmark_document_id": "supramolecular-framework-water-2014",
+      "expected_page": 4,
+      "expected_chunk_id": "96ae3ce1-130e-5f1b-b8a4-55f9cbbf0e85",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "supramolecular-framework-water-2014",
+          "document_id": "b6562c24-796e-5279-a966-fa595664db9e",
+          "page": 4,
+          "chunk_id": "96ae3ce1-130e-5f1b-b8a4-55f9cbbf0e85",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "dc64e32137f2b2343a4ea73eb9d17c568dfdff3f5feaaa53a91209e54f0fe227"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "A small-angle X-ray scattering experiment is described for the aqueous solution.",
+      "document_title": "Three-dimensional periodic supramolecular organic framework ion sponge in water and microcrystals",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Approved per the supplied independent human review outcome; query, source target, page/chunk association, and license-backed corpus membership passed integrity checks."
+    },
+    {
+      "query_id": "rpv1-037",
+      "source_spec_id": "framework_activation",
+      "query": "At what activation temperature was gas adsorption measured after vacuum treatment?",
+      "language": "en",
+      "query_class": "experimental_condition",
+      "expected_document_id": "b6562c24-796e-5279-a966-fa595664db9e",
+      "expected_benchmark_document_id": "supramolecular-framework-water-2014",
+      "expected_page": 9,
+      "expected_chunk_id": "5668c316-5faa-5168-abb0-754daf89f573",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "supramolecular-framework-water-2014",
+          "document_id": "b6562c24-796e-5279-a966-fa595664db9e",
+          "page": 9,
+          "chunk_id": "5668c316-5faa-5168-abb0-754daf89f573",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "837db5e45bf07ff48f7cddb5dc2163047b75c45522a58ab653562b6209194774"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The gas-sorption passage specifies a high-temperature vacuum activation step.",
+      "document_title": "Three-dimensional periodic supramolecular organic framework ion sponge in water and microcrystals",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Approved per the supplied independent human review outcome; query, source target, page/chunk association, and license-backed corpus membership passed integrity checks."
+    },
+    {
+      "query_id": "rpv1-038",
+      "source_spec_id": "framework_semantic",
+      "query": "How does the framework behave toward dissolved organic guests?",
+      "language": "en",
+      "query_class": "semantic",
+      "expected_document_id": "b6562c24-796e-5279-a966-fa595664db9e",
+      "expected_benchmark_document_id": "supramolecular-framework-water-2014",
+      "expected_page": 7,
+      "expected_chunk_id": "9160ca52-4007-5d60-98d7-0d766224d23f",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "supramolecular-framework-water-2014",
+          "document_id": "b6562c24-796e-5279-a966-fa595664db9e",
+          "page": 7,
+          "chunk_id": "9160ca52-4007-5d60-98d7-0d766224d23f",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "7bb2e51dd08be4195fdb774f75098dcb36f2fbdc4cc9c6f55aedfe6803428e40"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The discussion describes selective uptake and controllable release of conjugated guests from solution.",
+      "document_title": "Three-dimensional periodic supramolecular organic framework ion sponge in water and microcrystals",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Approved per the supplied independent human review outcome; query, source target, page/chunk association, and license-backed corpus membership passed integrity checks."
+    },
+    {
+      "query_id": "rpv1-039",
+      "source_spec_id": "framework_figure",
+      "query": "What evidence is shown for microcrystal formation during slow solvent evaporation?",
+      "language": "en",
+      "query_class": "figure_derived",
+      "expected_document_id": "b6562c24-796e-5279-a966-fa595664db9e",
+      "expected_benchmark_document_id": "supramolecular-framework-water-2014",
+      "expected_page": 5,
+      "expected_chunk_id": "b393c74f-b376-595d-9a7e-81fcd8558a90",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "supramolecular-framework-water-2014",
+          "document_id": "b6562c24-796e-5279-a966-fa595664db9e",
+          "page": 5,
+          "chunk_id": "b393c74f-b376-595d-9a7e-81fcd8558a90",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "fddf8959aa6b937b5c74b18d45bf0180fe07081ab5b7bad73158b45d434652e2"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The text associates the figure with solidification and diffraction-based evidence of microcrystallization.",
+      "document_title": "Three-dimensional periodic supramolecular organic framework ion sponge in water and microcrystals",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Approved per the supplied independent human review outcome; query, source target, page/chunk association, and license-backed corpus membership passed integrity checks."
+    },
+    {
+      "query_id": "rpv1-040",
+      "source_spec_id": "framework_gas",
+      "query": "What nitrogen uptake and BET area are reported for the activated microcrystals?",
+      "language": "en",
+      "query_class": "table_derived",
+      "expected_document_id": "b6562c24-796e-5279-a966-fa595664db9e",
+      "expected_benchmark_document_id": "supramolecular-framework-water-2014",
+      "expected_page": 9,
+      "expected_chunk_id": "5668c316-5faa-5168-abb0-754daf89f573",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "supramolecular-framework-water-2014",
+          "document_id": "b6562c24-796e-5279-a966-fa595664db9e",
+          "page": 9,
+          "chunk_id": "5668c316-5faa-5168-abb0-754daf89f573",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "837db5e45bf07ff48f7cddb5dc2163047b75c45522a58ab653562b6209194774"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The adsorption results give a nitrogen amount and a specific surface-area value.",
+      "document_title": "Three-dimensional periodic supramolecular organic framework ion sponge in water and microcrystals",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Approved per the supplied independent human review outcome; query, source target, page/chunk association, and license-backed corpus membership passed integrity checks."
+    },
+    {
+      "query_id": "rpv1-041",
+      "source_spec_id": "xpcs_doi",
+      "query": "Which DOI identifies the robotic pendant-drop XPCS paper?",
+      "language": "en",
+      "query_class": "identifier",
+      "expected_document_id": "bddda8e4-8cd7-54e1-8277-8b502c6d4af2",
+      "expected_benchmark_document_id": "xpcs-pendant-drop-2023",
+      "expected_page": 1,
+      "expected_chunk_id": "8426136a-4267-55fc-9392-b241d10af35d",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "xpcs-pendant-drop-2023",
+          "document_id": "bddda8e4-8cd7-54e1-8277-8b502c6d4af2",
+          "page": 1,
+          "chunk_id": "8426136a-4267-55fc-9392-b241d10af35d",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "f3f024197b4eb2017f4e0bde1f6b924afbfa1b74cb2d19688369a78cea215a0e"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The title page names the XPCS article and includes its DOI.",
+      "document_title": "Robotic pendant drop: containerless liquid for μs-resolved, AI-executable XPCS",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Approved per the supplied independent human review outcome; query, source target, page/chunk association, and license-backed corpus membership passed integrity checks."
+    },
+    {
+      "query_id": "rpv1-042",
+      "source_spec_id": "xpcs_technique",
+      "query": "Which technique is used to follow nanoparticle dynamics through speckle correlations?",
+      "language": "en",
+      "query_class": "method_basis",
+      "expected_document_id": "bddda8e4-8cd7-54e1-8277-8b502c6d4af2",
+      "expected_benchmark_document_id": "xpcs-pendant-drop-2023",
+      "expected_page": 4,
+      "expected_chunk_id": "58608b61-e08a-59fc-a33a-62572d49545f",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "xpcs-pendant-drop-2023",
+          "document_id": "bddda8e4-8cd7-54e1-8277-8b502c6d4af2",
+          "page": 4,
+          "chunk_id": "58608b61-e08a-59fc-a33a-62572d49545f",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "4dabbc852eb376b45f1b60c198b68261d945d67a17d8d30b730d25b98c8e02d1"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The methods discussion describes X-ray photon correlation analysis of time-varying speckles.",
+      "document_title": "Robotic pendant drop: containerless liquid for μs-resolved, AI-executable XPCS",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Approved per the supplied independent human review outcome; query, source target, page/chunk association, and license-backed corpus membership passed integrity checks."
+    },
+    {
+      "query_id": "rpv1-043",
+      "source_spec_id": "xpcs_diameter",
+      "query": "What diameter did the horizontal alignment scan report for the pendant drop?",
+      "language": "en",
+      "query_class": "numeric_value",
+      "expected_document_id": "bddda8e4-8cd7-54e1-8277-8b502c6d4af2",
+      "expected_benchmark_document_id": "xpcs-pendant-drop-2023",
+      "expected_page": 3,
+      "expected_chunk_id": "dfbe73ba-83f2-5b30-9720-186bd8a0f19f",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "xpcs-pendant-drop-2023",
+          "document_id": "bddda8e4-8cd7-54e1-8277-8b502c6d4af2",
+          "page": 3,
+          "chunk_id": "dfbe73ba-83f2-5b30-9720-186bd8a0f19f",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "104fed95d78d038e42f9a9c5eb1509d3205494a0d22ee97b1819e9dc3e0d05da"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The alignment scan result gives the pendant-drop diameter in millimetres.",
+      "document_title": "Robotic pendant drop: containerless liquid for μs-resolved, AI-executable XPCS",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Approved per the supplied independent human review outcome; query, source target, page/chunk association, and license-backed corpus membership passed integrity checks."
+    },
+    {
+      "query_id": "rpv1-044",
+      "source_spec_id": "xpcs_frames",
+      "query": "At what frame rate were the scattering data collected?",
+      "language": "en",
+      "query_class": "numeric_value",
+      "expected_document_id": "bddda8e4-8cd7-54e1-8277-8b502c6d4af2",
+      "expected_benchmark_document_id": "xpcs-pendant-drop-2023",
+      "expected_page": 8,
+      "expected_chunk_id": "97e53d1a-6062-5686-842a-d32b272cac4c",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "xpcs-pendant-drop-2023",
+          "document_id": "bddda8e4-8cd7-54e1-8277-8b502c6d4af2",
+          "page": 8,
+          "chunk_id": "97e53d1a-6062-5686-842a-d32b272cac4c",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "1b778ccd4e0939c5d1864befa5aba9a476ab6552ce64e2582d9b15fb5376bcac"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The data-collection description specifies a 52-kHz detector-frame rate.",
+      "document_title": "Robotic pendant drop: containerless liquid for μs-resolved, AI-executable XPCS",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Approved per the supplied independent human review outcome; query, source target, page/chunk association, and license-backed corpus membership passed integrity checks."
+    },
+    {
+      "query_id": "rpv1-045",
+      "source_spec_id": "xpcs_setup",
+      "query": "What protective layer surrounds the pendant drop in the alignment example?",
+      "language": "en",
+      "query_class": "experimental_condition",
+      "expected_document_id": "bddda8e4-8cd7-54e1-8277-8b502c6d4af2",
+      "expected_benchmark_document_id": "xpcs-pendant-drop-2023",
+      "expected_page": 3,
+      "expected_chunk_id": "dfbe73ba-83f2-5b30-9720-186bd8a0f19f",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "xpcs-pendant-drop-2023",
+          "document_id": "bddda8e4-8cd7-54e1-8277-8b502c6d4af2",
+          "page": 3,
+          "chunk_id": "dfbe73ba-83f2-5b30-9720-186bd8a0f19f",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "104fed95d78d038e42f9a9c5eb1509d3205494a0d22ee97b1819e9dc3e0d05da"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The setup description identifies a thin polymer sheet around the drop to limit airflow and evaporation.",
+      "document_title": "Robotic pendant drop: containerless liquid for μs-resolved, AI-executable XPCS",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Approved per the supplied independent human review outcome; query, source target, page/chunk association, and license-backed corpus membership passed integrity checks."
+    },
+    {
+      "query_id": "rpv1-046",
+      "source_spec_id": "xpcs_semantic",
+      "query": "Why can XPCS reveal nanoparticle dynamics that differ from a conventional DLS readout?",
+      "language": "en",
+      "query_class": "semantic",
+      "expected_document_id": "bddda8e4-8cd7-54e1-8277-8b502c6d4af2",
+      "expected_benchmark_document_id": "xpcs-pendant-drop-2023",
+      "expected_page": 4,
+      "expected_chunk_id": "58608b61-e08a-59fc-a33a-62572d49545f",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "xpcs-pendant-drop-2023",
+          "document_id": "bddda8e4-8cd7-54e1-8277-8b502c6d4af2",
+          "page": 4,
+          "chunk_id": "58608b61-e08a-59fc-a33a-62572d49545f",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "4dabbc852eb376b45f1b60c198b68261d945d67a17d8d30b730d25b98c8e02d1"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The discussion contrasts the large pixelated detector and accessible length scales with DLS.",
+      "document_title": "Robotic pendant drop: containerless liquid for μs-resolved, AI-executable XPCS",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Approved per the supplied independent human review outcome; query, source target, page/chunk association, and license-backed corpus membership passed integrity checks."
+    },
+    {
+      "query_id": "rpv1-047",
+      "source_spec_id": "xpcs_figure",
+      "query": "What physical quantity is estimated from the horizontal alignment scan in Figure 2?",
+      "language": "en",
+      "query_class": "figure_derived",
+      "expected_document_id": "bddda8e4-8cd7-54e1-8277-8b502c6d4af2",
+      "expected_benchmark_document_id": "xpcs-pendant-drop-2023",
+      "expected_page": 3,
+      "expected_chunk_id": "dfbe73ba-83f2-5b30-9720-186bd8a0f19f",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "xpcs-pendant-drop-2023",
+          "document_id": "bddda8e4-8cd7-54e1-8277-8b502c6d4af2",
+          "page": 3,
+          "chunk_id": "dfbe73ba-83f2-5b30-9720-186bd8a0f19f",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "104fed95d78d038e42f9a9c5eb1509d3205494a0d22ee97b1819e9dc3e0d05da"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The scan tracks transmitted X-rays as the sample moves across the beam to estimate drop size.",
+      "document_title": "Robotic pendant drop: containerless liquid for μs-resolved, AI-executable XPCS",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Approved per the supplied independent human review outcome; query, source target, page/chunk association, and license-backed corpus membership passed integrity checks."
+    },
+    {
+      "query_id": "rpv1-048",
+      "source_spec_id": "xpcs_semantic2",
+      "query": "How does the robotic setup help make complex XPCS experiments more reproducible?",
+      "language": "en",
+      "query_class": "paraphrase",
+      "expected_document_id": "bddda8e4-8cd7-54e1-8277-8b502c6d4af2",
+      "expected_benchmark_document_id": "xpcs-pendant-drop-2023",
+      "expected_page": 6,
+      "expected_chunk_id": "e3171459-a683-55f7-adcc-a0077cd9fe8c",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "xpcs-pendant-drop-2023",
+          "document_id": "bddda8e4-8cd7-54e1-8277-8b502c6d4af2",
+          "page": 6,
+          "chunk_id": "e3171459-a683-55f7-adcc-a0077cd9fe8c",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "7762410bc11a86164281c0b22ea2b0d42ff659f76511145dfd0d0cbad332860a"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The workflow section explains that automation sequences actions across the robot and beamline components.",
+      "document_title": "Robotic pendant drop: containerless liquid for μs-resolved, AI-executable XPCS",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Approved per the supplied independent human review outcome; query, source target, page/chunk association, and license-backed corpus membership passed integrity checks."
+    },
+    {
+      "query_id": "rpv1-049",
+      "source_spec_id": "xpcs_noisy_partial",
+      "query": "Drop size from the sideways beam scan?",
+      "language": "en",
+      "query_class": "noisy_partial",
+      "expected_document_id": "bddda8e4-8cd7-54e1-8277-8b502c6d4af2",
+      "expected_benchmark_document_id": "xpcs-pendant-drop-2023",
+      "expected_page": 3,
+      "expected_chunk_id": "dfbe73ba-83f2-5b30-9720-186bd8a0f19f",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "xpcs-pendant-drop-2023",
+          "document_id": "bddda8e4-8cd7-54e1-8277-8b502c6d4af2",
+          "page": 3,
+          "chunk_id": "dfbe73ba-83f2-5b30-9720-186bd8a0f19f",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "104fed95d78d038e42f9a9c5eb1509d3205494a0d22ee97b1819e9dc3e0d05da"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The alignment passage gives the measured pendant-drop diameter from a horizontal scan.",
+      "document_title": "Robotic pendant drop: containerless liquid for μs-resolved, AI-executable XPCS",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Approved per the supplied independent human review outcome; query, source target, page/chunk association, and license-backed corpus membership passed integrity checks."
+    },
+    {
+      "query_id": "rpv1-050",
+      "source_spec_id": "electro_doi",
+      "query": "Which DOI identifies the charge-transfer descriptor study for CO2 reduction?",
+      "language": "en",
+      "query_class": "identifier",
+      "expected_document_id": "0cd26d4e-b456-5014-a90a-ec64ffeb549f",
+      "expected_benchmark_document_id": "co2-electrocatalyst-descriptor-2023",
+      "expected_page": 1,
+      "expected_chunk_id": "f680b9a7-5116-5c35-8775-5679778dab39",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "co2-electrocatalyst-descriptor-2023",
+          "document_id": "0cd26d4e-b456-5014-a90a-ec64ffeb549f",
+          "page": 1,
+          "chunk_id": "f680b9a7-5116-5c35-8775-5679778dab39",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "da8175542ba0bf65e4aaae00e9467cbc8cee879848529b00b7c14bf1802ecdf7"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The first page names the electrocatalysis article and its DOI.",
+      "document_title": "The importance of a charge transfer descriptor for screening potential CO2 reduction electrocatalysts",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Approved per the supplied independent human review outcome; query, source target, page/chunk association, and license-backed corpus membership passed integrity checks."
+    },
+    {
+      "query_id": "rpv1-051",
+      "source_spec_id": "electro_reaction",
+      "query": "Which product-forming electrochemical reaction is modelled in the main mechanism?",
+      "language": "en",
+      "query_class": "semantic",
+      "expected_document_id": "0cd26d4e-b456-5014-a90a-ec64ffeb549f",
+      "expected_benchmark_document_id": "co2-electrocatalyst-descriptor-2023",
+      "expected_page": 3,
+      "expected_chunk_id": "52da01d0-75e6-5cde-aed2-bc0e06fcc97e",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "co2-electrocatalyst-descriptor-2023",
+          "document_id": "0cd26d4e-b456-5014-a90a-ec64ffeb549f",
+          "page": 3,
+          "chunk_id": "52da01d0-75e6-5cde-aed2-bc0e06fcc97e",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "fe5e8ea4d8d110cbec5db2f9cd9dffe95280610d63ce086e1c8c0872a86dd84d"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The mechanism follows electrochemical CO2 conversion through adsorbed intermediates to CO.",
+      "document_title": "The importance of a charge transfer descriptor for screening potential CO2 reduction electrocatalysts",
+      "review_status": "CORRECTED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Corrected taxonomy: this asks which product-forming reaction the mechanism represents, so semantic/mechanism is the closest existing class. The CO2-to-CO reaction target and page/chunk are unchanged and valid."
+    },
+    {
+      "query_id": "rpv1-052",
+      "source_spec_id": "electro_descriptor",
+      "query": "What descriptor is proposed to supplement adsorption energies when screening electrocatalysts?",
+      "language": "en",
+      "query_class": "method_basis",
+      "expected_document_id": "0cd26d4e-b456-5014-a90a-ec64ffeb549f",
+      "expected_benchmark_document_id": "co2-electrocatalyst-descriptor-2023",
+      "expected_page": 9,
+      "expected_chunk_id": "7e396d55-9dae-55bc-b01f-5f5e3ce66d45",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "co2-electrocatalyst-descriptor-2023",
+          "document_id": "0cd26d4e-b456-5014-a90a-ec64ffeb549f",
+          "page": 9,
+          "chunk_id": "7e396d55-9dae-55bc-b01f-5f5e3ce66d45",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "ad4e0c0c7707544832b5b44efbfbdc6ce27492a3fc52c4a1cf84786207ae72f9"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The central proposal uses a surface-charge-related electrochemical descriptor.",
+      "document_title": "The importance of a charge transfer descriptor for screening potential CO2 reduction electrocatalysts",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Approved per the supplied independent human review outcome; query, source target, page/chunk association, and license-backed corpus membership passed integrity checks."
+    },
+    {
+      "query_id": "rpv1-053",
+      "source_spec_id": "electro_catmap",
+      "query": "Which software package is named for the microkinetic calculations?",
+      "language": "en",
+      "query_class": "method_basis",
+      "expected_document_id": "0cd26d4e-b456-5014-a90a-ec64ffeb549f",
+      "expected_benchmark_document_id": "co2-electrocatalyst-descriptor-2023",
+      "expected_page": 10,
+      "expected_chunk_id": "da9a7111-027e-5347-82e4-a9611017dd79",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "co2-electrocatalyst-descriptor-2023",
+          "document_id": "0cd26d4e-b456-5014-a90a-ec64ffeb549f",
+          "page": 10,
+          "chunk_id": "da9a7111-027e-5347-82e4-a9611017dd79",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "b10eef9c75212b6fc7171d39b1c6e70d31b458fb9e2c7012232cb6e74ca2ee7c"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The modeling subsection identifies the package used to solve mean-field rate equations.",
+      "document_title": "The importance of a charge transfer descriptor for screening potential CO2 reduction electrocatalysts",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Approved per the supplied independent human review outcome; query, source target, page/chunk association, and license-backed corpus membership passed integrity checks."
+    },
+    {
+      "query_id": "rpv1-054",
+      "source_spec_id": "electro_conditions",
+      "query": "Which electrochemical variables are varied in the reaction-energy treatment?",
+      "language": "en",
+      "query_class": "experimental_condition",
+      "expected_document_id": "0cd26d4e-b456-5014-a90a-ec64ffeb549f",
+      "expected_benchmark_document_id": "co2-electrocatalyst-descriptor-2023",
+      "expected_page": 2,
+      "expected_chunk_id": "fa71f850-d3b2-54d6-9ee9-d2c1550e9553",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "co2-electrocatalyst-descriptor-2023",
+          "document_id": "0cd26d4e-b456-5014-a90a-ec64ffeb549f",
+          "page": 2,
+          "chunk_id": "fa71f850-d3b2-54d6-9ee9-d2c1550e9553",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "e4d2eaac6a3b6a770effd9a4bae2cab6cf6a6f1cdb3d59833a102a6a5123f942"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The article emphasizes dependence on applied potential and pH for intermediate energies.",
+      "document_title": "The importance of a charge transfer descriptor for screening potential CO2 reduction electrocatalysts",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Approved per the supplied independent human review outcome; query, source target, page/chunk association, and license-backed corpus membership passed integrity checks."
+    },
+    {
+      "query_id": "rpv1-055",
+      "source_spec_id": "electro_semantic",
+      "query": "Why can a charge-transfer descriptor change predicted catalyst selectivity?",
+      "language": "en",
+      "query_class": "semantic",
+      "expected_document_id": "0cd26d4e-b456-5014-a90a-ec64ffeb549f",
+      "expected_benchmark_document_id": "co2-electrocatalyst-descriptor-2023",
+      "expected_page": 9,
+      "expected_chunk_id": "7e396d55-9dae-55bc-b01f-5f5e3ce66d45",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "co2-electrocatalyst-descriptor-2023",
+          "document_id": "0cd26d4e-b456-5014-a90a-ec64ffeb549f",
+          "page": 9,
+          "chunk_id": "7e396d55-9dae-55bc-b01f-5f5e3ce66d45",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "ad4e0c0c7707544832b5b44efbfbdc6ce27492a3fc52c4a1cf84786207ae72f9"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The discussion connects interfacial charge and electric field effects to reaction intermediates and product trends.",
+      "document_title": "The importance of a charge transfer descriptor for screening potential CO2 reduction electrocatalysts",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Approved per the supplied independent human review outcome; query, source target, page/chunk association, and license-backed corpus membership passed integrity checks."
+    },
+    {
+      "query_id": "rpv1-056",
+      "source_spec_id": "electro_figure",
+      "query": "Which descriptor controls the location of the reported selectivity-volcano trend?",
+      "language": "en",
+      "query_class": "figure_derived",
+      "expected_document_id": "0cd26d4e-b456-5014-a90a-ec64ffeb549f",
+      "expected_benchmark_document_id": "co2-electrocatalyst-descriptor-2023",
+      "expected_page": 7,
+      "expected_chunk_id": "35b27d3f-ef36-596f-9d8f-249ce6f0a31b",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "co2-electrocatalyst-descriptor-2023",
+          "document_id": "0cd26d4e-b456-5014-a90a-ec64ffeb549f",
+          "page": 7,
+          "chunk_id": "35b27d3f-ef36-596f-9d8f-249ce6f0a31b",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "91dc686cc7f6affdee2f32c508882db841b117c53f5c872fb6e3b40a812f05a1"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The results relate the selectivity pattern to the potential-of-zero-charge descriptor.",
+      "document_title": "The importance of a charge transfer descriptor for screening potential CO2 reduction electrocatalysts",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Approved per the supplied independent human review outcome; query, source target, page/chunk association, and license-backed corpus membership passed integrity checks."
+    },
+    {
+      "query_id": "rpv1-057",
+      "source_spec_id": "electro_paraphrase",
+      "query": "In the copper-on-gold examples, what change is suggested to improve CO formation activity?",
+      "language": "en",
+      "query_class": "paraphrase",
+      "expected_document_id": "0cd26d4e-b456-5014-a90a-ec64ffeb549f",
+      "expected_benchmark_document_id": "co2-electrocatalyst-descriptor-2023",
+      "expected_page": 6,
+      "expected_chunk_id": "484ad5e9-7d5e-5cfa-9602-b023f9f4086e",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "co2-electrocatalyst-descriptor-2023",
+          "document_id": "0cd26d4e-b456-5014-a90a-ec64ffeb549f",
+          "page": 6,
+          "chunk_id": "484ad5e9-7d5e-5cfa-9602-b023f9f4086e",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "f7c0a8507f3941e978c0d464b6b0bd7d6cd2559f67b330ff391e0e5eddd5918a"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The results discuss modifying gold with copper to shift the relevant charge descriptor.",
+      "document_title": "The importance of a charge transfer descriptor for screening potential CO2 reduction electrocatalysts",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Approved per the supplied independent human review outcome; query, source target, page/chunk association, and license-backed corpus membership passed integrity checks."
+    },
+    {
+      "query_id": "rpv1-058",
+      "source_spec_id": "chiral_doi",
+      "query": "Which DOI identifies the chiral-framework disassembly study?",
+      "language": "en",
+      "query_class": "identifier",
+      "expected_document_id": "e4aec772-429d-5793-8ce2-e20240572334",
+      "expected_benchmark_document_id": "chiral-organometallic-helices-2025",
+      "expected_page": 1,
+      "expected_chunk_id": "55cc7849-05f8-50cc-96e5-0b830c19fdb2",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "chiral-organometallic-helices-2025",
+          "document_id": "e4aec772-429d-5793-8ce2-e20240572334",
+          "page": 1,
+          "chunk_id": "55cc7849-05f8-50cc-96e5-0b830c19fdb2",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "3ed6f928cd539befbb455a43fb198f08929cec535ab9cbb281d8b0284ef428c4"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The title page identifies the organometallic-helix paper and its DOI.",
+      "document_title": "Disassembly of chiral hydrogen-bonded frameworks into single-unit organometallic helices for enantioselective amyloid inhibition",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Approved per the supplied independent human review outcome; query, source target, page/chunk association, and license-backed corpus membership passed integrity checks."
+    },
+    {
+      "query_id": "rpv1-059",
+      "source_spec_id": "chiral_material",
+      "query": "Which metal is present in the D- and L-enantiomer crystal materials?",
+      "language": "en",
+      "query_class": "named_material",
+      "expected_document_id": "e4aec772-429d-5793-8ce2-e20240572334",
+      "expected_benchmark_document_id": "chiral-organometallic-helices-2025",
+      "expected_page": 3,
+      "expected_chunk_id": "a5c839f8-e256-58dc-bda1-e6e4608c5dce",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "chiral-organometallic-helices-2025",
+          "document_id": "e4aec772-429d-5793-8ce2-e20240572334",
+          "page": 3,
+          "chunk_id": "a5c839f8-e256-58dc-bda1-e6e4608c5dce",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "6b2328be0fc25bcd0cd8c98e9d9d2aeede340bb5dac99333f8d267b3f137096f"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The article uses copper-containing crystal and single-unit helix names for the enantiomers.",
+      "document_title": "Disassembly of chiral hydrogen-bonded frameworks into single-unit organometallic helices for enantioselective amyloid inhibition",
+      "review_status": "CORRECTED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Corrected taxonomy: the question asks for the metal identity, not a formula. Copper is supported by the unchanged source target, page, and chunk."
+    },
+    {
+      "query_id": "rpv1-060",
+      "source_spec_id": "chiral_bond",
+      "query": "What two hydrogen-bond distances are reported in the structural discussion?",
+      "language": "en",
+      "query_class": "numeric_value",
+      "expected_document_id": "e4aec772-429d-5793-8ce2-e20240572334",
+      "expected_benchmark_document_id": "chiral-organometallic-helices-2025",
+      "expected_page": 4,
+      "expected_chunk_id": "35318022-2f37-5539-b750-488cb97e1fb8",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "chiral-organometallic-helices-2025",
+          "document_id": "e4aec772-429d-5793-8ce2-e20240572334",
+          "page": 4,
+          "chunk_id": "35318022-2f37-5539-b750-488cb97e1fb8",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "9247c895e5c51e7500384b51dd058a211a10efaa733bbc2bb5c71b5d826c9a7c"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The crystal-contact paragraph gives two O-H···O distances in angstroms.",
+      "document_title": "Disassembly of chiral hydrogen-bonded frameworks into single-unit organometallic helices for enantioselective amyloid inhibition",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Approved per the supplied independent human review outcome; query, source target, page/chunk association, and license-backed corpus membership passed integrity checks."
+    },
+    {
+      "query_id": "rpv1-061",
+      "source_spec_id": "chiral_spacegroup",
+      "query": "Which crystallographic system and chiral space groups are assigned to the two crystals?",
+      "language": "en",
+      "query_class": "method_basis",
+      "expected_document_id": "e4aec772-429d-5793-8ce2-e20240572334",
+      "expected_benchmark_document_id": "chiral-organometallic-helices-2025",
+      "expected_page": 3,
+      "expected_chunk_id": "a5c839f8-e256-58dc-bda1-e6e4608c5dce",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "chiral-organometallic-helices-2025",
+          "document_id": "e4aec772-429d-5793-8ce2-e20240572334",
+          "page": 3,
+          "chunk_id": "a5c839f8-e256-58dc-bda1-e6e4608c5dce",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "6b2328be0fc25bcd0cd8c98e9d9d2aeede340bb5dac99333f8d267b3f137096f"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "Single-crystal diffraction assigns a tetragonal phase with opposite enantiomorphic space groups.",
+      "document_title": "Disassembly of chiral hydrogen-bonded frameworks into single-unit organometallic helices for enantioselective amyloid inhibition",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Approved per the supplied independent human review outcome; query, source target, page/chunk association, and license-backed corpus membership passed integrity checks."
+    },
+    {
+      "query_id": "rpv1-062",
+      "source_spec_id": "chiral_synthesis",
+      "query": "At what temperature are the copper crystals prepared according to the synthesis passage?",
+      "language": "en",
+      "query_class": "experimental_condition",
+      "expected_document_id": "e4aec772-429d-5793-8ce2-e20240572334",
+      "expected_benchmark_document_id": "chiral-organometallic-helices-2025",
+      "expected_page": 3,
+      "expected_chunk_id": "a5c839f8-e256-58dc-bda1-e6e4608c5dce",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "chiral-organometallic-helices-2025",
+          "document_id": "e4aec772-429d-5793-8ce2-e20240572334",
+          "page": 3,
+          "chunk_id": "a5c839f8-e256-58dc-bda1-e6e4608c5dce",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "6b2328be0fc25bcd0cd8c98e9d9d2aeede340bb5dac99333f8d267b3f137096f"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The synthesis description includes a 60-degree-Celsius step.",
+      "document_title": "Disassembly of chiral hydrogen-bonded frameworks into single-unit organometallic helices for enantioselective amyloid inhibition",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Approved per the supplied independent human review outcome; query, source target, page/chunk association, and license-backed corpus membership passed integrity checks."
+    },
+    {
+      "query_id": "rpv1-063",
+      "source_spec_id": "chiral_dimensions",
+      "query": "What average dimensions are reported for the D-enantiomer crystals?",
+      "language": "en",
+      "query_class": "numeric_value",
+      "expected_document_id": "e4aec772-429d-5793-8ce2-e20240572334",
+      "expected_benchmark_document_id": "chiral-organometallic-helices-2025",
+      "expected_page": 11,
+      "expected_chunk_id": "8afa8c5d-d716-586b-90cc-c0dc86123ebd",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "chiral-organometallic-helices-2025",
+          "document_id": "e4aec772-429d-5793-8ce2-e20240572334",
+          "page": 11,
+          "chunk_id": "8afa8c5d-d716-586b-90cc-c0dc86123ebd",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "15efb10cf465baff64f0c21b6c29e3a5634bf0bf5d1de6f56d5193d9ae537dcd"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The characterization passage reports a crystal yield and average length, width, and height.",
+      "document_title": "Disassembly of chiral hydrogen-bonded frameworks into single-unit organometallic helices for enantioselective amyloid inhibition",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Approved per the supplied independent human review outcome; query, source target, page/chunk association, and license-backed corpus membership passed integrity checks."
+    },
+    {
+      "query_id": "rpv1-064",
+      "source_spec_id": "chiral_figure",
+      "query": "What reversible structural change is illustrated between the crystals and the single-unit helices?",
+      "language": "en",
+      "query_class": "figure_derived",
+      "expected_document_id": "e4aec772-429d-5793-8ce2-e20240572334",
+      "expected_benchmark_document_id": "chiral-organometallic-helices-2025",
+      "expected_page": 6,
+      "expected_chunk_id": "205fe291-9cd7-5846-afca-382fc56c8416",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "chiral-organometallic-helices-2025",
+          "document_id": "e4aec772-429d-5793-8ce2-e20240572334",
+          "page": 6,
+          "chunk_id": "205fe291-9cd7-5846-afca-382fc56c8416",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "1b793cf65524a87d73499865742f6641a4fe3d6ac03682eb031d335f9776d722"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The results describe a reversible assembly–disassembly cycle between parent crystals and helical units.",
+      "document_title": "Disassembly of chiral hydrogen-bonded frameworks into single-unit organometallic helices for enantioselective amyloid inhibition",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Approved per the supplied independent human review outcome; query, source target, page/chunk association, and license-backed corpus membership passed integrity checks."
+    },
+    {
+      "query_id": "rpv1-065",
+      "source_spec_id": "chiral_semantic",
+      "query": "What is the main structural strategy used to obtain the chiral metal-organic helices?",
+      "language": "en",
+      "query_class": "semantic",
+      "expected_document_id": "e4aec772-429d-5793-8ce2-e20240572334",
+      "expected_benchmark_document_id": "chiral-organometallic-helices-2025",
+      "expected_page": 10,
+      "expected_chunk_id": "d7e865f9-d389-5c27-99c4-8405c8d63287",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "chiral-organometallic-helices-2025",
+          "document_id": "e4aec772-429d-5793-8ce2-e20240572334",
+          "page": 10,
+          "chunk_id": "d7e865f9-d389-5c27-99c4-8405c8d63287",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "5e6fc7e1c76fd1b9686746429050556f5295dd32d67bca013ca8ee699d50601b"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The conclusion describes disassembling hydrogen-bonded crystals into copper-based single-unit helices.",
+      "document_title": "Disassembly of chiral hydrogen-bonded frameworks into single-unit organometallic helices for enantioselective amyloid inhibition",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Approved per the supplied independent human review outcome; query, source target, page/chunk association, and license-backed corpus membership passed integrity checks."
+    },
+    {
+      "query_id": "rpv1-066",
+      "source_spec_id": "na_basis_methane",
+      "query": "Which basis set was used for a B3LYP geometry optimization of methane?",
+      "language": "en",
+      "query_class": "no_answer",
+      "expected_document_id": null,
+      "expected_benchmark_document_id": null,
+      "expected_page": null,
+      "expected_chunk_id": null,
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [],
+      "alternate_targets": [],
+      "no_answer": true,
+      "evidence_excerpt": "Plausible computational-chemistry question; none of the eight papers reports a methane B3LYP basis-set calculation.",
+      "document_title": "Corpus-wide no-answer candidate",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Corpus-wide source check of all eight hash-verified PDFs and 349 parsed production chunks searched methane, CH4, B3LYP, basis-set, and geometry-optimization/optimisation wording. Reviewed apparent hits: dichloromethane is a polymer-synthesis solvent, and methane appears in CO2-conversion reference context; neither describes the queried calculation. No methane/B3LYP geometry result or methane-associated basis set is present."
+    },
+    {
+      "query_id": "rpv1-067",
+      "source_spec_id": "na_polymer_modulus",
+      "query": "What tensile modulus was measured for the PCL/PEG nanospheres?",
+      "language": "en",
+      "query_class": "no_answer",
+      "expected_document_id": null,
+      "expected_benchmark_document_id": null,
+      "expected_page": null,
+      "expected_chunk_id": null,
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [],
+      "alternate_targets": [],
+      "no_answer": true,
+      "evidence_excerpt": "Plausible polymer-materials property; the corpus contains no reported tensile-modulus measurement for these nanospheres.",
+      "document_title": "Corpus-wide no-answer candidate",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Corpus-wide source check of all eight hash-verified PDFs and 349 parsed production chunks searched tensile, modulus, Young's modulus, mechanical, and elastic wording. Reviewed apparent hits: mechanical stirring/milling and general characterization or literature context, not tensile/elastic testing of the PCL/PEG nanospheres. No such modulus measurement is present."
+    },
+    {
+      "query_id": "rpv1-068",
+      "source_spec_id": "na_zno_bandgap",
+      "query": "What optical band gap was measured for the ZnO nanoparticles?",
+      "language": "en",
+      "query_class": "no_answer",
+      "expected_document_id": null,
+      "expected_benchmark_document_id": null,
+      "expected_page": null,
+      "expected_chunk_id": null,
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [],
+      "alternate_targets": [],
+      "no_answer": true,
+      "evidence_excerpt": "Plausible nanoparticle characterization question; the ZnO paper's indexed text contains no measured optical-band-gap value.",
+      "document_title": "Corpus-wide no-answer candidate",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Corpus-wide source check of all eight hash-verified PDFs and 349 parsed production chunks searched band gap/bandgap, optical gap, Eg, UV-vis, and absorption-edge wording. Reviewed apparent hits: Cu(II) crystal-field orbital energy gaps in the chiral-framework paper and UV-vis guest/chiroptical or reference context; none is a ZnO semiconductor optical gap. No ZnO optical-gap result is present."
+    },
+    {
+      "query_id": "rpv1-069",
+      "source_spec_id": "na_co2_methanol",
+      "query": "What overpotential produced methanol during the CO2 electroreduction study?",
+      "language": "en",
+      "query_class": "no_answer",
+      "expected_document_id": null,
+      "expected_benchmark_document_id": null,
+      "expected_page": null,
+      "expected_chunk_id": null,
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [],
+      "alternate_targets": [],
+      "no_answer": true,
+      "evidence_excerpt": "Plausible electrocatalysis question; the selected electrocatalysis paper models CO formation and does not report methanol overpotential.",
+      "document_title": "Corpus-wide no-answer candidate",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Corpus-wide source check of all eight hash-verified PDFs and 349 parsed production chunks searched methanol, CH3OH, overpotential, CO2RR, and CO2 reduction products. Reviewed methanol hits as polymer-process solvent or unrelated references; the target electrocatalysis paper's stated mechanism and modeled product are CO, not methanol. No methanol-producing overpotential is reported."
+    },
+    {
+      "query_id": "rpv1-070",
+      "source_spec_id": "ambiguous_xray",
+      "query": "Which papers in the corpus use X-ray methods to characterize a material?",
+      "language": "en",
+      "query_class": "ambiguous",
+      "expected_document_id": "9f17af81-8835-5891-84b7-8e1831cef5a2",
+      "expected_benchmark_document_id": "metal-oxide-nanoparticles-2020",
+      "expected_page": 3,
+      "expected_chunk_id": "31d50555-48df-5534-9f6f-9285a7cbe383",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "metal-oxide-nanoparticles-2020",
+          "document_id": "9f17af81-8835-5891-84b7-8e1831cef5a2",
+          "page": 3,
+          "chunk_id": "31d50555-48df-5534-9f6f-9285a7cbe383",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "0f4c3461b1af40e83e25d9ceb94d665acf9ca44b57faff8a869a209d3d1e7a51"
+        },
+        {
+          "benchmark_document_id": "counterfeit-drug-xrd-dsc-2018",
+          "document_id": "58511336-2551-5e7c-8102-6827c1b3f563",
+          "page": 9,
+          "chunk_id": "1b8a8519-1d63-5ca7-a325-2fe2b15af771",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "d96f11a1df90a022417426715061b2c1fa8bdff0a869bbac4f79b06b1e9178f3"
+        },
+        {
+          "benchmark_document_id": "supramolecular-framework-water-2014",
+          "document_id": "b6562c24-796e-5279-a966-fa595664db9e",
+          "page": 4,
+          "chunk_id": "96ae3ce1-130e-5f1b-b8a4-55f9cbbf0e85",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "dc64e32137f2b2343a4ea73eb9d17c568dfdff3f5feaaa53a91209e54f0fe227"
+        },
+        {
+          "benchmark_document_id": "chiral-organometallic-helices-2025",
+          "document_id": "e4aec772-429d-5793-8ce2-e20240572334",
+          "page": 3,
+          "chunk_id": "a5c839f8-e256-58dc-bda1-e6e4608c5dce",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "6b2328be0fc25bcd0cd8c98e9d9d2aeede340bb5dac99333f8d267b3f137096f"
+        },
+        {
+          "benchmark_document_id": "polymer-nanospheres-2020",
+          "document_id": "5450ebd1-4ce1-552b-a5b0-ddc6f8fab7ee",
+          "page": 10,
+          "chunk_id": "fd70733d-fcd1-5f8a-8298-ed9c05d9172e",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "30a669aa019675e3b60180ae15bb52cf5ab0771fb361d7bae56b071f71946b8d"
+        },
+        {
+          "benchmark_document_id": "xpcs-pendant-drop-2023",
+          "document_id": "bddda8e4-8cd7-54e1-8277-8b502c6d4af2",
+          "page": 3,
+          "chunk_id": "dfbe73ba-83f2-5b30-9720-186bd8a0f19f",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "104fed95d78d038e42f9a9c5eb1509d3205494a0d22ee97b1819e9dc3e0d05da"
+        }
+      ],
+      "alternate_targets": [
+        {
+          "benchmark_document_id": "counterfeit-drug-xrd-dsc-2018",
+          "document_id": "58511336-2551-5e7c-8102-6827c1b3f563",
+          "page": 9,
+          "chunk_id": "1b8a8519-1d63-5ca7-a325-2fe2b15af771",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "d96f11a1df90a022417426715061b2c1fa8bdff0a869bbac4f79b06b1e9178f3"
+        },
+        {
+          "benchmark_document_id": "supramolecular-framework-water-2014",
+          "document_id": "b6562c24-796e-5279-a966-fa595664db9e",
+          "page": 4,
+          "chunk_id": "96ae3ce1-130e-5f1b-b8a4-55f9cbbf0e85",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "dc64e32137f2b2343a4ea73eb9d17c568dfdff3f5feaaa53a91209e54f0fe227"
+        },
+        {
+          "benchmark_document_id": "chiral-organometallic-helices-2025",
+          "document_id": "e4aec772-429d-5793-8ce2-e20240572334",
+          "page": 3,
+          "chunk_id": "a5c839f8-e256-58dc-bda1-e6e4608c5dce",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "6b2328be0fc25bcd0cd8c98e9d9d2aeede340bb5dac99333f8d267b3f137096f"
+        },
+        {
+          "benchmark_document_id": "polymer-nanospheres-2020",
+          "document_id": "5450ebd1-4ce1-552b-a5b0-ddc6f8fab7ee",
+          "page": 10,
+          "chunk_id": "fd70733d-fcd1-5f8a-8298-ed9c05d9172e",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "30a669aa019675e3b60180ae15bb52cf5ab0771fb361d7bae56b071f71946b8d"
+        },
+        {
+          "benchmark_document_id": "xpcs-pendant-drop-2023",
+          "document_id": "bddda8e4-8cd7-54e1-8277-8b502c6d4af2",
+          "page": 3,
+          "chunk_id": "dfbe73ba-83f2-5b30-9720-186bd8a0f19f",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "104fed95d78d038e42f9a9c5eb1509d3205494a0d22ee97b1819e9dc3e0d05da"
+        }
+      ],
+      "no_answer": false,
+      "evidence_excerpt": "Six papers report X-ray diffraction or scattering used to characterize their studied materials.",
+      "document_title": "Mycosinthetized Ag, CuO and ZnO nanoparticles from a promising Trichoderma harzianum strain and their antifungal potential against important phytopathogens",
+      "review_status": "CORRECTED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Expanded the acceptable set after inspecting all eight source PDFs and production chunks. Six supported papers: metal-oxide nanoparticles (p3, XRD/WAXS), counterfeit-drug XRPD/DSC (p9), supramolecular framework (p5), chiral organometallic helices (p4), polymer nanospheres (p10, powder XRD of PPDNS), and pendant-drop XPCS (p3, SAXS/XPCS of silica nanoparticles). The Russian lattice-identification paper's X-ray hit is bibliographic context, not a measurement in its study; the CO2 descriptor paper reports computation rather than X-ray characterization. New page/chunk targets are source-backed."
+    },
+    {
+      "query_id": "rpv1-071",
+      "source_spec_id": "ambiguous_thermal",
+      "query": "Which papers report thermal-analysis measurements on their material samples?",
+      "language": "en",
+      "query_class": "ambiguous",
+      "expected_document_id": "5450ebd1-4ce1-552b-a5b0-ddc6f8fab7ee",
+      "expected_benchmark_document_id": "polymer-nanospheres-2020",
+      "expected_page": 12,
+      "expected_chunk_id": "d6d2ae2d-01c6-5b0a-a736-3cfdef636bcb",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "polymer-nanospheres-2020",
+          "document_id": "5450ebd1-4ce1-552b-a5b0-ddc6f8fab7ee",
+          "page": 12,
+          "chunk_id": "d6d2ae2d-01c6-5b0a-a736-3cfdef636bcb",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "e582f66bb0edbec181ff77d8f592985bf3c5dfc6e764de9feeb74f280f8698ec"
+        },
+        {
+          "benchmark_document_id": "metal-oxide-nanoparticles-2020",
+          "document_id": "9f17af81-8835-5891-84b7-8e1831cef5a2",
+          "page": 3,
+          "chunk_id": "4f2046f6-918a-5268-bc94-9ec7bf63e917",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "1e29b7f102eb24c35462adfbd6b163f3bf24867f7ddfa9b399ebc435f20b2fde"
+        },
+        {
+          "benchmark_document_id": "counterfeit-drug-xrd-dsc-2018",
+          "document_id": "58511336-2551-5e7c-8102-6827c1b3f563",
+          "page": 8,
+          "chunk_id": "8080466f-4f09-5744-bad9-635b73666f13",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "fb1ef569dc2f2e03a08810ed5b9e9d4dc690d71b0396178016ac8c44db0322cf"
+        },
+        {
+          "benchmark_document_id": "supramolecular-framework-water-2014",
+          "document_id": "b6562c24-796e-5279-a966-fa595664db9e",
+          "page": 5,
+          "chunk_id": "b393c74f-b376-595d-9a7e-81fcd8558a90",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "fddf8959aa6b937b5c74b18d45bf0180fe07081ab5b7bad73158b45d434652e2"
+        },
+        {
+          "benchmark_document_id": "chiral-organometallic-helices-2025",
+          "document_id": "e4aec772-429d-5793-8ce2-e20240572334",
+          "page": 4,
+          "chunk_id": "35318022-2f37-5539-b750-488cb97e1fb8",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "9247c895e5c51e7500384b51dd058a211a10efaa733bbc2bb5c71b5d826c9a7c"
+        }
+      ],
+      "alternate_targets": [
+        {
+          "benchmark_document_id": "metal-oxide-nanoparticles-2020",
+          "document_id": "9f17af81-8835-5891-84b7-8e1831cef5a2",
+          "page": 3,
+          "chunk_id": "4f2046f6-918a-5268-bc94-9ec7bf63e917",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "1e29b7f102eb24c35462adfbd6b163f3bf24867f7ddfa9b399ebc435f20b2fde"
+        },
+        {
+          "benchmark_document_id": "counterfeit-drug-xrd-dsc-2018",
+          "document_id": "58511336-2551-5e7c-8102-6827c1b3f563",
+          "page": 8,
+          "chunk_id": "8080466f-4f09-5744-bad9-635b73666f13",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "fb1ef569dc2f2e03a08810ed5b9e9d4dc690d71b0396178016ac8c44db0322cf"
+        },
+        {
+          "benchmark_document_id": "supramolecular-framework-water-2014",
+          "document_id": "b6562c24-796e-5279-a966-fa595664db9e",
+          "page": 5,
+          "chunk_id": "b393c74f-b376-595d-9a7e-81fcd8558a90",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "fddf8959aa6b937b5c74b18d45bf0180fe07081ab5b7bad73158b45d434652e2"
+        },
+        {
+          "benchmark_document_id": "chiral-organometallic-helices-2025",
+          "document_id": "e4aec772-429d-5793-8ce2-e20240572334",
+          "page": 4,
+          "chunk_id": "35318022-2f37-5539-b750-488cb97e1fb8",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "9247c895e5c51e7500384b51dd058a211a10efaa733bbc2bb5c71b5d826c9a7c"
+        }
+      ],
+      "no_answer": false,
+      "evidence_excerpt": "Five papers report TGA, DSC, or TG analysis of their material samples.",
+      "document_title": "Facile synthesis and nanoscale features of a nanostructured nordihydroguaiaretic acid analog for therapeutic applications",
+      "review_status": "CORRECTED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Expanded the acceptable set after inspecting all eight source PDFs and production chunks. Polymer nanospheres report TGA/DSC results on p12–13; the primary target was moved from a methods page to the p12 result chunk. Metal-oxide nanoparticles report TGA (p3), counterfeit-drug study reports DSC/TG (p8), supramolecular microcrystals report thermogravimetric stability testing (p5), and chiral Cu crystals report TGA curves (p4). The remaining Russian lattice and XPCS papers do not report thermal-analysis measurements; CO2 modeling temperature terms are not thermal analysis. Targets identify the source-bearing production chunks."
+    },
+    {
+      "query_id": "rpv1-072",
+      "source_spec_id": "cross_ru_to_en_xpcs",
+      "query": "Какова частота регистрации кадров и длительность сбора данных?",
+      "language": "ru",
+      "query_class": "multilingual",
+      "expected_document_id": "bddda8e4-8cd7-54e1-8277-8b502c6d4af2",
+      "expected_benchmark_document_id": "xpcs-pendant-drop-2023",
+      "expected_page": 8,
+      "expected_chunk_id": "97e53d1a-6062-5686-842a-d32b272cac4c",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "xpcs-pendant-drop-2023",
+          "document_id": "bddda8e4-8cd7-54e1-8277-8b502c6d4af2",
+          "page": 8,
+          "chunk_id": "97e53d1a-6062-5686-842a-d32b272cac4c",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "1b778ccd4e0939c5d1864befa5aba9a476ab6552ce64e2582d9b15fb5376bcac"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The English XPCS experiment description reports both a detector frame rate and a total collection interval.",
+      "document_title": "Robotic pendant drop: containerless liquid for μs-resolved, AI-executable XPCS",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Approved per the supplied independent human review outcome; query, source target, page/chunk association, and license-backed corpus membership passed integrity checks."
+    },
+    {
+      "query_id": "rpv1-073",
+      "source_spec_id": "cross_en_to_ru_formats",
+      "query": "Which two structure-file formats are proposed for lattice-recognition input?",
+      "language": "en",
+      "query_class": "multilingual",
+      "expected_document_id": "fd1edfa8-99a5-51f2-ab6a-fe5033fb1af9",
+      "expected_benchmark_document_id": "ru-crystal-grid-2025",
+      "expected_page": 2,
+      "expected_chunk_id": "a8c052a9-2e66-535e-81f2-f53886547776",
+      "expected_evidence_anchor_id": null,
+      "acceptable_targets": [
+        {
+          "benchmark_document_id": "ru-crystal-grid-2025",
+          "document_id": "fd1edfa8-99a5-51f2-ab6a-fe5033fb1af9",
+          "page": 2,
+          "chunk_id": "a8c052a9-2e66-535e-81f2-f53886547776",
+          "evidence_anchor_id": null,
+          "source_type": "DOCUMENT_TEXT",
+          "content_hash": "9a5cba56073ae1839b69182257b53ed0da22e9709bcd0f3440d1498d3b08efa2"
+        }
+      ],
+      "alternate_targets": [],
+      "no_answer": false,
+      "evidence_excerpt": "The Russian-language discussion names CIF and XYZ as alternative structure or coordinate inputs.",
+      "document_title": "Application of mathematical methods and DBMS technologies for solving the problem of crystalline grid identification",
+      "review_status": "APPROVED",
+      "reviewer": "external-human-review (user-provided independent review)",
+      "review_notes": "Approved per the supplied independent human review outcome; query, source target, page/chunk association, and license-backed corpus membership passed integrity checks."
+    }
+  ],
+  "review": {
+    "benchmark_version": "real-scientific-retrieval-v1",
+    "review_date": "2026-09-24",
+    "reviewer": "external-human-review (user-provided independent review)",
+    "reviewer_identity_source": "Independent review outcomes supplied by the user; not model-generated.",
+    "qrel_count": 73,
+    "judgment_counts": {
+      "APPROVED": 64,
+      "CORRECTED": 9,
+      "REJECTED": 0
+    },
+    "retrieval_benchmark_run": false
+  }
+}

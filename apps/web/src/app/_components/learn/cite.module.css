@@ -1,0 +1,356 @@
+/*
+ * How to Cite ChemDFT page styling.
+ * Conforms to ChemDFT DESIGN.md and Impeccable craft floor:
+ * Light-first scientific workstation, Inter + SFMono data fonts,
+ * clean typography hierarchy, balanced spacing, and zero slop.
+ */
+
+.citePage {
+  min-height: 100dvh;
+  background: var(--cdf-canvas);
+  color: var(--cdf-ink);
+}
+
+.article {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 24px 48px;
+  align-items: start;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 24px 32px 64px;
+}
+
+.articleHead {
+  grid-column: 1;
+}
+
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  font-size: 0.875rem;
+  color: var(--cdf-ink-muted);
+}
+
+.breadcrumb a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 32px;
+  color: var(--cdf-accent-hover);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.breadcrumb a:hover,
+.breadcrumb a:focus-visible {
+  text-decoration: underline;
+}
+
+.breadcrumb :global(.bp6-icon) {
+  color: var(--cdf-ink-muted);
+}
+
+.articleHead h1 {
+  max-width: 28ch;
+  margin: 0 0 12px;
+  font-size: clamp(1.625rem, 2.6vw, 2.25rem);
+  line-height: 1.12;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--cdf-ink);
+}
+
+.articleLead {
+  max-width: 66ch;
+  margin: 0 0 8px;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: var(--cdf-ink-muted);
+}
+
+.articleBody {
+  display: grid;
+  gap: 32px;
+  min-width: 0;
+  max-width: 72ch;
+}
+
+.section {
+  display: grid;
+  gap: 12px;
+}
+
+.section h2 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--cdf-ink);
+  letter-spacing: -0.01em;
+}
+
+.section p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--cdf-ink);
+}
+
+.workedExampleCard {
+  display: grid;
+  gap: 8px;
+  padding: 14px 18px;
+  background: var(--cdf-surface);
+  border: 1px solid var(--cdf-line);
+  border-left: 3px solid var(--cdf-accent);
+  border-radius: 4px;
+}
+
+/* Citation card */
+.citationCard {
+  border: 1px solid var(--cdf-line);
+  border-radius: var(--cdf-radius-2);
+  background: var(--cdf-surface);
+  box-shadow: 0 1px 3px rgba(16, 22, 26, 0.05);
+  overflow: hidden;
+  transition: border-color var(--cdf-duration) var(--cdf-ease);
+}
+
+.citationCard:focus-within {
+  border-color: var(--cdf-focus);
+}
+
+.citationCardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 16px;
+  background: var(--cdf-panel);
+  border-bottom: 1px solid var(--cdf-line);
+}
+
+.formatLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--cdf-ink);
+}
+
+.formatTag {
+  padding: 2px 6px;
+  border-radius: var(--cdf-radius-1);
+  background: var(--cdf-accent-soft);
+  color: var(--cdf-accent-hover);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.codeBlock {
+  margin: 0;
+  padding: 14px 16px;
+  background: var(--cdf-surface);
+  font-family: var(--cdf-font-data);
+  font-size: 0.875rem;
+  line-height: 1.55;
+  color: var(--cdf-ink);
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* Integrity notice: subtle enclosure without side-tab slop */
+.notice {
+  display: flex;
+  gap: 14px;
+  padding: 16px;
+  border: 1px solid var(--cdf-line);
+  border-radius: var(--cdf-radius-2);
+  background: var(--cdf-surface);
+  box-shadow: 0 1px 2px rgba(16, 22, 26, 0.04);
+}
+
+.noticeIcon {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--cdf-radius-2);
+  background: var(--cdf-accent-soft);
+  color: var(--cdf-accent);
+}
+
+.noticeText strong {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--cdf-ink);
+}
+
+.noticeText p {
+  margin: 0 0 8px;
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  color: var(--cdf-ink-muted);
+}
+
+.noticeText p:last-child {
+  margin-bottom: 0;
+}
+
+/* Sidebar aside */
+.aside {
+  display: grid;
+  gap: 16px;
+  position: sticky;
+  top: 74px;
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  margin-top: 48px;
+}
+
+.panel {
+  padding: 16px;
+  border: 1px solid var(--cdf-line);
+  border-radius: var(--cdf-radius-2);
+  background: var(--cdf-surface);
+  box-shadow: 0 1px 2px rgba(16, 22, 26, 0.04);
+}
+
+.panel h2 {
+  margin: 0 0 10px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--cdf-ink-muted);
+}
+
+.metaList {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.metaItem {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 0.875rem;
+}
+
+.metaLabel {
+  font-size: 0.75rem;
+  color: var(--cdf-ink-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.metaValue {
+  font-weight: 500;
+  color: var(--cdf-ink);
+  word-break: break-all;
+}
+
+.metaValue a {
+  color: var(--cdf-accent-hover);
+  text-decoration: none;
+}
+
+.metaValue a:hover,
+.metaValue a:focus-visible {
+  text-decoration: underline;
+}
+
+.panelLinks {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.panelLinks li + li {
+  border-top: 1px solid var(--cdf-line);
+}
+
+.panelLinks a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  min-height: 42px;
+  padding: 6px 0;
+  color: var(--cdf-ink);
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: color var(--cdf-duration) var(--cdf-ease);
+}
+
+.panelLinks a:hover,
+.panelLinks a:focus-visible {
+  color: var(--cdf-accent-hover);
+}
+
+.panelLinks a :global(.bp6-icon) {
+  color: var(--cdf-ink-muted);
+  transition: transform var(--cdf-duration) var(--cdf-ease);
+}
+
+.panelLinks a:hover :global(.bp6-icon),
+.panelLinks a:focus-visible :global(.bp6-icon) {
+  transform: translateX(2px);
+  color: var(--cdf-accent-hover);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .article {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 32px;
+    padding: 20px 24px 48px;
+  }
+
+  .aside {
+    grid-column: 1;
+    grid-row: auto;
+    position: static;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .article {
+    padding: 16px 16px 40px;
+  }
+
+  .articleHead h1 {
+    font-size: 1.5rem;
+    line-height: 1.18;
+  }
+
+  .citationCardHeader {
+    flex-wrap: wrap;
+  }
+
+  .citationCardHeader button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .codeBlock {
+    font-size: 0.8125rem;
+    padding: 12px;
+  }
+}

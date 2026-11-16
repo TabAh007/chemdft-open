@@ -1,0 +1,40 @@
+{
+  "authority": "evaluation output only; no candidate persistence or promotion",
+  "dataset_count": 69,
+  "dataset_id": "chemdft-structure-image-evaluation-v1",
+  "decimer_package_version": "2.8.0",
+  "machine_architecture": "arm64",
+  "model_assets": {
+    "assets": {
+      "DECIMER": {
+        "already_cached": false,
+        "filename": "models.zip",
+        "license": "CC-BY-4.0",
+        "md5": "de78c966b0d63b290cd3f70bb81a91e7",
+        "model_dir": "DECIMER_model",
+        "record": "https://zenodo.org/records/8300489",
+        "sha256": "8ebc7db18fffac7e71a2cf8487708053620d124846bc9502eddac1283b431d2b"
+      },
+      "DECIMER_HandDrawn": {
+        "already_cached": false,
+        "filename": "DECIMER_HandDrawn_model.zip",
+        "license": "CC-BY-4.0",
+        "md5": "1fece9813549417440f7c45d0c51603a",
+        "model_dir": "DECIMER_HandDrawn_model",
+        "record": "https://zenodo.org/records/10781330",
+        "sha256": "91c70fee79b7d64c09d433ff82e2216d16070e4d098b83da2c13d34c52439fde"
+      }
+    },
+    "prepared_at": "2026-09-24T07:52:12.459943+00:00",
+    "software": "DECIMER",
+    "software_version": "2.8.0",
+    "source": "official DECIMER Zenodo records"
+  },
+  "model_id": "DECIMER-Image_Transformer",
+  "model_version": "2.8.0",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "python_version": "3.12.10",
+  "results": "per-case JSON/CSV plus category summary and human review sheet",
+  "runtime_mode": "local CPU; Python network/DNS access blocked; no confidence score consumed",
+  "tensorflow_version": "2.20.0"
+}

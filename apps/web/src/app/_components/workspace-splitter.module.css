@@ -1,0 +1,50 @@
+.splitter {
+  position: relative;
+  width: 8px;
+  flex: 0 0 8px;
+  cursor: col-resize;
+  user-select: none;
+  touch-action: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  transition: background-color 150ms ease;
+  z-index: 10;
+}
+
+.splitter:hover,
+.splitter.dragging {
+  background-color: var(--cdf-accent-soft, #e4f0f8);
+}
+
+.splitter:focus-visible {
+  outline: 2px solid var(--cdf-focus, #2d7fc1);
+  outline-offset: -1px;
+}
+
+.handle {
+  width: 2px;
+  height: 28px;
+  background-color: var(--cdf-line, #d6dde4);
+  border-radius: 1px;
+  transition: background-color 150ms ease, height 150ms ease;
+}
+
+.splitter:hover .handle,
+.splitter.dragging .handle {
+  background-color: var(--cdf-accent, #1565a7);
+  height: 48px;
+}
+
+.splitter.collapsed {
+  width: 6px;
+  flex: 0 0 6px;
+}
+
+.splitter[aria-disabled="true"] {
+  cursor: default;
+  pointer-events: none;
+  opacity: 0.5;
+}
+

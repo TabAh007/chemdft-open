@@ -1,0 +1,20 @@
+{
+ "schema_version": "1.0.0",
+ "status": "REFUSED",
+ "label": "AI-drafted \u00b7 schematic",
+ "reply": "I can only draw or edit the structure here. I do not give energies, spectra, properties or literature in the drawing assistant: run a calculation for values, or use Evidence for cited sources.",
+ "steps": [],
+ "final": null,
+ "clarify": null,
+ "reference_check": null,
+ "proposals": [],
+ "warnings": [],
+ "info": [],
+ "error_code": null,
+ "error": null,
+ "repaired": false,
+ "run_id": null,
+ "model": "nemotron-3.5-lightning-30b-a3b",
+ "input_tokens": 412,
+ "output_tokens": 64
+}
