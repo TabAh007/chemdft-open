@@ -23,7 +23,7 @@ not a promise: there are no dates and no committed system sizes.
 
 ## Status
 
-**Public beta.** The hosted service is run by one person and has deliberately small limits. What it accepts today
+**Public beta.** The hosted service has deliberately small limits. What it accepts today
 (from `apps/web/src/lib/hosted-limits.ts`):
 
 | Calculation | Hosted limit |
@@ -94,8 +94,3 @@ and machine-readable metadata are in [CITATION.cff](CITATION.cff).
 
 [CONTRIBUTING.md](CONTRIBUTING.md) (including how to declare AI assistance), [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md),
 [SECURITY.md](SECURITY.md), [GOVERNANCE.md](GOVERNANCE.md).
-
-## AI authorship
-
-A large part of this code was written by AI coding agents under the owner's direction. This is disclosed rather than
-hidden: [docs/AI_DISCLOSURE.md](docs/AI_DISCLOSURE.md).

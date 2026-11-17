@@ -1,0 +1,44 @@
+{
+  "$schema": "https://fundingjson.org/schema/v1.1.0.json",
+  "version": "v1.1.0",
+  "entity": {
+    "type": "individual",
+    "role": "maintainer",
+    "name": "Tabriz Ahmadli",
+    "email": "tab@chemdft.com",
+    "description": "Founder and maintainer of ChemDFT, a free and open-source web workspace for quantum chemistry.",
+    "webpageUrl": { "url": "https://chemdft.com" }
+  },
+  "projects": [
+    {
+      "guid": "chemdft",
+      "name": "ChemDFT",
+      "description": "ChemDFT is a free, open-source (Apache-2.0) browser workspace for quantum chemistry. Scientists and students draw or import a molecule, run validated engines (PySCF, xTB, CREST, Quantum ESPRESSO), and view, cite and share the results, without installing software or owning a cluster. An AI assistant explains stored results, while the engines do all calculations. Funding would pay for the cloud and GPU compute that lets more people run larger calculations for free.",
+      "webpageUrl": { "url": "https://chemdft.com" },
+      "repositoryUrl": { "url": "https://github.com/TabAh007/chemdft-open" },
+      "licenses": ["spdx:Apache-2.0"],
+      "tags": ["chemistry", "dft", "quantum-chemistry", "open-science", "scientific-computing"]
+    }
+  ],
+  "funding": {
+    "channels": [
+      {
+        "guid": "bank",
+        "type": "bank",
+        "description": "Bank transfer. Details are shared directly with the funder after acceptance."
+      }
+    ],
+    "plans": [
+      {
+        "guid": "compute-and-cloud",
+        "status": "active",
+        "name": "Cloud and GPU compute",
+        "description": "Hosting and compute so scientists can run quantum chemistry calculations for free.",
+        "amount": 25000,
+        "currency": "USD",
+        "frequency": "one-time",
+        "channels": ["bank"]
+      }
+    ]
+  }
+}

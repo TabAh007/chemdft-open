@@ -29,6 +29,7 @@ path = [
   ".github/**",
   "AGENTS.md",
   "CITATION.cff",
+  "funding.json",
   "CLAUDE.md",
   "CODE_OF_CONDUCT.md",
   "CONTRIBUTING.md",
